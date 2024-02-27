@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {
+	margin-top: 0in;
+	margin-right: 0in;
+	margin-bottom: 10.0pt;
+	margin-left: 0in;
+	line-height: 115%;
+	font-size: 11pt;
+	font-family: "Verdana","sans-serif";
+	text-align: justify;
+}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.d {
+	font-weight: bold;
+}
+a:active {
+	font-weight: bold;
+}
+a:active {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;"><a href="Ân Tứ Nói Tiếng Lạ. Bài 1.pdf"><img src="../Image/Download.jpg" width="170" height="30" /></a></p>
+      <blockquote>
+        <p class="MsoNormal" align="center" style="text-align: center; font-size: 11pt;"><strong><span style="text-align: justify"></span><span style="line-height:115%; font-size:12.0pt; ">Ân Tứ&nbsp;  Nói Tiếng Lạ (Bài 1)</span></strong></p>
+        <p class="MsoNormal" align="center" style="text-align: center; font-size: 11pt;"><span style="line-height:115%; ">Trần Đình Tâm<br />
+        </span></p>
+        <p class="MsoNormal"><strong><span style="color: #C90612">Dẫn  nhập</span>.</strong></p>
+        <p class="MsoNormal" style="text-align:justify;">Trong số các ân tứ Đức Thánh Linh ban cho các tín hữu  được liệt kê trong I Cô-rinh-tô 12:8-10; 28-30; Ê-phê-sô 4:11; Rô-ma 12:6-8,  thì ân tứ nói tiếng lạ gây nhiều thắc mắc, nhiều tranh luận, nhiều ngộ nhận,  nhiều bất hòa nhất và đã đưa đến tình trạng chia rẽ trong Hội Thánh. Điều nầy  thật trái ngược với mục đích của các ân tứ, vì Đức Thánh Linh ban các ân tứ cho  tín hữu là để gây dựng cho nhau, giúp ích cho nhau, đem đến sự hiệp một chứ  không phải đem đến sự chia rẽ! </p>
+        <p class="MsoNormal" style="text-align:justify;">Điều quan trọng hơn hết là cần tìm hiểu xem Kinh Thánh  dạy gì về ân tứ nói tiếng lạ. Nhưng đáng tiếc là ngày hôm nay có nhiều tài liệu,  nhiều bài giảng, nhiều bài làm chứng về ân tứ nầy lại được trình bày dựa trên  kinh nghiệm chủ quan hơn là căn cứ trên Lời của Đức Chúa Trời, nếu có thì chỉ dẫn  chứng những phần Kinh Thánh nào ủng hộ cho quan điểm của mình và né tránh những  phần Kinh Thánh khác không thuận lợi cho lý giải của mình. Do đó, Lời của Đức  Chúa Trời đã không được rao giảng một cách ngay thẳng và trọn vẹn.</p>
+        <p class="MsoNormal" style="text-align: justify; font-weight: bold; color: #C90612;">1. &ldquo;Tiếng lạ&rdquo; <span>theo nguyên ngữ Hy-lạp</span>:</p>
+        <p class="MsoNormal" style="text-align: justify;">&ldquo;Tiếng lạ&rdquo; theo nguyên ngữ Hy-lạp là <em>&ldquo;glossā&rdquo;</em>, từ nầy mang nhiều ý nghĩa khác  nhau. Để xác định đúng ý nghĩa của nó, chúng ta không nên chỉ dựa vào định  nghĩa của từ ngữ đó trong tự điển, nhưng quan trong hơn cả là nghiên cứu văn mạch  của từ ngữ đó. <strong>Dựa vào văn mạch hay ngữ cảnh</strong> (context)<strong> là cách tốt nhất để hiểu  đúng ý nghĩa của từ ngữ mà Kinh Thánh muốn nói</strong>.</p>
+        <p class="MsoNormal" style="text-align:justify;">&ldquo;Glossā&rdquo; có 4 ý nghĩa sau đây:</p>
+        <p class="MsoNormal" style="text-align:justify;">a. <u>Glossā</u> có nghĩa là <em>cái lưỡi.</em> Đây là nghĩa đen (literal), là nghĩa đơn giản nhất, chỉ về  một
+          bộ phận
+trong cơ thể con người có nhiệm vụ  phát âm. Nghĩa nầy được dùng trong các
+        câu sau:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Đức Giê-hô-va phán cùng Ghê-đê-ôn rằng:  Phàm kẻ nào dùng <u>lưỡi</u> (Glossā) liếm nước
+            như chó, và
+            kẻ nào quỳ gối xuống mà  uống thì ngươi phải để riêng ra.&rdquo;</em> (Các Quan Xét
+            7:5)</p>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Ngài đem riêng người ra, cách xa đám  đông, rồi để ngón tay vào lỗ tai người, và thấm
+            nước miếng xức <u>lưỡi</u> (Glossā) người.&rdquo;</em>  (Mác 7:33)</p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">b. <u>Glossā</u> còn chỉ về <strong>chức năng</strong> của lưỡi, tức là  <strong>lời nói</strong> hay <strong>ngôn ngữ phát ra từ môi miệng
+          con người</strong>. Nghĩa nầy được thấy trong  các câu sau:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Hỡi các con cái bé mọn, chớ yêu mến bằng lời  nói và <u>lưỡi</u> (Glossā), nhưng bằng việc làm
+            và lẽ thật.&rdquo;</em>  (I Giăng 3:18)</p>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Và mọi <u>lưỡi</u> (Glossā) thảy đều xưng  Jesus Christ là Chúa…&rdquo;</em>  (Phi-líp  2:11)        </p>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Bởi cái <u>lưỡi</u> (Glossā) chúng ta ngợi  khen Chúa, Cha chúng ta, và cũng bởi nó chúng ta
+            rủa sả loài người, là loài tạo theo  hình ảnh Đức Chúa Trời.&rdquo;</em>  (Gia-cơ  3:9)</p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">c. <u>Glossā</u> cũng có nghĩa là tiếng ngoại quốc, là  <strong>ngôn ngữ của một dân tộc nào đó </strong>trên thế
+          giới, được dùng để phân biệt với ngôn  ngữ bản xứ. Nghĩa nầy được dùng trong các câu
+          Kinh Thánh sau:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Sự ấy đoạn, tôi nhìn xem, thấy vô số người,  không ai đếm được, bởi mọi nước, mọi chi
+            phái, mọi dân tộc, mọi <u>tiếng</u> (Glossā) mà ra; chúng đứng trước ngôi và trước Chiên
+            Con.&rdquo;</em>  (Khải Huyền 7:9)</p>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Hết thảy đều được đầy dẫy Đức Thánh Linh,  khởi sự nói <u>các thứ tiếng khác</u> (Glossā),
+            theo như Đức Thánh Linh cho mình  nói.&rdquo;</em>  (Công Vụ Các Sứ Đồ 2:4)</p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">d. <u>Glossā</u> còn dùng để chỉ một loại <strong>ngôn ngữ đặc  biệt</strong>, không thuộc về bất cứ một ngôn ngữ
+          nào của con người trên thế giới. <span class="MsoNormal" style="text-align:justify;">Bản Kinh Thánh Việt Ngữ dịch là &quot;nói tiếng lạ&quot;</span>, ngôn ngữ nầy là ngôn ngữ <em>thuộc linh</em>, đây  là một ân tứ do Đức Thánh Linh ban cho
+          tín hữu trong Hội Thánh. Ý nghĩa nầy  được thấy trong các câu sau:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Vì người nào nói <u>tiếng lạ</u> (Glossā),  thì không phải nói với người ta, bèn là với Đức Chúa
+            Trời.&rdquo;</em>  (I Cô-rinh-tô 14:2)</p>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Cả thảy đều được ơn chữa bịnh sao? Cả thảy  đều nói <u>tiếng lạ</u> (Glossā) sao? Cả thảy đều
+            thông giải <u>tiếng lạ</u> sao?&rdquo;</em>  (I Cô-rinh-tô 12:30)</p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Chúng ta thấy &ldquo;Glossā&rdquo; có nhiều nghĩa khác nhau, chúng  tôi chỉ chú ý đến 2 ý nghĩa sau cùng mà thôi, vốn là vấn đề gây nhiều tranh luận  hơn hết. Bài viết nầy chỉ xin trình bày ý nghĩa thứ ba, liên quan đến &quot;tiếng ngoại quốc&quot;. Còn ý nghĩa sau cùng, liên quan đến &quot;nói tiếng lạ&quot;  sẽ trình bày trong bài viết thứ 2. </p>
+        <p class="MsoNormal" style="text-align: justify; color: #C90612;"><span class="d">2.</span> <strong><span>Glossā trong sách Công Vụ Các Sứ Đồ: Tiếng ngoại quốc</span>.</strong></p>
+        <p class="MsoNormal" style="text-align:justify;">Trong sách Công Vụ Các Sứ Đồ, có tất cả 3 lần &ldquo;Glossā&rdquo;  được dùng đến: 2:4; 10:46 và 19:6. Chúng ta hãy khảo sát cả 3 trường hợp:</p>
+        <p class="MsoNormal" style="text-align: justify; color: #0420F5;">a. <u>Công Vụ Các Sứ Đồ 2:4</u>:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Hết thảy đều được đầy dẫy Đức Thánh Linh,  khởi sự nói <u>các thứ tiếng khác</u> (Glossā),
+            theo như Đức Thánh Linh cho mình  nói.&rdquo;</em>  </p>
+        </blockquote>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">Trong ngày Lễ Ngũ Tuần, có  nhiều người Do Thái mộ đạo sinh sống từ 15 vùng lân cận với Israel (Xin xem bản đồ trình bày 15 quốc gia có người Do Thái đi dự Lễ Ngũ Tuần) họ đến thành Giê-ru-sa-lem để dự lễ. Khi Đức  Thánh Linh được ban xuống, các môn đồ được đầy dẫy Thánh Linh, khởi sự nói bằng <span class="d"><em>Glossā</em></span><em>. </em>Câu 6 và 12 cho chúng ta biết  những người đến từ 15 nước lân cận rất kinh ngạc khi thấy các môn đồ nói được<strong> ngôn ngữ bản xứ</strong> của họ. Từ đó chúng ta dễ dàng kết luận rằng các môn đồ được Đức  Thánh Linh ban cho khả năng <span class="d">nói tiếng ngoại quốc</span>.</p>
+        <blockquote>
+          <blockquote>
+            <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;"><img src="../Pentecost.jpg" width="640" height="396"  alt=""/></p>
+          </blockquote>
+        </blockquote>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">Mục đích của ân tứ nói tiếng  ngoại quốc trong ngày lễ Ngũ tuần là ca tụng Đức Chúa Trời, và sau đó là công bố  Tin Lành cứu rỗi:</p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">+ Các môn đồ nói về những sự  cao trọng của Đức Chúa Trời:</p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">     <em>&ldquo;Chúng  ta đều nghe họ lấy tiếng chúng ta mà nói những sự cao trọng của Đức Chúa
+          Trời.&rdquo;</em> (2:11)</p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">+ Phi-e-rơ có cơ hội rao giảng  sự cứu rỗi trong Chúa Jesus cho những người Do Thái đang đi dự lễ Ngũ Tuần tại  Giê-ru-sa-lem:</p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">     <em>&ldquo;Vậy,  cả nhà Y-sơ-ra-ên khá biết chắc rằng Đức Chúa Trời đã tôn Jesus nầy, mà các
+          ngươi đã đóng đinh trên thập tự  giá, làm Chúa và Đấng Christ.&rdquo;</em>   (2:36)</p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">Kết quả có ba ngàn người được  cứu trong ngày đó. </p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">Có một số nhà giải kinh cho  rằng các môn đồ không nói tiếng ngoại quốc, họ chỉ nói ngôn ngữ thông thường của  họ mà thôi (tiếng A-ram), nhưng những người đi dự lễ từ 15 vùng lân cận khi <span class="d">nghe</span> các môn đồ nói, thì <span class="d">nghe</span> thành tiếng bản xứ của họ. Quan điểm nầy khó có thể chấp nhận  được vì lý do sau:</p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">+ Đoạn 2, câu 4 xác định rất  rõ ràng chính các môn đồ <span class="d">nói</span> các thứ tiếng khác, theo như Đức Thánh linh cho  mình <span class="d">nói</span>.</p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">+ Đức Thánh Linh ban cho các  môn đồ khi xưa cũng như tín hữu ngày nay ân tứ <span class="d">nói</span>, chứ không phải ân tứ <span class="d">nghe</span>.  Không có chổ nào trong Tân Ước cho chúng ta thấy Đức Thánh Linh ban cho ân tứ <span class="d">nghe</span>.</p>
+        <p class="MsoNormal" style="margin-top:12.0pt;text-align:justify;">Như vậy, bởi Đức Thánh Linh  ban cho, các môn đồ có khả năng nói được những ngoại ngữ mà trước đó họ chưa từng  học. Ngày nay, chúng ta nhờ học tập và rèn luyện mà nói được một ngoại ngữ nào  đó thì đó không phải là ân tứ nói ngoại ngữ, gọi là ân tứ chỉ khi đó là sự ban  cho của Đức Thánh Linh đi kèm với mục đích gây dựng Hội Thánh.</p>
+        <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; color: #031DE4;">b. <u>Công Vụ Các Sứ Đồ  10:46</u>:</p>
+        <p class="MsoNormal" style="text-align:justify;"><em>     &ldquo;Vì <u>các tín đồ đó</u> nghe <u>họ</u> nói tiếng ngoại quốc (Glossā) và ngợi khen Đức Chúa Trời.&rdquo;</em></p>
+        <p class="MsoNormal" style="text-align:justify;">Đọc trọn đoạn 10 sẽ thấy <em>&ldquo;các tín đồ đó&rdquo; </em>gồm sứ đồ Phi-e-rơ và một số người nữa cùng đi với  ông, là những người Do Thái tin Chúa Jesus và đã từng trãi sự nhận lãnh Đức  Thánh Linh trong ngày Lễ Ngũ Tuần. <em>&ldquo;Họ&rdquo; </em>chỉ  về đội trưởng Cọt-nây cùng với những người trong gia đình hoặc bạn bè của ông,  họ họp lại trong nhà Cọt-nây để nghe Phi-e-rơ rao giảng Tin Lành.</p>
+        <p class="MsoNormal" style="text-align:justify;">Khi Phi-e-rơ đang làm chứng về Tin Lành cho họ thì Đức  Thánh Linh giáng xuống, họ nói <em>Glossā </em>và  ngợi khen Đức Chúa Trời. Điều đặc biệt trong trường hợp nầy, khác với Công Vụ  Các Sứ Đồ 2:4 là: Những người nói <em>Glossā </em>ở  đây là những người ngoại bang, họ là những người thuộc trong gia đình đội trưởng  Cọt-nây. </p>
+        <p class="MsoNormal" style="text-align:justify;">Điểm quan trọng ở đây, không phải là vấn đề những người  nầy nói <em>Glossā</em> nhưng là sự kiện <span class="d">Đức  Thánh Linh cũng được ban cho những người ngoại bang</span>, vì câu 45 nói: <em>&ldquo;Các tín đồ đã chịu phép cắt bì, là những kẻ  đồng đến với Phi-e-rơ, đều lấy làm lạ, vì thấy sự ban cho Đức Thánh Linh cũng đổ  ra trên người ngoại nữa.&rdquo;</em></p>
+        <p class="MsoNormal" style="text-align:justify;">Câu hỏi nêu ra: <em>Glossā </em>mà những người ngoại bang dùng có nghĩa gì? Dựa vào câu 47 <em>&ldquo;Phi-e-rơ cất tiếng nói rằng: Người ta có thể  từ chối nước về phép báp-têm cho những kẻ đã nhận lấy Đức Thánh Linh <u>cũng  như chúng ta</u> chăng?&rdquo; </em>sẽ thấy Phi-e-rơ chứng kiến người ngoại bang nói <em>Glossā </em>khi nhận lãnh Đức Thánh Linh cũng  giống như <span class="d">kinh nghiệm</span> mà ông đã nói <em>Glossā </em>khi nhận lãnh Đức Thánh Linh trong ngày Lễ Ngũ Tuần. Vậy, những người ngoại  bang cũng được ban cho ân tứ <span class="d">nói tiếng ngoại quốc</span></p>
+        <p class="MsoNormal" style="text-align:justify;">Bài học cho chúng ta trong trường hợp trên đây là: Ân  tứ nói ngoại ngữ như là một dấu hiệu cho những người Do Thái biết rằng, bất cứ  ai tiếp nhận ơn cứu rỗi bởi Chúa Jesus, cũng được nhận lãnh Đức Thánh Linh, chứ  không chỉ dành riêng cho dân Do Thái.</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;">c. <u>Công Vụ Các Sứ Đồ 19:6</u>:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Sau khi Phao-lô đã đặt tay lên, thì có Đức  Thánh Linh giáng trên chúng, cho nói tiếng
+            ngoại quốc (Glossā) và lời tiên  tri.&rdquo;</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Câu chuyện xãy ra tại thành Ê-phê-sô, có khoảng 12 người  (câu 7) đã chịu phép báp-têm của Giăng Báp-tít, họ chưa nhận được Đức Thánh  Linh. Phao-lô giải thích cho họ biết phép Báp-têm của Giăng chỉ để ăn năn tội,  và dọn lòng mình để tiếp nhận Chúa Jesus là Đấng đến sau, chỉ khi nào tin tiếp  nhận Chúa Jesus, mới được từng trãi sự nhận lãnh Đức Thánh Linh. Sau khi nghe  Phao-lô giảng giải, họ đồng ý chịu phép báp-têm nhân danh Đức Chúa Jesus (biểu  lộ sự tiếp nhận Chúa Jesus), và khi Phao-lô đặt tay thì họ nói <em>Glossā. </em></p>
+        <p class="MsoNormal" style="text-align:justify;">Thật khó mà xác định được <em>Glossā</em> trong câu chuyện trên (19:1-7) có phải chỉ về tiếng ngoại quốc  hay không, tuy nhiên, nếu căn cứ vào diễn biến tự nhiên của câu chuyện thì có  thể mạnh dạn kết luận rằng trường hợp nói <em>Glossā </em>ở đây cũng tương tự như hai trường hợp trước, tức là họ <span class="d">nói tiếng ngoại quốc</span>.  Ân tứ nói ngoại ngữ trong trường hợp nầy như là một sự kiện xác nhận sự giảng  giải của Phao-lô là đúng.</p>
+        <p class="MsoNormal" style="text-align:justify;">Tóm lại, cả 3 trường hợp trong sách Công Vụ Các Sứ Đồ  đều nói tiếng ngoại quốc, bản dịch Kinh Thánh Việt ngữ truyền thống dịch &ldquo;<em>Glossā&rdquo;</em>, là tiếng Hy-lạp sang &ldquo;tiếng ngoại  quốc&rdquo; là chính xác. </p>
+        <p class="MsoNormal" style="text-align: justify; color: #C90612;"><strong><span>3. Lời tuyên phán của của Chúa Jesus về ân tứ nói ngoại  ngữ</span>:</strong></p>
+        <p class="MsoNormal" style="text-align:justify;">Sau khi Chúa Jesus sống lại và trước khi Ngài thăng  thiên, Chúa Jesus phán dạy các sứ đồ như sau:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Hãy đi khắp thế gian, giảng Tin lành cho mọi  người. Vậy, những kẻ tin sẽ được các dấu
+            lạ nầy: Lấy danh Ta mà trừ quỷ; dùng  <span class="d">tiếng mới</span> (Glossā) mà nói; bắt rắn trong tay;
+            nếu uống  giống chi độc, cũng chẳng hại gì; hễ đặt tay trên kẻ đau, thì kẻ đau sẽ lành.&rdquo;        </em>  (Mác 16:15,17-18)</p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Từ ngữ <em>Glossā </em>trong  lời phán của Chúa Jesus được dịch là &ldquo;tiếng mới&rdquo; (bản dịch truyền thống), là một  trong 5 dấu (sign) kèm theo <span class="d">cho những ai tin nhận Tin Lành</span>. Nếu đem &ldquo;tiếng mới&rdquo;  ở đây đối chiếu với các trường hợp nói tiếng ngoại quốc trong sách Công Vụ Các  Sứ Đồ nêu trên, là sách tường thuật về công cuộc truyền bá Tin Lành của Chúa  Jesus, thì chúng ta có thể kết luận rằng &ldquo;tiếng mới&rdquo; nầy cũng chính là tiếng  ngoại quốc. Như vậy, lời tuyên bố của Chúa Jesus về sự kiện người tin nhận Tin  Lành sẽ nhận được ân tứ nói ngoại ngữ thật đã xãy ra.</p>
+        <p class="MsoNormal" style="text-align:justify;">Có người giảng giải rằng &ldquo;dùng tiếng mới mà nói&rdquo; không  có ý nói về &ldquo;nói tiếng lạ&rdquo; hay &ldquo;nói ngoại ngữ&rdquo;, nhưng ám chỉ những người khi  tin Chúa, được Đức Thánh Linh tái sinh, bước vào đời sống mới thay cho đời sống  cũ, người ấy chỉ nói những gì phù hợp với nếp sống mới trong Chúa mà thôi. Sự  giải thích như vậy có thể phù hợp với tiêu chuẩn sống đạo đức mà Kinh Thánh dạy  dỗ, nhưng lại không đúng với ý nghĩa thật sự trong lời phán của Chúa, vì xét  theo nguyên ngữ Hy-lạp, <em>Glossā </em>không  mang ý nghĩa &ldquo;nói những gì tốt đẹp, ích lợi&rdquo; hay &ldquo;nói những gì đẹp lòng Chúa&rdquo;. </p>
+        <p class="MsoNormal" style="text-align:justify;">[Đón đọc bài &ldquo;Ân Tứ Nói Tiếng Lạ&rdquo;, bài 2]</p>
+        <p class="MsoNormal" style="text-align:justify;"><br />
+          <em><span style="line-height:115%; font-size:11.0pt; ">Tháng 4, năm 2011</span></em></p>
+        <p class="MsoNormal" style="text-align:justify;">&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

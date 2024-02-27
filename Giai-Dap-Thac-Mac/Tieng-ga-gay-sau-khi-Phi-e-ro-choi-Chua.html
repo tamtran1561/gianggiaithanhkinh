@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center">CÓ PHẢI GÀ GÁY SAU KHI PHI-E-RƠ CHỐI CHÚA?</p>
+  <p align="center">&nbsp;</p>
+  <p><strong>Mác 14:40,72: </strong></p>
+  <p><em>&ldquo;Đức Chúa Jêsus đáp rằng: Quả thật,  ta nói cùng ngươi, hôm nay, cũng trong đêm nay, trước  khi <strong>gà gáy</strong> (the rooster crows) hai  lượt, ngươi sẽ chối ta ba lần.&rdquo;</em></p>
+  <p><em>&ldquo;Tức thì <strong>gà gáy</strong> lần  thứ hai; Phi-e-rơ bèn nhớ lại lời Đức  Chúa Jêsus đã phán rằng: Trước khi <strong>gà gáy</strong> hai lượt, ngươi sẽ chối ta  ba lần. Người tưởng đến thì khóc.&rdquo;</em></p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Có phải tiếng &ldquo;gà  gáy&rdquo; thật là tiếng gáy của một con gà nào đó?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Cả 4 sách Phúc Âm đều  cho biết sau khi Phi-e-rơ chối không biết Chúa Jesus, gà  liền gáy (rooster crows). Đa số Cơ-đốc nhân cho  rằng đó là tiếng của <strong>con gà</strong> cất tiếng gáy. Tuy nhiên có những bằng  chứng cho thấy đó không không phải là tiếng gáy của  một con gà.</p>
+  <p>1. Câu chuyện xãy ra trong  địa phận Giê-ru-sa-lem. Đối với người  Do Thái, Giê-ra-sa-lem là thành phố thánh, nhất là trong giai  đoạn còn có đền thờ (temple). Gà là loại gia  súc không sạch, các thầy tế lễ  không cho phép người dân nuôi gà  trong thành Giê-ru-sa-lem. Xin đọc trang web sau để hiểu  được vấn đề nầy: <em>biblestudytools.com/commentaries/lightfoot-new-testament/matthew/centuries/jerusalem.html</em></p>
+  <p>2. Mác 13:35 là câu Kinh Thánh  cho thấy &ldquo;gà gáy&rdquo; không phải là tiếng gáy của con gà: <em>&ldquo;Vậy, các ngươi hãy tỉnh  thức, vì không biết chủ nhà về lúc nào, hoặc <strong>chiều tối</strong>, <strong>nửa đêm</strong>, <strong>lúc gà gáy </strong>(rooster crows, cockcrowing),  hay là <strong>sớm mai</strong>.&rdquo;</em></p>
+  <p>Trong thời đế quốc  La-mã cai trị, người Do Thái phân chia khoảng thời  gian từ 6 giờ chiều cho đến 6 giờ sáng ngày  hôm sau (gồm 12 tiếng đồng hồ) làm 4 phần, gọi  là 4 canh (watch):</p>
+  <p>+ Canh 1: Từ 6 giờ chiều  đến 9 giờ tối. Mác 13:35 kể là <em>chiều tối </em>(evening)</p>
+  <p>+ Canh 2: Từ 9 giờ tối  đến 12 giờ đêm. Mác 13:35 kể là <em>nửa đêm</em> (midnight)</p>
+  <p>+ Canh 3: Từ 12 giờ  đêm đến 3 giờ khuya. Mác 13:35 kể là <strong><em>gà  gáy </em></strong>(rooster crows)</p>
+  <p>+ canh 4: Từ 3 giớ  khuya đến 6 giờ sáng. Mác 13:35 kể là <em>sớm mai</em> (morning)</p>
+  <p>Theo sự phân chia thời  gian ra làm 4 canh bằng nhau như trên, không thể kết luận  &ldquo;gà gáy&rdquo; là tiếng gáy của con gà, nhưng phải là một  âm thanh cho biết rõ lúc đó là canh ba. Hơn nữa, ai  đã từng nuôi gà thì hiểu rõ, hiếm khi gà gáy vào  đêm khuya khoắt (2,3 giờ sáng), nhưng gà thường  gáy khi những tia sáng mặt trời bắt đầu xuất  hiện ở chân trời vào lúc bình minh.</p>
+  <p>Nguyên ngữ Hy-lạp của  từ ngữ &ldquo;gà gáy&rdquo; là <em>phōneō</em>,  chỉ về một <em>âm thanh</em> (sound). Âm thanh có thể phát ra từ bất cứ nguồn  gốc nào: con vật, người ta, dụng cụ âm nhạc  v.v… </p>
+  <p>Vậy, âm thanh ấy phát  xuất từ đâu? Tại sao canh ba gọi là &ldquo;gà gáy&rdquo;?</p>
+  <p>Vài nhà nghiên cứu Kinh  Thánh cho rằng tiếng &ldquo;gà gáy&rdquo; là tiếng thổi kèn  (trumpet) của lính canh La-mã ở tòa lâu đài Antinia Fortress mỗi  khi đổi phiên canh. Khi người ta nghe tiếng thổi  kèn, người ta biết đó là khoảng 3 giờ sáng.  Tiếng kèn &ldquo;trumpet&rdquo; theo tiếng La-tin là &ldquo;<em>gullicinium&rdquo;, </em>có nghĩa là &ldquo;cock crow&rdquo; (gà gáy). </p>
+  <p>Sách Mác cho biết &ldquo;gà gáy&rdquo;  2 lần. Chúng ta có thể giải thích như sau: Tiếng  kèn thổi lần thứ nhất là tiếng kèn cho biết  đã hết phiên trực của người lính đang trực;  tiếng kèn thứ hai là tiếng kèn cho biết người  lính trực khác đã đến bắt đầu phiên trực  của mình. Hoặc có thể giải thích rằng kèn thổi  lên 2 lần, mỗi lần thổi ở một hướng  khác, để tất cả người dân trong thành phố  đều nghe được rõ.</p>
+  <p>Xin đọc trang web sau  đây để tìm hiểu thêm: <em>http://getreadyforchrist.com/cockcrow.htm.</em></p>
+  <p><strong><em>Trần Đình Tâm</em></strong></p>
+  <p>Tháng 2, 2014</p>
+<p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

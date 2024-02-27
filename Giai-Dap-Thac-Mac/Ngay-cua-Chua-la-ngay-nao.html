@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center"><strong>&ldquo;Ngày của Chúa&rdquo; trong Khải  Huyền 1:10 là ngày nào?</strong></p>
+  <p align="center"> </p>
+  <p><strong>Khải Huyền 1:10:</strong></p>
+  <p><em>&ldquo;Nhằm <strong>ngày của Chúa</strong>,  tôi được Đức Thánh Linh cảm hóa, nghe đằng  sau có tiếng kêu vang, như tiếng loa&rdquo;</em></p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>&ldquo;Ngày của Chúa&rdquo; là ngày nào?  Ngày Thứ Bảy hay Chủ Nhật? </p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Những người chủ  trương tuân <em>giữ ngày  Sa-bát</em> (Thứ Bảy) cho rằng &ldquo;ngày của Chúa&rdquo; là ngày  Thứ Bảy (ngày Sa-bát), vì Mác 2:28 chép:<em> &ldquo;Vậy thì Con  người (Chúa Jesus) cũng làm chủ ngày Sa-bát.&rdquo;</em> Cách giải  thích nầy rất khó thuyết phục, vì chúng ta thấy lời  nói của Chúa Jesus ngụ ý Ngài làm <em>chủ</em> (<em>&ldquo;lord&rdquo;,</em> không  viết hoa) của &ldquo;ngày Sa-bát&rdquo;, chứ &ldquo;ngày Sa-bát&quot; không làm <em>chủ</em> Ngài. Như vậy,  không thể dùng Mác 2:28 để giải thích cho &ldquo;ngày của  Chúa&rdquo; (Lord, viết hoa)</p>
+  <p>Những người chủ  trương <em>giữ ngày Chủ  Nhật</em> cho rằng &ldquo;ngày của Chúa&rdquo; là ngày Chủ Nhật  (ngày Thứ Nhất trong tuần), vì đó là ngày Chúa Jesus sống  lại. Cách giải thích nầy khó chấp nhận, vì không  có bằng chứng gì chứng minh ngày Chúa sống lại  liên quan đến Khải Huyền 1:10.</p>
+  <p>Cách giải thích tốt  hơn là căn cứ vào <em>nội  dung</em> của sách Khải Huyền. Nếu đọc câu 11  kế tiếp sẽ thấy vào &ldquo;ngày của Chúa&rdquo; Giăng  được Đức Thánh Linh cảm hóa để làm  gì: <em>&ldquo;Điều ngươi <strong>thấy</strong>, hãy <strong>chép vào một quyển sách</strong> mà gởi cho bảy Hội  Thánh tại Ê-phê-sô, Si-miệc-nơ, Bẹt-găm,  Thi-a-ti-rơ, Sạt-đe, Phi-la-đen-phi và Lao-đi-xê.&rdquo;</em> Nhằm &ldquo;ngày của Chúa&rdquo;, Sứ đồ Giăng  được cảm bởi Đức Thánh Linh và ông  được truyền phải làm một việc quan trọng:  Những gì ông được Chúa cho thấy phải viết  vào một quyển sách để gửi cho bảy Hội  Thánh, đó là sách <strong>Khải Huyền</strong> mà chúng ta có ngày nay. Nội dung chính yếu của Khải  Huyền bao gồm những biến cố sẽ xãy đến  trong thời kỳ sau rốt. </p>
+  <p><em>&ldquo;Ngày của Chúa&rdquo;</em> (&ldquo;Lord&rsquo;s day&rdquo; hay &ldquo;day of the Lord&rdquo;) trong Khải  Huyền 1:10 không nhất thiết phải chỉ về một  ngày nào đó trong tuần lễ (từ Chủ Nhật  đến Thứ Bảy), nhưng chỉ về một <strong>khoảng thời gian được  Chúa định trước</strong>, <strong>khoảng  thời gian nầy bao gồm một chuổi các sự kiện  đặc biệt nằm trong chương trình của  Đức Chúa Trời cho thời kỳ sau cùng</strong>.</p>
+  <p>Nhiều nơi trong các  sách tiên tri trong Cựu Ước có đề cập đến <em>&ldquo;ngày của Chúa&rdquo;</em> hay <em>&ldquo;ngày của Đức Giê-hô-va&rdquo;</em> (day of The Lord) chỉ về thời kỳ sau cùng của thế  giới:</p>
+  <blockquote>
+    <p><em>&ldquo;<strong>Ngày lớn của Đức Giê-hô-va</strong> đã gần,  đã gần rồi; nó đến rất kíp. <strong>Ngày của Đức Giê-hô-va</strong> có tiếng động;  bấy giờ người mạnh dạn sẽ kêu khóc  đắng cay. Ngày ấy là ngày thạnh nộ, ngày hoạn  nạn và buồn rầu, ngày hủy phá và hoang vu, ngày tối  tăm và mờ mịt, ngày mây và  sương mù.&rdquo;</em> (Sô-phô-ni 1:14,15)</p>
+    <p><em>&ldquo;Các  ngươi khá than khóc! Vì <strong>ngày của  Đức Giê-hô-va</strong> đã gần: ngày đó đến  như cơn tai nạn đến bởi  Đấng Toàn năng.&rdquo;</em> (Ê-sai 13:6)</p>
+    <p><em>&ldquo;Song  le, <strong>ngày của Chúa </strong>sẽ  đến như kẻ trộm. Bấy giờ các từng  trời sẽ có tiếng vang rầm mà qua đi, các thể chết bị  đốt mà tiêu tán, đất cùng mọi công trình trên nó  đều sẽ bị đốt cháy cả. Vì mọi vật đó  phải tiêu tán thì anh em đáng nên thánh và tin kính trong mọi  sự ăn ở của mình là dường  nào, trong khi chờ đợi trông mong cho <strong>ngày Đức Chúa Trời</strong> mau đến, là ngày các từng trời  sẽ bị đốt mà tiêu tán, các thể chất sẽ  bị thiêu mà tan chảy đi!&rdquo; </em>(II Phi-e-rơ 3:10-12)</p>
+  </blockquote>
+  <p>Các câu Kinh Thánh trên cho thấy  &ldquo;ngày của Chúa&rdquo; chỉ về <em>thời  kỳ</em> <em>sau cùng</em> mà Đức  Chúa Trời sẽ thi hành sự phán xét trên thế gian không  vâng phục Ngài.</p>
+  <p>Nhằm &ldquo;ngày của Chúa&rdquo;,  Giăng được Chúa cho thấy tất cả các khải  tượng về ngày sau cùng và ông phải ghi chép lại  điều ông thấy thành sách Khải Huyền. Sách Khải  Huyền chứa đựng rất nhiều hình ảnh làm  biểu tượng mà chúng ta không thể hiểu theo  nghĩa <em>đen</em>, nhưng phải  hiểu theo nghĩa <em>hàm ngụ</em>.  Cũng vậy, &ldquo;ngày của Chúa&rdquo; không nên hiểu theo nghĩa  đen (các ngày trong tuần lễ), nhưng nên hiểu theo  nghĩa hàm ngụ, là hình bóng về một &ldquo;khoảng thời  gian&rdquo; bao gồm các sự kiện trong thời kỳ sau cùng,  đặc biệt là sự phán xét của Đức Chúa Trời  trên thế giới trong 7 năm đại nạn.</p>
+  <p><strong><em>Trần Đình Tâm</em></strong></p>
+  <p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

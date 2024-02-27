@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Toi-to-Chua-hay-con-cai-Chua.</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p align="center">TÔI TỚ CHÚA HAY CON CÁI CHÚA</p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Theo thói quen, người  tín hữu trong tất cả các Hệ phái Tin Lành Việt  Nam gọi các vị <strong>mục  sư</strong> là <em>&ldquo;tôi tớ Chúa&rdquo;</em> hay <em>&ldquo;đầy tớ Chúa&rdquo;</em>,  và gọi các <strong>tín hữu</strong> là <em>&ldquo;con cái Chúa&rdquo;</em>. Mỗi khi dùng cụm  từ &ldquo;tôi tớ Chúa&rdquo; là ám chỉ đến các <em>mục sư</em>; khi đề cập  đến &ldquo;con cái Chúa&rdquo; là ám chỉ người <em>tín đồ</em>. Sự phân biệt  trong ngôn ngữ và cách nói như thế xem ra rất rõ ràng và  không hề có sự lẫn lộn chút nào. Chính các vị mục  sư cũng tự nhận mình là <em>tôi tớ Chúa</em> mà <strong>không</strong> phải là <em>con cái Chúa</em>! còn các  tín hữu cũng công nhận mình là <em>con cái Chúa</em> mà <strong>không</strong> phải  là <em>tôi tớ Chúa</em>!</p>
+        <p>Nhận định trên  đây được chứng minh không những trong sự  giao tiếp hằng ngày mà còn trong các lời nói của  người hướng dẫn chương trình một buổi  nhóm, hội nghị, hội đồng v.v … Ví dụ: &ldquo;Kính  chào các <em>tôi tớ Chúa</em> và các <em>con cái Chúa</em> … Cám ơn các <em>đầy tớ Chúa</em> và <em>con cái Chúa</em> …&rdquo;, hay trong các văn  thư: &ldquo;Kính gửi các <em>tôi tớ  Chúa</em> và <em>con cái Chúa</em> ở …&rdquo;</p>
+        <p>Cách gọi như thế  đã trở thành <em>nguyên tắc </em>được  hiểu ngầm và được công nhận từ bao lâu  nay, có thể kể từ lúc Tin Lành đến Việt Nam  cho đến ngày nay (?). </p>
+        <p>Chúng ta hãy tìm hiểu  &ldquo;đầy tớ Chúa&rdquo; và &ldquo;con cái Chúa&rdquo; có ý nghĩa gì.</p>
+        <p><strong>1. Ý nghĩa của &ldquo;tôi tớ&rdquo; giữa người với  người.</strong></p>
+        <p>&ldquo;Tôi tớ&rdquo; hay &ldquo;đầy  tớ&rdquo; có nghĩa là <strong>người  phục vụ </strong>(servant). Người đầy tớ  cũng có nhiều <em>loại </em>(type)  khác nhau tùy theo tính chất của công việc được  giao:</p>
+        <p>Người <em>đầy tớ</em> có thể chỉ  về một người giúp việc cho một gia đình.  Có thể là người làm việc tình nguyện hay không  tình nguyện; được trả tiền công hay không  được trả tiền công. II Các Vua 5:1-3 ghi lại  câu chuyện một đứa <em>đầy  tớ</em> gái người Y-sơ-ra-ên giúp việc trong nhà  quan tổng binh Na-a-man, người Sy-ri. Tiên tri Ê-li-sê có  người đầy tớ là Ghê-ha-xi (II Các Vua 4:11,12).  A-ga là đầy tớ Sa-ra (Sáng Thế Ký 16:1). Ô-nê-sim là  đầy tớ của Phi-lê-môn (Phi-lê-môn 1:10)  v.v…</p>
+        <p>Người đầy tớ  có thể là một người <em>quản  gia</em> của một gia đình, do người chủ tin cậy  giao phó nhiều việc quan trọng cho người đó  quản lý. Ê-li-ê-se là quản gia của Áp-ra-ham (Sáng Thế  Ký 15:2; 24:2). Giô-sép là quản gia của Phô-ti-pha (Sáng Thế  Ký 39:4-6).</p>
+        <p>Người đầy tớ  có thể là một người phục vụ cho một  người thuộc cấp trên của mình, với tinh thần  cộng tác nhằm vào một mục đích hay một lý  tưởng nào đó. Giô-suê được kể là đầy  tớ của Môi-se (Xuất-Ê-díp-tô Ký 24:13). Ê-li-sê là đầy  tớ của Ê-li (I Các Vua 19:21) </p>
+        <p><strong>2. Ý nghĩa của &ldquo;tôi tớ Chúa&rdquo; hay &ldquo;đầy tớ  Chúa&rdquo;</strong>.</p>
+        <p>Theo ý nghĩa của Kinh  Thánh, <em>tôi tớ Chúa</em> hay <em>đầy tớ Chú</em>a (servant,  là danh từ) là người được Chúa sử dụng  để hoàn thành mục đích của Ngài<em>; </em>tôi tớ Chúa là người hầu việc hay phục  vụ (serve, là động từ) Chúa, có nhiệm vụ làm  theo ý muốn và mệnh lệnh của Chúa<em>.</em></p>
+        <p>a) <u>Trong Cựu Ước</u>:</p>
+        <p>+ Môi-se được kể  là tôi tớ của Đức Chúa Trời.</p>
+        <blockquote>
+          <p><em>&ldquo;A-rôn và các con trai  người đều dâng của lễ hoặc trên bàn thờ  về của lễ thiêu hay trên
+            bàn thờ xông hương,  làm mọi việc ở nơi chí thánh, và làm lễ chuộc  tội cho Y-sơ-ra-ên,
+            theo như mọi sự <u>Môi-se</u>, <u>đầy tớ Đức Chúa Trời</u>, đã truyền  dạy.&rdquo; (I Sử Ký 6:49)</em></p>
+          <p><em>&ldquo;Môi-se, <u>tôi tớ của  Đức Giê-hô-va</u>, qua đời tại đó, trong  đồng bằng Mô-áp, theo như lịnh
+            của Đức  Giê-hô-va.&rdquo; (Phục Truyền Luật Lệ Ký 34:5)</em></p>
+        </blockquote>
+        <p><em>+</em> Giô-suê là tôi tớ của Đức Chúa Trời:</p>
+        <blockquote>
+          <p><em>&ldquo;Sau  các việc ấy, Giô-suê, con trai Nun, <u>tôi tớ của  Đức Giê-hô-va</u>, qua đời, tuổi được  một
+            trăm mười.&rdquo;  (Giô-suê 24:29)</em></p>
+        </blockquote>
+        <p>+ Đa-vít là tôi tớ của  Đức Chúa Trời:</p>
+        <blockquote>
+          <p><em>&ldquo;Hỡi  Đức Giê-hô-va, tôi thật là <u>tôi tớ Ngài</u>; Tôi là  tôi tớ Ngài, con trai con đòi của Ngài;
+            Ngài đã mở lòi tói tôi.&rdquo;  (Thi Thiên 116:16)</em></p>
+          <p><em>&ldquo;<u>Tôi tớ ta</u> là  Đa-vít sẽ làm vua trên chúng nó. Hết thảy chúng nó sẽ  có chỉ một kẻ chăn;
+            chúng nó sẽ bước  theo các mạng lịnh của ta; chúng nó sẽ gìn giữ  các luật lệ của ta và
+            làm theo.&rdquo; (Ê-xê-chi-ên 37:24)</em></p>
+        </blockquote>
+        <p><em>+ </em>Vua Ba-by-lôn, Nê-bu-cát-nết-sa được kể  là đầy tớ của Đức Chúa Trời<em>:</em></p>
+        <blockquote>
+          <p><em>&ldquo;Nầy, ta sẽ sai  đòi mọi họ hàng phương bắc cùng <u>đầy  tớ ta</u> là Nê-bu-các-nết-sa, vua Ba-
+            by-lôn, đến nghịch  cùng đất nầy, nghịch cùng dân cư nó, và các nước  ở chung quanh. Ta
+            sẽ diệt hết chúng  nó, làm chúng nó nên sự gở lạ, chê cười, và hoang  vu đời đời. Đức Giê-
+            hô-va phán vậy.&rdquo; (Giê-rê-mi  25:9)</em></p>
+        </blockquote>
+        <p>Nê-bu-cát-nết-sa là vua ngoại  bang, được Chúa gọi là <em>đầy tớ</em> vì Ngài <em>sử  dụng</em> vua như một ngọn roi để trừng  phạt dân Giu-đa về tội thờ hình tượng. Ngoài ra, Chúa gọi vua Nê-bu-cát-nết-sa là <em>tôi tớ</em> vì ông đã công nhận Đức Chúa Trời là Đấng tạo hóa và Ngài tể trị mọi việc, ông đã ngợi khen và tôn vinh Ngài (Đa-ni-ên 4:37)</p>
+        <p>+ Dân Y-sơ-ra-ên  được kể là tôi tớ Đức Chúa Trời:</p>
+        <p><em>     &ldquo;Nhưng, hỡi  Y-sơ-ra-ên, ngươi là tôi tớ ta …&rdquo;  (Ê-sai 41:8)</em></p>
+        <p>b) <u>Trong Tân Ước</u>:</p>
+        <p>+ Ma-ri là tôi tớ của  Đức Chúa Trời:</p>
+        <blockquote>
+          <p><em>&ldquo;Ma-ri thưa rằng:  Tôi đây là <u>tôi tớ Chúa</u>; xin sự ấy xảy ra  cho tôi như lời người truyền!&rdquo;          (Lu-ca 1:38)</em></p>
+        </blockquote>
+        <p>+ Phao-lô là tôi tớ của  Đức Chúa Trời:</p>
+        <blockquote>
+          <p><em>&ldquo;Ta,  Phao-lô, <u>tôi tớ của Đức Chúa Trời</u> và sứ  đồ của Đức Chúa Jêsus Christ, để  đưa các
+            người được  chọn của Đức Chúa Trời đến đức  tin và sự thông hiểu lẽ thật.&rdquo; (Tít 1:1)</em></p>
+        </blockquote>
+        <p>+ Giu-đe là tôi tớ của  Chúa Jesus:</p>
+        <blockquote>
+          <p><em>&ldquo;Giu-đe, <u>tôi tớ của Đức Chúa Jêsus Christ</u> và em  Gia-cơ, đạt cho những kẻ đã được  kêu
+            gọi, được  Đức Chúa Trời, là Cha yêu thương, và được  Đức Chúa Jêsus Christ giữ gìn.&rdquo;          (Giu-đe 1)</em></p>
+        </blockquote>
+        <p>+ Ê-pháp-ra là tôi tớ của  Chúa Jesus:</p>
+        <blockquote>
+          <p><em>&ldquo;Ê-pháp-ra,  người hàng xứ với anh em, <u>tôi tớ của  Đức Chúa Jêsus Christ</u>, có lời chào anh
+            em; người vì anh em chiến  đấu không thôi trong khi cầu nguyện, để anh  em trở nên
+            toàn vẹn và trọn niềm  vâng phục mọi ý muốn của Đức Chúa Trời.&rdquo;  (Cô-lô-se 4:12)</em></p>
+        </blockquote>
+        <p>Ê-pháp-ra là bạn thân thiết  của Phao-lô, là người phục vụ Chúa rất trung  tín (Cô-lô-se 1:7)</p>
+        <p>+ Ti-chi-cơ là tôi tớ  của Chúa:</p>
+        <blockquote>
+          <p><em>&ldquo;Ti-chi-cơ là anh em rất yêu của  chúng tôi, một người <u>tôi tớ trung thành của  Chúa</u> và bạn
+            cùng làm việc với tôi,  sẽ báo tin cho anh em về các việc của tôi.&rdquo; (Cô-lô-se  4:7)</em></p>
+        </blockquote>
+        <p>+ Tất cả mọi  người tin nhận Chúa Jesus, được kể là  tôi tớ của Ngài:</p>
+        <blockquote>
+          <p><em>&ldquo;Vì  kẻ tôi mọi (servant, nên dịch là &ldquo;đầy tớ&rdquo;) được  Chúa gọi, ấy là kẻ Chúa đã buông tha;
+            cũng một lẽ ấy, ai đương  tự do mà được gọi, thì làm <u>tôi mọi</u> (servant,  nên dịch là &ldquo;<u>đầy </u><u>tớ</u>&rdquo;) <u>của Đấng  Christ</u>.&rdquo;  (I Cô-rinh-tô 7:22)</em></p>
+        </blockquote>
+        <p>+ Chúa Jesus dùng một số  ẩn dụ về <em>người  đầy tớ</em> để giảng dạy: Người  đầy tớ không thương xót trong Ma-thi-ơ 18:  23-35; Người đầy tớ trung tín và người  đầy tớ xấu trong Ma-thi-ơ 24:43-51; Người  đầy tớ và các ta-lâng trong 25:14-30; Người đầy  tớ hèn mọn trong Lu-ca 17:7-10. Hình ảnh <em>người đầy tớ </em>trong các ẩn dụ  được Chúa dùng để dạy tất cả chúng  ta ngày nay, là những người tin nhận Ngài. </p>
+        <p>Như vậy, tất cả  mọi người tin nhận Chúa Jesus, không phân biệt mục  sư hay tín đồ, đều được kể là <em>tôi tớ Chúa</em> hay <em>đầy tớ Chúa</em>, là những  người <em>hầu việc</em> hay <em>phục vụ</em> Ngài trong bất  cứ lãnh vực nào.</p>
+        <p><strong>3. Ý nghĩa của từ ngữ &ldquo;con cái Chúa&rdquo;</strong></p>
+        <p>Giăng 1:12 là câu định  nghĩa rõ ràng nhất về <em>con  cái Chúa</em> (children of God):</p>
+        <blockquote>
+          <p><em>&ldquo;Nhưng hễ ai  đã tin nhận Ngài, thì Ngài ban cho quyền phép trở nên <u>con  cái Đức Chúa </u><u>Trời</u>, là ban cho  những kẻ tin danh Ngài.&rdquo;</em></p>
+          <p><em>&ldquo;Chính Đức Thánh  Linh làm chứng cho lòng chúng ta rằng chúng ta là <u>con cái Đức  Chúa </u><u>Trời</u>.&rdquo; (Rô-ma  8:16) </em></p>
+        </blockquote>
+        <p>Ngay sau khi một người  tiếp nhận Chúa Jesus, người đó được  tái sanh bởi quyền năng của Đức Thánh Linh  để trở thành <em>con cái của  Chúa </em>(children of God).</p>
+        <blockquote>
+          <p><em>&ldquo;Hãy  xem Đức Chúa Cha đã tỏ cho chúng ta sự yêu  thương dường nào, mà cho chúng ta
+            được xưng là <u>con cái  Đức Chúa Trời</u>; và chúng ta thật là <u>con cái Ngài</u>.  Ấy là vì đó mà thế
+            gian chẳng biết chúng ta, vì họ  chẳng từng biết Ngài.&rdquo; (I Giăng 3:1)</em></p>
+          <p><em>&ldquo;Vì chưng anh em bởi  tin Đức Chúa Jêsus Christ, nên hết thảy đều  là <u>con trai của Đức </u><u>Chúa Trời</u>.&rdquo;  (Ga-la-ti 3:26)</em></p>
+        </blockquote>
+        <p><em>&ldquo;Con cái&rdquo; </em>là từ ngữ mô tả mối liên hệ  mang tính chất &ldquo;gia đình&rdquo; giữa người con và  người cha, cũng vậy, &ldquo;con cái Chúa&rdquo; là cụm từ  diễn tả mối liên quan mật thiết giữa  người được cứu với Cứu Chúa, giữa  người tín đồ với Chúa Jesus. Con người  nguyên thủy (A-đam và Êva) có sự tương giao với  Đức Chúa Trời, sau khi A-đam và Ê-va phạm tội,  mối tương giao với Đức Chúa Trời bị  sụp đổ, tội lỗi đã làm ngăn cách con  người với Đức Chúa Trời, Kinh Thánh mô tả  tình trạng của con người như sau: <em>&ldquo;Còn anh em đã <strong>chết vì lầm lỗi và tội ác</strong> mình, đều  là những sự anh em xưa đã học đòi, theo thói  quen đời nầy, vâng phục vua cầm quyền chốn  không trung tức là thần hiện đang hành động  trong các con bạn nghịch. Chúng ta hết thảy cũng  đều ở trong số ấy, trước kia sống  theo tư dục xác thịt mình, làm trọn các sự ham mê  của xác thịt và ý tưởng chúng ta, tự nhiên làm <strong>con của sự thạnh nộ</strong>,  cũng như mọi người khác.&rdquo; (Ê-phê-sô 2:1-3).</em> Người chưa được cứu được  gọi là <em>con cái của sự  thạnh nộ (children of wrath), </em>chứ không được  gọi là <em>con cái của Đức  Chúa Trời (children of God) </em>. Tuy nhiên, sau khi tin Chúa Jesus, mối  tương giao được tái lập, họ trở nên <em>con cái Đức Chúa Trời</em>,  và từ đó chúng ta được phép gọi Chúa là A-ba!  Cha! (Rô-ma 8:15; Ga-la-ti 4:6).</p>
+        <p>Như vậy, tất cả  mọi người tin nhận Chúa Jesus, không phân biệt mục  sư hay tín đồ, đều được kể là  con cái Chúa, không có sự phân nào hết. Không có chổ nào trong Tân Ước dạy rằng chỉ có <em>tín đồ </em>mới được kể là &ldquo;con  cái Chúa&rdquo;.</p>
+        <p><strong>4. Kết luận.</strong></p>
+        <p><em>&ldquo;Con cái Chúa&rdquo;</em> chỉ <em>sự  liên hệ</em><strong> cha con </strong>giữa  người được cứu với Đức Chúa  Trời. &ldquo;<em>Đầy tớ Chúa&rdquo;</em> chỉ sự<strong> </strong><em>liên hệ</em><strong> chủ tớ</strong> giữa người được  cứu đối với Đức Chúa Trời.</p>
+        <p><em>&ldquo;Con cái Chúa&rdquo; </em>chỉ về <strong>mối tương giao</strong> giữa người  được cứu với Đức Chúa Trời. &ldquo;<em>Đầy tớ Chúa&rdquo;</em> chỉ  về <strong>sự phục vụ</strong> của người được cứu đối với  Đức Chúa Trời.</p>
+        <p><em>&ldquo;Con cái Chúa&rdquo;</em> chỉ <strong>địa  vị</strong> mà Đức Chúa Trời đã phục hồi lại  cho con người sa ngã qua sự chuộc tội của  Chúa Jesus. &ldquo;Đầy tớ Chúa&rdquo; chỉ <strong>nếp sống</strong> phục vụ của người  đã được ở trong địa vị làm con của  Chúa. </p>
+        <p>Theo ý nghĩa của Tân  Ước, con người chỉ có thể làm &ldquo;đầy  tớ Chúa&rdquo; <strong>sau khi</strong> đã làm &ldquo;con  cái Chúa&rdquo;. Chúng ta được làm &ldquo;con cái Chúa&rdquo; <strong>trước khi</strong> chúng ta làm  &ldquo;đầy tớ Chúa&rdquo;. <em>Con  người được cứu để phục vụ  chứ không phải phục vụ để được  cứu</em>.</p>
+        <p>Như vậy, người <strong>tín đồ </strong>là <em>con cái Chúa</em> mà cũng là <em>đầy tớ Chúa</em>; tương  tự như vậy, <strong>mục  sư</strong> là <em>con cái Chúa</em> mà  cũng là <em>đầy tớ Chúa.</em> Vậy tại sao chúng ta lại phân biệt mục sư là <em>đầy tớ Chúa</em>, còn tín  đồ là <em>con cái Chúa,</em> hoặc <strong>mục sư </strong>không phải là <em>con cái Chúa</em>, còn <strong>tín đồ</strong> không phải là <em>đầy tớ Chúa </em>? Chúng ta có nên tiếp tục  giữ nguyên nếp suy nghĩ theo truyền thống đó  hay cần thay đổi?</p>
+        <p> <u>Bài đọc thêm</u>:       </p>
+<p align="center"><strong>Chúa Jesus là &ldquo;đầy tớ&rdquo; trên cả hai  phương diện.</strong></p>
+        <p>Theo một ý nghĩa rất  đặc biệt, Chúa Jesus là <em>đầy  tớ của Đức Chúa Trời</em>. Ê-sai đã nói tiên  tri về Chúa Jesus<em>: &ldquo;Nầy, <strong>tôi tớ Ta</strong> sẽ làm cách khôn  ngoan; sẽ được tôn lên, dấy lên, và rất cao  trọng.&rdquo;</em> (Ê-sai 52:13). Tiên tri Xa-cha-ri chép: <em>&ldquo;Ta sẽ làm cho <strong>đầy  tớ Ta</strong> là Chồi Mống</em> (Branch) (Xa-cha-ri 3:8). Các tín  hữu trong Hội Thánh đầu tiên nhận biết Chúa  Jesus là đầy tớ của Đức Chúa Trời: <em>&ldquo;Vả, Hê-rốt và Bô-xơ  Phi-lát, với các dân ngoại, cùng dân Y-sơ-ra-ên thật  đã nhóm họp tại thành nầy đặng nghịch  cùng <strong>Đầy tớ thánh Ngài</strong> là Đức Chúa Jêsus.&rdquo;</em> (Công Vụ Các Sứ Đồ  4:27).</p>
+        <p>Tại sao Đức Chúa  Jesus vốn là Đức Chúa Trời Ngôi Hai, lại  được gọi là <em>đầy  tớ của Đức Chúa Trời</em>? Phi-líp 2:6,7 cho chúng  ta câu trả lời: <em>&ldquo;Ngài vốn  có hình Đức Chúa Trời, song chẳng coi sự bình  đẳng mình với Đức Chúa Trời là sự nên nắm  giữ; chính Ngài đã tự bỏ mình đi, lấy hình <strong>tôi tớ</strong> và trở nên giống  như loài người.&rdquo; </em>Chúa Jesus vâng theo kế hoạch  cứu rỗi nhân loại của Đức Chúa Cha cách trọn  vẹn, Ngài thực hiện chương trình cứu rỗi  ấy từng bước một, từ lúc được  thai dựng trong thân xác con người bởi Đức  Thánh Linh cho đến khi hoàn thành công tác chuộc tội cho  nhân loại trên thập tự giá. Chúa Jesus thật là Đầy  Tớ Thánh của Đức Chúa Trời.</p>
+        <p>Thế nhưng, Đức  Chúa Jesus cũng là <em>đầy tớ  của con người</em>. Chính Chúa Jesus tuyên bố: <em>&ldquo;Con người đã đến,  không phải để người ta hầu việc mình,  song để mình hầu việc người ta, và phó sự  sống mình làm giá chuộc nhiều người.&rdquo;</em> (Ma-thi-ơ 20:28). Thật vậy, đời sống của  Chúa Jesus trên mặt đất là đời sống phục  vụ người khác: Ngoại trừ nhóm người vô  tín như Pha-ri-si, hay những người lãnh đạo dân  Do Thái cứng lòng, thì tất cả những người  còn lại, không một ai ra về … &ldquo;tay không&rdquo; mà không nhận  được phước hạnh sau khi gặp gỡ  Ngài: Người phụ nữ Sa-ma-ri, người phụ  nữ bị bắt quả tang phạm tội tà dâm,  Ni-cô-đem, Xa-chê, Ma-thi-ơ, Na-tha-na-ên, Phi-e-rơ, những  người bị tà ma hay quỷ dữ chiếm hữu,  những người đau khổ vì bệnh tật, những  gia đình tang chế, tên tội phạm bên thập tự  giá, thầy đội La-mã v.v… cuộc đời của  những người đó đều được thay  đổi sau khi đối diện với Chúa Jesus. </p>
+        <p>Trước khi Chúa Jesus  bước lên thập tự giá, Ngài đã làm một công việc  của người đầy tớ: Ngài rửa chân cho các  môn đồ của Ngài!</p>
+        <p>Chúa Jesus muốn dạy  chúng ta một bài học: Giống như Chúa Jesus,  Cơ-đốc nhân cũng là người &ldquo;đầy tớ&rdquo;  trên cả hai phương diện: chúng ta là <em>đầy tớ của Chúa</em> và cũng là <em>đầy tớ cho người  khác</em>. Chúa Jesus phán: <em>&ldquo;Vậy, nếu  ta là Chúa là Thầy, mà đã rửa chân cho các ngươi,  thì các ngươi cũng nên rửa chân lẫn cho nhau. Vì ta  đã làm gương cho các ngươi, để các  ngươi cũng làm như ta đã làm cho các ngươi.&rdquo;</em> (Giăng 13:14) Phao-lô khuyên: <em>&ldquo;Hãy lấy  lòng yêu thương làm <strong>đầy  tớ </strong>cho nhau.&rdquo;</em> (Ga-la-ti 5:13)</p>
+        <p><strong><em>Tháng 2, 2013</em></strong></p>
+        <p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

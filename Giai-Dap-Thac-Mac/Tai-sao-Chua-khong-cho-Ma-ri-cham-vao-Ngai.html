@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <div>
+    <p align="center"><strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tại sao Chúa Jesus không cho phép Ma-ri Ma-đơ-len chạm  vào Ngài?</strong></p>
+    <p align="center"><strong> </strong></p>
+    <p><strong>Giăng 20:17</strong>:</p>
+    <p><em>&ldquo;Đức Chúa Jêsus phán rằng:<a name="_Hlk392097279" id="_Hlk392097279">Chớ  rờ đến ta</a>; vì ta chưa lên cùng Cha! Nhưng hãy  đi đến cùng anh em ta, nói rằng ta lên cùng Cha ta và Cha  các ngươi, cùng Đức Chúa Trời ta và Đức Chúa  Trời các ngươi.&rdquo;</em></p>
+    <p><strong>Câu hỏi:</strong></p>
+    <p>Tại sao Chúa Jesus không  cho phép Ma-ri chạm vào Ngài sau khi Ngài sống lại?</p>
+    <p><strong>Giải đáp:</strong></p>
+    <p>Chúng ta biết Ma-ri  Ma-đơ-len là người đầu tiên được  Chúa Jesus hiện ra cho bà thấy sau khi ngài sống lại.  Ma-ri cũng như tất cả các môn đồ khác, không một  ai tin rằng Chúa Jesus sống lại cho đến khi Ngài  hiện ra cho họ xem thấy. </p>
+    <p>Ma-ri Ma-đơ-len rất  yêu quý Chúa Jesus, vì bà được Chúa cứu ra khỏi quỉ  hung dữ. Bà có mặt trong nhóm phụ nữ đi theo Chúa  Jesus trong khi Ngài giảng dạy; bà cũng đi theo Chúa  Jesus trên đoạn đường Chúa vác thập tự  giá từ trong thành Giê-ru-sa-lem cho đến đồi  Gô-gô-tha; bà chứng kiến cảnh tượng Chúa bị  đóng đinh và bà cũng theo dõi việc an táng xác Chúa trong  phần mộ; bà và các phụ nữ khác đem theo thuốc  thơm đến mộ để xức xác Chúa trong buổi  sáng ngày Thứ Nhất.</p>
+    <p>Lúc Ma-ri đứng bên  ngoài mộ và khóc, Chúa Jesus đến phía sau bà nhưng bà ngỡ  là người làm vườn. Đến khi Chúa Jesus gọi  tên bà<em>: &ldquo;Hỡi Ma-ri!&rdquo;</em> (câu 16a),  bà liền xây lại và nhận ra Chúa Jesus, bà liền thốt  lên: <em>&ldquo;Ra-bu-ni!</em> (nghĩa là <em>thầy</em>)&rdquo; (câu 16b). Sau đó, Chúa  Jesus nói: <em>&ldquo;Chớ rờ đến  ta …&rdquo;</em></p>
+    <p>Bản dịch Việt  Ngữ <em>&ldquo;chớ <strong>rờ</strong> đến ta&rdquo; </em>khiến nhiều người  hiểu lầm rằng Chúa Jesus không muốn Ma-ri <em>đụng chạm</em> (touch)  đến Ngài. Thật ra, câu <em>&ldquo;chớ  rờ đến ta&rdquo;</em> nếu dịch đúng nguyên bản  Hy-lạp, có nghĩa là <em>&ldquo;Chớ <strong>cầm giữ</strong> ta&rdquo;</em> <em>(&ldquo;Do not <strong>cling</strong> to me&rdquo;</em>, hoặc <em>&ldquo;Do  not <strong>hold on</strong> to me&rdquo;</em>)</p>
+    <p>Chúng ta thử đặt  câu hỏi: Bà Ma-ri đã có hành động phủ phục  dưới chân Chúa và <strong>ôm</strong> chân  Ngài không?</p>
+    <p>Có thể đa số  chúng ta nghĩ rằng, vì Ma-ri bất ngờ thấy Chúa sống  lại, bà vui mừng quá nên bà toan ôm chân chúa, nhưng vì chúa <em>biết trước</em> hành động  mà bà sẽ làm, nên Ngài phán <em>&ldquo;chớ  rờ đến ta&rdquo;</em> nên bà không thể làm điều mà  bà muốn. </p>
+    <p>Dù Kinh Thánh không mô tả  phản ứng của Ma-ri, nhưng nếu căn cứ  vào lời nói của Chúa Jesus: &ldquo;<em>Chớ <strong>cầm giữ</strong> ta&rdquo;, </em>chúng  ta có thể biết chắc Ma-ri, với sự ngạc  nhiên tột độ, với một tâm trạng quá đổi  vui mừng vì bất ngờ thấy Chúa sống lại, bà đã  phủ phục dưới chân Chúa và ôm chân Ngài. Hành động  của Ma-ri bày tỏ lòng quý mến Chúa và cũng bày tỏ  sự tôn thờ Chúa nữa. </p>
+    <p>+ Không có lý khi chúng ta cho rằng  Chúa cấm Ma-ri đụng chạm đến Ngài, dù lúc  đó thân thể Chúa Jesus là thân thể <em>vinh hiển (glory)</em>, là thân thể <em>không chết </em>(imperishable) (I Cô-rinh-tô 15:42,43), vì sau  đó, Chúa cho phép Thô-ma dùng tay <strong>chạm</strong> vào dấu đinh trong bàn tay của Chúa, <strong>chạm</strong> vào vết giáo đâm nơi sườn của  Chúa (Giăng 20:27). Chúa không bao giờ từ khước người  nào đụng chạm đến Ngài để bày tỏ  lòng yêu quý và tôn thờ Ngài. Chúng ta biết có người phụ  nữ xấu nết đã hôn chân Chúa (Lu-ca 7:37,38), Ma-ri  đã lấy tóc mình lau chân chúa với dầu thơm  (Giăng 12:3). Sau khi Chúa Jesus sống lại và hiện ra lần  đầu tiên với Ma-ri Ma-đơ-len, sau đó không bao  lâu, chính bà và một phụ nữ khác gặp Chúa lần nữa,  và hai bà đã ôm chân Chúa mà thờ lạy: <em>&ldquo;Hai người đàn bà đó bèn vội vàng ra khỏi  mộ, vừa sợ vừa cả mừng, chạy báo tin  cho các môn đồ. Nầy, Đức Chúa Jêsus gặp hai  người đàn bà đó, thì phán rằng: Mừng các  ngươi! Hai người cùng đến gần <strong><u>ôm</u></strong><u> chân Ngài, và thờ lạy  Ngài</u>.&rdquo; </em>(Ma-thi-ơ 28:8,9)</p>
+    <p>+ Tại sao Chúa Jesus nói với  Ma-ri <em>&ldquo;Chớ cầm giữ  (cling) ta&rdquo;? </em>Trước hết, động từ &ldquo;cling&rdquo;  có ý nghĩa là <em>cầm giữ,  níu lấy, bám lấy mà không muốn buông ra</em>, chứ không  có nghĩa là <em>rờ</em> hay <em>đụng chạm</em>. Như vậy,  Ma-ri đã ôm chân Chúa với tình cảm thông thường của  một người yêu kính Chúa, bà muốn níu giữ Chúa; Vì  thế, Chúa đã phán với bà: <em>&ldquo;đừng  cầm giữ ta&rdquo;. </em>Kế đến, văn mạch theo  sau sẽ giúp chúng ta hiểu được bài học mà  Chúa muốn dạy Ma-ri:</p>
+    <p>1. <em>&ldquo;Vì Ta chưa lên cùng Cha&rdquo;</em>: Chúa cho bà biết Ngài sẽ  trở về cùng Cha Ngài trên trời, bà không thể níu giữ  Chúa lại trên đất nầy, vì vậy, mối liên hệ  giữa Chúa và bà sẽ chuyển đổi sang một  hướng khác: bà (cũng như chúng ta ngày nay) sẽ có mối  liên hệ với Chúa Jesus qua Đức Thánh Linh sẽ  được ban xuống sau khi Ngài trở về cùng Cha  Ngài. Phi-e-rơ giải thích điều nầy trong Công Vụ  Các Sứ đồ 2:33: <em>&ldquo;Vậy,  sau khi Ngài đã được đem lên bên hữu Đức  Chúa Trời, và từ nơi Cha đã nhận lấy Đức  Thánh Linh mà Cha đã hứa ban cho, thì Ngài đổ Đức  Thánh Linh ra.&rdquo;.</em> Đức Thánh Linh sẽ ngự vào lòng của  những người tin theo Ngài. Nói cách khác, Chúa Jesus ở với  chúng ta, hiện diện trong chúng ta qua Đức Thánh Linh.  Đó là nguyên do vì sau Chúa Jesus phán với các môn đồ  trước khi Ngài về trời: <em>&ldquo;<strong>Ta thường ở  cùng các ngươi</strong> luôn cho đến tận thế.&rdquo; </em>(Ma-thi-ơ  28:20)</p>
+    <p>2. &ldquo;<em>Nhưng hãy đi đến cùng anh em ta, nói rằng ta  lên cùng Cha ta và Cha các ngươi, cùng Đức Chúa Trời  ta và Đức Chúa Trời các ngươi.&rdquo;</em>: Chúa muốn  nói với Ma-ri rằng &ldquo;đừng níu giữ&rdquo; Chúa, nhưng  cần phải đi báo ngay cho các môn đồ của Ngài  biết rằng Ngài đã sống lại, Ngài sẽ không ở  lại trần gian nầy nữa nhưng sẽ trở về  Cha Ngài. Thật ra, Chúa Jesus đã từng phán dạy cho các  môn đồ về việc Ngài sẽ trở về trời  và ban Đức Thánh Linh:<em> &ldquo;Ta lại  sẽ nài xin Cha, Ngài sẽ ban cho các ngươi một  Đấng Yên ủi khác, để ở với các  ngươi đời đời, tức là Thần lẽ  thật</em> (chỉ về Đức Thánh Linh) <em>… Còn ít lâu, thế gian chẳng thấy  ta nữa</em> (lúc Chúa Jesus về trời<em>), nhưng các ngươi sẽ thấy ta</em> (bởi  Đức Thánh Linh ngự trong lòng) … <em>Nội ngày đó, các ngươi sẽ nhận biết  rằng ta ở trong Cha ta; <strong>các  ngươi ở trong ta</strong>, và <strong>ta  ở trong các ngươi</strong>.&rdquo;</em> (Giăng 14:16-20)</p>
+    <p>3. &ldquo;<strong>Cha ta</strong> và <strong>Cha các  ngươi</strong>; <strong>Đức Chúa  Trời ta</strong> và <strong>Đức Chúa  Trời các ngươi</strong>&rdquo;: Chúa Jesus dạy một lẽ  đạo phân biệt giữa loài người chúng ta và  Chúa Jesus trong mối liên hệ với Đức Chúa trời: </p>
+    <p>+ Đức Chúa Trời  là <em>Cha của chúng ta</em>: </p>
+    <p>Chúa Jesus dạy các môn  đồ cầu nguyện<em>: &ldquo;Lạy <u>Cha của chúng tôi</u> ở trên trời …&rdquo; </em>(Ma-thi-ơ  6:9). Chúa Jesus từng nói Đức Chúa Trời là Cha của  chúng ta: <em>&ldquo;Ấy vậy, các  ngươi chớ lo lắng mà nói rằng: Chúng ta sẽ  ăn gì? uống gì? mặc gì? Vì mọi điều đó,  các dân ngoại vẫn thường tìm, và <u>Cha các  ngươi</u> ở trên trời vốn biết các  ngươi cần dùng những điều đó rồi.&rdquo;</em> (Ma-thi-ơ 6:31,32)</p>
+    <p>+ Đức Chúa Trời  là <em>Cha của Chúa Jesus</em>:</p>
+    <p>Chúa Jesus gọi Đức  Chúa Trời là Cha trong khi cầu nguyện với Đức  Chúa Trời <em>&ldquo;Cha ơi!&rdquo;</em> (Ma-thi-ơ 26:39,42). Chúa Jesus gọi Đức Chúa Trời  là Cha trong khi Ngài giảng dạy (Giăng 6:32,37,40; 10:15,29;  15:1 v.v…)</p>
+    <p>Trong mối liên hệ với  Đức Chúa Trời, Khi Chúa Jesus còn ở trong thân xác con  người, Đức Chúa Trời là Cha của Chúa Jesus  khác với Đức Chúa Trời là Cha của chúng ta, vì lý  do đơn giản là Chúa Jesus là Đức Chúa Trời,  ngài cũng là Đấng Tạo dựng chúng ta, còn chúng ta  chỉ là loài thọ tạo. Chính vì thế mà Chúa Jesus không  bao giờ nói <em>&ldquo;Đức Chúa Trời  của chúng ta&rdquo;</em> (our God) hay <em>&ldquo;Cha  của chúng ta&rdquo;</em> (our Father), nhưng Ngài nói <em>&ldquo;Cha ta và Cha các ngươi&rdquo;</em> (my Father and your Father) và <em>&ldquo;Đức Chúa Trời ta và Đức  Chúa Trời các ngươi&rdquo; </em>(my God and your God)</p>
+    <p> <em>Trần Đình Tâm</em></p>
+<p><strong>Tháng 7, 2014</strong></p>
+  </div>
+  <p align="center">&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

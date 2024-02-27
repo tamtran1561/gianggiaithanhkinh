@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong style="font-size: 12pt">Tượng Nhà Truyền Giáo Billy Graham</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Việc đúc tượng  một nhân vật nổi tiếng không phải là điều  gì mới mẻ. Trên lĩnh vực tín ngưỡng, những  nhân vật được người ta đúc tượng  với mục đích thờ cúng, tôn sùng như Phật  Thích Ca, Phật Bà Quan Âm, Thần Tài, Thổ Địa v.v…  được xem là vi phạm điều răn thứ  hai. Tuy nhiên, cũng có những nhân vật được  người ta tạc tượng không phải để  khấn vái hay thờ tự nhưng để ghi nhớ  công trạng và thành tích của người đó. Những  nhân vật được tạc tượng thường  là những người có tiếng tăm, được  nhiều người ngưỡng mộ, họ có những  đóng góp giá trị cho nhân loại trên các lãnh vực trong  đời sống như âm nhạc, y học, chính trị  v.v… Chúng ta có thể nhìn thấy tượng bác sĩ; tượng  nhạc sĩ; tượng tổng thống v.v…. </p>
+        <p>Cũng có những người  nắm giữ quyền lực cao, cai trị một đất  nước, thống lĩnh một vương quốc, những  nhân vật nầy buộc người ta tạc tượng  mình, chúng ta có tượng của các vị vua chúa thời  xưa, tượng các hoàng đế La-mã v.v…  </p>
+        <p>Trên lãnh vực đức  tin Cơ-đốc, người ta thường thấy  tượng của Ma-ri, tượng các Sứ Đồ  Phao-lô, Phi-e-rơ v.v… được đặt tại những  nơi tôn nghiêm.</p>
+        <p>Nhà truyền giáo  được nhiều người đánh giá là vượt  trội hơn các nhà truyền giáo khác trên thế giới  ngày nay, đó là Billy Graham. Ông cũng được người  ta tạc tượng để ghi nhớ công lao của  ông (xem hình bên dưới). </p>
+        <p>Tượng của Billy  Graham bằng đồng, cao 9 feet, 4 inches (khoảng 2.8 m);  hai cánh tay giơ cao, tay trái cầm Kinh Thánh; phía sau là cây thập  tự giá cao 17 feet (khoảng 5m). Dưới chân thập giá  có bảng đá khắc câu Kinh Thánh Giăng 3:16. Tượng  được đặt tại khuôn viên của Lifeway  Christian, một cơ sở của Hội Thánh Báp-tít  Phương Nam, thành phố Nashville, bang Tennessee, vào tháng 12  năm 2006.</p>
+        <blockquote>
+          <blockquote>
+            <img src="/Image/Graham statue.jpg" width="289" height="450" alt=""/>
+            <p>                                   <em></em></p>
+            <p> &nbsp; &nbsp; &nbsp; <em>Tượng Billy Graham</em></p>
+          </blockquote>
+        </blockquote>
+        <img src="/Image/Billy Graham.jpg" width="576" height="432" alt=""/>
+        <p>&nbsp;</p>
+        <p><em>Quý vị hãy xem hình ảnh bên trên và tự trả lời câu hỏi sau đây: <strong>Người phụ nữ có thái độ nào trước tượng Billy Graham? </strong>Tư thế quỳ của người phụ nữ hướng về bức tượng chứ không phải thập tự giá. Đó chính là hậu quả của sự tạc tượng!!! </em></p>
+        <p>&nbsp;</p>
+<p>Trước khi tượng  được đặt chính thức tại khuôn viên  Lifeway Christian, người ta đã tổ chức một buổi  lễ long trọng để <em>ra  mắt</em> (unveil) bức tượng vào ngày 14 tháng 6 năm  2006 tại Southern Baptist Convention.</p>
+        <p>Thử đặt câu hỏi:  Người làm tượng hay ban làm tượng Billy Graham  có phạm điều răn thứ hai không? Chúng ta có thể  đáp ngay là KHÔNG. Vì mục đích làm tượng không phải  để thờ lạy bức tượng. Thế  nhưng, người tạc nên bức tượng đó,  ban điều hành công trình tạc tượng và tất cả  mọi người ủng hộ, hoan nghênh công trình đó  đều đã làm điều không nên làm: Đó là thái  độ <strong>tôn sùng con người</strong>. </p>
+        <p>Chúng ta đừng quên vua  Ba-by-lôn là Nê-bu-các-nết-xa đã cho tạc tượng mình  và buộc người khác lạy tượng mình. Sau  đó, ông đã bị Chúa phạt rất nặng vì sự  tự tôn của ông: ông mất hết ngôi nước, phải  ăn cỏ như bò (Đa-ni-ên 4:33)</p>
+        <p>Sự <em>tôn sùng</em> con người, hay <em>thần tượng</em> con người, dù không liên  quan đến sự thờ lạy, đó là bản chất  của thế gian, không nên đem vào trong Hội Thánh của  Đức Chúa Trời. Người thế gian đã tạc  tượng con người để vinh danh hay tri ân con  người, có thể đúng trong một số trường  hợp, nhưng không thể nào phù hợp với <em>thân thể mầu nhiệm</em> của  Chúa Jesus là Hội Thánh. Chỉ có Chúa Jesus đáng được  tôn cao trong Hội Thánh mà thôi. Đành rằng Billy Graham là người  giảng Tin Lành, đem về cho Chúa biết bao linh hồn.  Nhưng Kinh Thánh cho chúng ta biết rằng tất cả những  gì chúng ta làm được là bởi Chúa mà hoàn thành:</p>
+        <p>Xô-rô-ba-bên là người  có công rất lớn trong công tác xây lại đền thờ  sau khi dân Do Thái trở về quê hương sau thời gian  lưu đày tại Ba-by-lôn, nhưng Đức Chúa Trời  phán với Xô-rô-ba-bên:</p>
+        <p> &nbsp;&nbsp;&nbsp; <em>“Ấy  chẳng phải là bởi quyền thế, cũng chẳng  phải là bởi năng lực, bèn là bởi Thần ta,  Đức Giê-hô-va vạn quân<br />
+  &nbsp; &nbsp;phán vậy.”</em> (Xa-cha-ri 4:6)</p>
+        <p>Chúa Jesus từng dạy  các môn đồ:</p>
+        <p> &nbsp;&nbsp;&nbsp; <em>“Ta  là gốc nho, các ngươi là nhánh. Ai cứ ở trong ta và  ta trong họ thì sinh ra lắm trái; vì ngoài ta, các ngươi<br />
+  &nbsp; &nbsp;chẳng  làm chi được.”</em> (Giăng 15:5)</p>
+        <p>Công tác truyền giảng  Tin Lành có kết quả là bởi quyền năng của  Đức Thánh Linh chứ không bởi tài năng của  người nào:</p>
+        <p><em> &nbsp;&nbsp;&nbsp; “Nhưng khi Đức  Thánh Linh giáng trên các ngươi, thì các ngươi sẽ nhận  lấy quyền phép, và làm chứng về ta tại<br />
+  &nbsp; &nbsp;thành Giê-ru-sa-lem, cả xứ Giu-đê, xứ Sa-ma-ri, cho  đến cùng trái đất.”</em> (Công Vụ Các Sứ Đồ 1:8)</p>
+        <p>Số người tin  Chúa gia tăng theo thời gian trong Hội Thánh đầu  tiên, nhưng Kinh Thánh không tri ân hay vinh danh một người  nào:</p>
+        <p>     <em>&ldquo;Mỗi  ngày <strong>Chúa </strong>lấy những kẻ  được cứu thêm vào Hội thánh.&rdquo;</em> (Công Vụ  Các Sứ Đồ 2:47)</p>
+        <p><em>     &ldquo;Nhờ <strong>Đức Thánh Linh</strong> vùa giúp, thì  số của hội được thêm lên.&rdquo;</em> (Công Vụ  Các Sứ Đồ 9:31)</p>
+        <p>Phao-lô là người truyền  giảng Tin Lành không mệt mỏi, ông đã thốt lên:</p>
+        <p>     <em>&ldquo;Tôi  làm được mọi sự nhờ Đấng ban  năng lực cho tôi.&rdquo;</em> (Phi-líp 4:13)</p>
+        <p>Nếu những câu Kinh  Thánh trên đây hoàn toàn đúng thì không có lý do gì người  ta phải tạc tượng để vinh danh một  người nào. Nếu Billy Graham làm nhiều việc lớn  cho Chúa, khi Chúa trở lại, Chúa sẽ ban thưởng cho  ông ấy thật xứng đáng, vì Ngài đã hứa  như vậy.</p>
+        <p>Không có bất cứ một  bằng chứng nào trong Kinh Thánh khuyến khích chúng ta tạc  tượng một người nào đó vì người  đó đã đem nhiều linh hồn hư mất về  cho chúa.</p>
+        <p>Chúa dạy chúng ta biết  ơn, tôn trọng những người hầu việc  Chúa, nhưng không có nghĩa là phải tạc tượng  người đó. Chỉ có Chúa là đáng được  tôn cao mà thôi. Ông Billy Graham, người tạc tượng  Billy Graham, ban điều hành công trình tạc tượng và  tất cả những người khác, cần noi  gương Giăng Báp-tít khi ông nói<em>: &ldquo;Ngài phải được tôn cao; ta phải bị  hạ xuống&rdquo; </em>(Giăng 3:30). </p>
+        <p>Cứ giả định  rằng cần phải tạc tượng một người  có công khó trong sự phục vụ Chúa, như vậy, những  phẩm chất nào ở người đó được  xem là đủ tiêu chuẩn để được tạc  tượng? Và ai là người đủ khả năng  để soạn thảo những tiêu chuẩn đó? Nhóm  người nào đủ khả năng và thông sáng để  đánh giá người ấy hội đủ điều  kiện để tạc tượng? Liệu có công bằng  không khi tạc tượng cho người nầy mà không tạc  tượng cho người kia? Và trên hết, Kinh Thánh có dạy  những điều nầy không?</p>
+        <p><strong>Phao-lô</strong> và <strong>Billy Graham, </strong>cả  hai đều là nhà truyền giáo của Đức Chúa Trời  (còn nhiều người khác nữa). Một số người  không chấp nhận tượng nhà truyền giáo Phao-lô,  nhưng lại hoan ngênh công trình tạc tượng cho nhà  truyền giáo Billy Graham!</p>
+        <p> <strong><em>Tháng 12, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

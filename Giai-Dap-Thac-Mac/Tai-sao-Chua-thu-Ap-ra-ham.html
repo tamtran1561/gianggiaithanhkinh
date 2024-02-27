@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <div>
+    <p align="center">TẠI SAO ĐỨC CHÚA TRỜI THỬ ÁP-RA-HAM?</p>
+    <p align="center"> </p>
+    <p><strong>Kinh Thánh: </strong>Sáng Thế Ký 22:1</p>
+    <p><em>&ldquo;Khi mọi việc kia đã xong, thì Đức Chúa Trời <strong>thử</strong> Áp-ra-ham; Ngài phán rằng:  Hỡi Áp-ra-ham! Người thưa rằng: Có tôi đây.  Đức Chúa Trời phán rằng: Hãy bắt đứa  con một ngươi yêu dấu, là Y-sác, và đi đến  xứ Mô-ri-a, nơi đó dâng đứa con làm của lễ  thiêu ở trên một hòn núi kia mà ta sẽ chỉ cho.&rdquo;</em></p>
+    <p><strong>Câu hỏi:</strong></p>
+    <p>Đức Chúa Trời là  Đấng biết trước mọi sự, nếu Ngài  biết trước Áp-ra-ham sẽ vâng theo lệnh truyền  của Ngài mà dâng Y-sác làm tế lễ, tại sao Ngài phải  &ldquo;thử&rdquo; Áp-ra-ham? Chẳng lẽ Đức Chúa Trời  không biết nên phải &ldquo;thử&rdquo; mới biết?</p>
+    <p><strong>Giải đáp:</strong></p>
+    <p>Nhiều nhà giải Kinh  giải thích rằng Đức Chúa Trời &ldquo;thử&rdquo;  Áp-ra-ham có nghĩa là Ngài <em>thử  thách</em><strong> </strong>đức tin của  Áp-ra-ham bằng lệnh truyền ông phải dâng đứa  con một yêu quý của ông, và qua sự thử thách đó,  đức tin của Áp-ra-ham được tôi luyện mà  trở nên mạnh mẽ và vững vàng hơn trước.</p>
+    <p>Tuy nhiên, động từ  &ldquo;thử&rdquo; mà Đức Chúa Trời dùng cho Áp-ra-ham không có  nghĩa là &ldquo;thử thách&rdquo;. &ldquo;Thử&rdquo; dành cho với Áp-ra-ham có ý  nghĩa <em>thử nghiệm</em> (test), tiếng Hebrew là <em>nâsâh</em>,  là <strong><em>thử</em> <em>để biết, để  có bằng chứng</em></strong><em>. </em>Từ  &ldquo;thử&rdquo; nầy còn được dùng trong các trường  hợp sau: Đức Chúa Trời &ldquo;thử&rdquo; dân Y-sơ-ra-ên: <em>&ldquo;Hãy nhớ trọn con đường  nơi đồng vắng mà Giê-hô-va Đức Chúa Trời  ngươi đã dẫn ngươi đi trong bốn  mươi năm nầy, để hạ ngươi xuống  và <strong>thử</strong> (nâsâh)  ngươi, <strong>đặng biết  điều có ở trong lòng ngươi</strong>, hoặc  ngươi có gìn giữ những điều răn của  Ngài hay chăng.&rdquo; </em>(Phục Truyền Luật Lệ Ký 8:2);  Nữ vương Sê-ba &ldquo;thử&rdquo; Sô-lô-môn: <em>&ldquo;Khi nữ vương nước Sê-ba nghe đồn  danh tiếng của Sa-lô-môn, bèn đi đến Giê-ru-sa-lem,  lấy những câu đố mà <strong>thử</strong> (nâsâh) người.&rdquo;</em> (II Sử 9:1); Đa-ni-ên và các bạn  ông được &ldquo;thử&rdquo; ăn rau và uống nước  trong 10 ngày: <em>&ldquo;Tôi xin ông hãy <strong>thử</strong> (nâsâh) những kẻ  tôi tớ ông trong mười ngày, cho chúng tôi chỉ ăn  rau uống nước. Sau đó, sẽ nhìn nét mặt chúng  tôi với nét mặt những kẻ trai trẻ ăn đồ  ăn ngon của vua.&rdquo;</em> (Đa-ni-ên 1:12,13).</p>
+    <p>Chúng ta thấy rõ: &ldquo;thử&rdquo;  nêu trên là <em>thử nghiệm</em>,  là <em>khảo hạch</em> để  biết rõ, để có bằng chứng chứ không phải  là &ldquo;thử thách&rdquo;, vì thử thách (trial) có mục đích <em>rèn luyện</em> để  được tốt hơn. Chúng ta sẽ phân biệt rõ  hơn khi so sánh với các câu Kinh Thánh nói về sự <em>thử thách</em> với mục  đích rèn luyện sau đây<em>:  &ldquo;Hỡi kẻ rất yêu dấu, khi anh em bị trong lò lửa <strong>thử thách</strong>, chớ lấy  làm lạ như mình gặp một việc khác thường.&rdquo;</em> (I Phi-e-rơ 4:12); <em>&ldquo;Hỡi anh  em, hãy coi sự <strong>thử thách</strong> trăm bề thoạt đến cho anh em như là điều  vui mừng trọn vẹn.&rdquo;</em> (Gia-cơ 1:2); <em>&ldquo;đang khi họ chịu nhiều  hoạn nạn <strong>thử thách</strong>,  thì lòng quá vui mừng, và cơn rất nghèo khó của họ  đã rải rộng ra sự dư dật của lòng rộng  rãi mình.&rdquo;</em> (II Cô-rinh-tô 8:2).</p>
+    <p>Đức Chúa Trời  không có ý thử thách để &ldquo;rèn luyện&rdquo; đức tin của  Áp-ra-ham, Ngài muốn <strong>thử</strong> <strong>để biết</strong> đức  tin của ông nơi Ngài. Bằng chứng là Ngài đã can thiệp,  không để ông giết Y-sác, và câu 12 ghi rõ: <em>&ldquo;Thiên sứ phán rằng: Đừng  tra tay vào mình con trẻ và chớ làm chi hại đến  nó; vì bây giờ <strong>TA BIẾT</strong> rằng  ngươi thật kính sợ Đức Chúa Trời, bởi  cớ không tiếc với ta con ngươi, là con một  ngươi.&rdquo;</em></p>
+    <p>Như vậy, câu hỏi  nêu được lên rất hợp lý: Đức Chúa Trời  biết rõ mọi sự, tại sao Ngài phải <em>thử</em> Áp-ra-ham?</p>
+    <p>Đức Chúa Trời biết  trước mọi sự trước khi nó xãy ra: <em>&ldquo;Ta đã rao sự cuối cùng từ  buổi đầu tiên, và đã nói từ thuở xưa những  sự chưa làm nên.&rdquo;</em> (Ê-sai 46:10). Ngài biết rõ lòng dạ  và ý tưởng của mọi người. Đức Chúa  Trời biết trước Áp-ra-ham sẽ vâng lời Ngài, <strong>Chúa biết </strong>đức tin của  Áp-ra-ham, nhưng<strong> </strong>Áp-ra-ham thì<strong> không biết đức tin của  chính ông</strong> đến mức độ nào cho đến khi  chính ông từng trải sự thật. Dù Chúa biết  trước nhưng Ngài vẫn phải truyền lệnh  cho Áp-ra-ham, Ngài muốn Áp-ra-ham phải trải qua thật sự,  ông phải đối diện với sự thử nghiệm,  ông phải kinh nghiệm về bản thân của mình. Nếu  Đức Chúa Trời không truyền lệnh để thử  Áp-ra-ham (vì Ngài đã biết trước), ông sẽ không biết  đức tin của mình như thế nào, và chúng ta ngày nay  cũng không biết gì về ông. Tuy nhiên, Chúa cho mọi việc  xãy ra theo ý của Ngài, và câu chuyện được ghi chép  thành Kinh Thánh để dạy dỗ tất cả mọi  người. Khi Kinh Thánh tường thuật Đức  Chúa Trời thử Áp-ra-ham và sau đó Thiên sứ của  Đức Giê-hô-va (Đức Chúa Trời) phán: <em>&ldquo;<strong>Ta  biết</strong> rằng ngươi thật kính sợ Đức  Chúa Trời …&rdquo;</em> , điều nầy không có nghĩa rằng  Đức Chúa Trời <em>không biết</em>,  nên Ngài phải <em>thử</em> rồi  mới <em>biết</em>, nhưng là  cách mà Đức Chúa Trời muốn loài người kinh  nghiệm về bản thân mình qua sự thử nghiệm.</p>
+    <p>Trường hợp  Đức Chúa Trời <strong>thử</strong> dân Y-sơ-ra-ên trong đồng vắng <strong>để</strong> <strong>biết  điều có ở trong lòng họ</strong> cũng tương tự  như thế. Cụm từ &ldquo;để biết điều  có ở trong lòng họ&rdquo; không có nghĩa là Chúa không biết nên  cần phải thử họ, nhưng là <strong>bằng chứng</strong> để cho dân Y-sơ-ra-ên thấy  rõ về chính bản thân mình qua sự thử nghiệm.</p>
+    <p>Thi Thiên 139 là ví dụ  để minh họa cho vấn đề nầy: Đa-vít  hiểu rằng Đức Chúa Trời biết rõ mọi sự  về ông nên ông đã viết: <em>&ldquo;Hỡi  Đức Giê-hô-va, Ngài đã dò xét tôi, và <strong>biết</strong> tôi. Chúa <strong>biết</strong> khi tôi ngồi, lúc tôi đứng dậy; Từ xa Chúa <strong>hiểu biết</strong> ý tưởng  tôi. Chúa xét nét nẻo đàng và sự nằm ngủ tôi, quen <strong>biết</strong> các đường  lối tôi. Vì lời chưa ở trên lưỡi tôi, Kìa, hỡi  Đức Giê-hô-va, Ngài đã <strong>biết  trọn hết rồi</strong>.&rdquo;</em> (câu 1-4). Thế nhưng, ông lại  yêu cầu Chúa &ldquo;thử&rdquo; ông như sau: <em>&ldquo;Đức Chúa Trời ơi, xin hãy <strong>tra xét</strong> tôi, và <u>biế</u>t lòng tôi; Hãy <strong>thử</strong> thách (nên dịch là &ldquo;thử&rdquo;  chứ không phải &ldquo;thử thách&rdquo;) tôi, và <u>biết</u> tư  tưởng tôi; Xin xem thử tôi có lối ác nào chăng, Xin  dắt tôi vào con đường đời đời.&rdquo;</em> (câu 23,24).</p>
+    <p> </p>
+    <p><em>Trần Đình Tâm</em></p>
+    <p>Tháng 1, 2014</p>
+  </div>
+<p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

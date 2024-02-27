@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong style="font-size: 14pt">ĂN THỊT THÚ SẠCH VÀ KIÊNG ĂN THỊT THÚ KHÔNG SẠCH</strong></p>
+        <p align="center"><strong>Trần Đình  Tâm</strong></p>
+        <p align="center"> </p>
+        <p>Một số ít hệ  phái Tin Lành truyền dạy các tín hữu phải kiêng ăn  thịt các loài thú <em>không sạch</em> theo như Luật Pháp Môi-se quy định. Chúng ta hãy tìm hiểu  xem việc tuân giữ như thế có phù hợp với sự  dạy dỗ của Tân Ước?</p>
+        <p><strong style="color: #E00614">1. Thời Kỳ trước luật pháp:</strong></p>
+        <p>Lần đầu tiên  Kinh Thánh đề cập đến loài thú sạch và thú không  sạch là vào ngay thời điểm trước cơn  nước lụt. Đức Chúa Trời truyền dạy  cho Nô-ê phải đem lên tàu các thú vật sạch và không sạch:</p>
+        <blockquote>
+          <p><em>&ldquo;Trong  các loài vật <strong>thanh sạch</strong>,  hãy đem theo mỗi loài bảy cặp, đực và cái;  còn loài vật <strong>không  thanh sạch</strong> mỗi loài một cặp, đực và cái.&rdquo;</em> (Sáng Thế Ký 7:2)</p>
+        </blockquote>
+        <p>Có thể trước thời  điểm nầy, Đức Chúa Trời đã có sự  phân biệt thú sạch với thú không sạch và Ngài bày tỏ  điều nầy cho loài người biết. Kinh Thánh  không liệt kệ các thú nào sạch hay không sạch mà Nô-ê  đem lên tàu, nhưng rõ ràng Nô-ê biết rõ đó là những  con gì. Vì thời kỳ nầy chưa có luật pháp và kinh  Thánh cũng không cho thấy Đức Chúa Trời cấm  loài người ăn một loài thú vật nào đó, nên  chúng ta có thể kết luận rằng loài người  được phép ăn tất cả các loại thú vật.  Tuy nhiên, Đức Chúa Trời <strong>phân  biệt</strong> thú sạch và không sạch với mục đích <strong>loài người phải chọn  những con thú tinh sạch làm của lễ thiêu dâng lên cho  Đức Chúa Trời</strong>. Nô-ê đã làm như vậy sau  cơn nước lụt:</p>
+        <blockquote>
+          <p><em>&ldquo;Nô-ê  lập một bàn thờ cho Đức Giê-hô-va. Người  bắt các súc vật <strong>thanh sạch</strong>,  các loài chim <strong>thanh sạch</strong>, bày của lễ thiêu dâng lên bàn thờ.&rdquo;</em> (Sáng Thế Ký 8:20)</p>
+        </blockquote>
+        <p>Ngay sau cơn nước  lụt, chúng ta biết tất cả các loài thú sạch và  không sạch ở ngoài tàu đều chết hết, chỉ  còn lại các loài thú sạch và không sạch ở trên tàu.  Đức Chúa Trời phán với Nô-ê:</p>
+        <blockquote>
+          <p><em>&ldquo;Phàm vật chi hành  động và có sự sống thì dùng làm đồ ăn  cho các ngươi. Ta cho mọi vật đó như ta đã cho thứ  cỏ xanh.&rdquo;</em> (Sáng Thế Ký 9:3)</p>
+        </blockquote>
+        <p>Qua lời phán trên, chúng ta  thấy rõ Chúa cho phép loài người được ăn  tất cả các loài thú mà <strong>không có sự phân biệt nào</strong>, vì  Ngài không phân biệt thú sạch và không sạch trong lời  phán dạy đó.</p>
+        <p>Lý do quan trọng  Chúa cho phép con người ăn tất cả mọi loài  thú mà không có lệnh cấm nào, ấy là vì trong giai đoạn nầy, <strong>tuyển dân Y-sơ-ra-ên  chưa được hình thành</strong>. Đức Chúa Trời  chỉ truyền lệnh cấm ăn các thú không sạch  cùng với các luật lệ khác khi tuyển dân đã  được hình thành. </p>
+        <p><strong style="color: #E00614">2. Thời Kỳ Luật Pháp:</strong></p>
+        <p>Hơn 1000 năm sau  nước lụt, Đức Chúa Trời thiết lập  luật lệ về các thú vật <em>sạch</em> (clean) và <em>không sạch </em>(unclean). Chúa cho phép dân Y-sơ-ra-ên ăn các loài thú tinh sạch,  nhưng cấm ăn các loài thú không sạch.</p>
+        <p>Quy định về các  loài sạch và không sạch được liệt kê khá chi  tiết trong Lê-vi Ký chương 11 và Phục Truyền Luật  lệ Ký 14:3-20. Có thể tóm lược như sau:</p>
+        <p>a) <u>Loài thú trên đất</u>:  Phải đáp ứng đủ 2 điều kiện sau  thì mới được kể là <em>sạch</em>: 1/ Chân có móng chẻ ra (cloven-footed) 2/ Nhai lại  (chew the cud) (bò, chiên, dê cái, nai đực, sơn  dương, bò rừng v.v…). Nếu chỉ có một điều  kiện thôi thì phải kể là <em>không  sạch</em> (lạc đà, thỏ, heo, chó, mèo, gà, chuột, rắn  v.v...)</p>
+        <p>b) <u>Loài sống dưới  nước</u>: Loài nào có <em>vây</em> (fin)  và có <em>vảy</em> (scale) thì kể  là sạch. Các loài cá da trơn là <em>không  sạch</em>.</p>
+        <p>c) <u>Loài bay trên trời</u>:  Dân Y-sơ-ra-ên được ăn tất cả ngoại  trừ các con sau: chim ưng, chim ngạc, ó biển; chim lão  ưng và con diều, tùy theo loại chúng nó; các thứ quạ,  chim đà điểu, chim ụt, chim thủy kê, chim bò cắc  và các loại giống chúng nó; chim mèo, chim thằng cộc,  con cò quắm, con hạc, chim thằng bè, con cồng cộc,  con cò, con diệc và các loại giống chúng nó; chim rẽ quạt  và con dơi.</p>
+        <p>d) <u>Loài côn trùng</u>: Loài  nào biết <em>bay</em> và biết <em>nhảy</em> được kể  là <em>sạch</em> (cào cào, châu chấu,  dế, ve v.v…). Loài biết bay, biết đi bốn chân  nhưng không biết nhảy phải kể là <em>không sạch</em>.</p>
+        <p><strong style="color: #031DE4">Tại sao Đức Chúa Trời cấm dân Y-so-ra-ên  ăn các thú không sạch?</strong></p>
+        <p>Câu hỏi trên rất quan  trọng, lời giải đáp cho câu hỏi trên sẽ giúp  cho chúng ta hiểu được ý nghĩa thật của  lệnh cấm của Đức Chúa Trời đối với  dân Y-sơ-ra-ên, và sự ngăn cấm đó có ý nghĩa gì  đối với chúng ta hôm nay, là con cái Chúa sống trong thời  Ân Điển.</p>
+        <p>Có nhiều nhà giải  kinh giải thích rằng sở dĩ Đức Chúa Trời  cấm dân Y-sơ-ra-ên ăn các loài thú không sạch vì chúng  không có lợi cho sức khỏe của con người (nhiều  chất béo, nhiều chất cholesterol, dễ gây dị ứng  v.v…). Tuy nhiên, cách giải thích đó không phải là câu trả  lời từ … Kinh Thánh! Chúng ta biết tất cả thú vật  đều do Chúa tạo dựng nên, các loài thú “không sạch”  cũng do Chúa tạo nên. Thật ra, <strong>thịt của các loại  thú sạch hay không sạch đều chứa các chất  dinh dưỡng và đều cần thiết cho sức  khỏe của con người</strong>; nếu có những chất  có hại (chết béo, cholesterol …) thì những chất có hại cho sức khỏe nầy cũng có trong cả  hai loại thú sạch và không sạch. Ví dụ:</p>
+        <p>+ Những chất có hại trong thịt <em>heo</em> (thú không sạch) như <em>chất béo</em> hay <em>cholesterol</em> cũng đều có trong thịt <em>bò</em> (thú<br />
+  &nbsp;sạch) </p>
+        <p>+ Thịt <em>gà</em> (thú không sạch) có sắc <em>trắng</em> (white meat) được xem là  tốt cho sức khỏe hơn thịt <em>bò</em> (thú sạch) có sắc <em>đỏ (red meat).</em></p>
+        <p><em>+ C</em><em>á da  trơn không vảy</em> (loại không sạch) chứa nhiều  chất omega-3 rất tốt cho tim mạch hơn các loài <em>cá có vảy</em> (loại sạch);  có người cho rằng thịt con <em>chiên</em> (thú sạch) ít gây dị ứng, nhưng thịt <em>heo</em> (thú không sạch) cũng  ít gây dị ứng, trong khi thịt <em>bò</em> (thú sạch) gây dị ứng nhiều hơn thịt <em>heo.</em>&nbsp;</p>
+        <p>+ Các loại <em>tôm</em> (không sạch) chứa nhiều  sinh tố B12, Selenium, Antioxidant, chất chống viêm rất  tốt cho con người v.v…</p>
+        <p>Sau đây là bảng so sánh các loại thịt thông dụng mà con người ăn hằng ngày: Dê (goat), bò (beef); gà (chicken); heo (pork); chiên (lamp); nai (venison) và bò rừng (bison). Một số chất được các nhà dinh dưỡng phân tích và đưa ra kết quả như sau:</p>
+        <img src="/Image/meatchart.jpg" width="673" height="360" alt=""/>
+        <p>&nbsp;</p>
+        <p> Qua bảng phân tích nêu trên, chúng ta thấy cholesterol trong thịt chiên (thú sạch) nhiều hơn trong thịt gà (thú không sạch); chất béo (fat) trong thịt chiên cũng nhiều hơn trong thịt heo (thú không sạch) v.v... </p>
+        <p>Như thế, lý do Đức  Chúa Trời cho phép dân Y-sơ-ra-ên ăn thịt một số  thú sạch hay cấm ăn thịt thú không sạch không phải  vì yếu tố <em>dinh dưỡng </em>như nhiều người gán cho. Đức Chúa Trời  có bày tỏ cho dân Y-sơ-ra-ên biết nguyên do tại sao Ngài  phân biệt thú sạch và thú không sạch trong <strong>Lê-vi Ký 20:23-26</strong>:</p>
+        <blockquote>
+          <p><em>“Chớ nên noi theo thói  tục của dân mà ta sẽ đuổi ra khỏi trước  mặt các ngươi, vì họ đã làm những điều đó, và ta  lấy làm gớm ghiếc lắm. Ta đã phán cùng các  ngươi rằng: Ấy là các ngươi sẽ được  xứ của dân đó; ta cho các ngươi xứ ấy  đặng làm sản nghiệp; ấy là một xứ đượm sữa và mật:  Ta là Giê-hô-va, Đức Chúa Trời của các ngươi,  đã <strong>PHÂN RẼ</strong>&nbsp;<u style="color: #C90612">các </u><u style="color: #C90612">ngươi</u> cùng <u style="color: #C90612">các  dân</u>. Vậy, hãy <strong>PHÂN BIỆT</strong> thú <u>tinh sạch</u> với thú <u>ô uế</u>, chim <u>ô uế</u> với chim <u>tinh sạch</u>; chớ  gây cho mình ra gớm ghiếc vì loài vật, vì chim chóc, vì các  loài côn trùng trên mặt đất, mà ta đã dạy  các ngươi phân biệt như loài ô uế. Đối  cùng ta các ngươi hãy nên thánh, vì ta, Đức Giê-hô-va, là  thánh; ta đã <strong>PHÂN RẼ</strong>&nbsp;<u style="color: #C90612">các  ngươi</u> với <u style="color: #C90612">các dân</u>, để các </em><em>ngươi thuộc về ta.” </em>(Lê-vi  Ký 20:23-26)</p>
+        </blockquote>
+        <p>Chữ chìa khóa trong phân  đoạn trên là  hay <strong>PHÂN BIỆT</strong> (<em>separate</em>: Có nghĩa là <em>phân  chia ra, tách riêng ra, không cùng chung với nhau</em>). Khi Đức  Chúa Trời ban xứ Ca-na-an cho dân Y-sơ-ra-ên, Ngài <strong>phân rẽ </strong>(separate) họ với  dân Ca-na-an là dân tộc thờ tà thần, Ngài không muốn  dân của Ngài bắt chước lối sống của  dân bản xứ. Và để cho dân Y-sơ-ra-ên ghi nhớ  nguyên tắc sống theo ý muốn của Ngài, Chúa dạy họ  phải <strong>phân biệt</strong> thức  ăn sạch và không sạch trong vấn đề ăn hằng  ngày. Chúa dùng hình ảnh “thú sạch” ám chỉ dân  Y-sơ-ra-ên, “thú không sạch” chỉ về dân Ca-na-an. Dân  Y-sơ-ra-ên phải ăn thịt thú sạch và không  được ăn thịt thú không sạch để luôn  nhắc nhỡ cho họ nhớ rằng họ Chúa biệt riêng họ ra khỏi các dân tộc khác, để thành một dân thánh cho Ngài, là dân thuộc riêng về Ngài. <em>"Vì ngươi là một dân thánh cho Giê-hô-va Đức Chúa Trời ngươi; Ngài đã chọn ngươi trong muôn dân trên mặt đất, đặng làm một dân thuộc riêng về Ngài."</em> (Phục Truyền Luật Lệ Ký 7;6)</p>
+        <p><strong style="color: #031DE4">Cơ-đốc nhân ngày nay có phải kiêng ăn thịt  các thú không sạch? </strong></p>
+        <p>Dân Y-sơ-ra-ên trong thời  Cựu Ước làm hình bóng về Hội Thánh trong thời  Tân Ước:</p>
+        <blockquote>
+          <p><em>“Vậy anh em hãy nhận  biết rằng những kẻ có đức tin là <strong>con cháu thật của Áp-ra-ham</strong>.” (Ga-la-ti 3:7)</em></p>
+          <p><em>&ldquo;Lại nếu anh em  thuộc về Đấng Christ, thì anh em là <strong>dòng dõi của Áp-ra-ham</strong>, tức là kẻ kế tự theo lời hứa.&rdquo;</em> (Ga-la-ti 3:29)</p>
+        </blockquote>
+        <p>Dân Y-sơ-ra-ên được  lựa chọn ra khỏi các dân tộc khác để trở  nên dân thánh của Đức Chúa Trời làm hình bóng về Hội  Thánh trong thời Tân Ước, gồm những người  được lựa chọn để trở nên dân thánh  cho Chúa:</p>
+        <blockquote>
+          <p><em>&ldquo;Nhưng anh em là dòng  dõi <strong>được lựa chọn</strong>,  là chức thầy tế lễ nhà vua, là <strong>dân thánh,</strong> là dân thuộc về Đức  Chúa Trời.&rdquo;</em> (I Phi-e-rơ 2:9)</p>
+        </blockquote>
+        <p>Dân Y-sơ-ra-ên được  truyền dạy chỉ ăn những thức ăn sạch  và kiêng những thức ăn không sạch làm hình bóng về  Hội Thánh của Chúa trong thời Tân Ước, con cái  Chúa sống ở giữa thế gian phải giữ lấy  đạo của Chúa mà không được bắt chước  nếp sống của người thế gian:</p>
+        <blockquote>
+          <p><em>&ldquo;Vậy,  hỡi anh em, tôi lấy sự thương xót của Đức  Chúa Trời khuyên anh em <strong>dâng thân thể mình làm của lễ  sống và thánh</strong>, đẹp lòng Đức Chúa Trời, ấy  là sự thờ phượng phải lẽ của anh em. <strong>Đừng làm theo đời nầy</strong>,  nhưng hãy biến hóa bởi sự đổi mới của  tâm thần mình …&rdquo;</em> (Rô-ma  12:1,2)</p>
+        </blockquote>
+        <p>Như vậy, con cái Chúa  sống trong Giao Ước mới phải tuân giữ các  &ldquo;luật lệ&rdquo; trong Giao Ước mới, không cần phải  tuân theo luật lệ Cựu Ước như dân  Y-sơ-ra-ên khi xưa. Tín hữu ngày nay có thể ăn tất  cả các loại thịt mà không cần phân biệt thú sạch  hay không sạch, vì <em>&ldquo;mọi vật  Đức Chúa Trời đã dựng nên đều là tốt  lành cả, không một vật chi đáng bỏ, miễn là  mình cảm ơn mà ăn lấy thì được; vì nhờ  lời Đức Chúa Trời và lời cầu nguyện mà  vật đó được nên thánh.&rdquo;</em> (I Ti-mô-thê 4:4,5). </p>
+        <p>Nên nhớ rằng không có  một câu Kinh Thánh nào trong Tân Ước dạy con cái Chúa  ngày nay chỉ được phép ăn thịt thú sạch  và không được ăn thịt thú không sạch.  </p>
+        <p>Có một số tín hữu  ngày nay vẫn tuân giữ theo luật Cựu Ước, họ  kiêng ăn thịt thú <em>không sạch</em> như thịt <em>heo</em>. Tất nhiên, đó là sự  lựa chọn của họ, họ có quyền kiêng cữ  ăn thịt thú không sạch theo Cựu Ước,  nhưng chúng ta thấy rõ nếu con cái Chúa ngày nay  kiêng cữ  ăn <em>thịt heo</em> vì lý do <em>tín ngưỡng</em> (làm theo luật  pháp) thì không có ý nghĩa gì trước mặt Đức Chúa  Trời. Hơn nữa, <strong>nếu người đó chỉ  kiêng thịt heo nhưng lại ăn thịt gà, thịt vịt,  các loại cá da trơn, như cá trê, cá bông lau, cá thiều v.v... hay một số hải sản  thông thường khác như: tôm, cua, sò v.v… là những thức  ăn không sạch, thì sự kiêng cữ của người  đó chỉ là vô ích</strong>, <strong>vì</strong> <strong>không nhất quán trong sự tuân giữ  luật pháp</strong>, và như vậy người đó cũng không  tuân giữ luật pháp cách trọn vẹn như mục đích mà họ theo đuổi.<strong></strong></p>
+        <p><strong style="color: #C90612">3. Khải tượng về thú không sạch trong Công  Vụ Các Sứ Đồ chương 10.</strong></p>
+        <p>Sứ đồ  Phi-e-rơ là người tuân giữ luật pháp về  ăn và không ăn các thức ăn sạch và không sạch.  Theo Công Vụ Các Sứ Đồ chương 10, một  ngày kia, ông thấy khải tượng sau: Trời mở  ra, có một cái khăn lớn giáng xuống, bên trong khắn  chứa những loài vật không sạch. Có tiếng phán với  ông: <em>&ldquo;Hỡi Phi-e-rơ, hãy dậy,  làm thịt và ăn.&rdquo;</em> (câu 13). Phi-e-rơ trả lời: <em>&ldquo;Lạy Chúa, chẳng vậy; vì  tôi chẳng ăn giống gì dơ dáy chẳng sạch bao  giờ.&rdquo; </em>(câu 14). Nhưng có tiếng phán với ông đến  ba lần: <em>&ldquo;Phàm vật chi Đức  Chúa Trời đã làm cho sạch, thì chớ cầm bằng  dơ dáy.&rdquo;</em> (câu 15)</p>
+        <p>Một thời gian ngắn  sau khi Đức Thánh Linh giáng lâm thành lập Hội Thánh, những  người Do Thái vẫn quan niệm rằng sự cứu  rỗi và những phước hạnh đến từ  Đức Thánh Linh chỉ dành cho người Do Thái, người  ngoại bang không có phần trong đó.</p>
+        <p>Khải tượng  Phi-e-rơ thấy có liên quan đến việc <em>ăn thịt các thú vật không sạch</em>.  Chúa muốn dùng khải tượng đó để dạy  cho Phi-e-rơ và những người Do Thái tin Chúa Jesus thời  bấy giờ một bài học: Ân sủng của Đức  Chúa Trời được ban cho tất cả mọi dân tộc  mà không có sự phân biệt. Bởi đức tin nơi  Chúa Jesus, người ngoại bang cũng sẽ nhận  được Đức Thánh Linh giống như người  Do Thái đã nhận Đức Thánh Linh trong ngày Lễ  Ngũ Tuần trước đó. Hình ảnh <em>&ldquo;thú không sạch&rdquo;</em> làm biểu  tượng cho <em>người ngoại  bang</em>. Khi có tiếng phán: <em>&ldquo;Phàm  vật chi Đức Chúa Trời đã làm cho sạch, thì chớ  cầm bằng dơ dáy&rdquo; </em>mang ý nghĩa khi một người  ngoại bang tiếp nhận Chúa Jesus, họ được  tha thứ tội và trở nên tinh sạch giống như một  người Do Thái tin Chúa Jesus vậy. Không có lý do gì mà  người Do Thái tin Chúa lại không chấp nhận  người ngoại bang tin Chúa. Những gì Chúa muốn dạy  Phi-e-rơ đã được thể hiện qua sự kiện  một gia đình người ngoại bang (viên đội  trưởng Cọt-nây) tiếp nhận Tin lành: <em>&ldquo;Khi Phi-e-rơ đang nói, thì Đức  Thánh Linh giáng trên mọi người nghe đạo. Các tín  đồ đã chịu phép cắt bì, là những kẻ đồng  đến với Phi-e-rơ, đều lấy làm lạ,  vì thấy <strong>sự ban cho Đức  Thánh Linh cũng đổ ra trên người ngoại nữa</strong>.  Vì các tín đồ nghe họ nói tiếng ngoại quốc  và khen ngợi Đức Chúa Trời. Bấy giờ  Phi-e-rơ lại cất tiếng nói rằng: Người  ta có thể từ chối nước về phép báp-tem cho  những kẻ đã nhận lấy Đức Thánh Linh  cũng như chúng ta chăng?&rdquo; </em>(Công Vụ Các Sứ Đồ  10:44-47). Chúng ta có rể rút ra hai bài học về khải  tượng <em>thú không sạch </em>mà  Chúa cho Phi-e-rơ thấy:</p>
+        <p>1. Cơ-đốc nhân thời  Tân Ước không cần kiêng ăn các thú không sạch.</p>
+        <p>2. Không có sự phân biệt  giữa người Do Thái và người ngoại bang trong  sự tiếp nhận ơn cứu rỗi qua Chúa Jesus. </p>
+        <p>&nbsp;</p>
+        <p><strong><em>Tháng 9, 2014<br />
+          tamtran1561@yahoo.com</em></strong></p>
+        <p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

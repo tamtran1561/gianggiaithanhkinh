@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {
+	margin-top: 0in;
+	margin-right: 0in;
+	margin-bottom: 10.0pt;
+	margin-left: 0in;
+	line-height: 115%;
+	font-size: 11pt;
+	font-family: "Verdana","sans-serif";
+	text-align: justify;
+}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+}
+.d {
+	font-weight: bold;
+	color: #000000;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;"><a href="Ân Tứ Nói Tiếng Lạ. Bài 2.pdf"><img src="../Image/Download.jpg" width="170" height="30" /></a></p>
+      <blockquote>
+        <p class="MsoNormal" align="center" style="text-align: center; font-size: 11pt;"><strong><span style="text-align: justify"></span><span style="line-height:115%; font-size:12.0pt; ">Ân Tứ Nói Tiếng Lạ. (Bài 2)</span></strong></p>
+        <p class="MsoNormal" align="center" style="text-align:center;"><span style="line-height: 115%; font-size: 11pt;">Trần Đình Tâm</span></p>
+        <p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+        <p class="MsoNormal"><strong><span style="color: #C90612">1. Nói tiếng lạ trong Hội Thánh Cô-rinh-tô</span>.</strong></p>
+        <p class="MsoNormal" style="text-align:justify;">Sứ đồ Phao-lô dùng rất nhiều câu trong I Cô-rinh-tô 14  để giải luận về ân tứ <em class="d">nói tiếng lạ </em>(bản  dịch truyền thống). Theo nguyên ngữ Hy-lạp, &ldquo;tiếng lạ&rdquo; trong thư I Cô-rinh-tô  và &ldquo;tiếng ngoại quốc&rdquo; trong  Công Vụ Các  Sứ Đồ đều có cùng một nguồn gốc là <em>Glossā. </em>Như vậy, câu hỏi cần được nêu lên: <em>Glossā </em>trong thư I Cô-rinh-tô có ý nhĩa khác với <em>Glossā </em>trong Công Vụ Các Sứ Đồ không?</p>
+        <p class="MsoNormal" style="text-align:justify;">Một số nhà giải nghĩa Kinh Thánh tin rằng nói &ldquo;tiếng lạ&rdquo;  trong thư Cô-rinh-tô là nói tiếng &ldquo;ngoại quốc&rdquo; vì có cùng nguyên ngữ, và vì nói  tiếng <em><u>ngoại quốc</u></em> trong Công Vụ  Các Sứ đồ đã được xác nhận (xem  bài 1)</p>
+        <p class="MsoNormal" style="text-align:justify;">Tuy nhiên, có cùng một gốc tiếng Hy-lạp không có nghĩa  là có cùng nghĩa, nếu suy gẫm cẩn thận sự giảng giải của Phao-lô trong I  Cô-rinh-tô 14, sẽ thấy tín hữu ở Cô-rinh-tô nói một loại ngôn ngữ khác hẳn với  ngôn ngữ mà các môn đồ đã nói trong ngày Lễ Ngũ Tuần. Chúng ta hãy khảo sát  ngôn ngữ đó sau đây.</p>
+        <p class="MsoNormal" style="text-align: justify; color: #C90612;"><span class="d">2. Những đặc điểm của ân tứ nói</span> <em class="d">Glossā </em><strong><span>trong I Cô-rinh-tô 14</span>. </strong></p>
+        <p class="MsoNormal">Chúng  ta ghi nhận được 4 điều đặc biệt về ân tứ nầy:</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;">a. <strong>Người đó nói với Đức Chúa Trời</strong>:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Vì người nào nói tiếng lạ (Glossā), thì  không phải nói với người ta, bèn là với Đức Chúa
+            Trời, bởi chẳng có ai hiểu.&rdquo;  </em>(câu 2a)</p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Có sự tương giao đặc biệt giữa người đó với Đức Chúa  Trời, chỉ có Đức Chúa Trời hiểu được người đó. Người đó đang nói với Chúa chứ  không phải cho người khác. </p>
+        <p class="MsoNormal" style="text-align:justify;">Trong ngày Lễ Ngũ Tuần, các môn đồ nói tiếng ngoại quốc  với mục đích cho người chung quanh nghe và người nghe hiểu được, còn tín hữu tại  Cô-rinh-tô không với mục đích nói cho người khác nhưng chủ yếu với Đức Chúa Trời,  nên người khác có nghe cũng không hiểu gì.</p>
+        <p><strong style="color: #031DE4">b. Người  đó nói bằng tâm thần:</strong></p>
+        <blockquote>
+          <p class="MsoNormal"><em>&ldquo;Ấy  là trong tâm thần mà người kia nói…&rdquo; (câu 2c)</em></p>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Vì nếu tôi cầu nguyện bằng tiếng lạ  (Glossā), thì tâm thần tôi cầu nguyện nhưng trí
+            khôn tôi lơ lửng&rdquo; (câu 14)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Người đó nói hoặc cầu nguyện bằng tâm thần hay <span class="d">tâm  linh</span> (spirit) của người đó.</p>
+        <p class="MsoNormal" style="text-align:justify;">Cụm từ  <em>&ldquo;tâm thần tôi cầu nguyện nhưng trí khôn tôi  lơ lửng</em>&rdquo; theo bản Anh ngữ là &ldquo;my spirit prays, but my mind is unfruitful&rdquo;  (NIV) hoặc &ldquo;my spirit prayeth, but my understanding is unfruitful&rdquo; (KJV). Vậy,  chỉ có tâm linh người đó nói hay cầu nguyện, còn tâm trí của người đó không  tham dự vào. Nói cách khác, tâm trí của người đó không &ldquo;nói&rdquo; hay &ldquo;cầu nguyện&rdquo;.</p>
+        <p class="MsoNormal" style="text-align:justify;">Như thế, những lời lẽ hay ngôn ngữ không phát xuất từ  tâm trí người đó, tâm trí người đó không &ldquo;sinh sản&rdquo; (unfruitful) ra ngôn ngữ,  mà ngôn ngữ xuất phát từ tâm linh của người đó.</p>
+        <p class="MsoNormal" style="text-align:justify;">Để giúp cho chúng ta dễ hiểu hơn, Phao-lô đã so sánh  việc cầu nguyện bằng tiếng lạ với việc cầu nguyện bằng ngôn ngữ thông thường  như sau:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Vậy thì tôi sẽ làm thế nào? Tôi sẽ cầu nguyện  theo <u>tâm thần</u>, nhưng cũng cầu   nguyện
+            bằng <u>trí khôn</u>. Tôi sẽ hát theo tâm thần  nhưng cũng hát bằng trí khôn&rdquo;</em>  (câu  15)</p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Một người cầu nguyện với ngôn ngữ thông thường (giả định  người đó cầu nguyện với tấm lòng chân thật trước mặt Chúa) thì có sự phối hợp  giữa tâm thần (spirit) và trí khôn hay còn gọi là tâm trí (mind). Chính ngôn ngữ  thông thường mà chúng ta nói trong khi cầu nguyện phát xuất từ tâm trí (mind) của  chúng ta.</p>
+        <p class="MsoNormal" style="text-align:justify;">Như vậy, một người cầu nguyện bằng tiếng lạ thì người  đó cầu nguyện từ tâm linh của người đó chứ không từ tâm trí; còn người cầu nguyện  bằng tiếng thông thường thì cầu nguyện bằng tâm linh mà cũng bằng tâm trí.</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;"><strong>c. Người đó nói lời mầu nhiệm:</strong></p>
+        <p class="MsoNormal" style="text-align:justify;">      <em>&ldquo;Ấy là trong tâm thần mà người kia nói lời mầu  nhiệm&rdquo;</em>  (câu 2c)</p>
+        <p class="MsoNormal" style="text-align:justify;">Bản tiếng Anh của câu nầy là &ldquo;he utters mysteries with  his spirit&rdquo; (NIV) hoặc &ldquo;in the spirit he speaketh mysteries&rdquo; (KJV). Có thể hiểu  &ldquo;lời mầu nhiệm&rdquo; theo hai ý nghĩa sau đây:</p>
+        <p class="MsoNormal" style="text-align:justify;">   1/ Chỉ về <span class="d">ngôn  ngữ</span>: Người đó không nói bằng loại ngôn ngữ thông thường của con người, hoặc tiếng  bản xứ hay tiếng ngoại quốc nào đó; nhưng nói bằng một <em>loại <span class="d">ngôn</span> <span class="d">ngữ</span> <span class="d">đặc</span> <span class="d">biệt</span></em>, còn gọi là <em>&ldquo;lời mầu nhiệm&rdquo;, </em>nên Phao-lô nói không có ai hiểu được (câu 2b), chỉ có Đức Chúa Trời hiểu mà thôi. Chúng ta  có thể gọi đó là <em>ngôn ngữ thuộc linh</em>.</p>
+        <p class="MsoNormal" style="text-align:justify;">Vì không phải là ngôn ngữ của con người  nên bản dịch  truyền thống Việt ngữ dịch là &ldquo;tiếng lạ&rdquo;, bản Anh ngữ dịch là &ldquo;unknown tongue&rdquo;  (KJV), &ldquo;speak in tongue&rdquo; (NIV, NASB, NRSV, ESV). Dịch sang tiếng Việt &ldquo;tiếng lạ&rdquo;  thật ra cũng không chính xác, vì <em>Glossā </em>không  có liên quan gì hết đến &ldquo;lạ&rdquo;. Tuy nhiên, vì trong tiếng Việt không thể chọn được  một từ ngữ nào khác diễn tả chính xác hơn nên chúng ta đành chấp nhận dùng từ  ngữ &ldquo;tiếng lạ&rdquo; như vẫn thường dùng bao lâu nay.</p>
+        <p class="MsoNormal" style="text-align:justify;">  2/ Chỉ về <span class="d">nội  dung</span>: &ldquo;lời mầu nhiệm&rdquo; có thể bao gồm những điều thuộc linh, cao đẹp mà ngôn ngữ  con người không thể diển tả được. Do đó, để cho người khác có thể hiểu được để  cùng được gây dựng, cần phải có sự thông giải. Tuy nhiên, sự thông giải tiếng lạ  lại là một khả năng đặc biệt mà con người không thể học được, chỉ do Đức Thánh  Linh ban cho mà thôi.</p>
+        <p class="MsoNormal"><strong style="color: #031DE4">d. Người  đó tự gây dựng cho mình:</strong></p>
+        <p class="MsoNormal" style="text-align:justify;"><em>     &ldquo;Kẻ nói tiếng lạ, tự gây dựng lấy mình&rdquo;</em>  (câu 4a)</p>
+        <p class="MsoNormal" style="text-align:justify;">Đây là một tác dụng rất hữu ích của ân tứ nói tiếng lạ,  là chính người đó được gây dựng, đức tin được mạnh mẽ, có lòng sốt sắng hầu việc  Chúa v.v… Phao-lô nhấn mạnh rằng người đó chỉ gây dựng cho bản thân họ mà thôi chứ  không gây dựng cho người khác hay gây dựng cho Hội Thánh của Chúa như ân tứ nói  tiên tri, vì lý do đơn giản là không ai hiểu gì.</p>
+        <p class="MsoNormal" style="text-align:justify;">Từ 4 đặc điểm nêu trên, chúng ta phải đi đến kết luận  rằng ngôn ngữ mà các môn đồ nói trong ngày lễ Ngũ Tuần khác hẳn với ngôn ngữ mà  tín đồ Hội Thánh Cô-rinh-tô nói.</p>
+        <p class="MsoNormal"><strong><span style="color: #C90612">2. Những  ảnh hưởng của ân tứ nói tiếng lạ:</span></strong></p>
+        <p class="MsoNormal" style="text-align:justify;">Ân tứ nói tiếng lạ thường gây ra một số ảnh hưởng đối  với sự sinh hoạt trong Hội Thánh. Nếu chúng ta quan sát sinh hoạt trong các Hội  Thánh ngày nay, nhất là ở những buổi nhóm họp có những người nói tiếng lạ, chúng  ta sẽ thấy những gì Thánh Kinh dạy trong I Cô-rinh-tô 14 rất đúng với thực tế.</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;">a. <u>Nói tiếng lạ không gây dựng Hội Thánh</u>:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Hỡi anh em, ví bằng tôi đến cùng anh em, mà  lời nói tôi chẳng tỏ ra sự kín nhiệm,
+            chẳng có sự thông biết, chẳng có lời tiên tri,  chẳng có sự khuyên dạy thì có ích gì cho
+            anh em?&rdquo;</em> <em>(câu 6)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Ân tứ Nói tiếng lạ chỉ có ích lợi cho chính bản thân  người nói nhưng không có ích lợi cho người khác trong buổi nhóm thờ phượng  Chúa. Người nghe không nhận được bất cứ một sự dạy dỗ nào từ Lời Chúa nên Hội  Thánh không bao giờ được gây dựng và lớn mạnh nhờ vào ân tứ nói tiếng lạ. Hội  Thánh được gây dựng bởi ân tứ nói tiên tri, là khi lời Chúa được rao giảng ra bởi  ngôn ngữ thông thường ai cũng có thể hiểu được. Dù vậy, Phao-lô tỏ ra trân trọng  ân tứ tiếng lạ nhưng ông cho biết ân tứ nói tiên tri là trọng hơn:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Tôi ước ao anh em đều nói tiếng lạ cả, song  tôi còn ước ao hơn nữa là anh em
+            nói  tiên tri. Người nói tiên tri là trọng hơn kẻ nói tiếng lạ mà không giải nghĩa 
+            để cho Hội Thánh được gây dựng&rdquo;</em>  <em>(Câu 5)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Từ câu 7 và câu 8, Phao-lô đưa ra một ví dụ về các loại  nhạc cụ để so sánh ân tứ nói tiếng lạ và nói tiên tri: Mỗi loại nhạc cụ phát ra  những âm thanh khác nhau, nhờ nghe âm thanh phát ra mà chúng ta biết được đó là  loại nhạc cụ nào, nếu chúng không có âm thanh riêng biệt thì người nghe không  phân biệt được, rồi Phao-lô giải thích tiếp:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Anh em cũng vậy, nếu dùng lưỡi nói chẳng rõ  ràng cho người ta nghe, thì làm
+            sao họ được biết điều anh em nói? Vì anh em  nói lông bông&rdquo;  (câu 9)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Từ câu 10 và 11, Phao-lô lại đưa ra một ví dụ khác  giúp cho chúng ta càng hiểu rõ hơn:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Trong thế gian nầy có lắm thứ tiếng, mỗi thứ  đều có nghĩa. Vậy nếu tôi chẳng biết
+            nghĩa của tiếng nói đó, thì người nói tiếng đó  sẽ coi tôi là mọi (nên dịch là &ldquo;người ngoại
+            quốc&rdquo;, tiếng Anh là &ldquo;foreigner&rdquo;) và  tôi cũng coi họ là mọi (foreigner) nữa&rdquo; (câu 10,11)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Ông muốn nói rằng người nói tiếng lạ nói một thứ ngôn  ngữ không ai hiểu nên họ chẳng khác gì là người ngoại quốc.</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;">b. <u>Nói tiếng lạ không đem đến sự hiệp nhất trong sự  thờ phượng</u>:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Nếu ngươi chỉ lấy tâm thần mà chúc tạ, thì  người tầm thường ngồi nghe, chẳng hiểu
+            người nói gì, thể nào họ theo lời chúc tạ mình  mà đáp lại rằng &ldquo;a-men&rdquo; được? Thật vậy,
+            lời chúc tạ của ngươi vẫn tốt lành, song kẻ  khác chẳng nhờ đó mà được gây dựng&rdquo;  (câu
+            16,17)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Vẻ đẹp trong sự thờ phượng Đức Chúa Trời là mọi người  cùng đáp &ldquo;A-men&rdquo;, có nghĩa là &ldquo;thật như vậy&rdquo;, cho thấy mọi người cùng đồng một  lòng hiệp một ý về một sự dạy dỗ nào đó được bày tỏ ra, nhưng người khác không  thể nói &ldquo;A-men&rdquo; được đối với người đang nói tiếng lạ.</p>
+        <p class="MsoNormal" style="text-align:justify;">Có thể nói rằng sứ đồ Phao-lô là người hiểu rõ hơn ai  hết về giá trị của ân tứ nói tiếng lạ, vì ông cho biết chính bản thân ông cũng  được Chúa ban cho ân tứ nói tiếng lạ và thậm chí còn được ban cho cách dồi dào  hơn những người khác nữa:</p>
+        <p class="MsoNormal" style="text-align:justify;">     <em>&ldquo;Tôi tạ ơn Đức Chúa Trời, vì đã được ơn nói  tiếng lạ nhiều hơn hết thảy anh em&rdquo;  (câu
+          18)</em></p>
+        <p class="MsoNormal" style="text-align:justify;">Nhưng Phao-lô đã nhận định giá trị của ân tứ nầy như  thế nào?</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Nhưng thà tôi lấy năm lời bằng trí khôn  mình mà rao giảng trong Hội Thánh, để  được
+            dạy bảo kẻ khác, hơn là lấy một vạn lời bằng  tiếng lạ&rdquo;  (câu 19)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Chúng ta thấy Phao-lô là người từng trãi đặc biệt về  ân tứ nói tiếng lạ hơn những người khác, nhưng ông  không hề khoe khoang về ân tứ nầy, ông không  tìm cách để làm nổi bật giá trị của ân tứ nầy trong Hội Thánh. Thái độ của  Phao-lô khác hẳn với thái độ của một số người ngày hôm nay khi họ được Chúa ban  cho ân tứ nói tiếng lạ.</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;">c. <u>Nói tiếng lạ làm người khác đánh giá sai về mình</u>:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Vậy khi cả Hội Thánh nhóm lại một nơi, nếu  ai nấy đều nói tiếng lạ, mà có kẻ tầm
+            thường (unlearned) hoặc người chẳng tin  (unbeliever) vào nghe, họ há chẳng nói anh
+            em là điên cuồng sao?&rdquo; (câu 23)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Thật vậy, trong một buổi nhóm có cả người tin Chúa và  người không tin Chúa, thì cả hai nhóm người nầy đều cho rằng những người nói tiếng  lạ là điên cuồng! &ldquo;điên cuồng&rdquo; theo bản dịch Anh ngữ là &ldquo;out of your mind&rdquo;  (NIV) hoặc &ldquo;mad&rdquo; (KJV).</p>
+        <p class="MsoNormal" style="text-align:justify;">Tóm lại, vì ân tứ nói tiếng lạ dễ gây ra những hậu quả  ngoài mong muốn nên Phao-lô nêu lên một lời khuyên trong câu 20 như sau:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Hỡi anh em, về sự khôn sáng, chớ nên như trẻ  con; nhưng về sự gian ác, thật hãy nên
+            như trẻ con vậy&rdquo;</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Phao-lô muốn nói rằng, so với ân tứ nói tiên tri thì  ân tứ nói tiếng lạ thấp kém hơn rất nhiều, nên hãy tỏ ra khôn sáng trong sự ao  ước các ân tứ thuộc linh. Hình ảnh trẻ con ở đây nói lên bản chất của đứa trẻ  là chúng chưa biết phân biệt những gì có giá trị và những gì không có giá trị  và chúng thường lựa chọn điều không có giá trị, có thể Phao-lô ám chỉ một số  tín hữu tại Hội Thánh Cô-rinh-tô tỏ ra trẻ con khi họ chạy theo ân tứ nói tiếng  lạ và khoe khoang về ân tứ nầy thay vì tìm kiếm những ân tứ có giá trị hơn.</p>
+        <p class="MsoNormal"><strong><span style="color: #C90612">3.  Nguyên tắc sử dụng ân tứ nói tiếng lạ trong Hội Thánh.</span></strong></p>
+        <p class="MsoNormal" style="text-align:justify;">Nói tiếng lạ là một ân tứ  Đức Thánh Linh ban cho tín đồ, đây là ân tứ  gây ra vài ảnh hưởng ngoài mong muốn như đã trình bày ở trên, nhưng không phải  vì thế mà chúng ta được phép xem thường. Xem thường ân tứ nầy hoặc quá coi trọng  ân tứ nầy đều là hai thái độ không phù hợp với sự dạy dỗ của Kinh Thánh.</p>
+        <p class="MsoNormal" style="text-align:justify;">Người tín đồ được ban cho ân tứ nói tiếng lạ không nên  tùy ý sử dụng theo ý muốn của mình mà phải vâng theo sự hướng dẫn của Chúa, có  như vậy Danh Chúa mới được tôn cao và Hội Thánh mới được gây dựng. Như đã nói ở  trên, người nói tiếng lạ nói bằng một ngôn ngữ thuộc linh không ai hiểu được và  có tác dụng tự gây dựng cho chính mình nên người đó được tự do cầu nguyện bằng  tiếng lạ trong phòng riêng tại nhà của mình. Còn khi nhóm lại nhiều người với  nhau mà người đó muốn lên tiếng bày tỏ sự mầu nhiệm cho người khác biết thì phải  tuân theo 3 nguyên tắc đơn giản sau đây:</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;">   <em>1. </em><u>Chỉ nên có tối đa là 3 người được  phép nói trong một buổi nhóm</u>:</p>
+        <p class="MsoNormal" style="text-align:justify;">     <em>&ldquo;Ví bằng có người nói tiếng lạ, chỉ nên hai  hoặc ba người là cùng&rdquo;</em> (câu 27a)</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;">  <em>2</em>. <u>Mỗi người phải nói theo lượt của  mình</u>:</p>
+        <p class="MsoNormal" style="text-align:justify;">     <em>&ldquo;Mỗi người phải nói theo lượt của mình&rdquo;</em> (câu 27b)</p>
+        <p class="MsoNormal" style="text-align:justify;">Không được phép nói chung một lần vì sẽ gây xáo trộn,  không ai nghe gì được, nhưng phải biết chờ đợi đến lượt của mình.</p>
+        <p class="MsoNormal" style="text-align: justify; color: #031DE4;">  <em>3</em>. <u>Phải có người thông giải mới được  nói</u>:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Và phải có một người thông giải. Nếu không  có ai thông giải, thì người đó phải làm
+            thinh ở trong Hội Thánh, mình nói với mình và  với Đức Chúa Trời&rdquo; (câu 27c, 28)</em></p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;">Người thông giải là người được Đức Thánh Linh ban cho  ân tứ thông giải (I Cô-rinh-tô 12:10), chính người nầy biết rõ mình được ban  cho ân tứ thông giải và Hội Thánh cũng công nhận điều nầy. Nếu không có người  thông giải thì người nói tiếng lạ không được lên tiếng, dù vậy chính họ vẫn giữ  sự cầu nguyện bằng tiếng lạ giữa họ với Đức Chúa Trời.</p>
+        <p class="MsoNormal" style="text-align:justify;"> Chúng ta hãy kết  luận bằng lời kết luận của Phao-lô về ân tứ nói tiếng lạ:</p>
+        <blockquote>
+          <p class="MsoNormal" style="text-align:justify;"><em>&ldquo;Ấy vậy, hỡi anh em, hãy trong mong ơn nói  tiên tri, và đừng ngăn trở chi về ơn nói
+            tiếng lạ. Nhưng mọi sự đều nên làm cho phải  phép và theo thứ tự&rdquo; (câu 39,40)</em></p>
+          <p class="MsoNormal" style="text-align:justify;">&nbsp;</p>
+        </blockquote>
+        <p class="MsoNormal" style="text-align:justify;"><span style="line-height:115%; font-size:11.0pt; ">Tháng 4, năm 2011</span></p>
+        <p class="MsoNormal" style="text-align:justify;">&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

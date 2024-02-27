@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>Bài học từ phần mở  đầu của các thư tín</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Trong tổng số 13  thư tín sứ đồ Phao-lô viết trong Tân Ước,  thư của Gia-cơ, thư của Phi-e-rơ, thư của  Giăng và thư của Giu-đe, nếu căn cứ vào  đối tượng nhận thư, chúng ta có thể chia  các thư tín ra làm hai loại: 1/ Thư viết cho các Hội  Thánh, 2/ Thư viết cho cá nhân. Theo nguyên tắc viết  thư của người Do Thái, <strong>phần mở đầu</strong> của một bức  thư bao gồm các bước: Đầu tiên, người  viết thư tự giới thiệu bản thân trước,  sau đó người viết mới đề cập  đến đối tượng nhận thư là ai, kế  đến là lời chúc.</p>
+        <p>Chúng ta cùng đọc phần  trích dẫn của các bức thư trong phần mở  đầu như sau (chỉ xin chú ý đến đối  tượng nhận thư mà thôi):</p>
+        <p><strong>1. Các thư viết cho các Hội Thánh địa  phương</strong>: </p>
+        <p>+ Thư Phao-lô viết cho Hội  Thánh Rô-ma:</p>
+        <p><em> &nbsp;&nbsp;&nbsp; “Phao-lô, tôi tớ  Đức Chúa Jêsus Christ, được gọi làm sứ  đồ, để riêng ra đặng giảng Tin
+          Lành Đức Chúa Trời  …<br />
+          <strong> &nbsp; &nbsp;gởi cho hết thảy những  người yêu dấu của Đức Chúa Trời
+            tại thành Rô-ma, được  gọi làm thánh đồ</strong>.”</em> <br />
+  &nbsp; &nbsp;(Rô-ma 1:1,7)</p>
+        <p>+ Thư Phao-lô viết cho Hội  Thánh Cô-rinh-tô:</p>
+        <p><em> &nbsp;&nbsp;&nbsp; “Phao-lô, theo ý Đức  Chúa Trời, được gọi làm sứ đồ của  Đức Chúa Jêsus Christ, cùng
+          Sốt-then, anh em chúng<br />
+  &nbsp; &nbsp; tôi, <strong>gởi cho Hội thánh Đức  Chúa Trời tại thành Cô-rinh-tô</strong>,
+          tức là cho những  người đã được nên thánh<br />
+  &nbsp; &nbsp; trong Đức  Chúa Jêsus Christ, được gọi làm
+          thánh đồ.”</em> (I  Cô-rinh-tô 1:1,2)</p>
+        <p> &nbsp;&nbsp;&nbsp; “Phao-lô, theo ý muốn Đức  Chúa Trời, làm sứ đồ Đức Chúa Jêsus Christ,  cùng người anh
+          em chúng ta là Ti-<br />
+  &nbsp; &nbsp;mô-thê, <strong>gởi cho Hội thánh của  Đức Chúa Trời ở thành Cô-rinh-
+    tô</strong>, và cho <strong>hết thảy thánh đồ</strong> <strong>ở khắp xứ <br />
+  &nbsp; &nbsp;A-chai</strong>.” (II Cô-rinh-tô 2:1)</p>
+        <p>+ Thư Phao-lô viết cho Hội  Thánh Ga-la-ti:</p>
+        <p><em> &nbsp;&nbsp;&nbsp; “Phao-lô, làm sứ  đồ, chẳng phải bởi loài người,  cũng không nhờ một người nào, bèn là
+          bởi Đức Chúa Jêsus<br />
+  &nbsp; &nbsp;Christ và  Đức Chúa Trời, tức là Cha, Đấng đã khiến  Ngài từ kẻ chết
+          sống lại, cùng hết thảy  anh em ở với tôi,<br />
+          <strong> &nbsp; &nbsp;gởi  cho các Hội thánh ở xứ Ga-la-ti</strong>.”</em> (Ga-
+          la-ti 1:1,2)</p>
+        <p>+ Thư Phao-lô viết cho Hội  Thánh Ê-phê-sô:</p>
+        <blockquote>
+          <p><em>&ldquo;Phao-lô,  theo ý muốn Đức Chúa Trời, làm sứ đồ của  Đức Chúa Jêsus Christ, <strong>gởi  cho
+            các thánh đồ ở  thành Ê-phê-sô</strong>.&rdquo;</em> (Ê-phê-sô 1:1)</p>
+        </blockquote>
+        <p>+ Thư Phao-lô viết cho Hội  Thánh Phi-líp:</p>
+        <blockquote>
+          <p><em>&ldquo;Phao-lô  và Ti-mô-thê, tôi tớ của Đức Chúa Jêsus Christ, <strong>gởi cho hết thảy các  thánh
+            đồ trong Đức Chúa Jêsus  Christ, ở thành Phi líp, cùng cho các giám mục và các
+            chấp sự.</strong>&rdquo;</em> (Phi-líp 1:1)</p>
+        </blockquote>
+        <p>+ Thư Phao-lô viết cho Hội  Thánh Cô-lô-se:</p>
+        <blockquote>
+          <p><em>&ldquo;Phao-lô, theo ý muốn  Đức Chúa Trời, làm sứ đồ của Đức  Chúa Jêsus Christ, cùng Ti-mô-thê là anh em, <strong>gởi cho các anh em chúng ta ở  thành Cô-lô-se</strong>, là những người
+            thánh và trung tín trong Đấng  Christ.&rdquo; </em>(Cô-lô-se 1:1,2)</p>
+        </blockquote>
+        <p>+ Thư Phao-lô viết cho Hội  Thánh Tê-sa-lô-ni-ca:</p>
+        <blockquote>
+          <p><em>&ldquo;Phao-lô, Sin-vanh và  Ti-mô-thê <strong>gởi cho Hội-thánh ở  thành Tê-sa-lô-ni-ca</strong>.&rdquo;</em> (I Tê-
+            sa-lô-ni-ca 1:1)</p>
+          <p><em>&ldquo;Phao-lô, Sin-vanh và  Ti-mô-thê <strong>gởi cho Hội thánh  Tê-sa-lô-ni-ca</strong>, là Hội thánh ở
+            trong Đức Chúa Trời,  Cha chúng ta, và trong Đức Chúa Jêsus Christ, là Chúa.&rdquo;</em> (II  Tê-sa-
+            lô-ni-ca 1:1)</p>
+        </blockquote>
+        <p>+ Thư Gia-cơ viết  cho Hội Thánh thuộc 12 chi phái Y-sơ-ra-ên:</p>
+        <blockquote>
+          <p><em>&ldquo;Gia-cơ,  tôi tớ Đức Chúa Trời và Đức Chúa Jêsus  Christ, <strong>đạt cho mười  hai chi phái</strong> <strong>ở
+            tan lạc&quot;</strong>.&rdquo;</em> (Gia-cơ 1:1)</p>
+        </blockquote>
+        <p>+ Thư Phi-e-rơ viết  cho một số Hội Thánh ở rải rác.</p>
+        <blockquote>
+          <p><em>&ldquo;Phi-e-rơ,  sứ đồ của Đức Chúa Jêsus Christ, <strong>gởi cho những người  kiều ngụ rải rác
+            trong xứ Bông, Ga-la-ti,  Cáp-ba-đốc, A-si và Bi-thi-ni</strong>, là những người  được chọn.&rdquo;        </em> (I Phi-e-rơ 1:1)</p>
+        </blockquote>
+        <p> + Thư Giu-đe viết cho Hội  Thánh chung:</p>
+        <blockquote>
+          <p><em>&ldquo;Giu-đe, tôi tớ của  Đức Chúa Jêsus Christ và em Gia-cơ, <strong>đạt cho những kẻ đã được
+            kêu gọi</strong> được Đức  Chúa Trời, là Cha yêu thương, và được Đức  Chúa Jêsus Christ giữ
+            gìn.&rdquo;</em> (Giu-đe 1)</p>
+        </blockquote>
+        <p><strong>2. Các thư viết cho cá nhân:</strong></p>
+        <p>+ Thư Phao-lô viết cho  Ti-mô-thê:</p>
+        <blockquote>
+          <p><em>&ldquo;Phao-lô, vâng mạng  Đức Chúa Trời là Cứu Chúa chúng ta, và vâng mạng  Đức Chúa
+            Jêsus Christ là sự trông cậy  chúng ta, làm sứ đồ của Đức Chúa Jêsus  Christ, <strong>gởi cho Ti-mô-thê</strong>, là con thật của  ta trong đức tin.&rdquo; </em>(I Ti-mô-thê 1:1,2)</p>
+          <p><em>&ldquo;Ta,  Phao-lô, theo ý muốn Đức Chúa Trời, làm sứ đồ  của Đức Chúa Jêsus Christ, đặng
+            rao truyền lời hứa  của sự sống trong Đức Chúa Jêsus Christ, <strong>gởi cho Ti-mô-thê</strong>, là con
+            rất yêu dấu của  ta.&rdquo;</em> (II Ti-mô-thê 1:1,2)</p>
+        </blockquote>
+        <p>+ Thư Phao-lô viết cho  Tít:</p>
+        <blockquote>
+          <p><em>&ldquo;Ta,  Phao-lô, tôi tớ của Đức Chúa Trời và sứ  đồ của Đức Chúa Jêsus Christ, … <strong>gởi cho
+            Tít</strong>, là con thật ta trong  đức tin chung.&rdquo; </em>(Tít 1:1,4)</p>
+        </blockquote>
+        <p>+ Thư Phao-lô viết cho  Phi-lê-môn:</p>
+        <blockquote>
+          <p><em>&ldquo;Phao-lô, kẻ tù của  Đức Chúa Jêsus Christ, và Ti-mô-thê, anh em chúng ta, <strong>gởi cho
+            Phi-lê-môn </strong>là người  rất yêu dấu và cùng làm việc với chúng ta.&rdquo;</em> (Phi-lê-môn 1)</p>
+        </blockquote>
+        <p>+ Thư Giăng viết  cho một người phụ nữ và gia đình bà:</p>
+        <blockquote>
+          <p><em>“Trưởng lão  (Giăng) <strong>đạt cho bà  được chọn kia cùng con cái bà </strong>mà tôi thật yêu dấu.” </em> &nbsp;(II Giăng 1)</p>
+        </blockquote>
+        <p>+ Thư Giăng viết  cho Gai-út:</p>
+        <p>    <em> &ldquo;Trưởng lão <strong>đạt cho Gai-út</strong> là người yêu dấu, mà tôi  thật thương yêu.&rdquo; </em>(III Giăng 3)</p>
+        <p> <strong>3. Bài học từ phần mở đầu của  các bức thư:</strong></p>
+  <p>Chúng ta học được  gì từ phần mở đầu của các thư tín trong  Tân Ước, là Lời Đức Chúa Trời? Chúng ta ghi  nhận nguyên tắc quan trọng được sử dụng  để viết thư như sau:</p>
+        <p>a. Trong các thư viết  cho một Hội Thánh địa phương, hoặc nhiều  Hội Thánh ở các nơi khác nhau, hoặc Hội Thánh  chung mà tên địa phương không được xác  định, thì tên của <strong>Hội  Thánh địa phương, hay Hội Thánh chung luôn luôn  được ưu tiên đặt trước tiên</strong>. Mặc  dù các Hội Thánh nầy đều có người lãnh đạo  như: giám mục (bishop), mục sư (pastor), trưởng  lão (elder), chấp sự (deacon) nhưng lại không  được nêu lên trong bức thư.</p>
+        <p>b. Trong trường hợp  có nêu lên người lãnh đạo Hội Thánh, thì <strong>Hội Thánh được nêu  lên trước</strong>, <strong>người</strong> <strong>lãnh đạo được  nêu lên sau</strong> (ví dụ thư viết cho Hội Thánh Phi-líp). </p>
+        <p>c. Các thư chủ yếu  viết cho cá nhân, tất nhiên tên của người nhận  thư phải được nêu lên.</p>
+        <p>Chúng ta thấy rõ, nếu  mục đích của thư đó viết cho người  nhận là Hội Thánh, thì HỘI THÁNH LUÔN LUÔN PHẢI  ĐƯỢC ƯU TIÊN NÊU LÊN TRƯỚC NGƯỜI  LÃNH ĐẠO. Lý do thật đơn giản: <strong>Hội Thánh là thân thể của  Chúa Jesus, là tập thể những người mà Chúa Jesus  đã mua chuộc bằng chính huyết của Ngài, nên Hội  Thánh phải được tôn trọng hơn một cá  nhân</strong>. </p>
+        <p>Hơn nữa, nếu cái  thư được viết cho đối tượng là  Hội Thánh, thì không có lý do gì để tên cá nhân lên trước  Hội Thánh, dù đó là người giữ chức vụ lãnh  đạo Hội Thánh.</p>
+        <p>Điều đáng buồn  là trong các Hội Thánh Việt Nam ngày nay, ở tất cả  mọi hệ phái, việc viết thư cho các Hội Thánh  đã không theo mẫu mực cao đẹp giống như  Kinh Thánh bày tỏ. Chúng ta thấy <strong>trong các văn thư</strong> <strong>gửi  cho Hội Thánh </strong>ngày nay, từ Hội Thánh nầy gửi  cho Hội Thánh khác, hay từ cá nhân gửi cho Hội Thánh,  người <strong>lãnh đạo lại  được nêu lên trước Hội Thánh của Đức  Chúa Trời!</strong></p>
+        <p>Không những điều  trên xuất hiện trong các văn thư mà thôi, nhưng còn  nghe được <strong>qua lời  nói trong phần mở đầu </strong>của những người  đứng trước Hội Thánh trong một buổi nhóm.</p>
+        <p>Phải chăng chúng ta sống  và làm theo nền văn hóa người Việt Nam, là dành sự  tôn trọng cho người lãnh đạo, nên người  lãnh đạo được nêu lên trước người  khác? Thật ra, sự tôn trọng người lãnh đạo  thể hiện đạo đức của người  dân và văn hóa của dân tộc đó, điều nầy  có thể thấy ở mọi dân tộc trên thế giới,  chứ không chỉ có ở dân tộc Việt Nam mà thôi.  Người Do Thái trong thời các sứ đồ cũng  vậy, họ cũng có nền văn hóa tôn trọng  người lãnh đạo, Lu-ca viết cho Thê-ô-phi-lơ:  &ldquo;Hỡi Thê-ô-phi-lơ quý nhân&rdquo; (most excellent Theophilus) (Lu-ca  1:1);  Phao-lô nói với quan tổng  đốc Phê-lít: &ldquo;Thưa quan lớn Phê-lít (most excellent  Felix)&rdquo; (Công Vụ Các Sứ Đồ 24:3); Phao-lô nói với  Phê-tu: &ldquo;Thưa quan lớn Phê-tu (most excellent Festus). Điều  đó có thể đúng trong mối quan hệ bên ngoài Hội  Thánh. Tuy nhiên, việc nêu người lãnh đạo lên  trước Hội Thánh trong thư viết cho Hội Thánh  là đưa sự <strong>tôn trọng  một cá nhân</strong> <strong>lên trên cả  Hội Thánh của Đức Chúa Trời</strong>. </p>
+        <p>Các văn thư gửi  cho các Hội Thánh địa phương ngày nay, tên Hội  Thánh địa phương cần phải được  nêu trước tên của người lãnh đạo (nếu  thật sự cần phải nêu tên và chức vụ  người lãnh đạo). Chúng ta đã biết nhiều  bức thư trong Tân Ước chỉ nêu tên Hội Thánh  mà không nhắc chi đến người lãnh đạo, mặc  dù có người lãnh đạo.</p>
+        <p>Cách viết phần mở  đầu của các thư tín viết cho các Hội Thánh  trong Tân Ước là mẫu mực đáng cho chúng ta bắt  chước ngày nay, vì đó là những bức thư  được Đức Chúa Trời soi dẫn.</p>
+        <p><strong><em>Tháng 3, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

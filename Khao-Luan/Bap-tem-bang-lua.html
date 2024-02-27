@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center">BÁP-TÊM BẰNG LỬA</p>
+        <p align="center">Trần đình  Tâm</p>
+        <p align="center"> </p>
+        <p><strong>Thế nào là Báp-têm bằng lửa?</strong></p>
+        <p>&ldquo;Báp-têm bằng lửa&rdquo;  được ghi trong Ma-thi-ơ và Lu-ca, cả hai sách đều  tường thuật về cùng một câu chuyện: </p>
+        <blockquote>
+          <p>&ldquo;<em>Về  phần ta, ta lấy nước mà làm phép báp-tem cho các  ngươi ăn năn; song Đấng đến
+            sau ta có
+            quyền phép hơn  ta, ta không đáng xách giày Ngài. Ấy là Đấng sẽ làm <strong>phép
+              báp-tem </strong>cho các ngươi  bằng Đức Thánh Linh và <strong>bằng  lửa</strong>.&rdquo;</em>  (Ma-thi-ơ 3:11)</p>
+          <p>&ldquo;<em>Phần  ta làm phép báp-tem cho các ngươi bằng nước; song có  một Đấng quyền phép
+            hơn ta sẽ đến, ta không  đáng mở dây giày Ngài. Chính Ngài sẽ làm <strong>phép báp-tem </strong>chocác ngươi bằng  Đức Thánh Linh và <strong>bằng  lửa</strong>.&rdquo;</em> (Lu-ca 3:16)</p>
+        </blockquote>
+        <p>Vì &ldquo;Báp-têm bằng lửa&rdquo;  đi kèm với &ldquo;Báp-têm bằng Đức Thánh Linh&rdquo; ở  các câu trên, nên một số nhà giải kinh (thuộc hệ  phái Ngũ Tuần) đã liên kết &ldquo;Báp-têm bằng Đức  Thánh Linh và bằng lửa&rdquo; với biến cố trong ngày Lễ  Ngũ Tuần<em>: &ldquo;Các môn đồ  thấy lưỡi rời rạc từng cái một,  như lưỡi bằng <strong>lửa</strong> hiện ra, đậu trên mỗi người trong bọn  mình. Hết thảy đều được <strong>đầy dẫy Đức  Thánh Linh</strong>&rdquo; </em>(Công Vụ Các Sứ Đồ 2:3,4). Dựa  vào sự xuất hiện &ldquo;lưỡi bằng lửa&rdquo;, những  nhà giải kinh thuộc hệ phái Ngũ Tuần cho rằng  trong ngày Lễ Ngũ Tuần, các môn đồ đã  được Báp têm bằng Đức Thánh Linh và Báp-têm bằng  lửa cùng một lúc. &ldquo;Lửa&rdquo; có nhiều ý nghĩa khác nhau  tùy theo từng trường hợp, &ldquo;lửa&rdquo; trong ngày Lễ  Ngũ Tuần làm hình bóng về sự &ldquo;thanh tẩy&rdquo; (purify),  tức là làm cho tinh sạch. Khi người ta đem vàng có  lẫn các chất cặn vào lửa, lửa sẽ có tác dụng  tẩy sạch các chất cặn và khiến vàng trở nên  nguyên chất. Khi các môn đồ được Báp-têm bằng  lửa, họ được tẩy sạch khỏi tội  bởi quyền năng của Đức Thánh Linh để  có thể kinh nghiệm đời sống phước hạnh  và sẵn sàng trong công tác phục vụ Chúa.</p>
+        <p>Cách giải thích tốt  hơn về &ldquo;Báp-têm bằng lửa&rdquo; là căn cứ vào bối  cảnh của câu chuyện mà qua đó Giăng Báp-tít đã  tuyên bố, và đồng thời xem xét văn mạch của  Ma-thi-ơ 3:11 nêu trên: </p>
+        <p>Giăng đang làm phép  Báp-têm <em>về sự ăn  năn </em>tại sông Giô-đanh cho nhiều người dân  thành Giê-ru-sa-lem và các vùng lân cận. Trong số đó có những  người Pha-ri-si và Sa-đu-sê cũng đến để  chịu Giăng làm Báp-têm cho. Người Pha-ri-si và  Sa-đu-sê là những người tự cho mình là người  công bình, tự hào mình thuộc dòng dõi Áp-ra-ham,  họ chú trọng đến lễ  nghi bên ngoài để người khác thấy mình đạo  đức công bình, họ là những người giả  hình. Giăng biết rõ những người nầy nên khi  thấy họ đến chịu Báp-têm, ông nói với họ: <em>&ldquo;Hỡi dòng dõi rắn lục  kia, ai đã dạy các ngươi tránh khỏi <strong>cơn giận ngày sau</strong>? Vậy,  các ngươi hãy kết quả xứng đáng với sự  ăn năn, và đừng tự khoe rằng: Áp-ra-ham là tổ  chúng ta; và ta nói cho các ngươi rằng Đức Chúa Trời  có thể khiến đá nầy sanh ra con cái cho Áp-ra-ham  được. Bây giờ cái búa đã để kề rễ  cây; vậy hễ cây nào không sanh trái tốt, thì sẽ phải  đốn và chụm.&rdquo; (Ma-thi-ơ 3:7-10)</em></p>
+        <p>Giăng cảnh cáo  người Pha-ri-si và Sa-đu-sê, nếu họ chỉ nhận  báp-têm bề ngoài mà không thật sự ăn năn trong  lòng, thì không tránh khỏi <strong>cơn  giận</strong> ngày sau. <em>&ldquo;Cơn giận&rdquo; </em>(wrath) chỉ về sự phán xét của Đức Chúa  Trời trong thời kỳ sau rốt. Sau khi Giăng tuyên bố <em>&ldquo; … Ấy là Đấng sẽ  làm <strong>phép báp-tem cho các ngươi</strong> bằng Đức Thánh Linh và <strong>bằng  lửa</strong>.&rdquo;</em>, hãy chú ý đến lời Giăng nói tiếp  sau đây<em>: &ldquo;Tay Ngài cầm nia mà  dê thật sạch sân lúa mình và Ngài sẽ chứa lúa vào kho,  còn rơm rạ thì <strong>đốt  trong lửa chẳng hề tắt</strong>.&rdquo;</em> (câu 12). Giăng  Báp-tít nêu ra hình ảnh của sự phán xét trong ngày sau cùng: <em>&ldquo;lúa&rdquo;</em> chỉ về những  người thuộc về Chúa, sẽ được  đem vào <em>&ldquo;kho&rdquo;</em>, chỉ về  Nước Thiên Đàng (Ma-thi-ơ 25:34); <em>&ldquo;rơm rạ&rdquo;</em> chỉ về những người  không thuộc về Chúa, sẽ bị <em>&ldquo;đốt trong lửa chẳng hề tắt&rdquo;</em>, chỉ  về hồ lửa đời đời (Ma-thi-ơ 25:41;  Khải Huyền 20:14,15).</p>
+        <p>Chúng ta cũng học  được sự dạy dỗ tương tự trong  Ma-thi-ơ 13:40-42: <em>&ldquo;Còn người  ta nhổ cỏ lùng mà <strong>đốt  trong lửa</strong> thể nào, thì ngày tận thế cũng sẽ  như vậy; Con người sẽ sai các thiên sứ Ngài  thâu mọi gương xấu và những kẻ làm ác khỏi  nước Ngài, và <strong>quăng những  người đó vào lò lửa</strong>, là nơi sẽ có khóc lóc  và nghiến răng.&rdquo;</em></p>
+        <p>Như vậy, khi  Giăng giới thiệu Chúa Jesus, là Đấng sẽ  đến, chính Ngài sẽ làm báp-têm bằng Đức Thánh  Linh và bằng lửa, Giăng muốn nói rằng: <strong>Những ai ăn năn tội  và tin Ngài, sẽ được Báp-têm bằng Đức  Thánh Linh, những ai không ăn năn và từ chối Ngài,  sẽ chịu Báp-têm bằng lửa, tức là sẽ bị  quăng vào hồ lửa đời đời trong thời  kỳ sau cùng</strong>. Báp-têm bằng Đức Thánh Linh  được áp dụng trong thời đại Hội  Thánh, Báp-têm bằng lửa sẽ được thực hiện  trong ngày sau cùng, là ngày phán xét của Đức Chúa Trời.</p>
+        <p>Trong ngày Lễ Ngũ Tuần,  hình ảnh &ldquo;lưỡi bằng lửa&rdquo; xuất hiện  đáp đậu trên các môn đồ, thật ra không phải  là lửa thật, nhưng là những hình ảnh giống  như (like) lưỡi bằng lửa. Ngoài hình ảnh &ldquo;lửa&rdquo;  ra, cần phải nêu thêm một yếu tố khác là <strong>gió</strong>: &ldquo;có <strong>tiếng</strong> (sound: âm thanh) từ trời đến <strong>như tiếng gió thổi</strong> ào  ào, đầy khắp nhà&rdquo; (câu 2). Âm thanh của <em>&ldquo;gió&rdquo;</em> và hình ảnh của <em>&ldquo;lửa&rdquo; </em>là những <strong>dấu hiệu</strong> (sign) chỉ về  sự hiện diện của Đức Thánh Linh, để  xác chứng cho các môn đồ rằng &ldquo;điều Cha  đã hứa&rdquo; đã được ứng nghiệm: Họ  được Báp-têm bằng Đức Thánh Linh, mở  đầu trang sử thành lập Hội Thánh. </p>
+        <p>&ldquo;Báp-têm bằng lửa&rdquo;  trong lời tuyên bố của Giăng Báp-tít không liên quan gì  đến &ldquo;lưỡi bằng lửa&rdquo; xuất hiện  trong Ngày Lễ Ngũ Tuần.</p>
+        <p>Tóm lại, <strong>Báp-têm bằng lửa</strong> chỉ về  số phận của những người ở ngoài Chúa  Jesus, sẽ bị &ldquo;báp-têm trong hồ lửa đời  đời&rdquo;. Xin chú ý: Giăng Báp-tít đã nói &ldquo;Báp-têm bằng  lửa&rdquo; đối với những người Pha-ri-si và  Sa-đu-sê lúc ấy, nhưng Chúa Jesus không hề nói về  &ldquo;Báp-têm bằng lửa&rdquo; cho các môn đồ của Ngài<em>: &ldquo;Vì Giăng đã làm phép báp-tem bằng  nước, nhưng trong ít ngày, các ngươi sẽ chịu  phép báp-tem bằng Đức Thánh Linh.&rdquo;</em> (Công Vụ Các Sứ  Đồ 1:5)</p>
+        <p><strong><em>Tháng 1, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

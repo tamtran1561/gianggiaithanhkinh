@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <div>
+    <p align="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>CÓ BAO NHIÊU VUA HÊ-RỐT  ĐƯỢC KỂ TRONG TÂN ƯỚC?</strong></p>
+    <p align="center"> </p>
+    <p><strong>Câu hỏi</strong>: Có bao nhiêu vị vua Hê-rốt được  nói đến trong Kinh Thánh?</p>
+    <p><strong>Giải đáp</strong>: Có 6 vị vua Hê-rốt khác nhau  nhưng cùng gia tộc được Tân Ước nói  đến:</p>
+    <p><strong>1. Hê-rốt Đại đế (Herod the Great).</strong></p>
+    <p>- Là vị vua trùng tu đền thờ Giê-ru-sa-lem.</p>
+    <p>- Cai trị xứ  Giu-đê lúc Chúa Jesus giáng sanh (Ma-thi-ơ 2:1).</p>
+    <p>- Ông ra lệnh giết  các bé trai dưới hai tuổi trong thành Bết-lê-hem  (Ma-thi-ơ 2:16).</p>
+    <p><strong>2. Hê-rốt A-chê-la-u (Herod Archelaus):</strong> Con của Hê-rốt  Đại đế.</p>
+    <p>- Sau khi Hê-rốt Đại  đế qua đời, ông làm vua xứ Giu-đê  (Ma-thi-ơ 2:22)</p>
+    <p><strong>3. Hê-rốt An-ti-ba (Herod Antipas):</strong> Con của Hê-rốt  Đại đế. Em ruột của A-chê-la-u.</p>
+    <p>- Cai trị xứ Ga-li-lê  (Lu-ca 3:1).</p>
+    <p>- Ông lấy người  phụ nữ tên Hê-rô-đia, là vợ của Hê-rốt Phi-líp,  em trai cùng cha khác mẹ với ông (Mác 6:17). </p>
+    <p>- Ông bắt giam Giăng  Báp-tít vì Giăng lên án cuộc hôn nhân bất chính nói trên  (Ma-thi 14:1-5; Mác 6:17,18) </p>
+    <p>- Ông ra lệnh chém đầu  Giăng báp-tít trong buổi tiệc sinh nhật của mình, vì  nghe theo lời  xúi giục của hai mẹ con  Hê-rô-đia và Sa-lô-mê (Ma-thi-ơ 14:6-10; Mác 6:21-28). </p>
+    <p>- Ông rất muốn gặp  mặt Chúa Jesus (Lu-ca 9:7-9).</p>
+    <p>- Ông muốn giết Chúa  Jesus (Lu-ca 13:31).</p>
+    <p>- Chúa Jesus bị dẫn  đến vua nầy khi Chúa bị bắt (Lu-ca 23:7-12).</p>
+    <p><strong>4. Hê-rốt Phi-líp (Herod Philip):</strong> Con của Hê-rốt  Đại đế, em khác mẹ với Hê-rốt An-ti-ba.</p>
+    <p>- Cai trị xứ Y-tu-rê  (Lu-ca 3:1).</p>
+    <p>- Ông cưới cháu gái của  mình là Hê-rô-đia (Hê-rô-đia là con gái của Herod Aristobulus,  một người con trai khác của Hê-rốt Đại  đế, Tân Ước không nói gì về ông nầy).  Hê-rô-đia có con gái là Sa-lô-mê (Tân Ước không nêu tên Sa-lô-mê),  là cô gái khiêu vũ trong ngày sinh hật của Hê-rốt An-ti-ba  (Mác 6:22)</p>
+    <p><strong>5. Hê-rốt Ạc-ríp-ba I (Herod Agrippa I):</strong> Cháu nội  của Hê-rốt đại đế, con của Aristobulus.</p>
+    <p>- Ông giết sứ đồ  Gia-cơ (Công Vụ Các Sứ Đồ 12:2).</p>
+    <p>- Ông bắt giam sứ  đồ Phi-e-rơ (Công Vụ Các Sứ Đồ 12:4,5).</p>
+    <p>- Ông bị thiên sứ của  Chúa đánh, sau đó bệnh chết (Công Vụ Các Sứ  Đồ 12:23)</p>
+    <p><strong>6. Hê-rốt Ạc-ríp-ba II (Herod Agrippa II):</strong> Con của  Hê-rốt Ạc-ríp-ba I.</p>
+    <p>- Ông được sứ  đồ Phao-lô làm chứng về Tin Lành (Công Vụ các Sứ  Đồ 26).</p>
+    <p>- Ông đã phát biểu một  lời đáng ghi nhớ sau khi nghe Phao-lô giảng: <em>&ldquo;Thiếu chút nữa ngươi  khuyên ta trở nên tín đồ Đấng Christ.&rdquo;</em> (Almost  thou persuadest me to be a Christian) (Công Vụ Các Sứ Đồ  26:28)</p>
+    <p><u>Sơ đồ sau  đây trình bày sự liên hệ trong gia đình Hê-rốt</u>:  Xin chú ý về những người con trai của Hê-rốt  đại đế: Hê-rốt Đại đế có nhiều vợ, Aristobulus  là con của bà Mariamne I; Phi-líp là con của bà Cleopatra;  A-chê-la-u và An-ti-ba cùng là con của bà Malthace.</p>
+    <p><img src="/Image/image001.jpg" alt="Herod Family" width="780" height="597" v:shapes="Picture_x0020_2" /></p>
+    <p><strong><em>Trần Đình Tâm</em></strong></p>
+  </div>
+  <p align="center">&nbsp;</p>
+  <p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

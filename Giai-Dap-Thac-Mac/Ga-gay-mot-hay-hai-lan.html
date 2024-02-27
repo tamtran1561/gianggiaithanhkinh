@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center"><strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gà gáy một hay hai lần  sau khi Phi-e-rơ chối Chúa?</strong></p>
+  <p align="center">&nbsp;</p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Ba sách Phúc Âm Ma-thi-ơ,  Lu-ca và Giăng cho thấy ngay sau khi Phi-e-rơ chối Chúa,  gà gáy một lần. Nhưng sách Mác lại cho biết gà gáy  đến hai lần. Ai đúng? Làm thế nào giải quyết  sự mâu thuẫn giữa các sách Phúc Âm?</p>
+  <p>Khảo sát sự tường  thuật câu chuyện trong cả bốn sách như sau:</p>
+  <p>1. <u>Tường thuật  của Ma-thi-ơ</u>:</p>
+  <p><em>&ldquo;Đức Chúa Jêsus phán rằng: Quả thật, ta  nói cùng ngươi, chính đêm nay, trước khi <strong>gà gáy</strong>, ngươi sẽ chối  ta ba lần.&rdquo;</em> (Ma-thi-ơ 26:34)</p>
+  <p><em>&ldquo;Một chặp nữa, những kẻ ở gần  đó đến gần nói với Phi-e-rơ rằng: Chắc  thật, ngươi cũng thuộc về đảng ấy,  vì tiếng nói của ngươi khai ngươi ra. Người  bèn rủa mà thề rằng: Ta không biết người  đó đâu! Tức thì <strong>gà gáy</strong>.  Phi-e-rơ nhớ lại lời Đức Chúa Jêsus đã  phán rằng: Trước khi gà gáy, ngươi sẽ chối  ta ba lần. Đoạn, người đi ra và khóc lóc cách  đắng cay.&rdquo; </em>(Ma-thi-ơ 26:73-75)</p>
+  <p>2. <u>Tường thuật  của Lu-ca</u>:</p>
+  <p>&ldquo;Đức Chúa Jêsus  đáp rằng: Hỡi Phi-e-rơ, ta nói cùng ngươi, hôm  nay khi <strong>gà chưa gáy</strong>,  ngươi sẽ ba lần chối không biết ta.&rdquo; (Lu-ca  22:34&rdquo;</p>
+  <p><em>&ldquo;Nhưng Phi-e-rơ cãi rằng: Hỡi người,  ta không biết ngươi nói chi! Đang lúc Phi-e-rơ còn  nói, thì <strong>gà liền gáy</strong>; Chúa xây  mặt lại ngó Phi-e-rơ. Phi-e-rơ nhớ lại lời  Chúa đã phán cùng mình rằng: Hôm nay trước khi gà  chưa gáy, ngươi sẽ chối ta ba lần.&rdquo; </em>(Lu-ca  22:60-61)</p>
+  <p>3. <u>Tường thuật  của Giăng</u>:</p>
+  <p>&ldquo;Đức Chúa Jêsus  đáp rằng: Ngươi liều sự sống  ngươi vì ta sao! Quả thật, quả thật, ta nói  cùng ngươi, khi <strong>gà chưa  gáy</strong>, ngươi đã chối ta ba lần!&rdquo; (Giăng  13:38)</p>
+  <p><em>&ldquo;Phi-e-rơ lại chối một lần nữa; tức  thì <strong>gà gáy</strong>.&rdquo; </em>(Giăng 18:27)</p>
+  <p>4. <u>Tường thuật  của Mác</u>:</p>
+  <p><em>&ldquo;Đức Chúa Jêsus đáp rằng: Quả thật,  ta nói cùng ngươi, hôm nay, cũng trong đêm nay, trước  khi <strong>gà gáy hai lượt</strong>,  ngươi sẽ chối ta ba lần.&rdquo;</em> (Mác 14:30)</p>
+  <p>&ldquo;Nhưng người chối  rằng: Ta không biết, ta không hiểu ngươi nói chi.  Đoạn, người bước ra tiền đường,  thì <strong>gà gáy</strong>.&rdquo; (Mác 14:68)</p>
+  <p> &ldquo;Người bèn rủa mà thề rằng:  Ta chẳng hề quen biết với người mà các  ngươi nói đó! Tức thì gà <strong>gáy lần thứ hai</strong>; Phi-e-rơ bèn nhớ lại  lời Đức Chúa Jêsus đã phán rằng: Trước  khi <strong>gà gáy hai lượt</strong>,  ngươi sẽ chối ta ba lần. Người tưởng  đến thì khóc.&rdquo; (Mác 14:71,72).</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>1. Nhận xét bản  tường thuật của Ma-thi-ơ, Lu-ca và Giăng: Cả  ba ông đều không chú ý đến sự kiện <strong>có</strong> <strong>bao  nhiêu tiếng gà gáy, </strong>nên chỉ kể rằng sau khi  Phi-e-rơ chối Chúa lần cuối cùng, là lần thứ  ba, thì gà liền gáy. Cả ba ông đều cho biết có<strong> </strong>tiếng<strong> gà gáy</strong> sau khi Phi-e-rơ chối Chúa lần cuối  cùng không có nghĩa là gà chỉ gáy một lần mà thôi.</p>
+  <p>2. Nhận xét bản  tường thuật của Mác: Qua lời cảnh báo tiên  tri của Chúa Jesus và câu chuyện Phi-e-rơ thật đã  chối Chúa sau đó, cả hai đều cho thấy gà gáy  hai lần. Như vậy, Mác trình bày chi tiết hơn và  chính xác hơn. Đọc trọn câu chuyện Phi-e-rơ chối  Chúa trong Mác 14:66-72, chúng ta sẽ ghi nhận sự kiện xãy  ra theo thứ tự như sau:</p>
+  <p>+ Sau khi Phi-e-rơ chối  Chúa lần thứ nhất – <strong>Gà  gáy lần thứ nhất</strong> (Câu 67,68).</p>
+  <p>+ Phi-e-rơ chối Chúa lần  thứ hai (câu 69,70a).</p>
+  <p>+ Phi-e-rơ chối Chúa lần  thứ ba – <strong>Gà gáy lần thứ  hai</strong> (70b,71,72).</p>
+  <p>Có hai lần gà gáy  nhưng không xãy ra trong cùng một thời điểm,  nhưng cách nhau khoảng một thời gian. </p>
+  <p>Đúng như lời Chúa  Jesus cảnh báo từ trước: &ldquo;<em>Quả thật, ta nói cùng ngươi, hôm nay, cũng  trong đêm nay, trước khi <strong>gà  gáy hai lượt </strong>(cock crow twice), ngươi sẽ chối  ta ba lần&rdquo;</em></p>
+  <p>Như vậy, tiếng  gà gáy trong sách Ma-thi-ơ, Lu-ca và Giăng là tiếng gà gáy lần  thứ hai trong sách Mác.</p>
+  <p>Tóm lại, không có sự  mâu thuẫn trong các sách Phúc Âm. Ma-thi-ơ, Lu-ca và Giăng chỉ  chú ý đến tiếng gà gáy lần thứ hai nên không  tường thuật tiếng gà gáy đầu tiên. Ba ông chỉ  chú ý đặc biệt đến tiếng gà cuối cùng  vì tiếng gà gáy cuối cùng sau ba lần chối Chúa đã  khiến ông Phi-e-rơ thức tỉnh, nhớ lại lời  phán của Chúa Jesus, và ông đã ăn năn, khóc lóc cách  đau đớn về hành động của mình.</p>
+  <p> Trần Đình Tâm</p>
+<p align="center" class="MsoNormal" style="text-align:left">&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

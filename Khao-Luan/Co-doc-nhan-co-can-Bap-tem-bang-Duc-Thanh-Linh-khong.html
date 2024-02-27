@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>CƠ-ĐỐC NHÂN CÓ CẦN BÁP-TÊM BẰNG ĐỨC THÁNH LINH?</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Các vị lãnh đạo  Hệ Phái Ngũ Tuần truyền dạy cho các con dân Chúa cần  được Báp-têm bằng Đức Thánh Linh, như là  một sự trãi nghiệm lần thứ hai về Đức  Thánh Linh. Giáo lý nầy có được đặt trên nền  tảng Thánh Kinh hay không?</p>
+        <p><strong>1. Đức Thánh Linh có được ban xuống  trước Lễ Ngũ Tuần?</strong></p>
+        <p>Đức Thánh Linh có  được ban xuống trước Lễ Ngũ Tuần?  Hay Đức Thánh Linh có được ban xuống trong thời  kỳ Cựu Ước?</p>
+        <p>Kể từ Lễ  Ngũ Tuần trở về trước, Kinh Thánh cho biết  Đức Thánh Linh có được ban xuống. Chúng ta ghi  nhận vài nhân vật được đầy dẫy  Đức Thánh Linh như: Giăng Báp-tít (Lu-ca 1:15),  Ê-li-sa-bét (Lu-ca 1:41), Xa-cha-ri (Lu-ca 1:67); xa hơn về trước  có Ê-li-sê (II Các Vua 2:15), Ba-la-am (Dân Số Ký 24:2), Ghê-đê-ôn  (Các Quan Xét 6:34), Giô-sép (Sáng Thế Ký 41:38) v.v... Tuy nhiên, cách  Đức Thánh Linh hành động trong thời Cựu  Ước khác với thời kỳ Tân Ước, chúng ta  có thể phân biệt các điểm khác nhau căn bản như  sau:</p>
+        <p>a) Ở TRÊN và Ở TRONG:</p>
+        <p>+ Trong thời kỳ Cựu  Ước (trước Lễ Ngũ Tuần), vì chưa  đến thời điểm Chúa Jesus xuống trần  gian chịu chết cho nhân loại, nên Đức Thánh Linh  thường được ban xuống BÊN TRÊN (come upon) một  cá nhân nào đó:</p>
+        <blockquote>
+          <p><em>&ldquo;Sa-mu-ên lấy sừng  dầu, xức cho người ở giữa các anh người.  Từ ngày đó về sau, Thần của Đức Giê-hô-va cảm  động (upon) Đa-vít.&rdquo;</em> (I Sa-mu-ên 16:13)</p>
+          <p><em>&ldquo;Khi Sau-lơ đến  Ghi-bê-a, có một đoàn tiên tri đến đón người.  Thần của Đức Giê-hô-va cảm động (upon)  người, người nói tiên tri giữa chúng.&rdquo; </em>(I Sa-mu-ên  10:10)</p>
+          <p><em>&ldquo;Thần  Đức Chúa Trời cảm động (upon) A-xa-ria, con  trai của Ô-đết.&rdquo;</em> (II Sử Ký 15:1)</p>
+        </blockquote>
+        <p>+ Trong thời kỳ sau Lễ  Ngũ Tuần, Đức Thánh Linh được ban xuống  và ngự BÊN TRONG (dwell) người tin nhận Chúa Jesus:</p>
+        <blockquote>
+          <p><em>&ldquo; … tức là Thần  Lẽ Thật, mà thế gian không thể nhận lãnh  được, vì chẳng thấy và chẳng biết Ngài; nhưng các  ngươi biết Ngài, vì Ngài sẽ ở với các  ngươi và sẽ ở trong (dwell) các ngươi.&rdquo;</em> (Giăng 14:17)</p>
+          <p><em>&ldquo;Anh  em há chẳng biết mình là đền thờ của Đức  Chúa Trời, và Thánh Linh Đức Chúa Trời ở trong (dwell) anh em sao?&rdquo;</em> (I Cô-rinh-tô 3:16)</p>
+        </blockquote>
+        <p>b) TẠM THỜI và  VĨNH VIỄN:</p>
+        <p>+ Trong thời Cựu  Ước, Đức Thánh Linh đến giúp đỡ, vận  hành trên một số cá nhân cách TẠM THỜI, trong khoảng  một thời gian nào đó để họ thực hiện  và hoàn tất công tác Đức Chúa Trời giao phó:</p>
+        <blockquote>
+          <p><em>&ldquo;Khi  đến Lê-chi, dân Phi-li-tin ra đón người và la tiếng  reo mừng. Song Thần của Đức Giê-hô-va cảm động  Sam-sôn, những dây cột cánh tay người trở thành  như chỉ gai bị lửa đốt, tàn rớt khỏi tay  người.&rdquo;</em> (Các Quan Xét 15:14)</p>
+          <p><em>&ldquo;Thần  của Đức Giê-hô-va bèn cảm động Giép-thê;  người trải qua Ga-la-át và Ma-na-se, sang đến Mích-ba ở  Ga-la-át, rồi từ Mích-ba ở Ga-la-át, người đi  đánh dân Am-môn.&rdquo;</em> (Các Quan Xét 11:29)</p>
+        </blockquote>
+        <p>+ Trong thời đại  Hội Thánh, Đức Thánh Linh cư trú VĨNH VIỄN  trong người tin nhận Chúa Jesus: </p>
+        <blockquote>
+          <p><em>&ldquo;Ta lại sẽ nài  xin Cha, Ngài sẽ ban cho các ngươi một Đấng  Yên ủi khác, để ở với các ngươi đời đời.&rdquo;</em> (Giăng 14:16)</p>
+          <p><em>&ldquo;Nầy, Ta thường ở cùng  các ngươi luôn cho đến tận thế.&rdquo; </em>(Ma-thi-ơ  28:20) [Chúa Jesus có ý nói Ngài sẽ ở với  chúng ta qua Đức Thánh Linh <em>ở  trong</em> chúng ta.] </p>
+        </blockquote>
+        <p>c) ĐƯỢC CHỌN  LỰA CHO CÔNG TÁC ĐẶC BIỆT và TIN CHÚA JESUS:</p>
+        <p>+ Trong thời kỳ  trước Lễ Ngũ Tuần, không phải tất cả  mọi người (kể cả dân Do Thái, là dân tộc  được Chúa tuyển chọn) đều được  ban cho Đức Thánh Linh, nhưng Đức Chúa Trời CHỌN  LỰA một số người nào đó theo ý muốn của  Ngài, những người nầy nhận được  Đức Thánh Linh để thi hành một công tác đặc  biệt nào đó được Ngài chỉ định:</p>
+        <blockquote>
+          <p><em>&ldquo;Nầy,  ta đã kêu tên Bết-sa-lê-ên, con trai của U-ri, cháu của  Hu-rơ, trong chi phái Giu-đa. Ta đã làm cho người  đầy dẫy Thần của Đức Chúa Trời, sự  khôn ngoan, sự thông sáng, và sự hiểu biết  để làm mọi thứ nghề thợ, đặng bày  ra và chế tạo đồ vàng, bạc và đồng,  đặng khắc và khảm ngọc,  đẽo gỗ và làm được mọi thứ nghề  thợ.&rdquo;</em> (Xuất Ê-díp-tô Ký 31:2-5)</p>
+          <p><em>&ldquo;Đoạn,  ta sẽ ngự xuống, nói chuyện tại đó với  ngươi; ta sẽ lấy Thần cảm ngươi mà  ban cho những người  đó, để họ chịu gánh nặng về dân sự  với ngươi, và ngươi không phải gánh một mình.&rdquo;</em> (Dân Số  Ký 11:17)</p>
+        </blockquote>
+        <p>+ Trong thời Tân Ước,  Đức Chúa Trời không &ldquo;chọn lựa&rdquo; một người  đặc biệt cho một công tác đặc biệt nào,  nhưng tất cả những ai TIN NHẬN CHÚA JESUS đều  được nhận lãnh Đức Thánh Linh. Đức  Thánh Linh ban ân tứ cho tất cả con cái Chúa để họ  phục vụ Chúa và gây dựng Hội Thánh.</p>
+        <blockquote>
+          <p><em>&ldquo;Tôi chỉ hỏi anh  em một câu nầy: Ấy là cậy các việc luật  pháp hay là bởi <strong>nghe</strong> và <strong>tin </strong>mà anh em đã nhận  được Đức Thánh Linh?&rdquo; </em>(Ga-la-ti 3:2)</p>
+          <p><em>&ldquo;Ngài  phán điều đó chỉ về Đức Thánh Linh mà  người nào <strong>tin</strong> Ngài sẽ  nhận lấy.&rdquo; </em>(Giăng 8:39)</p>
+        </blockquote>
+        <p>Tóm lại, từ kỳ  thời Cựu Ước cho đến Lễ Ngũ Tuần  (Công Vụ Các Sứ Đồ chương 2), Đức  Thánh Linh được ban xuống cách tạm thời trên  những cá nhân được Đức Chúa Trời chọn  lựa, và bởi quyền năng của Đức Thánh  Linh, những nhân vật nầy thi hành và hoàn tất công tác  Đức Chúa Trời giao phó. Sau ngày Lễ Ngũ Tuần,  Đức Thánh Linh được ban xuống và cư trú  vĩnh viễn bên trong tất cả mọi người  tin nhận Chúa Jesus. Công việc của Đức Thánh Linh  trong đời sống của con cái Chúa trong thời Tân  Ước thì phong phú hơn nhiều so với thời Cựu  Ước: Ngài cáo trách tội khiến chúng ta ăn năn,  Ngài tái sanh chúng ta, Ngài ban ân tứ để phục vụ,  Ngài giúp chúng ta hiểu Kinh Thánh, Ngài hướng dẫn chúng  ta sống theo Lời Chúa v.v… </p>
+        <p><strong>Đối đáp với Hệ phái Ngũ Tuần:</strong></p>
+        <p>Hệ phái Ngũ Tuần  căn cứ vào sự kiện Đức Thánh Linh có  được ban cho trước Lễ Ngũ Tuần: </p>
+        <p>a) Đức Thánh Linh có  được ban xuống và hành động trong môn đồ  TRƯỚC ngày Lễ Ngũ Tuần.</p>
+        <p>b) TRONG ngày Lễ Ngũ tuần,  các môn đồ được báp-têm bằng Đức  Thánh Linh và được <em>nói tiếng  lạ</em>. </p>
+        <p>Từ đó, các lãnh đạo  của Hệ phái Ngũ Tuần giảng dạy: Con cái Chúa  ngày nay có thể nhận báp-têm bằng Đức Thánh Linh  như là một sự từng trãi thứ hai về Đức  Thánh Linh, được thể hiện qua ân tứ nói tiếng  lạ. Họ cho rằng con cái Chúa hôm nay có thể kinh nghiệm  những gì mà các môn đồ khi xưa đã trãi nghiệm  trong ngày Lễ Ngũ Tuần: Đó là được Báp-têm  bằng Đức Thánh Linh và dấu hiệu kèm theo là <em>nói</em> hay <em>cầu nguyện</em> bằng tiếng lạ.</p>
+        <p>Rất khó có thể chấp  nhận một giáo lý như thế, vì trong thời kỳ <strong>TRƯỚC</strong> Lễ Ngũ Tuần,  những người được nhận Đức  Thánh Linh <strong>không phải</strong> là những  người <strong>đã tin</strong> <strong>Chúa Jesus</strong> [là đức tin  đặt trên nền tảng sự chết và sống lại  của Chúa Jesus, đơn giản là vì Chúa Jesus chưa chết  và sống lại để họ biết, thấy mà tin]. Như  vậy, chúng ta không thể dùng trường hợp một  số người được ban cho Đức Thánh  Linh trước Lễ Ngũ Tuần để đem áp dụng  cho con cái Chúa trong Hội Thánh ngày nay, là những người  đã đặt đức tin nơi sự chết và sự  sống lại của Chúa Jesus.</p>
+        <p><strong>2. Ý nghĩa của Lu-ca 11:13: Cầu xin được  báp-têm bằng Đức Thánh Linh?</strong></p>
+        <blockquote>
+          <p><em>&ldquo;Vậy  nếu các ngươi là người xấu, còn biết cho  con cái mình vật tốt thay, huống chi Cha các ngươi ở trên trời  lại chẳng <strong>ban Đức  Thánh Linh cho người xin Ngài</strong>!&rdquo; </em>(Lu-ca 11:13)</p>
+        </blockquote>
+        <p>Con cái Chúa thuộc hệ  phái Ngũ Tuần căn cứ vào câu Kinh Thánh trên, cho rằng  tín đồ ngày nay, là người đã tin Chúa rồi, cần  phải <strong>cầu xin</strong> Đức  Chúa Cha ban Đức Thánh Linh cho mình; điều nầy  được thể hiện qua kinh nghiệm nói <em>tiếng lạ</em>, và họ tin rằng  đó là dấu hiệu hay bằng chứng cho thấy người  ấy được <em>báp-têm bằng  Đức Thánh Linh</em> (hay báp-têm <em>trong</em> Đức Thánh Linh). </p>
+        <p><strong>Đối đáp với hệ Phái Ngũ Tuần</strong>:</p>
+        <p>Khi Chúa Jesus phán dạy câu  trên, có phải Chúa thật sự muốn dạy chúng ta ngày  nay cần cầu xin để được báp-têm trong  Đức Thánh Linh? Nếu không cầu xin, sẽ không nhận  được báp-têm trong Đức Thánh Linh?</p>
+        <p>Văn mạch của  Lu-ca 11:13 nằm trong Lu-ca 11:1-13. Câu 1-4 dạy các môn đồ  phải cầu nguyện như thế nào; câu 5-13 dạy về  sự đáp ứng của Chúa đối với lời cầu  xin của môn đồ. Chúa phán trong câu 11 và 12: <em>&ldquo;Trong các ngươi có ai làm cha,  khi con mình xin bánh mà cho đá chăng? Hay là xin cá, mà cho rắn  thay vì cá chăng? Hay là xin trứng, mà cho bò cạp chăng?&rdquo;</em>,  rồi Chúa kết luận trong câu 13: &ldquo;<em>Vậy nếu các ngươi là người xấu,  còn biết cho con cái mình vật tốt thay, huống chi Cha các  ngươi ở trên trời lại chẳng ban Đức  Thánh Linh cho người xin Ngài!&rdquo;. </em>Chúa Jesus dùng ví dụ  người con xin cha mình những thứ cần thiết,  và người cha cho con những điều cần thiết.  Chúa Jesus cho biết bản chất của con người vốn  là xấu (do hậu quả của tội lỗi) mà còn biết  dành cho con của mình những điều tốt, huống  chi Đức Chúa Trời, là Đấng giàu lòng yêu  thương lại không ban cho con cái Ngài <strong>điều tốt nhất</strong> hay sao?  Chúa Jesus liên kết &ldquo;điều tốt  nhất&rdquo; với &ldquo;Đức Thánh Linh&rdquo;, Đức Thánh Linh là  điều tốt nhất mà Đức Chúa Cha sẽ ban  cho các môn đồ. Như vậy, ý nghĩa thật sự  của Lu-ca 11:13 là Đức Thánh Linh là điều tốt  nhất mà các môn đồ cần và họ sẽ nhận  được trong ngày Lễ Ngũ Tuần. Chúa Jesus ngụ  ý nói &ldquo;điều tốt nhất&rdquo; sẽ xãy ra trong ngày Lễ  Ngũ Tuần, chứ không phải ngay lúc ấy, vì Đức  Thánh Linh chỉ được ban xuống sau khi Chúa Jesus  được vinh hiển, tức là sau khi Ngài trở về  trời. Chúa Jesus phán: <em>&ldquo;Nếu  người nào khát, hãy đến cùng ta mà uống. <strong>Kẻ nào tin ta</strong> thì sông nước  hằng sống sẽ chảy từ trong lòng mình, y như  Kinh Thánh đã chép vậy. Ngài phán điều đó chỉ  về <strong>Đức Thánh Linh mà  người nào tin Ngài sẽ nhận lấy</strong>; bởi <strong>bấy giờ</strong> <strong>Đức Thánh Linh chưa ban xuống,  vì Đức Chúa Jêsus chưa được vinh hiển</strong>&rdquo;</em> (Giăng 7:37-39)</p>
+        <p>Dễ thấy rằng  khi Chúa Jesus phán &ldquo;bấy giờ Đức Thánh Linh chưa  được ban xuống&rdquo;, Ngài ám chỉ về thời  điểm Đức Thánh Linh sẽ được ban xuống  trong ngày Lễ Ngũ Tuần (mở ra thời kỳ Ân  điển), như thế không có gì mâu thuẫn với sự  kiện Đức Thánh Linh đã được ban xuống  thuộc thời kỳ Cựu Ước. </p>
+        <p>Chân lý mà Chúa Jesus bày tỏ  bên trên rất rõ ràng cho thời đại hôm nay, là thời  đại mà Chúa Jesus đã hoàn tất sự chuộc tội  trên thập giá, Ngài đã về trời, đã ngự bên hữu  Đức Chúa Trời, đã được vinh hiển: Bất  cứ ai tin nhận Ngài sẽ nhận được sông  nước hằng sống, tức là được <em>nhận lãnh</em> Đức Thánh  Linh, cũng được gọi là <em>Báp-têm bằng Đức Thánh Linh </em>vậy (Công Vụ  Các Sứ Đồ 1:5).</p>
+        <p>Ngày nay, những người  đã tin Chúa rồi, có cần phải cầu nguyện, khẩn  xin để được báp-têm bằng Đức Thánh  Linh không? Câu trả lời là KHÔNG, vì không có một một  câu Kinh Thánh nào trong Tân Ước, dạy rằng một  người đã tin nhận Chúa Jesus (đã nhận lãnh  Đức Thánh Linh rồi) phải cầu xin để  được báp-têm bằng Đức Thánh Linh.</p>
+        <p><strong>3. Ý nghĩa của Công Vụ Các Sứ Đồ  8:14-17: Báp-têm bằng Đức Thánh Linh cho những người  đã tin Chúa từ trước?</strong></p>
+        <p>Các vị lãnh đạo  Hệ phái Ngũ Tuần sử dụng phân đoạn Kinh  Thánh Công Vụ Các Sứ Đồ 8:14-17 để truyền  dạy giáo lý về Báp-têm trong Đức Thánh Linh cho những  người đã tin Chúa rồi:</p>
+        <blockquote>
+          <p><em>&ldquo;Các  sứ đồ vẫn ở tại thành Giê-ru-sa-lem, nghe  tin xứ Sa-ma-ri <strong>đã nhận  lấy đạo Đức Chúa Trời</strong>, bèn sai Phi-e-rơ và  Giăng đến đó. Hai người tới nơi, cầu  nguyện cho các môn đồ mới, để cho  được nhận lấy Đức Thánh Linh. Vì Đức  Thánh Linh chưa giáng xuống trên một ai trong bọn đó; họ  chỉ nhân danh Đức Chúa Jêsus mà chịu phép báp-tem thôi.  Phi-e-rơ và Giăng bèn đặt  tay trên các môn đồ, thì <strong>đều  được nhận lấy Đức Thánh Linh</strong>.&rdquo;</em></p>
+        </blockquote>
+        <p>Theo sự suy luận của  Hệ phái Ngũ Tuần, tín đồ Sa-ma-ri là những  người đã tin Chúa Jesus, đã nhận Đức  Thánh Linh, đã nhận được sự cứu rỗi,  nhưng họ chưa kinh nghiệm &ldquo;báp-têm bằng Đức  Thánh Linh&rdquo;. Do đó, khi hai sứ đồ Phi-e-rơ và  Giăng đến đặt tay trên họ và cầu nguyện,  họ liền được báp-têm bằng Đức  Thánh Linh.</p>
+        <p><strong>Đối đáp với Hệ Phái Ngũ Tuần</strong>:</p>
+        <p>Nếu đọc cẩn  thận câu chuyện, chúng ta dễ thấy rằng <strong>trước khi</strong> Phi-e-rơ và  Giăng đến đặt tay cầu nguyện cho tín  đồ Sa-ma-ri, họ đã chịu phép báp-têm nhân danh Chúa  Jesus, nhưng họ <strong>chưa </strong>nhận  được Đức Thánh Linh, câu 16 xác minh rõ: <em>&ldquo;Vì Đức Thánh Linh <strong>chưa</strong> giáng xuống trên một  ai trong bọn đó&rdquo;</em>. Sự kiện tín hữu Sa-ma-ri nhận  lãnh Đức Thánh Linh (báp-têm bằng Đức Thánh Linh) <strong>sau khi</strong> được đặt  tay cầu nguyện cho thấy đó là <strong>lần đầu tiên </strong>họ kinh nghiệm về  Đức Thánh Linh chứ không phải là kinh nghiệm <strong>lần thứ hai</strong> về Đức  Thánh Linh. Chính vì vậy, câu chuyện tín hữu Sa-ma-ri đã  tiếp nhận đạo cứu rỗi rồi sau một  thời gian họ được báp-têm bằng Đức  Thánh Linh, không thể đem áp dụng cho các con cái Chúa trong Hội  Thánh ngày nay, là những người đã tin Chúa, đã nhận  Đức Thánh Linh vào thời điểm họ tin Chúa [Vì  họ đã được tái sanh bởi Đức Thánh  Linh, trở nên con cái Đức Chúa Trời]. </p>
+        <p>Như vậy, nan đề  cần được giải quyết trong Công Vụ Các Sứ  Đồ 8:14-17 là: <strong>tại sao  người Sa-ma-ri chưa nhận được Đức  Thánh Linh khi họ tiếp nhận đạo Chúa? </strong>chứ  không phải là tín đồ Sa-ma-ri chưa được  kinh nghiệm lần thứ hai về Đức Thánh Linh.  [Để giải đáp câu hỏi nầy, xin đọc  bài &ldquo;Tại sao tín hữu Sa-ma-ri chưa nhận Đức  Thánh Linh khi họ tin Chúa?&rdquo; trong mục <em>giải đáp thắc mắc</em>.] </p>
+        <p>Các con cái Chúa ngày nay cần  noi theo tấm gương của Hội Thánh Bê-rê trong khi  nghe giảng dạy Lời Chúa (Công Vụ Các Sứ Đồ  17:10,11). Tín hữu thành Bê-rê tra xem Kinh Thánh để biết  sự giảng dạy của Phao-lô và Si-la có đúng theo  Kinh Thánh không. Ngày nay cũng vậy, con cái Chúa cần phải  xem xét cẩn thận sự giảng dạy của các lãnh  đạo trong Hội Thánh có phù hợp với Kinh Thánh hay  không: giáo lý nào đúng với Lời Chúa thì tiếp nhận  vì đó là Lời Chúa, còn sự giảng dạy nào không  thích hợp với Kinh Thánh thì loại bỏ vì đó là ý của  con người<em>. &ldquo;Những  người nầy (Bê-rê) có ý hẳn hoi hơn người  Tê-sa-lô-ni-ca, đều sẵn lòng chịu lấy đạo,  ngày nào cũng <strong>tra xem Kinh Thánh,  để xét lời giảng có thật chăng</strong>.&rdquo; </em>(Công  Vụ Các Sứ Đồ 17:11)</p>
+        <p><strong><em>Tháng 8, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

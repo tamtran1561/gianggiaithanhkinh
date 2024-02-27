@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center">&nbsp;</p>
+  <div>
+    <p align="center"><strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Tại sao  A-đam và Ê-va không được phép ăn trái cây sự sống?</strong></p>
+    <p align="center"><strong> </strong></p>
+    <p><strong>Sáng Thế Ký 3:24:</strong></p>
+    <p><em>&ldquo;Vậy, Ngài đuổi loài người ra khỏi  vườn, rồi đặt tại phía đông vườn  Ê-đen các thần chê-ru-bin với gươm lưỡi  chói lòa, để giữ con đường đi đến <strong>cây sự sống</strong>.&rdquo;</em></p>
+    <p><strong>Câu hỏi:</strong></p>
+    <p>Tại sao Đức Chúa  Trời không cho phép A-đam và Ê-va ăn <em>trái cây sự sống</em>?</p>
+    <p><strong>Giải đáp:</strong></p>
+    <p>Trong vườn Ê-đen  khi xưa, có 3 loại cây ăn trái được nói đến  trong Sáng Thế Ký 2:9:<em> &ldquo;Giê-hô-va  Đức Chúa Trời khiến đất mọc lên các thứ  cây đẹp mắt, và trái thì ăn ngon; giữa vườn  lại có cây sự sống cùng cây biết điều thiện  và điều ác.&rdquo;</em></p>
+    <p>Căn cứ vào Sáng Thế  Ký 2:9, chúng ta biết Đức Chúa Trời dựng nên 3 loại  cây ăn trái khác nhau, điều quan trọng là cần phải  hiểu rõ quy định của Chúa về 3 loại cây  ăn trái nầy:</p>
+    <p>1/ Rất nhiều loại  cây ăn trái rất ngon và đẹp mắt: A-đam và Ê-va  được phép ăn tất cả các loại trái cây nầy: <em>“Giê-<br />
+  &nbsp; &nbsp;hô-va Đức Chúa Trời  phán dạy rằng: Ngươi được tự do ăn hoa quả các thứ cây  trong vườn.”</em> (Sáng Thế Ký<br />
+  &nbsp; 2:16)</p>
+    <p>2/ Cây <em>biết điều thiện điều ác</em>: Chúa cấm  ăn trái cây nầy: <em>“Nhưng về  cây biết điều thiện và điều ác thì chớ  hề ăn<br />
+  &nbsp;đến; vì một mai ngươi ăn chắc  sẽ chết.”</em> (Sáng Thế Ký 2:17). Mục đích Chúa dựng  nên cây nầy là để thử <br />
+  &nbsp;nghiệm sự vâng lời  của con người. [Xin đọc  bài “Tại sao Chúa cấm A-đam ăn trái cây biết  điều thiên điều ác?”]</p>
+    <p>3/ Cây <em>sự sống</em> (tree of life): Cây nầy rất đặc  biệt, trồng giữa vườn. Có một số vấn đề cần biết về  cây sự sống sau đây:</p>
+    <p>+ Cây sự sống cho  trái quanh năm, <strong>lá </strong>(leaves) của cây là vị thuốc rất  quý, chữa lành bất cứ bệnh nào: <em>&ldquo;Ở giữa phố thành và trên hai bờ sông có <strong>cây sự sống</strong> trổ  mười hai mùa, mỗi tháng một lần ra trái; và những <strong>lá</strong> cây đó dùng để chữa  lành cho các dân.&rdquo;</em> (Khải Huyền 22:2).</p>
+    <p>+ Trái của cây sự sống  là phần thưởng cho những người chiến thắng  trong ngày sau cùng: <em>&ldquo;Kẻ nào thắng,  ta sẽ cho ăn trái <strong>cây sự  sống</strong> ở trong Ba-ra-đi của Đức Chúa Trời.&rdquo;  (</em>Khải Huyền 2:7)</p>
+    <p>+ Quan trọng hơn hết,  đúng như tên gọi của cây đó, là cây <strong><em>sự  sống</em></strong>, ai ăn trái của cây nầy sẽ không hề  hết, nhưng sống đời đời: <em>&ldquo;Giê-hô-va Đức Chúa Trời  phán rằng: Nầy, về sự phân biệt điều  thiện và điều ác, loài người đã thành một  bực như chúng ta; vậy bây giờ, ta hãy coi chừng, e  loài người giơ tay lên cũng hái trái <strong>cây sự sống mà ăn và được sống  đời đời chăng</strong>.&rdquo;</em> (Sáng Thế Ký 3:22)</p>
+    <p>Trở lại với câu  hỏi: Tại sao Chúa không cho phép A-đam và Ê-va hái ăn  trái cây sự sống? Sáng Thế Ký 3:22 nêu trên là câu Kinh Thánh  quan trọng giúp chúng ta tìm ra câu giải đáp:</p>
+    <p>Vì A-đam và Ê-va <strong>trước đó</strong>, không vâng lời  Chúa, <strong>đã ăn</strong> trái cây <em>biết điều thiện  điều ác,</em> nên Giê-hô-va Đức Chúa Trời không cho  phép họ ăn trái cây sự sống. Như vậy, chúng  ta có thể kết luận: Chúa đặt ra cây <em>biết điều thiện  điều ác</em> là để thử nghiệm (test) sự  vâng lời của loài người. Nếu loài người  vượt qua được (pass) cuộc thử nghiệm,  họ sẽ được ăn trái cây <em>sự sống</em> và được sống mãi mãi  trong sự thánh thiện. nhưng A-đam và Ê-va đã thất  bại (fail) trong cuộc thử nghiệm, vì thế Chúa  không cho phép họ ăn trái cây sự sống, Đức  Chúa Trời đã đuổi A-đam và Ê-va ra khỏi  Ê-đen và ra lệnh cho các Chê-ru-bim trấn giữ con  đường đi đến cây sự sống: <em>“Vậy, Ngài đuổi loài  người ra khỏi vườn, rồi đặt tại  phía đông vườn Ê-đen các thần chê-ru-bin với  gươm lưỡi chói lòa, để giữ con  đường đi đến cây sự sống.”</em> (Sáng Thế Ký 3:24). Điều nầy cũng dễ hiểu,  vì án phạt định cho việc ăn trái cây biết  điều thiện điều ác là <em>sự chết</em>, và án phạt đó phải  được thi hành, vậy nên Chúa ngăn cấm  A-đam và Ê-va ăn trái cây sự sống là điều hợp  lý. Hơn nữa, sau khi ông bà phạm tội, tội lỗi  đã làm hư hoại bản chất của con người  rồi, nếu ông bà ăn trái cây sự sống, ông bà sẽ  sống mãi với bản tính hư hoại vô phương  cứu chữa, tình trạng nầy thật còn khốn nạn  hơn bội phần, vì Phao-lô quả quyết <em>“thịt và máu chẳng hưởng  nước Đức Chúa Trời được, và sự  hay hư nát không hưởng sự không hay hư nát  được.” </em>(I Cô-rinh-tô 15:50) </p>
+    <p>Tuy nhiên, bởi tình yêu của  Đức Chúa Trời, Ngài có kế hoạch để cho  loài người có cơ hội ăn trái cây cây sự sống,  không phải trong thời đại nầy nhưng trong thời  kỳ cuối cùng, sau khi Chúa Jesus tái lâm. Nhưng để  được ăn trái cây sự sống, tội lỗi  của con người ngày nay (tội do A-đam truyền lại)  cần phải được giải quyết. Tội  đó chỉ có thể được tẩy sạch bởi <em>huyết </em>của Chúa Jesus mà  thôi. Không phải ai muốn ăn trái cây sự sống cũng  được đâu, chỉ có những người tin nhận  Chúa Jesus và được huyết Chúa Jesus thanh tẩy và  phiếu trắng mới được phép đến  nơi cây sự sống và hái ăn, như lời của Khải  Huyền 22:14 đã chép: <strong><em>&ldquo;Phước thay cho những kẻ  giặt áo mình đặng có phép đến nơi cây sự  sống …</em></strong><em>&rdquo; </em>(Khải Huyền  22:14)</p>
+    <p> </p>
+    <p>Trần Đình Tâm</p>
+    <p><strong><em>Tháng 4, 2016</em></strong></p>
+    <p> </p>
+  </div>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

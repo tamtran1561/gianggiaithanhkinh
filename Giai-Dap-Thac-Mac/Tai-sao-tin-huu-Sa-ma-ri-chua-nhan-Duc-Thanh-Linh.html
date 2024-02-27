@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center"><strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tại sao tín hữu Sa-ma-ri  chưa nhận Đức Thánh Linh sau khi tin Chúa?</strong></p>
+  <p align="center"> </p>
+  <p><strong>Công Vụ Các Sứ Đồ 8:14-17</strong></p>
+  <p><em>&ldquo;Các sứ đồ vẫn ở tại thành  Giê-ru-sa-lem, nghe tin xứ Sa-ma-ri đã nhận lấy đạo  Đức Chúa Trời, bèn sai Phi-e-rơ và Giăng đến  đó. Hai người tới nơi, cầu nguyện cho  các môn đồ mới, để cho được nhận  lấy Đức Thánh Linh. Vì Đức Thánh Linh chưa  giáng xuống trên một ai trong bọn đó; họ chỉ  nhân danh Đức Chúa Jêsus mà chịu phép báp-tem thôi.  Phi-e-rơ và Giăng bèn đặt tay trên các môn đồ,  thì đều được nhận lấy Đức  Thánh Linh.&rdquo;</em></p>
+  <p><strong>Câu hỏi</strong>:</p>
+  <p>Tại sao các tín hữu ở  xứ Sa-ma-ri chưa nhận được Đức  Thánh Linh ngay khi họ tin Chúa Jesus?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Trước hết, chúng  ta cần ghi nhận bối cảnh lịch sử của  câu chuyện, vốn là một yếu tố quan trọng để  giúp chúng ta hiểu vì sao tín đồ Sa-ma-ri chỉ nhận  Đức Thánh Linh sau khi được các Sứ đồ  đặt tay:</p>
+  <p>+ Người Do Thái cho rằng  người Sa-ma-ri không phải là dân Do Thái chính gốc. Dân  Sa-ma-ri là dân lai tạp giữa dân Do Thái và dân ngoại bang, sự  lai tạp nầy xãy trong thời kỳ Vương Quốc  Miền Bắc bị Vua A-si-ri đánh chiếm, vua A-si-ri  đem các dân tộc khác là Babylon, Cuthah, Avva, Hamath, Sepharvaim  đến sinh sống tại Sa-ma-ri: <em>&ldquo;Vua A-si-ri đem người ở Ba-by-lôn, Cu-tha, A-va,  Ha-mát và Sê-phạt-va-im, đặt ở trong các thành của  Sa-ma-ri, thế cho dân Y-sơ-ra-ên. Chúng chiếm lấy  nước Sa-ma-ri, và ở trong các thành nó.&rdquo;</em> (II Các Vua  17:24). Trải qua nhiều thế hệ, người Sa-ma-ri  bị đồng hóa với các dân ngoại bang. Sau khi dân Do  Thái (Vương Quốc Miền Nam) từ Ba-by-lôn  được phép trở về quê hương để  xây lại đền thờ, những người Sa-ma-ri &ldquo;lai  tạp&rdquo; đến gặp Xô-rô-ba-bên và đề nghị  được cùng chung xây cất đền thờ,  nhưng họ đã bị người Do Thái &ldquo;chính tông&rdquo; từ  chối: <em>&ldquo;Các ngươi chẳng  được phần chung với chúng ta đặng cất  một đền thờ cho Đức Chúa Trời của  chúng ta; song chúng ta, chỉ một mình chúng ta, sẽ cất  một đền cho Giê-hô-va Đức Chúa Trời của  Y-sơ-ra-ên.&rdquo;</em> (Ê-xơ-ra 4:3).</p>
+  <p>Như vậy, chúng ta thấy  rõ Người Do Thái khinh dễ người Sa-ma-ri, không  giao thiệp với người Sa-ma-ri. Khi Chúa Jesus đến  giếng nước gặp người phụ nữ  Sa-ma-ri và xin bà nước uống, thái độ của  Chúa Jesus đối với bà khiến cho bà phải ngạc  nhiên: <em>&ldquo;ủa kìa! ông là người  Giu-đa, mà lại xin nước uống của tôi, là một  người đàn bà Sa-ma-ri sao?&rdquo;</em> (Giăng 4:9)</p>
+  <p>+ Khi Chúa Jesus chọn 12 Sứ đồ và sai  họ đi, Ngài hướng dẫn họ<em>: &ldquo;Đừng đi đến dân ngoại, cũng  đừng vào một thành nào của dân Sa-ma-ri cả; song  thà đi đến cùng những con chiên lạc mất của  nhà Y-sơ-ra-ên</em>&rdquo;. (Ma-thi-ơ 10:5,6). Không phải Đức  Chúa Trời từ bỏ dân Sa-ma-ri và không muốn cứu họ,  vì theo kế hoạch của Đức Chúa Trời, Tin Lành  trước hết phải được rao giảng cho  dân Do Thái, sau đó mới đến lượt dân Sa-ma-ri  và các dân tộc khác trên thế giới. Trước khi về  trời, Chúa Jesus phán: <em>&ldquo;Nhưng  khi Đức Thánh Linh giáng trên các ngươi, thì các  ngươi sẽ nhận lấy quyền phép, và làm chứng  về ta tại thành <strong>Giê-ru-sa-lem</strong>,  cả xứ <strong>Giu-đê</strong>, xứ <strong>Sa-ma-ri</strong>, cho đến <strong>cùng trái đất</strong>&rdquo;. </em>(Công Vụ  Các Sứ Đồ 1:8)</p>
+  <p>Trở lại câu chuyện trong Công Vụ Các  Sứ Đồ 8:14-17, các tín hữu xứ Sa-ma-ri tin nhận  Chúa Jesus và chịu báp-têm qua đợt truyền giảng của  Phi-líp (8:4-13). Kinh Thánh tường thuật rằng lúc các Sứ  đồ tại Giê-ru-sa-lem nghe tin dân Sa-ma-ri tin nhận Chúa,  họ gửi Phi-e-rơ và Giăng đến Sa-ma-ri để  đặt tay cầu nguyện cho tín đồ Sa-ma-ri để  họ được nhận Đức Thánh Linh. Như vậy,  đây là trường hợp đặc biệt Đức  Chúa Trời muốn ban Đức Thánh Linh cho tín đồ  Sa-ma-ri qua sự đặt tay của hai Sứ đồ  để chứng minh cho những người lãnh đạo  tại Hội Thánh Giê-ru-sa-lem, là những người Do  Thái chính gốc, thấy rõ tận mắt Đức Thánh  Linh cũng được ban cho người Sa-ma-ri, vốn  là hạng người bị dân Do Thái coi thường. Những  người Do Thái chính gốc quan niệm rằng người  Sa-ma-ri không nằm trong diện được hưởng  đặc ân của Chúa như họ. Sự kiện tín hữu  Sa-ma-ri nhận Đức Thánh Linh là bằng chứng cho dân  Do Thái thấy rằng trong Chúa Jesus, dân Sa-ma-ri cũng hiệp  một với họ để trở thành một thành viên  trong Hội Thánh: <em>&ldquo;</em><em>Ấy chính Ngài là sự hòa hiệp  của chúng ta; Ngài đã hiệp cả hai lại làm một,  phá đổ bức tường ngăn cách.&rdquo;</em> (Ê-phê-sô  2:14) </p>
+  <p>Có thể nói sự kiện người  Sa-ma-ri nhận lãnh Đức Thánh Linh, hay  <em>báp-têm  bằng Đức Thánh Linh</em> được xem như &ldquo;lễ  Ngũ Tuần&rdquo; của các môn đồ Sa-ma-ri vậy. Sự  kiện nầy chỉ xãy ra một lần mà thôi, đánh dấu  sự chuyển tiếp công việc của Đức Thánh  Linh giữa thời Cựu Ước và Tân Ước, từ  đó trở về sau không còn xãy ra nữa.</p>
+  <p>Có hệ phái Tin Lành dùng câu chuyện trên làm căn cứ cho giáo lý <em>"báp-têm bằng Đức Thánh Linh cho con cái Chúa đã tin Chúa từ trước". </em>Giáo lý nầy không có nền tảng Kinh Thánh vì lý do sao:</p>
+  <p>Câu chuyện đã chứng minh rõ tín hữu Sa-ma-ri được "<strong>báp-têm</strong> bằng Đức Thánh Linh" cũng chính là <strong>lần đầu tiên</strong> họ <strong>nhận lãnh</strong> Đức Thánh Linh, vì <strong>trước đó </strong>họ chưa nhận được Đức Thánh Linh nào. Đây không phải là kinh nghiệm lần thứ hai về Đức Thánh Linh của người Sa-ma-ri. Vì vậy, chúng ta không thể dùng câu chuyện nầy làm nền tảng cho giáo lý “Báp-têm bằng Đức Thánh  Linh" cho một người đã nhận lãnh Đức Thánh Linh rồi, là người đã tin Chúa ngày nay.</p>
+  <p> <strong><em>Trần Đình Tâm</em></strong></p>
+  <p><em>Tháng 12, 2014</em></p>
+  <p> </p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

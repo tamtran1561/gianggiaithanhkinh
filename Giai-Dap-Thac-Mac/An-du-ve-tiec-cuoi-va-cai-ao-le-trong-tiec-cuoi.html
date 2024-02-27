@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center">&nbsp;</p>
+  <p align="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong style="font-size: 12pt">Ý nghĩa của tiệc cưới  và cái áo lễ trong ẩn dụ về tiệc cưới</strong></p>
+  <p align="center"> </p>
+  <p><strong>Ma-thi-ơ 22:11-13:</strong></p>
+  <p><em>&ldquo;Vua vào xem khách dự tiệc, chợt  thấy một người không mặc <strong>áo lễ</strong>, thì phán cùng người rằng: Hỡi bạn,  sao ngươi vào đây mà không mặc áo lễ? Người  đó làm thinh. Vua bèn truyền cho đầy tớ rằng:  Hãy trói tay chân nó lại, và quăng ra ngoài nơi tối  tăm, là nơi sẽ có khóc lóc và nghiến răng.&rdquo;</em></p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Tại  sao người khách được mời dự tiệc  cưới bị đuổi khỏi phòng tiệc vì không mặc  áo lễ? Áo lễ có ý nghĩa gì?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Để  hiểu được ý nghĩa của áo lễ, chúng ta cần  hiểu ý nghĩa của toàn thể ấn dụ về tiệc  cưới mà Chúa Jesus kể trong Ma-thi-ơ 22:1-14.</p>
+  <p>Ma-thi-ơ  22:1-14 là một ẩn dụ về <strong><em>tiệc cưới</em></strong> (wedding banquet). Đây là một trong 3 ẩn dụ liên tiếp  được Chúa Jesus dạy từ  Ma-thi-ơ 21:28 đến 22:14 liên quan đến <em>nước thiên đàng </em>(kingdom  of heaven)hay <em>nước Đức Chúa Trời </em>(kingdom  of God). </p>
+  <p>Tìm  hiểu bối cảnh lúc Chúa Jesus nêu các ẩn dụ sẽ  giúp hiểu ý nghĩa của các ẩn dụ. Chúng ta biết  rõ nước thiên đàng trước hết được  ưu tiên dành cho người Do Thái. Sau khi Chúa chọn 12 sứ  đồ, Chúa truyền dạy họ: <em>&ldquo;Đừng đi đến dân ngoại, cũng  đừng vào một thành nào của dân Sa-ma-ri cả; song  thà đi đến cùng những con chiên lạc mất của  nhà Y-sơ-ra-ên.&rdquo; </em>(Ma-thi-ơ 10:5,6). Tuy nhiên, giới lãnh  đạo Do Thái (bao gồm các thầy tế lễ, các thầy  thông giáo, các trưởng lão, những người Pha-ri-si)  đã khước từ sự giảng dạy của Chúa  Jesus, họ âm mưu tìm mọi cách để giết Chúa  Jesus. Dân Do Thái được Chúa kể là <em>không xứng đáng</em> nhận nước thiên  đàng, nên nước thiên đàng được ban cho  người ngoại bang. Qua các ẩn dụ, Chúa Jesus tuyên  bố dân ngoại bang sẽ được ban cho nước  thiên đàng trước dân Do Thái vì họ nghe và tin nhận  Chúa Jesus và lời giảng dạy của Ngài. Chúng ta thấy  rõ điều đó trong cả 3 ẩn dụ:</p>
+  <p>Ẩn  dụ về hai người con trai (Ma-thi-ơ 21:28-32),  người con thứ nhất chỉ về sân Do Thái,  người con thứ hai chỉ về dân ngoại. <em>&ldquo;Trong hai con trai đó, đứa  nào làm theo ý muốn của cha? Họ đáp rằng: <strong>Đứa thứ hai</strong>. Đức  Chúa Jêsus phán cùng họ rằng: Quả thật, ta nói cùng các  ngươi, <strong>những kẻ thâu  thuế và phường đĩ điếm sẽ  được vào nước Đức Chúa Trời  trước các ngươi</strong>.&rdquo; </em>(Ma-thi-ơ 21:31)</p>
+  <p>Ẩn  dụ về những người làm công trong vườn  nho (Ma-thi-ơ 21:33-45): Những người làm công chỉ về  dân Do Thái. <em>&ldquo;Bởi vậy, ta  phán cùng các ngươi, <strong>nước  Đức Chúa Trời sẽ cất khỏi các  ngươi</strong>, và <strong>cho một  dân khác</strong> là dân sẽ có kết quả của nước  đó.&rdquo;</em> (Ma-thi-ơ 21:43)</p>
+  <p>Ẩn  dụ về tiệc cưới, những người  khách <strong>được mời  đầu tiên</strong> (câu 3,4) chỉ về dân Do Thái, nhưng họ  đã khước từ lời mời và không đến dự  tiệc. Câu 8 chép: <em>&ldquo;Đoạn,  vua phán cùng đầy tớ mình rằng: Tiệc cưới  đã dọn xong rồi; song <strong>những  người được mời không xứng</strong> <strong>đáng</strong> dự tiệc đó.&rdquo; </em>Do đó, vua ra lệnh mời tất cả mọi  người ở phắp nơi đến dự tiệc,  những khách thập phương chỉ về <strong>dân ngoại bang</strong>. Lúc nầy,  câu 10 cho biết trong phòng tiệc đầy những vị  khách được mời.</p>
+  <p>Sau  cùng, vua vào xem phòng tiệc và thấy có một người  không mặc áo lễ. Vua đuổi người nầy ra  khỏi phòng tiệc. </p>
+  <p>Dù  câu chuyện ẩn dụ không nói gì đến việc nhà  vua yêu cầu khách mời phải mặc áo lễ, nhưng  chúng ta có thể thấy rõ mặc áo lễ là một nghi thức  mà nhà vua bắt buộc khách mời phải mặc khi vào dự  tiệc. Vì là một tiệc cưới trọng thể do  vua tổ chức cho nên không phải ai muốn mặc gì tùy  ý, nhưng phải mặc trang phục theo quy định của  vua, chắc hẳn áo lễ được vua cung cấp  và phân phát cho khách mời. </p>
+  <p>Như  vậy, chúng ta có thể thấy <strong>áo lễ, </strong>hay<strong> trang phục  dự tiệc cưới </strong>(wedding garment)  như là một <em>điều kiện  để được vua chấp nhận vào dự tiệc</em>. <strong>Người mặc áo lễ  làm hình bóng cho bất cứ ai tin nhận Chúa Jesus</strong>. Bởi  đức tin đến sự chuộc tội của Chúa  Jesus cho mình, người đó được Chúa tha tội  và được Chúa khoác lên một <strong><em>áo công bình</em></strong>, hay còn gọi  là <strong><em>áo  cứu rỗi</em></strong>, như Ê-sai 61:10 cho biết: <em>&ldquo;</em><em>Ta sẽ rất vui vẻ trong Đức Giê-hô-va, linh  hồn ta mừng rỡ trong Đức Chúa Trời ta; vì  Ngài đã mặc <strong>áo cứu rỗi</strong> cho ta; <strong>khoác áo choàng công bình</strong> cho ta …&rdquo;</em> (Ê-sai 61:10)</p>
+  <p>Ẩn  dụ về Tiệc Cưới trong Ma-thi-ơ 11:1-14 làm  hình bóng về <strong>Tiệc Cưới  của Chiên Con</strong> sẽ diễn ra sau khi Chúa Jesus đến  tiếp rước Hội Thánh lên trời. Tiệc Cưới  Chiên Con đã được Giăng mô tả trong sách Khải  Huyền chương 19. Trong Tiệc Cưới Chiên Con,  chúng ta thấy rõ những vị khách tham dự là những  người tin nhận Chúa Jesus:</p>
+  <p><em>&ldquo;Chúng ta hãy hớn hở vui mừng,  tôn vinh Ngài; vì lễ cưới Chiên Con đã tới, và vợ  Ngài (chỉ về Hội Thánh) đã sửa soạn, đã  cho người được <strong>mặc  áo sáng láng tinh sạch</strong> bằng vải gai mịn (vải  gai mịn tức là công việc công bình của các thánh đồ).  Thiên sứ phán cùng tôi rằng: Hãy chép: Phước thay cho những  kẻ được mời đến dự tiệc  cưới Chiên Con! Người lại tiếp rằng:  Đó là những lời chân thật của Đức Chúa  Trời. <strong>Họ được  mặc áo sáng láng tinh sạch</strong>.&rdquo;</em> (Khải Huyền  19:7-9)</p>
+  <p>Những  khách được phép dự Tiệc Cưới Chiên Con vì  đều được mặc áo <em>sáng láng</em> (white) và <em>tinh sạch</em> (clean), áo sáng láng và tinh sạch làm hình  bóng về áo dự tiệc đã được phiếu  trắng bởi huyết của Chiên Con là Chúa Jesus.</p>
+  <p><strong>Tại sao người khách nầy  lại có mặt trong phòng tiệc? </strong></p>
+  <p>Đơn  giản là người nầy không tuân theo quy định của  nhà vua trước khi vào phòng tiệc, người đó  khước từ mặc áo lễ của vua trao. Người  khách nầy có mặt trong phòng tiệc cho thấy trong Hội  Thánh ngày nay, có những người mang danh &ldquo;tín đồ&rdquo; của  Chúa Jesus, họ có mặt trong tổ chức Hội Thánh, họ  tham gia các sinh hoạt trong Hội Thánh, nhưng những người  nầy chưa bao giờ tiếp nhận Chúa Jesus, họ thật  sự chưa được cứu, chưa được  tái sanh bởi Đức Thánh Linh, những người  đó <strong>không có áo lễ.</strong></p>
+  <p><strong>Tại sao chỉ có một  người?</strong></p>
+  <p>Trong  ẩn dụ tiệc cưới, chúng ta thấy chỉ có  một người không mặc áo lễ mà thôi. Chúng ta nên nhớ  rằng đây là một <em>ẩn  dụ</em>, do đó không có nghĩa là trong Tiệc Cưới  Chiên Con sau nầy chỉ có một người sẽ bị  loại ra khỏi tiệc cưới. Một người  trong ẩn dụ có thể tượng trưng hay đại  diện cho nhiều người khác. </p>
+  <p><strong>Trần Đình Tâm</strong></p>
+  <p><strong><em>tamtran1561@yahoo.com</em></strong></p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

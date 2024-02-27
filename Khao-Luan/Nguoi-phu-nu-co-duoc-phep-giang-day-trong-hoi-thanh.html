@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <div>
+          <p align="center"><strong>Người Phụ Nữ  Có Được Phép Giảng Dạy Trong Hội Thánh?</strong></p>
+          <p align="center">Trần Đình  Tâm</p>
+          <p align="center">&nbsp;</p>
+          <p>            Có nhiều phụ nữ trong thời Cựu Ước  được Đức Chúa Trời dùng để thực  hiện những mục đích đặc biệt của Ngài  như các nữ tiên tri Đê-bô-ra (Các Quan Xét 4:4), Hun-đa  (II Các Vua 22:14), Mi-ri-am (Xuất Ê-díp-tô Ký 15:20), Nô-a-đia  (Nê-hê-mi 6:14) v.v… Tân Ước cũng ghi chép nhiều  gương phục vụ của phụ nữ được  Chúa dùng để gây dựng Hội Thánh. Không ai có thể  phủ nhận những thành quả rất đáng trân trọng  từ những người phụ nữ yêu kính Chúa đã đóng  góp cho Hội Thánh ngày nay. Tuy nhiên, đối với công tác  giảng dạy Kinh Thánh cho những người nam trong Hội  Thánh, người phụ nữ có nên đứng trước  Hội Thánh trong buổi nhóm thờ phượng để  dạy Kinh Thánh không? Đây là một vấn đề gây nhiều  tranh luận và chắc sẽ không có hồi kết thúc. Có  nhiều phụ nữ không thể chấp nhận một  phụ nữ đứng lên giảng dạy trong buổi  thờ phượng Chúa. Ngược lại, cũng có nhiều  người nam lại chấp nhận sự giảng dạy  của người phụ nữ trong Hội Thánh. Đây  là vấn đề quan trọng, vì có liên quan đến sự  tổ chức một buổi nhóm thờ phượng Chúa  mà cả hội chúng (có sự hiện diện những  người nam) được nghe giảng Lời Chúa. Để  giải quyết vấn đề nầy, chúng ta cần  tuân theo sự hướng dẫn của Kinh Thánh, là Lời  Đức Chúa Trời.     </p>
+          <p><strong>1. Người phụ nữ có được phép giảng  dạy trong Hội Thánh Không?</strong></p>
+          <p>Sứ-đồ Phao-lô trình  bày rất rõ ràng trong I Ti-mô-thê 2:11-12:</p>
+          <blockquote>
+            <p><em>&ldquo;Đàn bà phải yên  lặng mà nghe dạy, lại phải vâng phục mọi  đàng. Ta không cho phép
+              đàn bà <strong>dạy dỗ</strong>, cũng không được <strong>cầm quyền</strong> trên đàn  ông; nhưng phải ở yên lặng.&rdquo;</em></p>
+            <p><em>&ldquo;Let the woman learn in  silence with all subjection. But I suffer not a woman to teach,
+              nor to usurp authority over the  man, but to be in silence.&rdquo;</em> (KJV)</p>
+          </blockquote>
+          <p>Từ ngữ &ldquo;<em>dạy dỗ</em>&rdquo;, nói cho gọn  hơn, là &ldquo;<em>dạy</em>&rdquo;, theo nguyên  văn Hy-lạp là <em>didaskō</em> có nghĩa là &ldquo;đem lại kiến thức cho ai&rdquo; hoặc  &ldquo;làm cho ai hiểu biết được điều gì  đó và có khả năng làm được điếu  đó&rdquo;, từ tiếng anh là &ldquo;teach&rdquo; được dùng trong hầu  hết các bản dịch tiếng Anh như KJV, NKJV, NRSV,  HCSB, ESV, NIV.</p>
+          <p>Trong thời đại  Tân Ước, Đức Thánh Linh ban cho tín đồ các ân  tứ để gây dựng Hội Thánh, một trong các ân tứ  là <em>&ldquo;teach&rdquo;</em>, bản Kinh Thánh Truyền  Thống dịch là <em>&ldquo;thầy  giáo&rdquo;</em> (I Cô-rinh-tô 12:28 ) hay <em>&ldquo;giáo  sư&rdquo; </em>(I Cô-rinh-tô 12:29, Ê-phê-sô 4:11) hay <em>&ldquo;dạy dỗ&rdquo;</em> (Rô-ma 12:7). Đây là ân tứ <strong>giảng dạy Lời Chúa</strong>, là  công việc giải nghĩa, giải thích hay thông giải Lời  Chúa nhằm giúp cho người khác hiểu biết Lời  Chúa để áp dụng đúng trong cuộc sống và  để gây dựng cho nhau.</p>
+          <p>Theo sự hướng dẫn  của Kinh Thánh, người phụ nữ không được  giảng dạy Kinh Thánh và cầm quyền trên người  nam. Xin nhớ rằng I Ti-mô-thê 2:11-12 không phải là ý kiến  riêng của Phao-lô như nhiều người cố ý gán  cho, nhưng là mệnh lệnh của Chúa truyền cho  Phao-lô.</p>
+          <p>Để hiểu rõ thêm,  chúng ta đọc trong I Cô-rinh-tô 14:35,36: </p>
+          <blockquote>
+            <p><em>&ldquo;<strong>đờn bà phải nín lặng  trong đám hội</strong> (churches) của anh em: họ <strong>không có phép nói
+              tại nơi đó</strong>, nhưng phải  phục tùng cũng như luật pháp dạy. Nhược  bằng họ muốn học
+              khôn điều gì, thì mỗi  người trong đám họ phải hỏi chồng mình ở  nhà; bởi vì <strong>đờn bà nói
+                lên trong Hội thánh </strong>(church) <strong>là không hiệp lẽ</strong>.&rdquo;<strong></strong></em></p>
+          </blockquote>
+          <p>Phần Kinh Thánh trên dạy  rõ về người phụ nữ sinh hoạt trong Hội  Thánh như sau: </p>
+          <p>+ Đàn bà phải nín lặng  trong đám hội của anh em (keep silence in the churches-KJV). Bản  TTHĐ dịch: <em>&ldquo;Phụ nữ  phải giữ yên lặng trong Hội Thánh.&rdquo;</em></p>
+          <p>+ Họ không có phép nói tại  nơi đó (it is not permitted unto them to speak-KJV)</p>
+          <p>+ Phải thuận phục  theo luật pháp dạy (they are commanded to be under obedience, as  also saith the law).</p>
+          <p>+ Nếu muốn tìm biết  điều gì, họ nên hỏi chồng mình ở nhà (If  they will learn anything, let them ask their husbands at home-KJV)</p>
+          <p>+ Đàn bà nói lên trong Hội  Thánh là không hợp lẽ (It is a shame for women to speak in the  church-KJV). Bản TTHĐ dịch: <em>&ldquo;Vì <a name="_Hlk368140391" id="_Hlk368140391">phụ nữ nói giữa Hội  Thánh là điều đáng xấu hổ</a>.&rdquo;</em></p>
+          <p>Nếu theo sự hướng  dẫn trên, người phụ nữ không được  phép nói trong Hội Thánh, như thế, làm thế nào người  phụ nữ lại có thể được phép giảng  dạy trong Hội Thánh với bất cứ lý do gì?</p>
+          <p>Tuy vậy, <em>&ldquo;Họ</em> (người phụ nữ) <em>không có phép nói tại nơi  đó</em> (buổi nhóm tại Hội Thánh) hay &ldquo;<em>phụ nữ nói giữa Hội  Thánh là điều đáng xấu hổ.&rdquo; </em>không có nghĩa  là người phụ nữ phải <em>hoàn toàn im lặng</em>. Chúng ta nên hiểu họ chỉ  không được phép <em>dạy</em> (teach) mà thôi. Người phụ nữ vẫn tham gia vào các  sinh hoạt trong Hội Thánh  và  có <em>tiếng nói</em> trong Hội  Thánh: Họ đóng góp ý kiến, họ làm chứng ơn  phước Chúa cho, họ nêu thắc mắc hay góp ý trong  các buổi học Kinh Thánh v.v…</p>
+          <p>Cần xác định cho  rõ: Người phụ nữ không được phép giảng  dạy trong Hội Thánh, tức là trong một <strong>buổi nhóm họp thờ  phượng Chúa</strong> <strong>có sự  hiện diện của những người đàn ông</strong>.  Nhưng người phụ nữ có thể giảng dạy  Lời Chúa cho các em thiếu nhi tronh Hội Thánh trong các lớp  học riêng từng lứa tuổi. Chúng ta biết rõ  người phụ nữ làm công tác dạy Kinh Thánh cho thiếu  nhi tốt hơn nam giới.</p>
+          <p><strong>2. Lý do người phụ nữ không được  phép dạy hay cầm quyền trên người nam.</strong></p>
+          <p>Kinh Thánh cho chúng ta biết  người phụ nữ không được phép giảng  dạy hay cầm quyền trên người đàn ông, Lời  Chúa cũng nêu ra lý do tại sao có sự giới hạn  đó, chúng ta đọc tiếp câu 13 và 14:</p>
+          <blockquote>
+            <p><em>&ldquo;<strong>Vì</strong> (for) A-đam được <strong>dựng nên trước nhất</strong>,  rồi mới tới Ê-va. Lại không phải A-đam bị
+              dỗ dành, bèn là <strong>người đàn bà bị dỗ  dành mà sa vào tội lỗi</strong>.&rdquo;</em> (I Ti-mô-thê 2:13,14)</p>
+          </blockquote>
+          <p>Chúng ta ghi nhận có hai  nguyên do như sau:</p>
+          <p><em>a. <u>A-đam được dựng nên trước  nhất</u>: </em></p>
+          <p><em>-</em> Đức Chúa Trời không dựng nên A-đam và  Ê-va cùng một lúc, nhưng dựng nên A-đam <strong>trước</strong> rồi mới  đến Ê-va.</p>
+          <p>- Đức Chúa Trời  không tạo nên Ê-va giống như cách mà Ngài đã tạo  nên A-đam: Ngài không dùng bụi đất để tạo  ra Ê-va nhưng lấy xương và thịt của A-đam  để tạo ra Ê-va. Ê-va được tạo dựng <strong>từ </strong>A-đam (Sáng Thế  Ký 2:21,22).</p>
+          <p>- Đức Chúa Trời  tạo nên Ê-va như một người <strong>giúp đỡ</strong> cho A-đam (Sáng Thế Ký 2:18 chép: <em>&ldquo;Ta sẽ làm nên một kẻ giúp  đỡ (helper) giống như nó&rdquo;)</em></p>
+          <p>Như vậy, theo thứ  tự của sự sáng tạo, A-đam được dựng  nên trước, Ê-va ra từ A-đam, và <strong>vai trò</strong> của Ê-va là người giúp đỡ<strong> </strong>cho A-đam. Xin chú ý, Ê-va là  người <strong>giúp đỡ</strong> (helper) A-đam chứ không phải <strong>làm chủ</strong> (master) A-đam. </p>
+          <p>Chúng ta thấy Đức  Chúa Trời không muốn nguời phụ nữ giảng dạy  và cầm quyền trên người đàn ông (trong gia  đình cũng như trong Hội Thánh) không phải vì  người phụ nữ thấp hèn hơn người  đàn ông, cũng không phải họ kém thông minh hơn  người đàn ông, nhưng vì Đức Chúa Trời chỉ  định vai trò hay vị trí của người phụ nữ  là để <strong>giúp đỡ  người nam chứ không phải cầm quyền trên  người nam</strong>. </p>
+          <p><em>b. <u>Ê-va bị lừa dối (deceive) mà phạm tội</u>:</em></p>
+          <p>Phao-lô đưa ra lý do thứ  hai: Người phụ nữ đầu tiên bị lừa  dối bởi Sa-tan (Sa-tan mượn hình thể con rắn).  Đành rằng A-đam và Ê-va cùng ăn trái cây Chúa cấm  ăn, nhưng Chúa cho biết Ê-va trực tiếp bị khuất  phục bởi sự lừa dối của Sa-tan chứ  không phải A-đam. Ê-va trò chuyện với con rắn (Sa-tan)  chứ không phải A-đam, và cũng chính Ê-va đưa  tay hái trái cây cấm và ăn trước chứ không phải  A-đam. <em>&ldquo;Người nữ thấy  trái của cây đó bộ ăn ngon, lại đẹp mắt  và quí vì để mở trí khôn, bèn hái ăn.&rdquo;</em> (Sáng Thế  Ký 3:6)</p>
+          <p>Chính sự không vâng lời  của Ê-va đã đưa đến hậu quả  người nữ sẽ phải chịu phục tùng  người nam trong Hội Thánh nói chung và người vợ  phải phục tùng người chồng trong gia đình,  đó là quy định của Đức Chúa Trời: <em>&ldquo;Ngài phán cùng người nữ rằng:  Ta sẽ thêm điều cực khổ bội phần trong  cơn thai nghén; ngươi sẽ chịu đau đớn  mỗi khi sanh con; sự dục vọng ngươi phải  xu hướng về chồng, và <strong>chồng sẽ cai trị ngươi</strong>.&rdquo;</em> (Sáng Thế  Ký 3:16). </p>
+          <p>Như vậy, Đức  Chúa Trời không muốn người phụ nữ dạy  dỗ hay cầm quyền trên người nam vì người  nam được tạo dựng trước người  nữ và vì người nữ phạm tội trước  người nam. Hai lý do đó không có liên quan gì đến  phong tục xã hội (trọng nam khinh nữ), cũng không  liên quan gì đến trình độ học vấn hay sự  giáo dục của người phụ nữ  đương thời, chính vì thế mà sự nghiêm cấm  không phải chỉ dành cho một số Hội Thánh địa  phương nào đó hay chỉ có giới hạn trong khoảng  thời gian nào đó, nhưng có giá trị cho tất cả  Hội Thánh thuộc mọi thời đại.</p>
+          <p><strong>3. Người phụ nữ có được phép giảng  dạy những phụ nữ khác không?</strong></p>
+          <p>Tít 2:3-5 cho thấy người  phụ nữ được quyền dạy những phụ  nữ khác, đặc biệt là dạy những phụ nữ  trẻ:</p>
+          <blockquote>
+            <p><em>&ldquo;Các  bà cao tuổi cũng vậy… phải lấy điều  khôn ngoan <strong>dạy</strong> bảo; phải <strong>dạy</strong> <u>đàn bà trẻ  tuổi</u>            biết yêu chồng con mình,  có nết na, trinh chánh, trông nom việc nhà; lại biết ở  lành,
+              vâng phục chồng mình, hầu  cho đạo Đức Chúa Trời khỏi bị một  lời chê bai nào.&rdquo;</em></p>
+          </blockquote>
+          <p>Chúng ta thấy người  phụ nữ được Chúa dùng qua nhiều công tác khác  nhau để gây dựng Hội Thánh, nhưng chúng ta  cũng thấy Đức Chúa Trời có đặt một  giới hạn cho người Phụ nữ mà họ không  được phép vượt qua giới hạn đó, ấy  là dạy Lời Chúa trong Hội Thánh và cầm quyền trên  người đàn ông trong gia đình cũng như trong Hội  Thánh. </p>
+          <p><strong>4. Những Ý kiến chấp thuận cho người  phụ nữ giảng dạy trong Hội Thánh:</strong></p>
+          <p>Sau đây là những ý kiến  chấp nhận cho người phụ nữ được  quyền giảng dạy trong Hội Thánh. Tiếp theo là phần  nhận xét của tác giả về ý kiến vừa nêu.</p>
+          <p><em>1. <u>I Ti-mô-thê 2:11,12 chỉ giới hạn trong gia  đình</u></em>:</p>
+          <p>Có một số người  chấp nhận sự giảng dạy của phụ nữ  trong Hội Thánh.  Những  người nầy cho rằng I Ti-mô-thê 2:11,12 chỉ giới  hạn trong gia đình mà thôi chứ không áp dụng trong Hội  Thánh, tức là <strong>người vợ</strong> không được phép dạy hay cầm quyền trên <strong>người chồng</strong> trong gia  đình riêng của họ, nhưng được quyền  giảng dạy hay cầm quyền trong Hội Thánh.</p>
+          <p><u>Nhận xét</u>: </p>
+          <p>Theo nguyên ngữ Hy-lạp,  từ <em>&ldquo;đàn ông&rdquo;</em> trong câu <em>&ldquo;Ta không cho phép đàn bà dạy dỗ,  cũng không được cầm quyền trên <strong>đàn ông</strong>&rdquo; </em>là &ldquo;<em>aner&rdquo;</em>, từ nầy gồm 2  nghĩa: 1/ Chỉ về <em>người  chồng </em>(husband); 2/ Chỉ về người <em>đàn ông</em> (man) nói chung. Để  xác định nghĩa nào đúng, chúng ta dựa vào văn mạch,  I Ti-mô-thê 2:8-10 chép: <em>&ldquo;Vậy, ta  muốn những người <strong>đàn  ông </strong>(aner) đều giơ tay thánh sạch lên trời, mà  cầu nguyện khắp mọi nơi, chớ có giận dữ  và cãi cọ.  Ta cũng muốn  rằng những người <strong>đàn  bà</strong> ăn mặc một cách gọn ghẽ, lấy nết  na và đức hạnh giồi mình, không dùng những tóc  gióc, vàng, châu ngọc và áo quần quí giá, nhưng dùng việc  lành, theo lẽ đang nhiên của người <strong>đàn bà</strong> tin kính Chúa.&rdquo; </em>Căn  cứ vào văn mạch, chúng ta xác định <em>aner </em>chỉ về người <strong><em>đàn  ông</em></strong>nói chungchứ không phải chỉ về <em>người</em> <em>chồng</em>, vì Phao-lô đang đề cập đến  người <em>đàn ông</em> và  người <em>đàn bà</em> theo ý  nghĩa tổng quát chứ ông không đề cập đến <em>chồng</em> và <em>vợ</em>. Vì không phải chỉ có <em>người chồng</em> mới giơ tay cầu nguyện  mà chỉ về tất cả <em>đàn  ông</em>; cũng không phải chỉ có <em>người vợ </em>nên ăn mặc gọn ghẽ,  trao dồi đức hạnh mà tất cả người <em>phụ nữ</em>.</p>
+          <p>Vậy, I Ti-mô-thê 2:11,12 áp  dụng chung cho người <em>phụ  nữ</em> và <em>nam giới </em>trong <em>sinh hoạt cộng đồng</em>,  (bao gồm cả vợ và chồng) chứ không phải chỉ  áp dụng cho vợ chồng <em>trong  gia đình</em> mà thôi.</p>
+          <p><em>2. <u>Không có sự phân biệt giữa người nam  và nữ trong Hội Thánh của Chúa</u>.</em></p>
+          <p>Một số người  khác chấp nhận vai trò giảng dạy của ngườ  phụ nữ trong Hội Thánh, họ nói rằng, trong Đấng  Christ, không còn có sự phân biệt nam nữ, tất cả  mọi giới đều ngang hàng với nhau, căn cứ  vào Ga-la-ti 3:26-28: <em>&ldquo;Vì anh em bởi  tin Đức Chúa Jêsus Christ, nên hết thảy đều  là con cái của Đức Chúa Trời. Vả, anh em thảy  đều chịu phép báp tem trong Đấng Christ, đều  mặc lấy Đấng Christ vậy. Tại đây <strong>không còn chia</strong> ra người  Giu-đa hoặc người Gờ-réc; không còn người  tôi mọi hoặc người tự chủ; không <strong>còn đàn ông hoặc đàn bà</strong>;  vì trong Đức Chúa Jêsus Christ, anh em thảy đều làm  một.&rdquo;</em></p>
+          <p><u>Nhận xét</u>:<u></u></p>
+          <p><a name="_Hlk370147829" id="_Hlk370147829">Ý  nghĩa của Ga-la-ti 3:26-28 </a>không phải là sự hướng  dẫn cho sự sinh hoạt giảng dạy trong Hội  Thánh. Phần Kinh Thánh trên <strong>không</strong> có ý dạy rằng trong Chúa Jesus, không còn sự phân biệt  giữa nam nữ nên người phụ nữ hay nam giới  đều có <em>quyền giảng  dạy ngang nhau</em>. Ga-la-ti 3:26-28 nói về <strong>sự</strong> <strong>cứu rỗi</strong> <strong>trong Chúa Jesus</strong>: Sự cứu  rỗi là ân sủng Đức Chúa Trời ban cho tất cả  mọi người, không có sự phân biệt nào hết,  đọc trọn câu sẽ thấy chẳng những không  phân biệt &ldquo;<em>đàn ông hoặc  đàn bà&rdquo;</em> mà còn không phân biệt <em>&ldquo;người tôi mọi hoặc người tự chủ&rdquo;.</em> Lẽ đạo cứu rỗi nầy cũng được  nhắc lại trong Cô-lô-se 3:11: <em>&ldquo;Tại  đây không còn phân biệt người Gờ-réc hoặc  người Giu-đa, người chịu cắt bì hoặc  người không chịu cắt bì, người dã man hoặc  người Sy-the, người tôi mọi hoặc người  tự chủ; nhưng Đấng Christ là mọi sự và  trong mọi sự</em>.&rdquo;. Người nam và người nữ  đều hiệp làm <strong>một</strong> trong Chúa Jesus. Như vậy, Chúng ta không thể dùng quan  điểm thần học nầy để biện minh  cho sự cầm quyền hay dạy dỗ của người  phụ nữ trong Hội Thánh (trên người đàn ông).</p>
+          <p><em>3. <u>Bối cảnh xã hội của Hội Thánh  Ê-phê-sô trong thế kỷ thứ nhất</u>.</em></p>
+          <p>Một số người  cho rằng Phao-lô viết II Ti-mô-thê 2:11,12 cho Ti-mô-thê, là mục  sư tại Hội Thánh Ê-phê-sô. Thời ấy tại thành  phố Ê-phê-sô, có đền thờ Artemis khá nổi tiếng,  nhiều phụ nữ trong thành phố dược quyền  phục vụ trong đền thờ và thờ lạy tà thần,  cho nên Phao-lô không cho phép người phụ nữ giảng  dạy trong Hội Thánh để tránh gây vấp phạm. Lời  dạy của Phao-lô chỉ áp dụng tại Hội Thánh  Ê-phê-sô vào thời đó chứ không áp dụng cho các Hội  Thánh ngày nay.</p>
+          <p><u>Nhận xét</u>:</p>
+          <p>Ý kiến trên rất khó  chấp nhận và hoàn toàn không đặt trên nền tảng  Kinh Thánh. Không có chổ nào trong thư Ti-mô-thê đề cập  đến sự thờ tà thần Artemis, và Phao-lô cũng  không nói vì sự thờ lạy tà thần Artemis mà ông không  cho phép phụ nữ giảng dạy trong Hội Thánh. Lý do  người phụ nữ không được phép giảng  dạy hay cầm quyền trên người nam là vì người  nam được dựng nên trước và người nữ  bởi người nam mà có; và vì người nữ chìu theo  sự cám dỗ của Sa-tan, chứ không liên quan gì đến  bối cảnh xã hội của Hội Thánh Ê-phê-sô. Đúng  là có những người phụ nữ không tin Chúa, họ  thờ lạy trong đền thờ Artemis, nhưng điều  nầy  không liên quan gì đến  sự sinh hoạt thờ phượng Chúa trong Hội Thánh  Ê-phê-sô.</p>
+          <p><em>4. <u>Bê-rít-sin (Priscilla) là mẫu người phụ nữ  giảng dạy người nam</u>.</em></p>
+          <p>Một số người  nêu trường hợp Bê-rít-sin (Priscilla), là một phụ  nữ đã dạy cho A-bô-lô hiểu rõ hơn về Kinh  Thánh trong Công Vụ Các Sứ Đồ 18:24-26<em>: &ldquo;Bấy giờ có một người  Giu-đa tên là A-bô-lô, quê tại thành A-léc-xan-tri, là tay khéo nói  và hiểu Kinh Thánh, đến thành Ê-phê-sô. Người  đã học đạo Chúa; nên lấy lòng rất sốt sắng  mà giảng và dạy kĩ càng những điều về  Đức Chúa Jêsus, dẫu người chỉ biết phép  báp-tem của Giăng mà thôi. Vậy, người khởi sự  giảng cách dạn-dĩ trong nhà hội. <strong>Bê-rít-sin</strong> và A-qui-la nghe giảng, bèn đem người  về với mình, giải bày đạo Đức Chúa Trời  cho càng kĩ lưỡng hơn nữa.&rdquo; </em></p>
+          <p>Những người chấp  nhận người phụ nữ giảng dạy trong Hội  Thánh lý luận rằng: nếu bà Bê-rít-sin đã từng giảng  dạy Kinh Thánh cho người đàn ông là A-bô-lô thì người  phụ nữ hôm nay cũng có quyền giảng dạy Kinh  Thánh trên người nam. Hơn nữa, tên của bà  Bê-rít-sin luôn được đặt trước tên của  chồng bà là A-qui-la (Aquila), điều nầy cho thấy vị  trí nổi bậc của Bê-rít sin.</p>
+          <p><u>Nhận xét</u>:</p>
+          <p>Nếu nghiên cứu kỹ  các câu Kinh Thánh có liên quan đến Bê-rít-sin, chúng ta ghi nhận  một số yếu tố sau:</p>
+          <p>+ Tên hai vợ chồng  A-qui-la và Bê-rít-sin luôn gắn liền nhau, điều nầy  chứng tỏ hai vợ chồng cùng hiệp nhau hầu việc  Chúa. Tân Ước đề cập đến hai vợ chồng  tất cả sáu lần: Ba lần tên chồng kể  trước tên bà (A-qui-la đặt trước Bê-rít-sin):  Công Vụ các Sứ Đồ 18:2; 18:26 (Bản KJV) và I  Cô-rinh-tô 16:19. Ba lần tên bà đặt trước tên chồng  (Bê-rít-sin trước A-qui-la): Công Vụ Các Sứ Đồ  18:18; Rô-ma 16:3 và II Ti-mô-thê 4:19. Như vậy, không phải  tên bà đặt trước tên chồng trong tất cả  các lần Kinh Thánh nhắc đến. </p>
+          <p>+ Việc tên người  vợ được kể trước tên người chồng  khiến nhiều người ngạc nhiên, vì tên người  vợ đặt trước tên chồng là điều  không thông thường trong thời bấy giờ. Tuy nhiên,  không phải vì tên bà Bê-rít-sin được kể  trước tên chồng mà chúng ta  có quyền cho rằng Bê-rít-sin nắm quyền trên A-qui-la,  để rồi kết luận người phụ nữ  có quyền trên người đàn ông trong Hội Thánh. Trong  một số trường hợp, tên Bê-rít-sin được  kể trước A-qui-la có thể là do sự đóng góp  công sức của bà trong Hội Thánh có thể vượt  hơn chồng bà trong thời điểm đó, hoặc có  thể bà đóng góp công lao nhiều hơn chồng vì công  tác đó thích hợp với người phụ nữ  hơn. Có ý kiến cho rằng tên của Bê-rít-sin đặt  trước tên chồng có thể do bà xuất thân từ  dòng dõi quý phái La-mã (tên Priscilla có nguồn gốc là Prisca, là  tên dòng quý tộc La-mã). </p>
+          <p>+ Trong Công Vụ Các Sứ  Đồ 18:24-26 nêu trên, theo bản Kinh Thánh Anh ngữ KJV,  là bản dịch đáng tin cậy hơn hết, thì tên &ldquo;A-qui-la&rdquo; <strong>đặt trước </strong>&ldquo;Bê-rít-sin&rdquo;: <em>&ldquo;And he (Apollos) began to speak boldly  in the synagogue. Whom when <strong>Aquila and  Priscilla </strong>had heard, they took him unto them, and expounded unto him the  way of God more perfectly.&rdquo;</em> (Acts 18:26). Tên người chồng  đặt trước chứng minh rằng A-qui-la là  người chính thức và có quyền dạy A-bô-lô chứ  không phải Bê-rít-sin. Chúng ta có thể nói <strong>Bê-rít-sin đã cộng tác với chồng mình để  giúp A-bô-lô hiểu rõ hơn về Kinh Thánh</strong>. Hơn nữa,  chúng ta còn thấy A-qui-la và Bê-rít-sin dạy Kinh Thánh cho A-bô-lô <strong>tại nhà riêng </strong>chứ không  phải trong buổi nhóm hội chúng. Như vậy, chúng ta  không thể căn cứ vào câu chuyện A-qui-la và Bê-rít-sin  đã từng dạy Kinh Thánh cho A-bô-lô để kết luận  rằng người phụ nữ được quyền  giảng dạy Kinh Thánh trong buổi nhóm thờ phượng  Chúa tại Hội Thánh.</p>
+          <p><em>5. <u>Tinh thần phục vụ Chúa của phụ nữ</u>.</em></p>
+          <p>Nhiều người lý  luận rằng: Có nhiều phụ nữ tham gia tích cực  mọi công tác trong Hội Thánh, họ hầu việc Chúa với  sự hy sinh và lòng tận tụy rất đáng phục. Vậy,  tại sao chúng ta lại cấm người phụ nữ  giảng dạy Kinh Thánh?</p>
+          <p><u>Nhận xét</u>:</p>
+          <p>Chúng ta công nhận có nhiều  phụ nữ phục vụ Chúa trong Hội Thánh rất tốt,  thậm chí còn hơn cả người nam trong một số  trường hợp. Trên thực tế, đã có những  trường hợp người phụ nữ đứng  trước Hội Thánh giảng Kinh Thánh, và được  nhiều nữ cũng như người nam ủng hộ.  Tuy nhiên, điều quan trọng hơn hết là: Kinh Thánh,  là <strong>Lời của Đức  Chúa Trời</strong> <strong>có cho phép họ  làm như vậy không, chứ không phải là công việc  đó có được nhiều người ủng hộ  không</strong>; hoặc: <strong>Lời Chúa có  cho phép họ giảng dạy không chứ không phải họ  giảng dạy có tốt không.</strong></p>
+          <p><strong>4. Kết luận</strong>:</p>
+          <p>Tân Ước nêu tên nhiều  người phụ nữ đã tận tụy, sốt sắng  phục vụ Chúa, chúng ta có thể liệt kê: Ma-ri  Ma-đơ-len, Gian-nơ, Su-xan-nơ (Lu-ca 8:2,3) là nững  phụ nữ giúp của cải vật chất cho Chúa Jesus  trong khi Ngài thi hành chức vụ; Đô-ca (Công Vụ Các Sứ  Đồ 9:36) là phụ nữ tin Chúa tại thành Giốp-bê,  bà làm nhiều việc phước thiện và dâng hiến  tiền bạc giúp đỡ các tín hữu khác; Ly-đi  (Công Vụ Các Sứ Đồ 16:14) là một phụ nữ  khá giả, đã mở cửa nhà mình cho Phao-lô và Ti-mô-thê ở  trọ trong lúc hai ông hầu việc Chúa tại thành Phi-líp; Bốn  người con gái của Phi-líp được ân tứ nói  tiên tri (Công Vụ Các Sứ Đồ 21:8,9); Ti-mô-thê  được nuôi dưỡng và được giáo dục  bởi người mẹ tin kính Chúa là Ơ-nít (II Ti-mô-thê  1:5); Phê-bê (Rô-ma 16:1) là nữ chấp sự tại Hội  Thánh Xen-cơ-rê; Ê-vô-đi và Sin-ti-cơ là hai phụ nữ  hết lòng bênh vực cho Tin Lành (Phi-líp 4:2,3) v.v…</p>
+          <p>Chúng ta không thể chối  cãi có rất nhiều phụ nữ được Chúa kêu gọi  phục vụ Ngài từ khi Hội Thánh được  thành lập được ký thuật trong Công Vụ Các Sứ  Đồ cho đến ngày nay, sự phục vụ của  họ đã mang nhiều kết quả cho Hội Thánh và  làm vinh hiển danh Chúa. Chúng ta cần lưu ý, sách Công Vụ  Các Sứ Đồ cũng như các thư tín đều  không nêu ra bất cứ trường hợp nào người  phụ nữ làm chức vụ mục sư (pastor) hay giữ  công tác giảng dạy trong Hội Thánh. Chúa Jesus không hề  chọn một phụ nữ nào trong nhóm mười hai sứ  đồ của Ngài. Như vậy, người phụ nữ  không cần thiết phải được giao cho công tác  giảng dạy trong Hội Thánh, vì Đức Chúa Trời  đã giao công tác đó cho người nam. Hội Thánh có nhiều  công việc khác nhau mà người phụ nữ có thể  làm để phục vụ Chúa mà không cần phải giảng  dạy. </p>
+          <p>Nhiều hệ phái Tin  Lành ngày nay công nhận cho phụ nữ được quyền  giảng dạy Kinh Thánh trong buổi thờ phượng  có những người nam, vì thế, nhiều người  phụ nữ được đào tạo trong trường  thần học để trở thành mục sư. Con số  nữ mục sư không nhiều nhưng chắc chắn sẽ  có khuynh hướng gia tăng trong những năm sắp  đến. Trong sinh hoạt Hội Thánh ngày nay, chức vụ  mục sư được xem là chức vụ <strong>lãnh đạo</strong> và chuyên <strong>giảng dạy</strong> Kinh Thánh cho hội  chúng, mà hội chúng bao gồm nhiều người nam.  Như vậy, một số hệ thống tổ chức  của giáo hội ngày nay đã làm điều trái với sự  giáo huấn trong Tân Ước.</p>
+          <p><strong><em>Tháng 10, năm 2013</em></strong></p>
+          <p> </p>
+        </div>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

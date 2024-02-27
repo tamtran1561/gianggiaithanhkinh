@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong style="font-size: 12pt">Báp-têm bằng Đức Thánh Linh</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p> </p>
+        <p><strong style="color: #C90612">1. Người đã tin nhận Chúa có cần nhận  Báp-têm bằng Đức Thánh Linh không?</strong></p>
+        <p>Thế nào là &ldquo;Báp-têm bằng  Đức Thánh Linh&rdquo;? Các Cơ-đốc nhân thuộc hệ  phái Ngũ Tuần tin rằng con cái Chúa, là những người  đã được tái sanh, có thể nhận được  Báp-têm bằng Đức Thánh Linh để kinh nghiệm  được một đời sống đầy  phước hạnh, tràn nhập niềm vui, mạnh mẽ  trong đời sống cầu nguyện và phục vụ  Chúa. Các Cơ-đốc nhân thuộc hệ phái Ngũ Tuần  cho rằng sở dĩ các con cái Chúa ngày nay có nếp sống  thuộc linh yếu ớt, tẻ nhạt, không có quyền năng  trong sự cầu nguyện hay trong công tác phục vụ  Chúa là do không được hay chưa được Báp-têm  bằng Đức Thánh Linh. Một khi nhận được  Báp-têm bằng Đức Thánh Linh, người tín hữu sẽ  được đầy dẫy Đức Thánh Linh, họ  sẽ sống và hầu việc Chúa cách đầy quyền  năng và đem lại kết quả lớn lao cho Chúa.</p>
+        <p>Theo quan điểm trên, một  người đã tiếp nhận Chúa Jesus, đã nhận  Đức Thánh Linh để được tái sanh và  đã được cứu, nhưng người tín hữu  đó có thể chưa được Báp-têm bằng Đức  Thánh Linh. Như vậy, Báp-têm bằng Đức Thánh Linh là  một <strong>kinh nghiệm thứ  hai</strong> theo sau sự kiện người đó tin Chúa Jesus và  được tái sanh. </p>
+        <p>Hệ phái Ngũ Tuần  xác nhận niềm tin trên qua các lập luận sau:</p>
+        <p>1. Các môn đồ theo  Chúa Jesus đương nhiên là những người đã  được cứu, đã được tái sanh. Có thể  họ nhận được tái sanh lúc họ tin Chúa và  đi theo Ngài trong suốt thời gian Chúa còn ở trên đất.  Sau khi Chúa Jesus sống lại, Chúa đã hiện ra với họ  trong phòng đóng kín cửa và phán rằng: <em>&ldquo;Ngài lại phán cùng môn đồ rằng: Bình an cho các  ngươi! Cha đã sai ta thể nào, ta cũng sai các  ngươi thể ấy. Khi Ngài phán điều đó rồi,  thì hà hơi trên môn đồ mà rằng: <strong>Hãy nhận lãnh Đức Thánh Linh</strong>.&rdquo;</em> (Giăng  20:21,22). Tín hữu của hệ phái Ngũ Tuần dựa  vào câu Kinh Thánh ấy để kết luận rằng các  môn đồ đã được &ldquo;nhận&rdquo; Đức  Thánh Linh nhưng chưa được &ldquo;báp-têm&rdquo; bằng  Đức Thánh Linh.</p>
+        <p> 2. Sau đó, Chúa Jesus căn dặn  các môn đồ đừng ra khỏi thành Giê-ru-sa-lem,  nhưng cứ ở lại để được nhận  lãnh điều Đức Chúa Cha đã hứa: <em>&ldquo;Lúc ở với các sứ đồ,  Ngài dặn rằng đừng ra khỏi thành Giê-ru-sa-lem,  nhưng phải ở đó chờ điều Cha đã hứa,  là điều các ngươi đã nghe ta nói.&rdquo;</em> (Công Vụ  Các Sứ Đồ 1:4). Điều Cha hứa chính là Báp-têm  bằng Đức Thánh Linh: <em>&ldquo;nhưng  trong ít ngày, các ngươi sẽ chịu phép báp-tem bằng  Đức Thánh Linh.&rdquo;</em> (Công Vụ Các Sứ Đồ 1:5).  Và Chúa phán dạy: <em>&ldquo;Nhưng khi  Đức Thánh Linh giáng trên các ngươi, thì các  ngươi sẽ nhận lấy quyền phép, và làm chứng  về ta tại thành Giê-ru-sa-lem, cả xứ Giu-đê, xứ  Sa-ma-ri, cho đến cùng trái đất.&rdquo;</em> (Công Vụ Các  Sứ Đồ 1:8). Các môn đồ đã vâng lời mà ở  lại trong thành Giê-ru-sa-lem và chờ đợi.</p>
+        <p>3. Đến ngày Lễ  Ngũ Tuần, các môn đồ nhóm lại và nhận  được Báp-têm bằng Đức Thánh Linh: &ldquo;Đến  ngày lễ Ngũ Tuần, môn đồ nhóm họp tại một  chỗ. Thình lình, có tiếng từ trời đến  như tiếng gió thổi ào ào, đầy khắp nhà môn  đồ ngồi. Các môn đồ thấy lưỡi rời  rạc từng cái một, như lưỡi bằng lửa  hiện ra, đậu trên mỗi người trong bọn  mình. Hết thảy đều được <strong>đầy dẫy Đức  Thánh Linh</strong>, khởi sự nói <strong>các  thứ tiếng khác</strong>, theo như Đức Thánh Linh cho  mình nói.&rdquo; (Công Vụ Các Sứ Đồ 2:1-4). Các môn đồ  theo Chúa Jesus, đã được tái sanh, bây giờ họ  được Báp-têm bằng Đức Thánh Linh, họ trải  nghiệm kinh nghiệm mới mẻ nầy qua việc <strong>nói ngôn nhữ khác</strong>.</p>
+        <p>4. Hệ phái Ngũ tuần  dạy rằng: Tất cả con cái Chúa ngày nay, có thể cầu  xin để được Báp-têm bằng Đức Thánh  Linh, giống như các môn đồ đã từng kinh nghiệm  trong ngày Lễ Ngũ Tuần. Khi được Báp-têm bằng  Đức Thánh Linh, con cái Chúa sẽ nhận được  quyền năng để hầu việc Chúa cách mạnh mẽ.  Và, theo sự giảng dạy của hầu hết các vị  lãnh đạo của hệ phái Ngũ Tuần, dấu hiệu  một người được Báp-têm bằng Đức  Thánh Linh luôn luôn đi kèm theo ân tứ <strong>nói tiếng lạ</strong>, đó là khuôn mẫu của ngày  Lễ Ngũ Tuần mà các môn đồ đã kinh nghiệm. </p>
+        <p><strong style="color: #C90612">2. Báp-têm bằng Đức Thánh Linh là gì? </strong>(Baptism in  the Holy Spirit):</p>
+        <p>Để hiểu  đúng ý nghĩa đích thực của Báp-têm bằng Đức  Thánh Linh, chúng ta cần tìm hiểu tất cả những  câu Kinh Thánh nói về Báp-têm bằng Đức Thánh Linh,  đặt câu đó trong ngữ cảnh, đối chiếu  các câu đó với nhau, kết nối với các câu Kinh  Thánh khác có liên quan và tìm hiểu cách mà phép Báp-têm đó  được áp dụng và thể hiện trên người  tín đồ.<strong></strong></p>
+        <p>Trong toàn bộ Tân Ước,  tổng cộng chỉ có 7 câu đề cập <em>đến &ldquo;Báp-têm bằng Đức  Thánh Linh&rdquo;</em>: Ma-thi-ơ 3:11; Mác 1:8; Lu-ca 3:16; Giăng 1:33; Công  Vụ Các Sứ Đồ 1:5; Công Vụ Các Sứ Đồ  11:16 và I Cô-rinh-tô 12:13. Bảy câu Kinh Thánh nầy đều  sẽ được nêu lên và giải thích trong bài học nầy.  Trong số 7 câu ấy, có 4 câu giống nhau, vì cùng một câu  chuyện nhưng được ký thuật trong 4 sách Phúc  Âm, 4 câu đó như sau:</p>
+        <blockquote>
+          <p><em>&ldquo;Về  phần ta, ta lấy nước mà làm phép báp-tem cho các  ngươi ăn năn; song Đấng đến
+            sau ta có quyền phép hơn ta, ta  không đáng xách giày Ngài. Ấy là Đấng sẽ làm <strong>phép
+              báp-tem cho các ngươi bằng  Đức Thánh Linh</strong> và bằng lửa.&rdquo;</em>  (Ma-thi-ơ 3:11)</p>
+          <p><em>&ldquo;Ta  làm phép báp-tem cho các ngươi bằng nước; nhưng  Ngài sẽ làm <strong>phép báp-tem cho
+            các ngươi bằng  Đức Thánh Linh</strong>.&rdquo;</em> (Mác 1:8)</p>
+          <p><em>&ldquo;Phần  ta làm phép báp-tem cho các ngươi bằng nước; song có  một Đấng quyền phép
+            hơn ta sẽ đến, ta không  đáng mở dây giày Ngài. Chính Ngài sẽ làm <strong>phép báp-tem cho
+              các ngươi bằng Đức  Thánh Linh</strong> và bằng lửa.&rdquo;</em> (Lu-ca 3:16)</p>
+          <p><em>&ldquo;Về  phần ta, ta vốn không biết Ngài; nhưng Đấng  sai ta làm phép báp-tem bằng nước có
+            phán cùng ta rằng: Đấng  mà ngươi sẽ thấy Thánh Linh ngự xuống đậu  lên trên, ấy là
+            Đấng làm <strong>phép báp-tem bằng Đức  Thánh Linh</strong>.&rdquo;</em> (Giăng 1:33)</p>
+        </blockquote>
+        <p>Bốn câu trên là lời  tuyên bố của Giăng Báp-tít với người dân  thành Giê-ru-sa-lem và người dân sống gần sông  Giô-đanh, họ đến với ông tại sông  Giô-đanh để nhận phép Báp-têm. Giăng Báp-tít là sứ  giả của Đức Chúa Trời, ông được  sai đến để làm <em>phép  Báp-têm về sự ăn năn </em>cho dân chúng. Mục  đích phép Báp-têm của Giăng là kêu gọi người  ta ăn năn tội, chuẩn bị lòng để tiếp  nhận Chúa Jesus để được cứu rỗi.  Công tác của Giăng là <em>người  dọn đường cho Chúa Jesus.</em> Ông tuyên bố rằng  Đấng đến sau ông, là Chúa Jesus, chính Ngài sẽ làm  phép <strong>Báp-têm bằng Đức  Thánh Linh</strong>.</p>
+        <p><strong style="color: #031DE4">Vào thời điểm nào các môn đồ thời  Chúa Jesus nhận Báp-têm bằng Đức Thánh Linh?</strong></p>
+        <p>Kể từ khi Giăng  Báp-tít tuyên bố lời trên, trong suốt thời gian Chúa  Jesus thi hành chức vụ trên đất cho đến khi  Chúa chết trên thập tự giá, chúng ta không thấy lời  tuyên bố của Giăng được ứng nghiệm.  Tuy nhiên, sau khi Chúa Jesus sống lại, và trước khi  Ngài về trời, Chúa Jesus tuyên bố với các sứ  đồ rằng <strong>chẳng bao  lâu nữa</strong>, họ sẽ nhận Báp-têm bằng Đức  Thánh Linh: </p>
+        <blockquote>
+          <p><em>&ldquo;Lúc  ở với các sứ đồ, Ngài dặn rằng đừng  ra khỏi thành Giê-ru-sa-lem, nhưng phải ở đó
+            chờ điều Cha  đã hứa, là điều các ngươi đã nghe ta nói.  Vì Giăng đã làm phép báp-tem
+            bằng nước,  nhưng <u>trong ít ngày nữa</u>, các ngươi sẽ chịu  phép <strong>báp-tem bằng Đức
+              Thánh Linh</strong>.&rdquo;</em> (Công Vụ  Các Sứ Đồ 1:5)</p>
+        </blockquote>
+        <p>Chúng ta đã biết lời  tuyên bố trên của Chúa Jesus đã được ứng  nghiệm trong ngày Lễ Ngũ Tuần. Các Sứ Đồ  và môn đồ được Báp-têm bằng Đức  Thánh Linh: <em>&ldquo;Đến ngày lễ  Ngũ Tuần, môn đồ nhóm họp tại một chỗ.  Thình lình, có tiếng từ trời đến như tiếng  gió thổi ào ào, đầy khắp nhà môn đồ ngồi.  Các môn đồ thấy lưỡi rời rạc từng  cái một, như lưỡi bằng lửa hiện ra,  đậu trên mỗi người trong bọn mình. Hết  thảy đều được <strong>đầy dẫy Đức Thánh Linh</strong>, khởi sự  nói các thứ tiếng khác (tiếng ngoại quốc), theo  như Đức Thánh Linh cho mình nói.&rdquo;</em> (Công Vụ Các Sứ  Đồ 2:1-4).</p>
+        <p>Sự kiện xãy đến  cho các môn đồ trong ngày Lễ Ngũ Tuần được  xem là phép báp-têm bằng Đức Thánh Linh. </p>
+        <p>Vậy, Báp-têm bằng  Đức Thánh Linh có nghĩa gì? </p>
+        <p>Chúng ta hãy xem lời <u>giải  thích của sứ đồ Phi-e-rơ</u> về hiện  tượng &ldquo;báp-têm bằng Đức Thánh Linh&rdquo;, và lời <u>hứa  của Chúa Jesus</u> về Đức Thánh Linh trước  khi Ngài chịu chết như thế nào. Chúng ta phải học  xem<strong> chính Kinh Thánh, là Lời  Đức Chúa Trời giải thích Báp-têm bằng Đức  Thánh Linh có nghĩa gì</strong>,<strong> </strong>chứ  không nên tin hoàn toàn vào cách giải thích của các vị lãnh  đạo hệ phái Ngũ Tuần.  </p>
+        <p><strong style="color: #031DE4">Lời giải thích của Phi-e-rơ:</strong></p>
+        <p>Trong ngày Lễ Ngũ Tuần,  có nhiều người mộ đạo từ các vùng lân cận  đến thành Giê-ru-sa-lem để dự lễ theo luật  pháp Môi-se quy định, những người nầy đến  từ 15 vùng khác nhau (Chương 2:9-11 liệt kê 15 địa  danh khác nhau), họ nói tiếng bản xứ. Khi Đức  Thánh Linh giáng xuống, các môn đồ được Chúa  ban cho khả năng nói được ngoại ngữ của  15 vùng trên, họ rất ngạc nhiên và tập trung lại  để xem, lúc nầy Phi-e-rơ đứng lên giảng  về Chúa Jesus, và ông giải thích hiện tượng các  môn đồ được đầy dẫy Thánh Linh  như sau: <em>&ldquo;Đức Chúa Jêsus  nầy, Đức Chúa Trời đã khiến sống lại,  và chúng ta thảy đều làm chứng về sự  đó. Vậy, sau khi Ngài đã được đem lên bên  hữu Đức Chúa Trời, và từ nơi Cha đã<strong> nhận lấy Đức Thánh  Linh </strong>mà Cha đã <strong>hứa ban  cho, thì Ngài đổ Đức Thánh Linh ra, </strong>như các  ngươi đang thấy và nghe.&rdquo;</em> (câu 32,33)</p>
+        <p><strong style="color: #031DE4">Lời hứa của Chúa Jesus:</strong></p>
+        <p>Chúng ta hãy nhớ lại,  trước khi Chúa Jesus bị bắt và chịu chết,  Chúa dành nhiều thì giờ để dạy dỗ các sứ  đồ. Đặc biệt, Ngài phán dạy về sự  kiện Đức Thánh Linh sẽ được ban xuống: <em>&ldquo;Ta lại sẽ nài xin Cha, Ngài  sẽ <strong>ban cho</strong> các ngươi  một Đấng Yên ủi khác, để ở với  các ngươi đời đời, tức là Thần lẽ  thật, mà thế gian không thể nhận lãnh được.&rdquo;</em> (Giăng 14:16); <em>&ldquo;Nhưng Đấng  Yên ủi, tức là <strong>Đức  Thánh Linh mà Cha sẽ nhân danh ta sai xuống</strong>, Đấng ấy  sẽ dạy dỗ các ngươi mọi sự, nhắc  lại cho các ngươi nhớ mọi điều ta  đã phán cùng các ngươi.&rdquo;</em> (Giăng 14:26); <em>&ldquo;Khi nào Đấng Yên ủi sẽ  đến, là <strong>Đấng ta sẽ  bởi Cha sai xuống</strong>, tức là Thần lẽ thật  ra từ Cha, ấy chính Ngài sẽ làm chứng về ta.&rdquo;</em> (Giăng 15:26) </p>
+        <p>Căn cứ vào lời  giải thích của Phi-e-rơ nêu trên, và cũng căn cứ  vào hứa của chúa Jesus về sự kiện Đức  Thánh Linh sẽ được ban xuống nêu trên, chúng ta  đi đến một kết luận quan trọng sau: BÁP-TÊM  BẰNG ĐỨC THÁNH LINH CHÍNH LÀ NHẬN LÃNH ĐỨC  THÁNH LINH: Vào lúc một người nhận &ldquo;Báp-têm&rdquo; bằng  Đức Thánh Linh ấy là lúc người đó <strong>nhận được Đức  Thánh Linh </strong>vào lòng. Vào thời điểm Đức Thánh  Linh ban xuống và ngự vào (dwell) người nào, đó là  thời điểm mà Kinh Thánh gọi là &ldquo;Báp-têm bằng  Đức Thánh Linh&rdquo; vậy.</p>
+        <p>&ldquo;<u>Báp-têm</u>&rdquo; bằng  Đức Thánh Linh là cách gọi đặc biệt của  sự kiện được &ldquo;<u>nhận lãnh</u>&rdquo; Đức  Thánh Linh. Đối với các môn đồ, sự nhận  lãnh Đức Thánh Linh trong ngày Lễ Ngũ Tuần là một  kinh nghiệm mới mẻ mà trước đó họ  chưa từng kinh nghiệm. </p>
+        <p>Hơn nữa, sự kiện  Đức Thánh Linh được ban xuống cách đầy  dẫy trong mỗi môn đồ còn đánh dấu một  bước ngoặc lịch sử quan trọng: sự <strong>thành lập Hội Thánh,</strong> hay có  thể nói cách khác, là sự mở đầu cho thời  đại của Đức Thánh Linh, công việc của  Đức Thánh Linh được thực thực hiện  qua những người tiếp nhận Ngài.</p>
+        <p><strong style="color: #C90612">3. Lúc nào một người thời nay được  Báp-têm bằng Đức Thánh Linh?</strong></p>
+        <p>Chúng ta đã đồng  ý rằng các môn đồ và các sứ đồ sống  trong thời Chúa Jesus đã được Báp-têm bằng  Đức Thánh Linh trong ngày Lễ Ngũ Tuần, đó  chính là lần đầu tiên họ kinh nghiệm được  điều kỳ diệu ấy trong cuộc đời của  họ. Nhưng sau ngày Lễ Ngũ Tuần, <em>lúc nào hoăc với điều  kiện nào </em>thì một người được <em>Báp-têm </em>bằng Đức Thánh  Linh? Giải đáp cho câu hỏi nầy cũng tương  tự như giải đáp cho câu hỏi: <em>Lúc nào hoặc với điều kiện nào</em> thì một  người được <em>nhận  lãnh</em> Đức Thánh Linh?</p>
+        <p>Chúng ta có lời giải  đáp trong thư Ga-la-ti: <em>&ldquo;Tôi chỉ  hỏi anh em một câu nầy: Ấy là cậy các việc  luật pháp hay là bởi <strong>nghe</strong> <strong>và</strong> <strong>tin</strong> (hearing of faith) mà anh em đã <strong>nhận</strong> (receive) được Đức Thánh  Linh?&rdquo;</em> (Ga-la-ti 3:2); <em>&ldquo;Đấng <strong>ban</strong> Đức Thánh Linh cho  anh em và làm các phép lạ trong anh em, thì làm bởi các việc  luật pháp, hay là bởi đã <strong>nghe  mà tin </strong>(hearing of faith)?&rdquo; </em>(Ga-la-ti 3:5), và <em>&ldquo;phước lành ban cho Áp-ra-ham nhờ Đức Chúa  Jêsus Christ mà được rải khắp trên dân ngoại,  lại hầu cho chúng ta <strong>cậy  đức tin</strong> mà <strong>nhận  lãnh</strong> Đức Thánh Linh đã hứa cho.&rdquo;</em> (Ga-la-ti 3:14).  Bất cứ người nào nghe Tin Lành cứu rỗi của  Chúa Jeus và <strong>tin</strong>, sẽ  được nhận lãnh Đức Thánh Linh. Trong Phúc Âm  Giăng chương 3, Chúa Jesus cho biết một người  phải được <em>tái sanh</em> (born again) mới được vào nước Đức  Chúa Trời, mà sự tái sanh là công việc của Đức  Thánh Linh: <em>&ldquo;Hễ chi sanh bởi  xác thịt là xác thịt; hễ chi sanh bởi Thánh Linh là  linh.&rdquo; </em>(Giăng 3:6). Như vậy, <strong>ngay vào thời điểm một tội nhân ăn  năn tội và  tin nhận  Chúa Jesus, người ấy sẽ được</strong> <strong>Báp-têm bằng Đức Thánh  Linh</strong>, tức là được nhận lãnh Đức  Thánh Linh, Đức Thánh Linh sẽ tái sanh người  đó bởi quyền năng của Ngài để người  ấy trở nên con người mới: <em>&ldquo;Vậy, nếu ai ở trong Đấng Christ, thì nấy  là người dựng nên mới; những sự cũ  đã qua đi, nầy mọi sự đều trở nên  mới.&rdquo;</em> (II Cô-rinh-tô 5:17) </p>
+        <p>Câu chuyện gia đình Cọt-nây  là người ngoại bang, được nhận lãnh  Đức Thánh Linh khi đang nghe Phi-e-rơ giảng Tin Lành,  đây là một bằng chứng cho <strong>thấy Báp-têm bằng Đức Thánh Linh chính là sự  nhận lãnh Đức Thánh Linh lần đầu tiên của  bất cứ ai tin nhận Chúa Jesus</strong><em>: &ldquo;Khi Phi-e-rơ đang nói, thì <strong>Đức Thánh Linh giáng trên mọi người nghe  đạo</strong>.&rdquo; </em>(Công Vụ Các Sứ Đồ 10:44). Sau  nầy, Phi-e-rơ làm chứng lại sự kiện ấy  cho những người Do Thái tại Giê-ru-sa-lem như sau: <em>&ldquo;Ta mới khởi sự nói, thì  có <strong>Đức Thánh Linh giáng</strong> trên họ, cũng <strong>như ban  đầu Ngài đã giáng trên chúng ta</strong>. Ta bèn nhớ lại  lời Chúa đã truyền rằng: Giăng đã làm phép  báp-tem bằng nước; nhưng các ngươi sẽ chịu <strong>phép báp-tem bằng Đức  Thánh Linh</strong>. Vậy, nếu Đức Chúa Trời đã ban  cho họ cũng một ơn như cho chúng ta, là kẻ  đã tin đến Đức Chúa Jêsus Christ, thì ta là ai, mà  ngăn trở Đức Chúa Trời được?&rdquo;</em> (Công Vụ Các Sứ Đồ 11:15-17). Chúng ta thấy rõ, Cọt-nây  không hề nhận lãnh Đức Thánh Linh cho đến khi  ông nghe và tiếp nhận Tin Lành, Phi-e-rơ khẳng định  rõ: gia đình Cọt-nây được &ldquo;Báp-têm bằng Đức  Thánh Linh&rdquo; ngay vào thời điểm họ tin nhận Chúa.</p>
+        <p>Như vậy, &ldquo;Báp-têm&rdquo; bằng  Đức Thánh Linh không phải là kinh nghiệm thứ hai cho  những ai trước đó đã nhận Đức Thánh  Linh rồi (lúc tin Chúa), nhưng là sự nhận lãnh Đức  Thánh Linh lần đầu tiên và duy nhất ở người  tin nhận Chúa Jesus. </p>
+        <p><strong style="color: #C90612">4. Ý nghĩa của Báp-têm bằng Đức Thánh Linh.</strong></p>
+        <p>I Cô-rinh-tô 12:13 là câu Kinh  Thánh rất quan trọng, là câu chìa khóa giúp chúng ta hiểu ý  nghĩa thực sự của Báp-têm bằng Đức  Thánh Linh:</p>
+        <blockquote>
+          <p><em>&ldquo;Vì chúng ta dù là người  Giu-đa hay người Gờ-réc, tôi mọi hay tự chủ,  đều đã chịu <strong>Báp-
+            têm chung một Thánh Linh</strong> để <strong>HIỆP LÀM MỘT  THÂN</strong>; và chúng ta đều đã chịu uống
+            chung một Thánh Linh nữa.&rdquo; </em>(I Cô-rinh-tô 12:13)</p>
+        </blockquote>
+        <p>Ý nghĩa thật rõ ràng:  Tất cả mọi người trên thế giới, không  phân biệt màu da, chủng tộc, địa vị trong xã  hội v.v… ngay vào thời điểm tin nhận Chúa Jesus, sẽ  được Báp-têm bằng Đức Thánh Linh để <strong>HIỆP LÀM MỘT THÂN (into one  body)</strong>. &ldquo;Thân&rdquo; hay &ldquo;thân thể&rdquo; (body) chính là <em>thân thể</em> của Chúa Jesus<em>: &ldquo;<u>Anh em</u> là <strong>thân</strong> của  Đấng Christ&rdquo; </em>(I Cô-rinh-tô 12:27); tức là <strong>HỘI THÁNH </strong>vậy: <em>&ldquo;<u>Hội Thánh</u> là <strong>thân thể</strong> của Ngài</em> (Chúa  Jesus)&rdquo; (Ê-phê-sô 6:23)</p>
+        <p>&ldquo;Báp-têm bằng Đức  Thánh Linh&rdquo; là việc mầu nhiệm khiến cho tất cả  mọi tội nhân hiệp nên một thân thể, là <strong>Hội Thánh</strong>. Điều nầy  chứng minh rằng Báp-têm bằng Đức Thánh Linh xãy ra <strong>lần đầu tiên cho một  người tin nhận Chúa Jesus</strong>, chứ <strong>không phải là một kinh nghiệm thứ hai cho những  người đã tin Chúa rồi</strong>.</p>
+        <p>I Cô-rinh-tô 12:13 nêu trên còn bày  tỏ một lẽ thật: Chúng ta, là những người  đã tin Chúa, <strong>ĐÃ</strong> <strong>ĐƯỢC</strong> Báp-têm bằng Đức Thánh Linh  (we all <strong>baptized, </strong>xin chú ý:<strong> </strong>động từ &ldquo;báp-têm&rdquo; ở  thì quá khứ), điều đó đã được hoàn tất,  đã thực hiện xong trong quá khứ, ngay vào lúc tiếp  nhận Chúa.</p>
+        <p>Một người  được Báp-têm bằng Đức Thánh Linh để  được tái sanh, trở nên con cái Đức Chúa Trời,  để trở nên một thành viên tronh thân thể của  Chúa Jesus, chứ không phải Báp-têm bằng Đức Thánh  Linh để được nói (hay cầu nguyện) bằng  tiếng lạ.</p>
+        <p><strong style="color: #C90612">5. Đối đáp với tín lý của hệ phái  Ngũ Tuần:</strong></p>
+        <p>1. Hệ phái Ngũ Tuần  cho rằng các môn đồ đã được nhận  lãnh Đức Thánh Linh trước Ngày Lễ Ngũ Tuần,  nhưng chưa được Báp-têm bằng Đức  Thánh Linh, họ nêu bằng chứng trong Giăng 20:22, Chúa  Jesus phán với họ: &ldquo;Hãy nhận lãnh Đức Thánh Linh&rdquo;.  Sự kiện nầy xãy ra trước ngày Lễ Ngũ Tuần.</p>
+        <p>+ Cần đặt lời  phán của Chúa Jesus trong ngữ cảnh: Sau khi Chúa Jesus sống  lại, Ngài hiện ra với các sứ đồ và phán: &ldquo;Ngài  lại phán cùng môn đồ rằng: Bình an cho các  ngươi! Cha đã sai ta thể nào, ta cũng sai các  ngươi thể ấy. Khi Ngài phán điều đó rồi,  thì hà hơi trên môn đồ mà rằng: Hãy nhận lãnh  Đức Thánh Linh. Kẻ nào mà các ngươi tha tội  cho, thì tội sẽ được tha; còn kẻ nào các  ngươi cầm tội lại, thì sẽ bị cầm  cho kẻ đó.&rdquo; (Giăng 20:21-23). Chúa Jesus cho biết Đức  Chúa Cha sai Ngài đến thế gian để hoàn thành  chương trình của Cha thể nào thì Ngài cũng sai phái  các sứ đồ giống như vậy, họ <strong>sẽ nhận lãnh Đức  Thánh Linh để thi hành công tác của Ngài giao phó,</strong> nên sau  đó Chúa Jesus hà hơi trên họ và nói <em>&ldquo;Hãy nhận lãnh Đức Thánh Linh&rdquo;</em>, chúng ta hiểu  ngay sự &ldquo;nhận lãnh Đức Thánh Linh&rdquo; đã được  ứng nghiệm trong ngày Lễ ngũ Tuần, đúng như  Ngài đã phán trước <em>&ldquo;Nhưng  khi Đức Thánh Linh giáng trên các ngươi, thì các  ngươi sẽ nhận lấy quyền phép, và làm chứng  về ta tại thành Giê-ru-sa-lem, cả xứ Giu-đê, xứ  Sa-ma-ri, cho đến cùng trái đất.&rdquo;</em> (Công Vụ Các  Sứ Đồ 1:8). Như vậy, khi Chúa Jesus hà hơi và  phán &ldquo;hãy nhận lãnh Đức Thánh Linh&rdquo; thì Ngài ám chỉ  trong ít Ngài nữa, sau khi Ngài về trời, vào ngày Lễ  Ngũ Tuần, họ sẽ nhận lãnh Đức Thánh  Linh.</p>
+        <p>Nếu các môn đồ  đã nhận được Đức Thánh Linh và đã  được tái sanh trong khi Chúa Jesus còn hiện diện  trên đất (trước Lễ Ngũ Tuần), thì mâu  thuẫn với lời hứa ban Đức Thánh Linh Trong  Giăng 14:16; 15:26. Nếu họ đã được nhận  lãnh Đức Thánh Linh thì sao Chúa lại hứa ban Đức  Thánh Linh cho họ? Chúng đọc trong Giăng 16:7: <em>&ldquo;Dầu vậy, ta nói thật cùng  các ngươi: <strong>Ta đi</strong> là  ích lợi cho các ngươi; vì <strong>nếu</strong> <strong>ta </strong>(Chúa Jesus) <strong>không đi</strong>, Đấng Yên ủi (Đức Thánh  Linh) <strong>sẽ không đến</strong> cùng các ngươi đâu; song <strong>nếu  ta đi, thì ta sẽ sai Ngài đến</strong>.&rdquo;</em> Câu kinh Thánh nầy  chứng tỏ rằng <strong>Đức  Thánh Linh chỉ có thể được ban xuống sau khi  Chúa Jesus về trời</strong>. Khi Chúa Jesus phán với họ:  &ldquo;hãy nhận lãnh Đức Thánh Linh&rdquo; thì Ngài vẫn còn ở  trước mặt họ.</p>
+        <p>Một bằng chứng  khác: Trong Giăng 7:37-39, Chúa Jesus cho biết chỉ khi nào  Ngài được vinh hiển, tức là sau khi Ngài  được cất lên trời và ngồi bên hữu  Đức Chúa Trời, thì sau đó Đức Thánh Linh mới  được ban xuống: <em>&ldquo;Ngày  sau cùng, là ngày trọng thể trong kỳ lễ, Đức  Chúa Jêsus ở đó, đứng kêu lên rằng: Nếu  người nào khát, hãy đến cùng ta mà uống. Kẻ  nào tin ta thì sông nước hằng sống sẽ chảy từ  trong lòng mình, y như Kinh Thánh đã chép vậy. <strong>Ngài phán điều đó chỉ  về Đức Thánh Linh mà người nào tin Ngài sẽ nhận  lấy; bởi bấy giờ Đức Thánh Linh chưa  ban xuống, vì Đức Chúa Jêsus chưa được  vinh hiển</strong>.&rdquo;</em></p>
+        <p>+ Các tín hữu hệ phái  Ngũ Tuần không chú ý đến một yếu tố  quan trọng sau: Có sự khác biệt giữa các môn đồ  sống trong thời Chúa Jesus và những người tin Chúa  ngày nay: Các môn đồ là những người đã từng  đi theo Chúa Jesus, chứng kiến Chúa sống lại và  lên trời, rồi  sau đó họ  được Báp-têm bằng Đức Thánh Linh đúng  theo lời Chúa hứa. Họ là những người sống  trong sự <strong>chuyển tiếp </strong>của  hai thời kỳ: Thời kỳ Cựu Ước và Thời  kỳ Hội Thánh mà <strong>thời  điểm chuyển tiếp là sự kiện môn đồ  được Báp-têm bằng Đức Thánh Linh</strong> (trong ngày  Lễ Ngũ Tuần). Những người tin Chúa sau Lễ  Ngũ tuần cho đến ngày nay không sống trong cả  hai giai đoạn ấy, họ không có cơ hội từng  trải giai đoạn chuyển tiếp ấy như những  môn đồ khi xưa. Đòi hỏi con cái Chúa ngày nay phải  kinh nghiệm giống như kinh nghiệm của các môn  đồ trong ngày Lễ Ngũ tuần khi xưa là điều  vô lý. Vì lẽ đó, bất cứ ai ngày hôm nay, ngay vào thời  điểm tin nhận Chúa Jesus, người đó  được Báp-têm bằng Đức Thánh Linh (nhận  lãnh Đức Thánh Linh) để trở nên một thành  viên trong thân thể của Chúa Jesus, tức là Hội Thánh.</p>
+        <p>2. Căn cứ vào sự  kiện các môn đồ nói các ngôn ngữ khác trong ngày Lễ  Ngũ Tuần, các vị lãnh đạo hệ phái Ngũ Tuần  giảng dạy rằng <strong>dấu  hiệu</strong> của một người được  Báp-têm bằng Đức Thánh Linh được thể hiện  qua ân tứ <strong>nói</strong> <strong>tiếng lạ</strong>. Cách suy diễn  nầy rất khó chấp nhận, vì các môn đồ trong  ngày Lễ Ngũ Tuần nói các <strong>tiếng  ngoại quốc </strong>(ngôn ngữ của 15 dân tộc vùng lân  cận) là tiếng bản xứ nên người nghe hiểu  được; chứ không phải tiếng <em>lạ</em> (tiếng thuộc linh)  mà các tín đồ của hệ phái Ngũ Tuần đang ứng  dụng, là loại ngôn ngữ mà không ai hiểu được.</p>
+        <p><strong style="color: #C90612">6. Kết luận:</strong></p>
+        <p>Chúng ta ghi nhận mục  đích của biến cố Đức Thánh Linh giáng xuống  (Báp-têm bằng Đức Thánh Linh) trên các môn đồ trong  ngày Lễ Ngũ Tuần:</p>
+        <p>1. Hoàn thành lời tiên tri  của Giăng Báp-tít và lời hứa của Chúa Jesus.</p>
+        <p>2. Mở ra một thời  kỳ lịch sử trọng đại trong chương  trình cứu rỗi của Đức Chúa Trời: Sự  khai sanh Hội Thánh. </p>
+        <p>3. Hội Thánh được  thành lập để tiếp tục công tác truyền bá Tin  Lành cho thế giới.</p>
+        <p>4. Sau Lễ Ngũ Tuần,  bất cứ ai tin nhận Chúa Jesus, đều được  Báp-têm bằng Đức Thánh Linh để trở nên thành  viên của Hội Thánh. </p>
+        <p>Chúng ta thấy rõ sự  kiện Báp-têm bằng Đức Thánh Linh không phải nhằm  mục đích &ldquo;chữa trị&rdquo; tình trạng thuộc linh yếu  kém của các môn đồ khi xưa; do đó, những  người đã tin Chúa ngày hôm nay, không có lý do gì để  bắt chước theo khuôn mẫu của ngày Lễ  Ngũ như sự giảng dạy của hệ phái  Ngũ Tuần, là phải cầu xin cho được  báp-têm bằng Đức Thánh Linh.</p>
+        <p>Những ai đã tin Chúa rồi  thì không cần phải tìm kiếm hay cầu xin để được  Báp-têm bằng Đức Thánh Linh. Hơn nữa, không có chổ  nào trong Công Vụ Các Sứ Đồ (sau Lễ Ngũ Tuần)  và trong tất cả các Thư Tín khuyên dạy con cái Chúa phải  được &ldquo;Báp-têm bằng Đức Thánh Linh&rdquo;. </p>
+        <p>Sự giảng dạy rằng  các tín hữu phải cầu nguyện xin Chúa Báp-têm bằng  Đức Thánh Linh cho mình, là sự giảng dạy không có  nền tảng Thánh Kinh. </p>
+        <p>Nan đề cần được  giải quyết là: Tại sao đời sống của nhiều  con cái Chúa trong Hội Thánh không làm gương tốt, tình trạng  thuộc linh nguội lạnh, thiếu quyền năng  trong sự hầu việc Chúa v.v…? Điều con cái Chúa cần,  là cần được đầy dẫy Đức Thánh  Linh: <em>&ldquo;Phải đầy dẫy  Đức Thánh Linh&rdquo; </em>(Ê-phê-sô 5:18); cần bước  đi theo sự dẫn dắt của Đức Thánh Linh:<em> &ldquo;Hãy bước đi theo Thánh  Linh, chớ hề làm trọn những điều ưa muốn  của xác thịt.&rdquo;</em> (Ga-la-ti 5:16); cần sống theo  Đức Thánh Linh<em>: &ldquo;Những  ai sống theo Thánh Linh thì chú tâm vào những việc thuộc  Thánh Linh. Chú tâm vào xác thịt sanh ra sự chết, còn chú tâm  vào Thánh Linh sanh ra sự sống và bình an.</em>&rdquo; (Rô-ma 8:5,6); cần  có bông trái của Đức Thánh Linh trong đời sống  (Ga-la-ti 5:22), chứ không cần Báp-têm  bằng Đức Thánh Linh (vì đã được thực  hiện rồi). Chúng ta sẽ suy gẫm vấn đề &ldquo;đầy  dẫy Đức Thánh Linh&rdquo; trong một bài học Kinh Thánh  khác.</p>
+        <p> </p>
+        <p><strong><em>Tháng 2, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

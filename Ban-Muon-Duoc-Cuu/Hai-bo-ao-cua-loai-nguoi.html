@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+      <blockquote>
+        <div>
+          <p align="center"><strong>Hai bộ áo của loài  người</strong></p>
+          <p align="center">Trần Đình  Tâm</p>
+          <p align="center"> </p>
+          <p>Kinh Thánh, là Lời của  Đức Chúa Trời bày tỏ cho chúng ta biết loài  người đầu tiên được tạo dựng  bởi Đức Chúa Trời (Sáng Thế Ký chương  1-3). Tổ tiên của loài người là A-đam và Ê-va  được Chúa tạo dựng thật hoàn hảo và sống  trong hạnh phúc. Lúc ấy loài người không phải mặc  áo quần chi cả, nhưng họ không hề có cảm  giác xấu hổ nào, vì họ được che phủ bởi  sự <em>vinh hiển</em> của  Đức Chúa Trời, Ngài đã <em>&ldquo;Đội cho loài người sự vinh hiển (grory)  và sang trọng&rdquo; </em>(Thi Thiên 8:5).</p>
+          <p>Tuy nhiên, tổ tiên loài  người đã không vượt qua được cuộc  thử nghiệm về sự tự do vâng phục Đức  Chúa Trời, qua hành động hái ăn trái của cây <em>biết điều thiện và  điều ác </em>mà Chúa nghiêm cấm. Ngay sau khi ăn trái cây ấy,  Kinh Thánh cho biết <em>&ldquo;mắt họ  mở ra, biết rằng mình lỏa lồ&rdquo;</em> (Sáng Thế  Ký 3:7a). Lúc ấy, loài người nhận biết rằng  mình đã làm điều sai trái trước mặt Thiên Chúa  bởi cảm giác hổ thẹn khi thấy mình trần truồng.  Cảm giác hổ thẹn ấy đã lưu truyền từ  A-đam và Ê-va cho toàn thể nhân loại ngày nay. Sự hổ  thẹn (hay xấu hổ, mắc cỡ) khi trần truồng  là một bằng chứng cho thấy nhân loại ngày nay thừa  hưởng nguyên tội do A-đam truyền lại. Đúng  như Rô-ma 3:23 chép: <em>&ldquo;Vì tất cả  mọi người đều đã phạm tội, thiếu  mất vinh quang của Đức Chúa Trời.&rdquo;</em></p>
+          <p><strong>Bộ áo thứ nhất.</strong></p>
+          <p>A-đam và Ê-va đã làm gì  khi biết mình lỏa lồ? Kinh Thánh cho biết ông bà  đã <em>&ldquo;lấy lá cây vả  đóng khố che thân.&rdquo; </em>(Sáng Thế Ký 3:7b). Trần truồng  là một trong các hậu quả trước mắt của  tội không vâng phục Đức Chúa Trời. Với phản  ứng thông thường của con người phạm tội  lúc ấy, ông bà đã lấy lá của cây vả (fig) để  kết thành áo và quần để che đậy sự trần  truồng. Cây vả là loại cây có diện tích lá khá lớn  và có khía nên dể kết lại với nhau (xem hình bên  dưới)</p>
+          <p><img src="/Image/image002_0004.jpg" alt="Description: C:\Users\Tam Tran\Downloads\29APPE1-articleLarge.jpg" v:shapes="Picture_x0020_1" height="266" width="420" />  <img src="/Image/image004_0001.jpg" alt="Description: C:\Users\Tam Tran\Downloads\images.jpg" v:shapes="Picture_x0020_5" height="307" width="292" /></p>
+          <p><em>                    Lá và trái vả                                              Hình dạng một lá vả</em></p>
+          <p>Bộ áo của A-đam  và Ê-va là <strong>cái áo bằng lá cây vả</strong>,  đây là loại áo do <strong>chính tay  ông bà</strong> <strong>làm ra</strong>, và do <strong>chính ông bà tự mặc cho mình </strong>với  mục đích <strong>che đậy sự  trần truồng</strong>. </p>
+          <p>Cái áo bằng lá cây vả  của A-đam và Ê-va ngày xưa làm hình bóng về tất cả  những việc công đức, từ thiện, ép xác, khổ  tu v.v… mà con người có thể nghĩ ra và cố gắng  thực hiện. Từ trong thâm tâm, dù không nói ra, con người  ý thức được có một <em>&ldquo;điều gì đó không ổn&rdquo;</em> trong bản chất  của mình. <em>&ldquo;Điều gì  đó không ổn&rdquo;</em> là khuynh hướng làm điều  không tốt mặc dù trong thâm tâm họ biết đó là  điều không nên làm. Để chống lại khuynh  hướng đó, con người cố gắng để  cho tâm trí mình nghĩ đến những điều tốt  và ra sức thực hành những công việc mà họ cho là  tốt, là có ích cho người khác v.v… &ldquo;Điều không ổn&rdquo;  đó Kinh Thánh gọi là <strong>tội</strong> do A-đam lưu truyền lại. </p>
+          <p><strong>Tất cả những việc công đức mà bản  thân con người đã cố công thực hiện cũng  giống như chiếc áo bằng lá vả</strong> mà A-đam và  Ê-va khi xưa đã tự làm ra và mặc lấy cho mình. Thử  hỏi, những việc làm từ thiện, tu thân v.v … mà  con người ra sức làm có thể che đậy  được bản chất tội lỗi do A-đam  truyền lại hay không? Lời Đức Chúa Trời  đã khẳng định: KHÔNG! Chúng ta đọc trong Ê-sai  64:6: <em>&ldquo;Chúng tôi hết thảy  đã trở nên như vật ô uế, <strong>mọi việc công bình của chúng tôi như ÁO NHỚP </strong>(polluted garment); chúng tôi thảy đều héo như lá, và  tội ác chúng tôi như gió đùa mình đi.&rdquo; </em></p>
+          <p>Hãy giả định rằng  một người làm công đức 1 năm sẽ  được 1 chiếc lá vả làm áo che thân; 2 năm sẽ  được 2 lá; 3 năm 3 lá v.v… ; người có công  đức rất lớn khó có ai sánh bằng là bà Tê-rê-sa  (Teresa) đã dành 40 năm cho công tác từ thiện, bà có 40  chiếc lá. Dưới cái nhìn của con người,  người có chiếc áo được kết với 40  lá được xem là kín đáo hơn người có cái áo  chỉ với vài cái lá. Tuy nhiên, dưới con mắt của  Đức Chúa Trời, tất cả mọi người  đều như nhau, tất cả đều trần trụi  trước mặt Ngài dù họ mặc 1, 2 hay 40 cái lá!</p>
+          <p><strong>Bộ áo thứ hai.</strong></p>
+          <p>Bộ áo thứ nhất là  bộ áo bằng lá vả mà A-đam và Ê-va đã tự kết  lấy và mặc cho mình. Đức Chúa Trời đã không  hài lòng chút nào về bộ áo ấy, nên chẳng bao lâu sau  đó, Ngài đã &ldquo;may&rdquo; cho A-đam và Ê-va bộ áo khác thay thế  cho bộ áo bằng lá vả: <em>&ldquo;Giê-hô-va  Đức Chúa Trời lấy <strong>da  thú</strong> kết thành áo dài cho vợ chồng A-đam, và <strong>mặc lấy cho</strong>.&rdquo;</em> (Sáng Thế  Ký 3:21).</p>
+          <p>Bộ áo thứ hai là bộ  áo bằng <strong>da thú </strong>(garment of  skin), do Đức Chúa Trời <strong>làm</strong> <strong>cho </strong>(made) và cũng do chính  Chúa <strong>mặc cho A-đam và Ê-va</strong>.</p>
+          <p>Chúng ta hãy lưu ý các yếu  tố khác nhau giữa hai bộ áo như sau:</p>
+          <p>                              <u>Chất  liệu</u>             <u>Cách  chế tạo</u>                  <u>cách mặc</u></p>
+          <p>Bộ áo thứ nhất:     Bằng lá vả              Tự làm lấy                    Tự mặc lấy</p>
+          <p>Bộ áo thứ hai:       Bằng da thú        Đức  Chúa Trời làm      Đức  Chúa Trời mặc cho</p>
+          <p> </p>
+          <p>Câu hỏi cần  được giải đáp: Đức Chúa Trời lấy  da thú từ đâu để làm áo cho A-đam và Ê-va? Chúng ta  có câu trả lời trong Khải Huyền 13:8: <em>&ldquo;Hết thảy những dân sự  trên đất đều thờ lạy nó (Antichrist), là những  người không có tên ghi trong sách sự sống của <strong>Chiên Con (lamb) đã bị giết  từ buổi sáng thế</strong>.&rdquo;</em></p>
+          <p>Đức Chúa Trời  đã có kế hoạch chọn cho A-đam và Ê-va bộ áo bằng  da thú. Để có da làm áo, Đức Chúa Trời KHÔNG tạo  ra (create) bộ áo bằng da thú, nhưng có con thú phải bị  giết chết để lấy da làm áo. Con thú chịu hy  sinh sự sống mình để cho A-đam và Ê-va có áo mặc  chính là con chiên con (Xem hình minh họa bên dưới)</p>
+          <p> <img src="/Image/image006_0001.jpg" alt="Description: C:\Users\Tam Tran\Downloads\388588779_f641aa9afb_m.jpg" v:shapes="Picture_x0020_2" height="195" width="257" />    <img src="/Image/image008_0001.jpg" alt="Description: C:\Users\Tam Tran\Downloads\mixed color kalgan lamb.JPG" v:shapes="Picture_x0020_4" height="194" width="277" /></p>
+          <p>        <em>Con  chiên con                            Da  con chiên để làm áo</em></p>
+          <p> </p>
+          <p>Chiên con<strong> </strong>làm hình bóng về Chúa Jesus (Giăng 1:35,36)</p>
+          <p>Chiên con bị giết làm  hình bóng về Chúa Jesus chịu chết trên thập tự  giá (II Cô-rinh-tô 5:7)</p>
+          <p>Chiên con bị giết  để có da làm áo cho A-đam và Ê-va làm hình bóng về sự  chết của Chúa Jesus có tác dụng &ldquo;che đậy&rdquo; hay xóa  bỏ tội do A-đam truyền lại (Rô-ma 5:19, Giăng  1:19).</p>
+          <p>Đức Chúa Trời <strong>làm ra áo</strong> cho A-đam và Ê-va và  Ngài <strong>mặc lấy cho họ </strong>hàm  chứa một chân lý quan trọng: Hành động ấy  bày tỏ tình yêu của Đức Chúa Trời đối với  A-đam và Ê-va. Tương tự như vậy, sự cứu  rỗi qua Chúa Jesus mà bất cứ ai tin sẽ nhận  được là một ân sủng (grace) Đức Chúa Trời  ban cho loài người.  </p>
+          <p>Đức Chúa Trời  không hài lòng và không chấp nhận chiếc áo bằng lá vả.  Cũng vậy, tất cả những công đức mà loài  người cố gắng sống và thực hành đều  không có giá trị để che đậy bản chất tội  lỗi của mình trước mặt Đức Chúa Trời.</p>
+          <p>Đức Chúa Trời  đã may cho A-đam và Ê-va chiếc áo bằng da thú để  che đậy sự trần truồng của họ.  Cũng vậy, chỉ có sự chết của Chúa Jesus mới  có thể khiến cho loài người trở nên vô tội trước  mặt Đức Chúa Trời. Bất cứ ai tin nhận  Chúa Jesus đã chịu chết chuộc tội cho mình, Đức  Chúa Trời liền kể người ấy là vô tội  và được kể là công bình: <em>&ldquo;Vì, như bởi sự không vâng phục của một  người (chỉ về A-đam) mà mọi người  khác đều thành ra kẻ có tội, thì cũng một lẽ  ấy, bởi sự vâng phục của một người  (chỉ về Chúa Jesus) mà mọi người khác sẽ  đều thành ra công bình.&rdquo;</em> (Rô-ma 5:19)</p>
+          <p>Quý vị và các bạn  đã từng nghe về sự cứu rỗi bởi đức  tin nơi Chúa Jesus, nhưng quý vị chưa bao giờ quyết  định tin nhận Chúa Jesus, có thể quý vị là những  người tốt, đạo đức, vì quý vị  không làm điều gì sai trái mà chỉ làm những việc phúc  đức mà thôi. Tuy nhiên, Lời Đức Chúa Trời cho  biết Ngài không hài lòng về <em>&ldquo;bộ  áo bằng lá vả&rdquo;</em> mà quý vị <em>&ldquo;tự làm lấy&rdquo;</em> và <em>&ldquo;tự  mặc&rdquo;</em> cho mình. Đức Chúa Trời chỉ chấp nhận <em>&ldquo;bộ áo bằng da chiên con&rdquo;</em>,  do chính Ngài &ldquo;<em>may cho&rdquo;</em> và &ldquo;<em>mặc lấy&rdquo; cho</em> quý vị.</p>
+          <p>Quý vị chọn cho mình  bộ áo nào?</p>
+          <p> </p>
+          <p><em>Tháng 5, 2014</em></p>
+          <p> </p>
+        </div>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

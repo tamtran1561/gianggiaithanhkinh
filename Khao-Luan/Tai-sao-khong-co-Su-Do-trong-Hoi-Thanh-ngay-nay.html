@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>TẠI SAO KHÔNG CÓ CHỨC SỨ ĐỒ TRONG HỘI THÁNH NGÀY NAY?</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p><strong>1. ý nghĩa của chức Sứ Đồ.</strong></p>
+        <p><strong>Sứ Đồ</strong> (apostle), Hy văn: <em>apostolos</em>, có nghĩa là người <strong><em>được sai đi </em></strong>(to  send away, send forth). Sứ Đồ chỉ về một người  được sai phái đi để thực hiện một  công tác được ủy thác cho. Chúng ta biết  được ý nghĩa nầy qua các câu Kinh Thánh sau:</p>
+        <p>a) <u>Chúa Jesus được  kể là Sứ đồ</u>:</p>
+        <blockquote>
+          <p><em>&ldquo;Bởi cớ đó,  hỡi anh em thánh, là kẻ dự phần ơn trên trời  gọi, hãy suy kỹ đến <strong>sứ  giả </strong>(apostle) và thầy tế lễ  thượng phẩm mà chúng ta tin theo, <strong>tức là Đức Chúa Jêsus</strong>.&rdquo;</em> <br />
+            (Hê-bơ-rơ 3:1) </p>
+        </blockquote>
+        <p>[<em>Sứ giả</em> (apostle) trong câu trên nên dịch là <em>Sứ đồ</em>, vì cùng một  từ ngữ &ldquo;apostle&rdquo; lại được dịch là &ldquo;Sứ  đồ&rdquo; trong các câu chỉ về 12 vị Sứ đồ  của Chúa Jesus]</p>
+        <p>Chúa Jesus được gọi  là Sứ Đồ vì Ngài được Đức Chúa Cha <strong>sai</strong> <strong>phái </strong>đến thế gian để thực hiện  công tác chuộc tội cho nhân loại: </p>
+        <blockquote>
+          <p><em>&ldquo;Vì ta  từ trên trời xuống, chẳng phải để làm  theo ý ta, nhưng làm theo ý Đấng đã <strong>sai</strong> ta đến&rdquo;</em> (Giăng 6:38); </p>
+          <p><em>&ldquo;Chúng  ta lại đã thấy và làm chứng rằng Đức  Chúa Cha đã <strong>sai</strong> Đức  Chúa Con đặng làm Cứu Chúa thế gian.&rdquo; </em> (I Giăng 4:14).</p>
+        </blockquote>
+        <p>b) <u>Mười hai Sứ  Đồ của Chúa Jesus</u>:</p>
+        <blockquote>
+          <p><em>&ldquo;Đến sáng ngày,  Ngài đòi môn đồ đến, chọn mười hai  người, gọi là <strong>sứ  đồ</strong>.&rdquo;</em> (Lu-ca 6:13)</p>
+          <p><em>&ldquo;Ấy  đó là mười hai sứ đồ Đức Chúa Jêsus <strong>sai đi</strong> … Kìa, Ta <strong>sai các ngươi đi</strong> khác  nào như chiên vào giữa bầy muông  sói …&rdquo;</em> (Ma-thi-ơ 10:5, 16)</p>
+          <p><em>&ldquo;Đức Chúa Jêsus  nhóm họp mười hai <strong>sứ  đồ</strong>, ban quyền năng phép tắc để trị  quỉ chữa bịnh. Rồi Ngài <strong>sai đi</strong> rao giảng về  nước Đức Chúa Trời cùng chữa lành kẻ có  bịnh.&rdquo;</em> (Lu-ca 9:1,2)</p>
+        </blockquote>
+        <p>Mười hai người  được Chúa Jesus chọn và <strong>sai đi</strong> thi hành công tác rao giảng nước  Đức Chúa Trời, nên họ được gọi là <em>Sứ đồ</em>.</p>
+        <p>c) <u>Phao-lô là Sứ đồ</u>:</p>
+        <p> &nbsp;&nbsp;&nbsp; <em>“Phao-lô,  tôi tớ Đức Chúa Jêsus Christ, được gọi  làm <strong>sứ đồ</strong>, để  riêng ra đặng giảng Tin Lành Đức Chúa Trời.”</em> <br />
+  &nbsp; &nbsp; (Rô-ma 1:1) </p>
+        <p>Phao-lô được Chúa  Jesus hiện ra và kêu gọi ông là Sứ đồ, ông là  người được Chúa <strong>sai  đi </strong>giảng Tin Lành cho dân ngoại.</p>
+        <p>d) <u>Ba-na-ba là Sứ đồ</u>: </p>
+        <p>     &ldquo;Nhưng hai sứ đồ là <strong>Ba-na-ba</strong> và Phao-lô hay điều  đó …&rdquo; (Công Vụ Các Sứ Đồ 14:14)</p>
+        <p>Ba-na-ba được gọi  là Sứ đồ vì ông được Đức Thánh Linh  sai đi truyền giảng Tin Lành cho thế giới: <em>&ldquo;Đang khi môn đồ thờ  phượng Chúa và kiêng ăn, thì Đức Thánh Linh phán rằng:  hãy để riêng Ba-na-ba và Sau-lơ đặng làm công việc  ta đã gọi làm. Vậy, Sau-lơ và Ba-na-ba đã chịu  Đức Thánh Linh <strong>sai đi</strong>,  bèn xuống thành Sê-lơ-xi, rồi từ đó đi thuyền  đến đảo Chíp-rơ.&rdquo;</em> (Công Vụ Các Sứ  Đồ 13:2,4)</p>
+        <p>Tóm lại, <strong>người được Chúa  sai đi đến một nơi nào đó, để rao giảng  Tin Lành cho dân cư vùng đó và thành lập Hội Thánh tại  địa phương</strong> <strong>đó,  được kể là Sứ đồ </strong>vậy. </p>
+        <p><strong>2. Có chức Sứ Đồ trong Hội Thánh ngày nay  không?</strong></p>
+        <p>Nhiều người cho  rằng chức Sứ Đồ không có trong Hội Thánh  ngày nay, vì chức nầy không còn cần thiết nữa. Quan  điểm nầy dựa vào các lập luận sau đây:</p>
+        <p><strong>a) Lập luận thứ nhất</strong>: Quan điểm  nầy đặt nền tảng trên câu chuyện Sứ  Đồ Phi-e-rơ nêu ra tiêu chuẩn để bầu chọn  một Sứ Đồ thay thế cho Sứ Đồ  Giu-đa Ích-ca-ri-ốt: <em>&ldquo;Vậy,  nội những kẻ <strong>đã  theo cùng chúng ta trọn lúc Đức Chúa Jêsus đi lại  giữa chúng ta</strong>, từ khi Giăng làm phép báp-tem cho đến  ngày Ngài được cất lên khỏi giữa chúng ta,<strong> phải có một người  làm chứng cùng chúng ta về sự Ngài sống lại</strong>.  Môn đồ cử ra hai người: Giô-sép tức là  Ba-sa-ba, cũng gọi là Giúc-tu, và Ma-thia, rồi cầu nguyện  rằng: Lạy Chúa, Ngài biết lòng mọi người,  xin tỏ ra cho chúng tôi nội hai người nầy ai là  người Chúa đã chọn, đặng dự vào chức  vụ sứ đồ, thay vì Giu-đa đã bỏ đặng  đi nơi của nó. Đoạn bắt thăm, trúng nhằm  Ma-thia; người bèn được bổ vào mười  một sứ đồ.&rdquo;</em> (Công Vụ Các Sứ Đồ  1:21-26). Tiêu chuẩn để chọn một Sứ Đồ, <strong>theo ý của Phi-e-rơ</strong>, là  người phải có đủ 2 điều kiện sau: 1/  Là người đã cùng với các Sứ Đồ, đi  theo Chúa Jesus trong suốt thời gian Chúa thi hành chức vụ,  tức là từ lúc Giăng Báp-tít làm Báp-têm cho Chúa Jesus cho  đến lúc Chúa Jesus thăng thiên; 2/ Người đó thấy  Chúa Jesus phục sinh. Có 2 vị hội đủ các điều  kiện trên: Ba-na-ba và Ma-thia, sau khi bắt thăm, Ma-thia  được chọn. </p>
+        <p>Quan điểm trên cho rằng  kể từ thời điểm Chúa Jesus thăng thiên cho  đến ngày nay, không còn ai hội đủ 2 điều  kiện do Phi-e-rơ nêu ra, nên không còn ai thi hành chức Sứ  Đồ nữa.</p>
+        <p><strong>Nhận xét</strong>:</p>
+        <p>Hai điều kiện  bình chọn chức vụ Sứ Đồ phát xuất từ  nếp suy nghĩ của Phi-e-rơ. Sách Công Vụ Các Sứ  Đồ chỉ tường thuật cách khách quan sự  kiện Phi-e-rơ đưa ra vấn đề cần phải  bầu ra một Sứ Đồ thay thế cho Giu-đa  Ích-ca-ri-ốt, mà không cho biết cuộc bầu cử ấy  được Chúa chỉ định hay không. Để biết  đó có phải là ý của Chúa hay chỉ là ý riêng của  Phi-e-rơ thì cần phải so sánh với các phần Kinh  Thánh khác, và dùng Kinh Thánh để giải nghĩa Kinh Thánh  (Xin đọc bài <em>&ldquo;Vị Sứ  Đồ nào thay thế cho Giu-đa Ích-ca-ri-ốt&rdquo;</em> trong  mục Giải Đáp Thắc Mắc). Chúng ta biết  Phao-lô được <strong>chính Chúa  Jesus kêu gọi làm Sứ Đồ</strong> (sau khi Chúa thăng  thiên). <strong>Sau khi Chúa sống lại  và tiếp tục ở trên đất suốt 40 ngày, chúng  ta biết Chúa Jesus không chọn ai, Chúa Jesus đã không chọn  Ma-thia</strong>. [Ma-thia được chọn bởi sự bắt  thăm của con người, cho dù con người đã có  cầu nguyện trước khi bắt thăm, nhưng  điều quan trọng hơn là chúng ta phải biết rõ  đó có phải là sự chỉ định của Chúa hay  không] </p>
+        <p>Một vấn đề  khó giải quyết nếu dựa theo lập luận trên:  Không phải chỉ có Ma-thia là hội đủ 2 điều  kiện do Phi-e-rơ nêu ra, nhưng còn có Giô-sép Ba-sa-ba nữa  (Công Vụ Các Sứ Đồ 1:23). Như vậy, Giô-sép  Ba-sa-ba cũng xứng đáng được gọi là Sứ  Đồ (nếu theo điều kiện do Phi-e-rơ  đưa ra), thế nhưng, ông đã <strong>không</strong> được kể là Sứ Đồ vì …  lá thăm không trúng nhằm tên ông!</p>
+        <p>Phao-lô thực sự là Sứ  đồ mà không do bất cứ ai bầu ra, nhưng do  chính Chúa Jesus lựa chọn và kêu gọi ông.</p>
+        <p>Như vậy, chúng ta  không thể dùng 2 điều kiện do Phi-e-rơ  đưa ra để kết luận rằng chức vụ  Sứ Đồ ngày nay đã hết hiệu lực.</p>
+        <p><strong> b) Lập luận thứ  hai</strong>: Quan điểm nầy cho rằng chỉ có 12 vị  được gọi là Sứ đồ, vì được  Chúa Jesus trực tiếp lựa chọn, họ được  Chúa ban cho quyền làm phép lạ, chữa bệnh, đuổi  quỷ; một số trong 12 vị nầy là trước  giả của vài sách trong Kinh Thánh Tân Ước. Ngoài 12 vị  Sứ đồ ấy ra, chỉ còn Phao-lô là được  Chúa kêu gọi cách đặc biệt sau khi Ngài thăng  thiên. Ngoài những vị nầy ra, không ai &ldquo;xứng đáng&rdquo;  được gọi là Sứ đồ nữa.</p>
+        <p><strong>Nhận xét:</strong></p>
+        <p>Sau khi Chúa thăng thiên,  ngoại trừ Phao-lô là Sứ đồ, Kinh Thánh cho biết <strong>Ba-na-ba</strong> cũng là một Sứ  Đồ trong thời Hội Thánh đầu tiên: <em>&ldquo;Nhưng hai sứ đồ là  Ba-na-ba và Phao-lô … &rdquo; </em>(Công Vụ Các Sứ Đồ 14:14.  Xin đọc thêm 14:3-5 để thấy rõ Ba-na-ba là Sứ  đồ). Ngoài Ba-na-ba là Sứ Đồ, Rô-ma 16:7 cho biết <strong>An-trô-ni-cơ</strong> (Andronicus) và <strong>Giu-ni-a</strong> (Junia) cũng là các Sứ-đồ. <strong>Si-la</strong> (Silas) là người cộng  tác với Phao-lô trong chuyến truyền giáo lần thứ  hai, được gọi là Sứ đồ (Công Vụ  Các Sứ Đồ 15:25,40; I Tê-sa-lô-ni-ca 2:6)</p>
+        <p>Hội Thánh đầu  tiên đã còn chức Sứ đồ thì không có lý do gì Hội  Thánh ngày nay không còn chức Sứ đồ! </p>
+        <p>Vấn đề là tại  sao chức Sứ đồ không được công khai nêu  lên trong Hội Thánh ngày nay? Câu trả lời thuộc về  trách nhiệm của những người lãnh đạo các  hệ phái Tin Lành, là những người có thẩm quyền  cao nhất trong cơ cấu tổ chức của Hội  Thánh. </p>
+        <p><strong>c) Lập luận thứ ba</strong>: Quan điểm nầy  cho rằng chức Sứ đồ liên quan đến quyền  trước tác Kinh Thánh Tân Ước:</p>
+        <blockquote>
+          <p><em>&ldquo;Anh  em đã được dựng lên trên nền của các <strong>sứ đồ</strong> cùng các đấng  tiên tri, chính Đức Chúa Jêsus Christ là đá góc  nhà.&rdquo;</em> (Ê-phê-sô 2:20)</p>
+          <p><em>&ldquo;Hầu  cho ghi lấy lời nói trước của các thánh tiên tri,  cùng mạng lịnh của Chúa và Cứu Chúa chúng ta, đã cậy  các <strong>sứ đồ</strong> của  anh em mà truyền lại.</em> (II Phi-e-rơ 3:2)</p>
+        </blockquote>
+        <p>Căn cứ vào hai câu  trên, nhiều người cho rằng Đức Chúa Trời  đã soi dẫn các Sứ đồ do Chúa Jesus chọn lựa  để viết Kinh Thánh Tân Ước. Sau khi Tân Ước  đã hoàn tất, chức Sứ đồ không còn cần  thiết nữa. Không ai được quyền nhận  mình là Sứ Đồ, và cũng không ai được quyền  tuyên bố người nào khác là Sứ Đồ. </p>
+        <p><strong>Nhận xét:</strong></p>
+        <p>Đúng là các Sứ Đồ  được Chúa soi dẫn để viết Tân Ước,  nhưng chúng ta nên nhớ rằng không phải tất cả  các Sứ Đồ được Chúa dùng để trước  tác Tân Ước, chỉ có 3 vị là Ma-thi-ơ, Giăng và  Phi-e-rơ, còn Phao-lô được chọn viết các  thư tín sau khi Chúa về trời. Tuy nhiên, không phải chỉ  có Sứ Đồ được Chúa dùng để viết  Kinh Thánh, Đức Chúa Trời cũng dùng những người <strong>không</strong> phải là Sứ Đồ  để viết Tân Ước như: Mác, Lu-ca, Gia-cơ  và Giu-đe. Như vậy, quan điểm cho rằng ngày  nay không còn chức Sứ đồ nữa vì Kinh Thánh đã  hoàn tất thì khó có thể chấp nhận được. </p>
+        <p>Dù Kinh Thánh đã hoàn tất,  nhưng không có nghĩa là chức Sứ Đồ đã chấm  dứt, vì như đã giải thích bên trên, từ ngữ<strong> &ldquo;Sứ Đồ&rdquo; (apostolos) </strong>có  nghĩa<strong> </strong>là <strong><em>được</em> <em>sai đi </em>để rao giảng  Tin Lành, </strong>chứ<strong> </strong>không có nghĩa  là<strong> người trước tác  Kinh Thánh</strong>. </p>
+        <p>Tóm lại, có chức Sứ  Đồ trong Hội Thánh ngày nay không? Kinh Thánh khẳng  định là có chức Sứ Đồ:</p>
+        <blockquote>
+          <p><em>&ldquo;Đức  Chúa Trời đã lập <strong>trong  Hội Thánh</strong>, thứ nhứt là <strong>sứ đồ</strong>, thứ nhì là đấng tiên tri,  thứ ba là thầy giáo, kế đến  kẻ làm phép lạ, rồi kẻ được ơn chữa  bịnh, cứu giúp, cai quản, nói các thứ tiếng.&rdquo; </em> (I Cô-rinh-tô 12:28)</p>
+          <p><em>&ldquo;Ấy  chính Ngài đã cho người nầy làm <strong>sứ đồ</strong>, kẻ kia làm tiên tri, người  khác làm thầy giảng Tin Lành, kẻ khác nữa  làm mục sư và giáo sư, để các thánh đồ  được trọn vẹn về công việc của chức dịch  và sự gây dựng <strong>thân thể  Đấng Christ (tức Hội Thánh)</strong>&rdquo; </em>(Ê-phê-sô 4:11,12)</p>
+        </blockquote>
+        <p>Theo sự <strong>bày tỏ của Kinh Thánh</strong>, <strong>Hội Thánh có chức Sứ  Đồ</strong> chứ không phải không còn nữa như nhiều  người ngày nay lầm tưởng. Và theo sự bày tỏ  của Kinh Thánh, chức Sứ Đồ cũng được  phân biệt rõ ràng với các chức khác như Mục  sư, Giáo Sư, Tiên tri, Thầy Giảng Tin Lành v.v… Tất  nhiên, tất cả chúng ta điều đồng ý rằng  sự mạc khải của Đức Chúa Trời qua Kinh  Thánh đã hoàn tất, không một ai có quyền thêm vào Kinh  Thánh bất cứ giáo lý nào nữa. </p>
+        <p>Chúng ta biết có một  số Mục Sư được Chúa sai phái đi đến  một nơi nào đó để rao giảng Tin Lành và thành  lập Hội Thánh tại địa phương đó, vị  Mục sư đó thật đang thi hành chức Sứ  Đồ. Hội Thánh ngày nay thường dùng từ ngữ  &ldquo;<em>giáo sĩ&rdquo; </em>để chỉ  chức vụ của vị Mục sư đó. Tuy nhiên, từ  ngữ &ldquo;giáo sĩ&rdquo; lại không hề có trong Kinh Thánh. Có thể  các tổ chức Hội Thánh ngày nay gọi chức <em>giáo sĩ</em> (hay<em> &ldquo;Mục sư Giáo sĩ&rdquo;</em>) thay cho &ldquo;Thầy giảng  Tin Lành&rdquo; (evangelist) mà Phao-lô liệt kê trong Ê-phê-sô 4:11,12 để  chỉ về những vị Mục sư được  gửi ra ngoại quốc, giảng Tin Lành và thành lập Hội  Thánh tại nơi đó (?). Nếu đúng như vậy  thì nan đề cũng không thay đổi và cũng chưa  được giải quyết: chức Sứ đồ  cũng đã bị bỏ qua. Kinh Thánh cho biết rõ ràng: Phao-lô,  Ba-na-ba, Si-la, An-trô-ni-cơ … là những <em>Sứ đồ</em> (Apostle) chứ không phải <em>Mục sư</em>. </p>
+        <p>Tại sao chúng ta không thấy  chức Sứ Đồ được nói đến và  được công nhận cách công khai trong Hội Thánh ngày  nay như đáng phải có theo sự hướng dẫn của  Kinh Thánh? Thật dễ dàng nhận thấy trên thực tế,  đặc biệt trong công tác giảng dạy Lời Chúa, Hội  Thánh ngày nay quá chú trọng đến chức Mục Sư,  còn các chức vụ khác có liên quan đến công tác giảng  dạy Kinh Thánh, như chức <em>Sứ  Đồ</em>, chức <em>Tiên Tri</em>,  chức <em>Giáo Sư</em> và chức <em>Thầy Giảng Tin Lành </em>(hay <em>Giáo sĩ</em>) được liệt  kê trong Ê-phê-sô 4:11,12 thì không được nhắc đến,  hoặc nếu có nhắc đến thì cũng bị đặt  ở vị trí thấp kém hơn! </p>
+        <p><strong>3. Sự khác biệt giữa chức Sứ Đồ  do Chúa Jesus chọn lựa và ơn kêu gọi làm Sứ Đồ  của Đức Thánh Linh.</strong></p>
+        <p>Có sự khác nhau giữa  chức Sứ Đồ do chính Chúa Jesus kêu gọi so với  chức Sứ Đồ là ân tứ của Đức Thánh  Linh ban cho. Nói cho dễ hiểu, là có hai &ldquo;loại&rdquo; Sứ  Đồ khác nhau, căn cứ vào 2 giai đoạn:</p>
+        <p>1/ Các Sứ Đồ  được <strong>chính Chúa Jesus trực  tiếp chọn lựa</strong> khi Ngài còn trên mặt đất,  gồm 12 Sứ Đồ (Ma-thi-ơ 10:1,2). Các Sứ Đồ  nầy được Chúa Jesus ban cho quyền phép chửa bệnh,  đuổi quỷ. Một số vị trong các Sứ  Đồ nầy được Chúa soi dẫn để  trước tác Kinh Thánh Tân Ước như Ma-thi-ơ,  Phi-e-rơ, Giăng. Sau khi Chúa Jesus thăng thiên, chính Chúa  Jesus đã hiện ra cho Phao-lô và kêu gọi ông làm Sứ  Đồ (I Cô-rinh-tô 15:8), và chính Phao-lô cũng khẳng  định chức sứ đồ của ông là được <strong>chính Chúa kêu gọi và chọn lựa</strong>: <em>&ldquo;<strong>Phao-lô,  làm sứ đồ</strong>, chẳng phải bởi loài người,  cũng không nhờ một người nào,<strong> bèn là bởi Đức Chúa Jêsus Christ</strong> và Đức  Chúa Trời, tức là Cha.&rdquo;</em> (Ga-la-ti 1:1. Xin đọc thêm  I Cô-rinh-tô 9:1). Như vậy, Phao-lô, chứ không phải  Ma-thia, xứng đáng là người thay thế cho  Giu-đa Ích-ca-ri-ốt. Phao-lô được chúa soi dẫn  để viết 13 Thư Tín trong Tân Ước. Phao-lô  đứng trong nhóm các <strong>sứ  đồ của Chiên Con </strong>(Khải Huyền 21:14) vì  được chính Chúa Jesus lựa chọn. Chúa Jesus phán với  các Sứ Đồ của Ngài rằng:<em> &quot;Ấy chẳng  phải các ngươi đã chọn ta, bèn là ta đã chọn  và lập các ngươi, để các ngươi đi và  kết quả.&quot; </em>(Giăng 15:16)</p>
+        <p>2/ Sau khi Đức Thánh  Linh được ban xuống và <strong>Hội Thánh được thành lập</strong>, có các Sứ  Đồ không phải do Chúa Jesus trực tiếp chọn lựa,  chức Sứ Đồ trong trường hợp nầy  phải được kể là một trong các <strong>ân tứ của Đức Thánh  Linh</strong> ban cho những người tin với mục đích  mở mang và gây dựng Hội Thánh: </p>
+        <blockquote>
+          <p><em>&ldquo;Đức Chúa Trời  đã lập <strong>trong Hội thánh</strong>,  thứ nhứt là <strong>Sứ Đồ</strong>,  thứ nhì là đấng tiên tri, thứ ba là thầy giáo, kế đến  kẻ làm phép lạ, rồi kẻ được ơn chữa  bịnh, cứu giúp, cai quản, nói các thứ tiếng.&rdquo; </em>(I  Cô-rinh-tô 12:28)</p>
+          <p><em>&quot;Ấy chính Ngài đã cho  người nầy làm <strong>Sứ Đồ</strong>,  kẻ kia làm tiên tri, người khác làm thầy giảng Tin Lành, kẻ khác nữa  làm mục sư và giáo sư, để các thánh đồ  được trọn vẹn về công việc của chức dịch  và sự gây dựng thân thể Đấng Christ.&quot; </em>(Ê-phê-sô  4:11,12). </p>
+          <p><em>&ldquo;Mọi điều  đó là công việc của đồng một Đức  Thánh Linh mà thôi, theo ý Ngài muốn phân phát sự ban cho riêng cho mỗi  người.&rdquo;</em> (I Cô-rinh-tô 12:11)</p>
+        </blockquote>
+        <p>Sứ đồ Ba-na-ba,  An-trô-ni-cơ, Giu-ni-a, Si-la … thuộc trong nhóm Sứ đồ  nầy. </p>
+        <p>Xin lưu ý: Một vài Sứ  đồ do chính Chúa Jesus kêu gọi, và Sứ đồ  Phao-lô được Chúa đặc biệt soi dẫn  để trước tác một số sách trong Tân Ước,  những gì họ viết ra là Lời của Đức  Chúa Trời, được xem là nền tảng cho đức  tin của Cơ-đốc nhân ngày nay, như Ê-phê-sô 2:20 và II  Phi-e-rơ 3:2 đã bày tỏ. Tuy nhiên,  khi sự mạc khải của  Đức Chúa Trời cho con người qua Kinh Thánh  được đầy đủ, tức là kể từ  khi Kinh Thánh Tân Ước đã hoàn tất, các Sứ đồ  trong Hội Thánh đầu tiên cho đến các Sứ  đồ trong Hội Thánh sau nầy cũng như tất  cả mọi người khác, đều phải rao giảng  và tuân giữ các giáo lý trong Kinh Thánh mà không được  thêm hay bớt điều gì.</p>
+        <p>Tóm lại, trong Hội  Thánh ngày nay, chắc chắn có nhiều người  được Đức Thánh Linh ban ân tứ để phục  vụ như là một Sứ Đồ, có thể một  vài Mục Sư đã dấn thân vào công tác Sứ Đồ,  phục vụ như một Sứ Đồ mà không ai biết.  Tuy nhiên, chức Sứ Đồ cần phải được  xác định rõ ràng cũng như các chức vụ khác  đã được nêu lên trong Ê-phê-sô 4:11. Sự hướng  dẫn của Kinh Thánh cần phải được thực  hiện một cách nghiêm túc cho mọi chức vụ rao giảng  Lời Chúa trong Hội Thánh mà không có bất kỳ sự  thiên kiến nào. </p>
+        <p><strong><em>Tháng 3, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

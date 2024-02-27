@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+	font-size: 10pt;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong>ÁP-RA-HAM CÓ MẮC TỘI NÓI DỐI?</strong></p>
+    <p><br />
+      <strong><em>Sáng  Thế Ký 12:11-13</em></strong>:</p>
+    <p><em>&ldquo;Khi sắp  vào xứ Ê-díp-tô, Áp-ram bèn nói cùng Sa-rai, vợ mình rằng: Nầy,  ta biết ngươi là một người đàn bà đẹp.  Gặp khi nào dân Ê-díp-tô thấy ngươi, họ sẽ  nói rằng: Ấy là vợ hắn đó, họ sẽ giết  ta, nhưng để cho ngươi sống. Ta xin hãy  xưng ngươi là em gái ta, hầu cho sẽ vì  ngươi mà ta được trọng đãi và giữ  toàn mạng ta.&rdquo;</em></p>
+    <p><strong>Câu hỏi:</strong></p>
+    <p>Áp-ram có mắc tội nói dối không khi  ông nói với vua Ê-díp-tô rằng Sa-rai là em gái của mình?</p>
+    <p><strong>Giải  đáp:</strong></p>
+    <p>Trước hết, chúng ta cần tìm hiểu  bối cảnh của câu chuyện. Sáng Thế Ký 12:10-20 thuật  lại chuyện vợ chồng Áp-ram và sa-rai (sau nầy  được Đức Chúa Trời đổi tên thành  Áp-ra-ham và Sa-ra) vì cơn đói kém nên phải di chuyển xuống  xứ Ê-díp-tô và nan đề xãy ra khi ông bà phải đối  diện với vua Ê-díp-tô. Thời ấy, các vị vua  thường nắm quyền sinh sát trong tay, đặc biệt  có thể giết chết người chồng để  chiếm đoạt người vợ. Áp-ra-ham biết rõ  mối nguy hiểm đó nên ông nói với Sa-ra: <em>&ldquo;</em><em>Khi vào đất Ê-díp-tô, Áp-ram bèn nói cùng Sa-rai, vợ  mình, rằng: Nầy, ta biết ngươi là một  người đàn bà đẹp. Gặp khi nào dân Ê-díp-tô thấy  ngươi, họ sẽ nói rằng: Ấy là vợ hắn  đó; họ sẽ giết ta, nhưng để cho  ngươi sống.&rdquo;</em> (Câu 11,12)</p>
+    <p>Sau đó một thời gian, nan đề  trên xãy ra lần thứ hai với Áp-ra-ham và Sa-ra khi ông bà  đối diện với vua Ghê-ra là A-bi-mê-léc (xin đọc  Sáng Thế Ký đoạn 20:8-18) và xãy ra một lần nữa  với vợ chồng Y-sác và Rê-be-ca (Sáng Thế Ký 26:6-11). </p>
+    <p>Áp-ra-ham hiểu được sự  gian ác của các vua ngoại bang thời bấy giờ, nên ông  đã bàn trước với Sa-ra, yêu cầu Sa-ra xưng ông  là anh, đối lại, Áp-ra-ham cũng sẽ nói Sa-ra là em  gái của ông. Áp-ra-ham thật đã xưng Sa-ra là em gái mình  trong cả hai trường hợp: lần đối diện  với vua Ê-díp-tô (Sáng Thế Ký 1210-20) và lần khác với  vua A-bi-mê-léc (Sáng Thế-Ký 20:8-18) Sự thật, Áp-ra-ham và  Sa-ra là hai anh em cùng cha khác mẹ, đúng như lời  Áp-ra-ham giải thích cho vua A-bi-mê-léc: <em>“Nhưng nó cũng thật là <strong>em gái tôi</strong>, <strong>em một cha  khác mẹ</strong>; và tôi cưới nó làm vợ” </em>(Sáng Thế  Ký 20:12). Như vậy, <strong>Áp-ra-ham đã nói thật</strong>.</p>
+    <p>Hầu hết các con cái Chúa ngày nay khi  đọc đến câu chuyện trên đều kết luận  rằng Áp-ra-ham đã mắc tội nói dối. Sở dĩ đa số tín đồ kết luận như thế vì đọc câu chuyện qua loa hoặc tin tưởng hoàn toàn vào sự giảng dạy của người khác mà không suy xét cẩn thận câu chuyện Kinh Thánh. Chúng ta có thể nêu lên hai trường hợp như sau và một trong hai trường hợp đã xãy ra:</p>
+    <p>1. Nếu vua hỏi Áp-ra-ham: <strong>“Người phụ nữ  đi với ông là ai?</strong>”, Áp-ra-ham trả lời: <strong>“Nàng là em gái tôi”</strong>. Trong trường  hợp nầy, Áp-ra-ham đã nói <strong>sự  thậ</strong>t, dù ông không nói trọn sự thật, nhưng ông nói 50% sự thật, nhưng rõ ràng ông <strong>không nói dối</strong>.</p>
+    <p>2. Nếu vua hỏi Áp-ra-ham: <strong>“Người phụ nữ  đi với ông có phải là vợ ông chăng?”</strong>, và nếu Áp-ra-ham<strong> </strong>trả lời:<strong> “Nàng không phải  là vợ tôi”</strong>. Trong trường hợp nầy, Áp-ra-ham <strong>mắc tội nói dối</strong>.</p>
+    <p>Như vậy, Áp-ra-ham có nói dối hay không là căn cứ vào cách hỏi của vua Ê-díp-tô. Nếu chúng ta đọc kỹ văn mạch  Kinh Thánh và suy gẫm cẩn thận câu chuyện của  Áp-ra-ham, chúng ta sẽ thấy tình huống thứ nhất  xãy ra chứ không phải tình huống thứ hai: </p>
+    <p><u>Bằng chứng trong lần gặp vua Ê-díp  tô</u>: Vua  Ê-díp-tô nói với Áp-ra-ham rằng<em>:  &ldquo;Sao <strong>không tâu với ta</strong> rằng nó là vợ ngươi? Sao <strong>ngươi đã nói rằng: người  đó là em gái tôi</strong>&rdquo;</em> (Sáng Thế Ký 12:18,19)</p>
+    <p><u>Bằng chứng trong lần gặp vua  A-bi-mê-léc</u>:  Vua A-bi-mê-léc thưa với Đức Chúa Trời: <em>&ldquo;<strong>Người  đó </strong>(Áp-ra-ham) <strong>há chẳng  nói với tôi </strong>rằng: <strong>ấy  là em gái tôi chăng?</strong>, và chính <strong>người  nữ</strong> (Sa-ra) há chẳng nói rằng: <strong>ấy là anh tôi sao?</strong>&rdquo;</em> (Sáng Thế Ký 20:5)</p>
+    <p>Như vậy, <strong>Áp-ra-ham không mắc tội nói dối,</strong> ông chỉ  không nói ra đầy đủ thông tin về mối quan hệ  giữa ông và Sa-ra mà thôi (Ông đã nói 50% sự thật). Hơn  nữa, khi đối diện với những vị vua ngoại  bang gian ác thời bấy giờ, không kính sợ Chúa, chỉ  dùng quyền hành để giết chồng và cướp vợ  người khác thì thử hỏi Áp-ra-ham có cần thiết  phải nói lên đầy đủ sự thật không? </p>
+    <p>Nhiều người lý luận rằng: "không nói thật tức là nói dối". Trong thực tế cuộc sống thì không đơn giản như công thức toán học: "1 cộng 1 phải là 2". Nếu nói: <em>"không nói thật tức là nói dối"</em> là đúng và để cho công bằng, thì câu sau đây cũng phải đúng: <em>"không nói dối tức là nói thật". </em>Đó chính là trường hợp của Áp-ra-ham.</p>
+    <p>Ngoài ra, Kinh Thánh không cho thấy Đức  Chúa Trời kết tội Áp-ra-ham. Nếu Áp-ra-ham có mắc  tội nói dối, chắc hẳn Đức Chúa Trời sẽ  chỉ ra tội của ông và khiển trách ông để ông  không lập lại lần thứ hai. Tuy nhiên, chúng ta thấy  Áp-ra-ham và Sa-ra tiếp tục ứng xử giống như  vậy lần thứ hai khi đối mặt với vua  A-bi-mê-léc. Hơn nữa, Đức Chúa Trời còn phán cho  vua A-bi-mê-léc biết Áp-ra-ham là một tiên tri và vua phải nhờ  Áp-ra-ham cầu nguyện cho vua thì vua và gia đình của vua  mới được sống, và được Đức  Chúa Trời chữa cho khỏi bệnh son sẻ: <em>&ldquo;</em><em>Bây giờ, hãy giao đàn bà đó lại cho chồng  nó, vì chồng nó là một đấng tiên tri, sẽ cầu  nguyện cho ngươi, thì ngươi mới được  sống</em>.&rdquo; <em>&ldquo;Áp-ra-ham cầu xin Đức Chúa  Trời, thì Ngài chữa bịnh cho vua A-bi-mê-léc, vợ cùng  các con đòi người; vậy, họ đều có con.&rdquo; </em>(Sáng Thế Ký 20:7,  17).</p>
+    <p>Vậy, nếu Đức Chúa Trời  không kết tội Áp-ra-ham nói dối, thì chúng ta ngày nay cũng không nên kết luận Áp-ra-ham mắc tội nói dối.</p>
+    <p><strong>Trần  Đình Tâm</strong></p>
+  </div>
+  <p align="center" class="MsoNormal" style="text-align:left">&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

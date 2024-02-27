@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center">&nbsp;</p>
+  <p align="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Tại sao Chúa nhận của  lễ của A-bên nhưng khước từ của lễ  của Ca-in?</strong></p>
+  <p> </p>
+  <p><strong>Sáng Thế  Ký 4:3-5:</strong></p>
+  <p><em>&ldquo;Vả, cách ít lâu, Ca-in dùng <strong>thổ  sản</strong> làm của lễ dâng cho Đức Giê-hô-va. A-bên  cũng dâng <strong>chiên đầu lòng</strong> trong bầy mình cùng mỡ nó. Đức Giê-hô-va đoái xem  A-bên và nhận lễ vật của người; nhưng  chẳng đoái đến Ca-in và cũng chẳng nhận  lễ vật của người.&rdquo;</em></p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Tại sao Đức Chúa Trời nhận  của lễ của A-bên nhưng khước từ của  lễ của Ca-in? </p>
+  <p><strong>Giải  đáp:</strong></p>
+  <p>Rất nhiều con cái Chúa dù đã tin Chúa  lâu năm, đã được nghe giảng giải nhiều  lần về câu chuyện dâng lễ vật của Ca-in và  A-bên, nhưng hầu như đa số con cái Chúa vẫn  còn nhiều thắc mắc chung quanh sự của lễ của  Ca-in và A-bên. Thật ra, không phải chỉ đơn thuần  giải đáp câu hỏi <em>&ldquo;Tại  sao Đức Chúa Trời nhận của lễ của  A-bên nhưng khước từ của lễ của Ca-in?&rdquo; </em>mà chúng ta cần phải giải quyết nhiều vấn  đề sau đây:</p>
+  <p>+ Chẳng phải là cả hai người,  Ca-in và A-bên đều <strong>dâng</strong> <strong>những gì mình có</strong> đó sao? Vậy,  tại sao Chúa từ chối tế lễ của Ca-in?</p>
+  <p>+ Đức Chúa Trời có bất công  không khi từ chối của lễ của Ca-in, vì luật  lệ về dâng của lễ mãi đến khoảng 1.050  năm sau mới được ban hành trong thời của  Môi-se?</p>
+  <p>+ Ngoài ra, Kinh Thánh cũng khuyến khích  con người dâng lễ vật cho Đức Chúa Trời  bằng thổ sản, hay hoa lợi đầu mùa do chính  tay mình trồng trọt như Lê-vi Ký 2:14 hay Châm Ngôn 3:9 truyền  dạy đó sao? Vậy, tại sao Chúa từ chối lễ  vật của Ca-in?</p>
+  <p>Vấn đề quan trọng đầu  tiên cần giải quyết là <strong>Đức  Chúa Trời có truyền dạy cho Ca-in và A-bên nguyên tắc  dâng của lễ hay không?</strong></p>
+  <p>Chúng ta hãy suy gẫm cẩn thận Sáng Thế  Ký 4:3: </p>
+  <p><em>&ldquo;Vả, cách ít lâu, Ca-in dùng thổ sản làm <strong>của lễ </strong>dâng cho Đức  Giê-hô-va. A-bên cũng dâng <strong>chiên  đầu lòng</strong> trong bầy mình cùng <strong>mỡ</strong> nó</em>.&rdquo; </p>
+  <p>Xin chú ý đến hai yếu tố sau  trong câu trên:</p>
+  <p>a) Từ ngữ &ldquo;<strong>của lễ</strong>&rdquo; (offering) được  dùng. &ldquo;<strong>Của lễ</strong>&rdquo; <strong>chỉ về những gì đã  được chỉ dẫn để dâng lên cho Chúa</strong>. Từ  &ldquo;của lễ&rdquo; cũng được dùng trong luật pháp  Môi-se để quy định về sự dâng tế lễ  cho Đức Chúa Trời (Lê-vi Ký chương 1 đến  7). Trong hoàn cảnh thế giới lúc lúc ấy chỉ có bốn  người, chúng ta nhận thấy không thể nào Ca-in hay  A-bên tự nghĩ ra mình phải có bổn phận dâng cho  Chúa thổ sản hay chiên đầu lòng <strong>làm</strong> <strong>của lễ</strong>,  mà phải có sự hướng dẫn như là một bổn  phận phải làm;<strong> </strong>hơn  nữa, không phải chỉ một người dâng của  lễ mà cả hai ông dâng của lễ, điều nầy  chứng minh rằng cả hai ông đã được  Đức Chúa Trời truyền dạy trực tiếp, hoặc  do A-đam và Ê-va truyền dạy. </p>
+  <p>Đức  Chúa Trời là Đấng Công Bình, Chúa không hề bắt lỗi  con người khi họ vi phạm luật của Ngài mà  trước đó họ không biết gì về luật  đó. Chúa nhận của lễ của A-bên và không nhận  của lễ của Ca-in vì A-bên dâng của lễ theo sự  hướng dẫn, còn Ca-in không dâng theo sự truyền dạy  mà dâng theo ý mà ông cho là đúng. </p>
+  <p>b) A-bên dâng <strong>Chiên</strong> đầu lòng và <strong>mỡ</strong>: &ldquo;Mỡ&rdquo; của con  chiên chứng minh con chiên đã bị A-bên giết. Hơn nữa,  hành động giết con chiên để lấy thịt  làm của lễ cùng với mỡ của nó phù hợp với  luật pháp của Đức Chúa Trời truyền dạy  về dâng tế lễ trong thời của Môi-se sau nầy.  Điều nầy chứng minh rõ ràng Chúa có truyền dạy  cho tổ tiên loài người nguyên tắc dâng tế lễ,  vì con người không thể nào tự nghĩ ra điều  lạ lùng là giết con chiên, rồi lấy thịt thiêu  đốt trên bàn thờ làm tế lễ, rồi dâng mỡ  của chiên cho Chúa làm của lễ. Chì có một cách giải  thích: Chúa đã truyền dạy họ như thế!</p>
+  <p>Tại sao của  lễ của A-bên lại được Chúa vui nhận? Hê-bơ-rơ  11:4 giúp chúng ta lời giải đáp: <em>&ldquo;</em><strong><em>Bởi đức tin</em></strong><em>,  A-bên đã dâng cho Đức Chúa Trời một tế lễ  tốt hơn của Ca-in, và <strong>được  xưng công bình</strong>, vì Đức Chúa Trời làm chứng về  người rằng Ngài nhậm lễ vật ấy.&rdquo;</em></p>
+  <p>Có vài yếu tố quan trọng  mà chúng ta cần hiểu liên quan đến <em>thái độ</em> dâng, <em>vật  dâng </em>và <em>kết quả</em> sau  khi dâng như sau:</p>
+  <p>1/ <em>Thái độ dâng</em>: A-bên dâng bởi <strong>đức tin</strong>.</p>
+  <p>2/ <em>Vật dâng</em>: A-bên <strong>dâng  chiên đầu lòng</strong> cùng <strong>mỡ</strong> (fat) của con chiên đó. Tại sao Kinh Thánh lại nhấn  mạnh đến <em>mỡ</em> của  con chiên? <em>Mỡ</em> của chiên  cho thấy con chiên <strong>đã bị  giết, </strong>A-bên không dâng con chiên còn sống, nhưng giết  chết con chiên để dâng thịt và mỡ. Lê-vi Ký 3:16  cho biết một chi tiết về luật dâng tế lễ: <em>&ldquo;Hết thảy mỡ đều  thuộc về Đức Giê-hô-va.&rdquo;</em></p>
+  <p>3/ <em>Kết quả dâng</em>: A-bên được <strong>xưng công bình </strong>(hay được  kể là công bình).</p>
+  <p><strong>Con chiên bị giết</strong> mà A-bên  dâng làm của lễ làm hình bóng về Chúa Jesus chịu chết  vì tội của chúng ta. A-bên dâng con chiên <strong>bởi đức tin</strong> và ông được <strong>xưng công bình </strong>làm hình bóng về  bất cứ ai ngày nay đặt <strong>đức tin nơi Chúa Jesus</strong> đã chết vì tội  của mình sẽ được Chúa tha thứ tội, và  được Đức Chúa Trời <strong>kể là công bình</strong>, đúng theo lời Chúa đã hứa: <em>&ldquo;</em><em>Họ nhờ ân điển Ngài mà được <strong>xưng công bình</strong> nhưng không, bởi <strong>sự chuộc tội </strong>đã  làm trọn trong<strong> Đức Chúa  Jêsus Chris</strong></em><strong>t</strong>.&rdquo; (Rô-ma 3:24) và <em>&ldquo;</em><em>Vậy chúng ta đã được <strong>xưng công bình bởi đức  tin</strong>.&rdquo;</em> (Rô-ma 5:1)</p>
+  <p>Nếu sự dâng con chiên  của A-bên làm hình bóng cho những người bởi đức  tin nơi Chúa Jesus để được sự cứu rỗi,  thì sự dâng thổ sản của Ca-in làm hình bóng cho những  ai dựa vào các công đức của mình để đạt  sự cứu rỗi. </p>
+  <p>Có người trích dẫn  Châm Ngôn 3:9 <em>&ldquo;Hãy lấy tài vật  và huê lợi đầu mùa của con, mà tôn vinh Đức  Giê-hô-va.&rdquo; </em>để cho rằng việc dâng thổ sản  của Ca-in rất phải lẽ, tại sao Chúa không nhận?  Chúng ta cần phân biệt hai trường hợp khác nhau:  Châm Ngôn 3:9 nói về sự dâng hiến thổ sản với  tinh thần cảm tạ Chúa (honor), còn sự dâng của  Ca-in và A-bên là sự dâng tế lễ (offering), đó là hai  trường hợp hoàn toàn khác nhau.</p>
+  <p>Lê-vi Ký 2:14,15 có nói về  dâng hoa quả đầu mùa: <em>&ldquo;Nếu  ngươi dùng hoa quả đầu mùa đặng làm của  lễ chay tế Đức Giê-hô-va, thì phải bằng gié  lúa rang, hột lúa mới tán ra, đổ dầu vào và thêm  nhũ hương. Ấy là của lễ chay.&rdquo;</em> Đây là  luật về <strong>của lễ  chay</strong> chứ không phải luật về <strong>của lễ thiêu </strong>đúng như A-bên đã dâng. Câu  chuyện dâng của lễ của Ca-in và A-bên cho thấy  Đức Chúa Trời yêu cầu dâng của lễ thiêu.  Ngay cả luật dâng của lễ chay, Ca-in vẫn không  làm đúng.</p>
+  <p>Có ý kiến cho rằng vì  A-bên làm nghề chăn chiên nên có sẵn chiên để dâng  tế lễ, còn Ca-in làm ruộng, chỉ có thổ sản  để dâng mà thôi, Chúa có bất công không khi từ chối  của lễ của Ca-in? Thật ra, đây không phải là  nan đề! Chúng ta hãy thử đặt câu hỏi: A-bên  làm nghề chăn chiên, vậy A-bên sẽ không bao giờ  ăn được hoa quả, ngũ cốc mà chỉ  ăn thịt thôi sao? Còn Ca-in có nghề làm ruộng nên ông phải <em>ăn chay</em> suốt đời  sao? Chúng ta không cần nuôi bò mà vẫn có thịt bò ăn hằng  ngày đó sao! Chúng ta không trồng lúa mà vẫn có gạo  ăn mỗi ngày! Chúa rất công bằng, Ngài không bao giờ  đòi hỏi Ca-in phải dâng con chiên mà Ngài biết rằng  ông không thể nào kiếm đâu cho ra con chiên. Ca-in đã biết  làm thế nào để có con chiên để dâng, nhưng ông  thích làm theo ý riêng của mình, đó là lý do của lễ ông  dâng bị từ chối. Chúa không bao giờ truyền dạy  cho chúng ta điều mà chúng ta không thể làm được;  Chúa chỉ truyền dạy cho chúng ta điều mà chúng ta  có thể làm được nếu chúng ta thật lòng muốn  vâng lời Ngài: <em>&ldquo;Điều  răn nầy mà ta truyền cho ngươi ngày nay chẳng  phải cao quá ngươi, hay là xa quá cho ngươi … Vì lời  nầy rất gần ngươi, ở trong miệng và  trong lòng ngươi, để ngươi làm theo nó.&rdquo;</em> (Phục  Truyền Luật Lệ Ký 30:11,14)</p>
+  <p>Vấn  đề dâng của lễ cho Chúa chính thức trở thành <em>văn bản</em> (Luật Pháp),  được ghi chép trong Lê-vi Ký chương 1 đến  7, tức là khoảng 1050 năm sau khi Ca-in và A-bên dâng của  lễ, điều nầy không có nghĩa là trước khi  có Luật Pháp, Ca-in và A-bên không biết chi hết về luật  dâng tế lễ cho Chúa. Chúa có thể truyền dạy cho  A-đam và Ê-va và họ dạy lại cho các dòng dõi tiếp  theo. Sở dĩ đến thời Môi-se mới có luật  về dâng tế lễ là vì lúc nầy, dân Y-sơ-ra-ên là dân  được Chúa chọn để trở thành một  dân tộc của Chúa, là một QUỐC GIA (nation). Một  quốc gia phải có luật pháp, nên Đức Chúa Trời  thiết lập Luật Pháp cho họ.</p>
+  <p> </p>
+  <p><strong><em>Trần  Đình Tâm</em></strong></p>
+  <p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

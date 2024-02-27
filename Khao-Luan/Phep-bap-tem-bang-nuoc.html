@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center">PHÉP BÁP-TÊM BẰNG  NƯỚC</p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Phép báp-têm là một nghi thức  rất thông thường mà người tín hữu  được nhận một lần trong đời sau  khi tin nhận Chúa Jesus. Tuy nhiên, có những ý kiến khác nhau  chung quanh vấn đề báp-têm, phát xuất từ quan  điểm của các hệ phái Tin Lành, hay tùy theo cách mà  người ta dẫn giải các phần Kinh Thánh có liên  quan. Những ý kiến khác nhau tuy không ở mức độ  trầm trọng, không gây ra những xung đột gắt  gao, nhưng những bất đồng ngấm ngầm nầy  cũng cần phải được giải tỏa qua việc  nghiên cứu và tìm kiếm sự dạy dỗ trong Lời  Chúa một cách nghiêm túc. </p>
+        <p>Trong bài nầy, chúng ta chỉ  tìm hiểu về báp-têm bằng <em>nước </em>mà thôi, còn các <em>loại </em>báp-têm  khác như báp-têm bằng <em>Đức  Thánh Linh</em>, báp-têm bằng <em>lửa</em>,  báp-têm cho <em>người chết</em>…  sẽ được đề cập đến trong một  bài khảo cứu khác.</p>
+        <p><strong>1. Ý nghĩa của từ ngữ &ldquo;Báp-têm&rdquo;</strong>.</p>
+        <p>&ldquo;Báp-têm&rdquo; là từ phiên âm của <em>&ldquo;Baptize&rdquo;</em> (động từ)  trong Anh ngữ. </p>
+        <p>a) &ldquo;Báp-têm&rdquo; theo nguyên ngữ  Hy-lạp là <em>&ldquo;baptō&rdquo;</em> (số  thứ tự 911 của từ điển Hy-lạp). Theo  định nghĩa của Strong&rsquo;s Complete Word Study, có  nghĩa là &ldquo;nhúng&rdquo; (dip, immerse, submerge). Ví dụ: người  ta nhún vải vào trong nước màu để nhuộm vải;  người ta nhún cái bình vào trong một dung dịch nào  đó nhằm mục đích làm cho cái bình được  tráng một lớp dung dịch ấy.</p>
+        <p>Các câu Kinh Thánh sau đây,  từ &ldquo;<em>baptō&rdquo; </em>được  dùng, bản Kinh Thánh tiếng Việt dịch là &ldquo;nhúng&rdquo;, tương  đương với từ &ldquo;dip&rdquo; trong các bản Anh ngữ. </p>
+        <p>Lu-ca 16:24: <em>&ldquo;bèn kêu lên rằng: Hỡi Áp-ra-ham tổ tôi, xin  thương lấy tôi, sai La-xa-rơ <strong>nhúng</strong> (baptō) đầu ngón tay vào nước  đặng làm cho mát lưỡi tôi; vì tôi bị khổ  trong lửa nầy quá đỗi.&rdquo;</em></p>
+        <p>Giăng 13:26<em>: &ldquo;Đức Chúa Jêsus đáp rằng:  Ấy là kẻ mà ta trao cho miếng bánh ta sẽ <strong>nhúng </strong>(baptō)  đây. Đoạn, Ngài <strong>nhúng</strong> một miếng, rồi  lấy cho Giu-đa Ích-ca-ri-ốt, con trai của Si-môn.&rdquo;</em></p>
+        <p>Khải Huyền 19:13: <em>&ldquo;Ngài mặc áo <strong>nhúng</strong> (baptō) trong huyết, danh Ngài xưng là Lời  Đức Chúa Trời.&rdquo;</em></p>
+        <p>b) &ldquo;Báp-têm&rdquo; còn có nguyên ngữ  Hy-lạp khác là động từ &ldquo;<a name="_Hlk367219551" id="_Hlk367219551">baptizō</a>&rdquo;  (số 907), từ nầy là từ phát sinh của <em>&ldquo;baptō&rdquo; </em>(911) nêu trên.  &ldquo;baptizō&rdquo; được dùng trong các trường hợp sau:</p>
+        <p>1/ Rửa cho sạch  (wash, clean) với nước: Không dùng chỉ về sự  tẩy rửa thông thường, nhưng chỉ được  dùng trong các câu Kinh Thánh nói về sự tẩy rửa mang ý  nghĩa nghi thức tôn giáo: <em>&ldquo;Người  Pha-ri-si thấy Ngài không <strong>rửa</strong> (baptizō) trước bữa ăn, thì lấy làm lạ.&rdquo;</em> (Lu-ca 11:38); <em>&ldquo;khi họ (người  Pha-ri-si) ở chợ về, nếu không <strong>rửa</strong> (<a name="_Hlk367388252" id="_Hlk367388252">baptizō</a>) cũng  không ăn.&rdquo;</em> (Mác 7:4)</p>
+        <p>2/ Từ ngữ &ldquo;báp-têm&rdquo; (<a name="_Hlk367390251" id="_Hlk367390251"><em>baptizō</em></a><em>)</em> được sử dụng  trong hầu hết các câu Kinh Thánh liên quan đến <strong><em>nghi  thức</em></strong> báp-têm: từ phép báp-têm do Giăng Báp-tít làm cho  người Giu-đa, phép báp-têm Chúa Jesus chịu tại sông  Giô-đanh, mệnh lệnh của Chúa Jesus cho các môn đồ  trước khi Ngài về trời, cho đến sự thi  hành báp-têm cho người tin nhận Chúa Jesus trong suốt  sách Công Vụ Các Sứ Đồ. &ldquo;<em>baptizō&rdquo; </em>trong các nghi thức báp-têm có nghĩa là <strong>nhận chìm</strong> (submerge, immerse). Như  thế, nếu căn cứ vào ý nghĩa của &ldquo;báp-têm&rdquo;  theo ngôn ngữ Hy-lạp, người nhận phép &ldquo;báp-têm&rdquo; cần  được <strong>dìm mình hoàn toàn  trong nước. </strong></p>
+        <p>Những trường hợp <em>rải</em> hay <em>rắc</em> nước (sprinkle) không thấy đề  cập đến trong Kinh Thánh. Tuy nhiên, Kinh Thánh cũng  không đưa ra những mệnh lệnh dứt khoát rõ  ràng là phải dìm thân thể hoàn toàn trong nước,  cũng không có chổ nào trong Kinh Thánh ngăn cấm hình thức  rải hay rắc nước hay chỉ nhúng một phần  thân thể  trong nước.  cho nên, cách tốt nhất là nên theo ý nghĩa của từ  ngữ &ldquo;batizō&rdquo; trong tiếng Hy-lạp là dìm mình hoàn toàn  trong nước. Tuy nhiên, báp-têm là <em>nghi thức bên ngoài</em> (rite) để bày tỏ đức  tin bên trong, cho nên trong một số trường hợp ngoại  lệ, ví dụ những người tin Chúa là những  người già yếu mắc bệnh đặc biệt,  những người tật nguyền, những người  bệnh nằm trên giường sắp qua đời v.v…  những người nầy không thể dìm mình hoàn toàn trong  nước, chúng ta không nên bắt buộc họ phải chịu  báp-têm bằng cách dìm thân thể hoàn toàn trong nước. Vì  điều quan trọng là đức tin nơi Chúa Jesus,  chính đức tin đã cứu họ, chứ không phải  phép nghi lễ báp-têm cứu người đó. Ê-phê-sô 2:8,9  cho biết <em>&ldquo;Vả, ấy là nhờ  ân điển, bởi <strong>đức  tin</strong>, mà anh em được cứu, điều đó  không phải đến từ anh em, bèn là sự ban cho của  Đức Chúa Trời. Ấy chẳng phải bởi việc  làm đâu, hầu cho không ai khoe mình.&rdquo;</em> Mác 16:16 chép: <em>&ldquo;Ai tin và chịu phép báp-tem, sẽ  được rỗi; nhưng ai <strong>chẳng tin</strong>, sẽ bị đoán phạt.&rdquo;  </em>Các câu nầy cho thấy nếu  một người không tin Chúa mà nhận phép báp-têm, thì họ  vẫn bị hư mất, vì nghi thức báp-têm không cứu  được họ.</p>
+        <p>Hình thức <em>rải</em> nước hay <em>nhúng</em> trong nước chỉ  nên được áp dụng trong những trường hợp  ngoại lệ. Tuy nhiên, một người tin Chúa vào lúc  già yếu, bệnh tật, sắp qua đời trên giường  bệnh, chúng ta hiểu rằng bởi <em>đức tin </em>mà người ấy được  cứu, nếu người ấy đã được cứu  rồi, thì có cần phải bắt buộc người ấy  nhận báp-têm hay không, dù đó chỉ là sự <em>rải </em>nước?</p>
+        <p><strong>2. Ý nghĩa thuộc linh của phép Báp-têm</strong>.</p>
+        <p>Phép Báp-têm mang ý nghĩa rất  cao đẹp và quan trọng, được sứ đồ  Phao-lô trình bày trong Rô-ma 6:3,4: <em>&ldquo;Anh  em chẳng biết rằng chúng ta thảy đều đã <strong>chịu phép báp-têm trong Đức  Chúa Jêsus Christ</strong>, tức là <strong>chịu  phép báp-têm trong sự chết Ngài</strong> sao? Vậy chúng ta đã <strong>bị chôn với Ngài bởi  phép báp-têm trong sự chết Ngài</strong>, hầu cho Đấng  Christ nhờ vinh hiển của Cha được từ kẻ  chết sống lại thể nào, thì chúng ta cũng <strong>sống trong đời mới</strong> thể ấy.&rdquo; </em>và Cô-lô-se 2:12; <em>&ldquo;Anh  em đã bởi <strong>phép báp-têm  được chôn với Ngài</strong>, thì cũng được <strong>sống lại với Ngài</strong> bởi đức tin trong quyền phép Đức Chúa Trời,  là Đấng đã khiến Ngài từ kẻ chết sống  lại.&rdquo;</em></p>
+        <p>Báp-têm chỉ là nghi thức  bên ngoài nhưng lại bày tỏ ý nghĩa thuộc linh quan  trọng: Khi một người chịu báp-têm là người  ấy công khai xưng nhận đức tin qua sự <u>liên  hiệp với Chúa Jesus trong sự chết, sự chôn và sự  sống lại của Ngài</u>: 1/ Hành động <strong>dìm mình xuống nước</strong> biểu  thị cho sự <em>chế</em>t và <em>chôn</em> đối với <em>con người cũ</em> của  mình, Phao-lô giải thích thêm <em>&ldquo;vì  biết rõ rằng người cũ của chúng ta đã bị  đóng đinh trên thập tự giá với Ngài, hầu cho  thân thể của tội lỗi bị tiêu diệt đi,  và chúng ta không phục dưới tội lỗi nữa.&rdquo;</em> (Rô-ma 6:6). Người tín đồ cần hiểu rằng  mình không còn bị nô lệ hay bị phục tùng bởi con  người cũ (là con người bị tội lỗi  do A-đam lưu truyền làm cho hư hoại). 2/ sự kiện <strong>ra khỏi nước</strong> biểu  thị cho sự <em>sống lại</em> trong <em>cuộc đời mới</em>.  Phao-lô giải thích thêm<em>: &ldquo;Vậy  anh em cũng hãy coi mình như <strong>chết</strong> về tội lỗi và như <strong>sống</strong> cho Đức Chúa Trời trong Đức Chúa Jêsus Christ&rdquo;</em> (Rô-ma 6:11) <em>&ldquo;Vậy nếu anh em  được <strong>sống lại</strong> với Đấng Christ, hãy tìm các sự ở trên trời,  là nơi Đấng Christ ngồi bên hữu Đức Chúa  Trời. Hãy ham mến các sự ở trên trời, đừng  ham mến các sự ở dưới đất.&rdquo; </em>(Cô-lô-se  3:1,2). Sau khi ra khỏi nước, người tín đồ  bước vào đời sống mới, là đời sống  đã được tái sanh và đổi mới bởi  Đức Thánh Linh, từ đây người ấy sống  theo sự dạy dỗ và hướng dẫn của Chúa. </p>
+        <p>Chúng ta thường chứng  kiến các vị lãnh đạo Hội Thánh thực hiện  phép báp-têm cho tín hữu theo một trong hai hình thức sau: 1/  Người tín hữu <em>ngồi</em> hụp xuống nước sao cho nước bao phủ  hoàn toàn thân mình. 2/ Vì ý nghĩa thuộc linh của báp-têm là  đồng chết, đồng chôn và đồng sống  lại với Chúa Jesus, nên một số vị lãnh đạo  Hội Thánh thi hành phép báp-têm cho tín hữu bằng cách <em>ngã ngửa</em> người tín hữu  ra phía sau (vì cho rằng người chết thì nằm ngửa)  và cũng được nước phủ hoàn toàn. Cách nào  là đúng với Kinh Thánh? Kinh Thánh hoàn toàn không đưa ra  sự chỉ dẫn về vấn đề nầy nên  chúng ta không nên cố chấp mà cho rằng cách nầy  đúng hơn cách kia.  </p>
+        <p><strong>3. Điều kiện để được nhận  báp-têm</strong>.</p>
+        <p>Chúng ta hãy khảo sát 5  trường hợp sau:</p>
+        <p>a) Trong ngày Lễ Ngũ  Tuần, sau khi Đức Thánh Linh giáng lâm, Phi-e-rơ giảng  Tin Lành cho những người Do Thái, ông nói<em>: &ldquo;Hãy hối cải, ai nấy phải nhân danh Đức  Chúa Jêsus chịu <strong>phép báp-tem</strong>,  để được tha tội mình, rồi sẽ  được lãnh sự ban cho Đức Thánh Linh… Vậy,  những kẻ nhận lời đó đều chịu <strong>phép báp-tem</strong>; và trong này ấy, có  độ ba ngàn người thêm vào Hội thánh.&rdquo;</em> (Công Vụ  Các Sứ Đồ 2:38,41)</p>
+        <p>Ngay sau khi nghe giảng về  Chúa Jesus, những người tin nhận đều  được nhận báp-têm. Xin chú ý là tất cả đều  được báp-têm ngay trong ngày họ tin Chúa.</p>
+        <p>b) Sau khi viên hoạn quan  Ê-thi-ô-bi được Phi-líp rao giảng về Chúa Jesus, Kinh  Thánh chép<em>: &ldquo;Hai người  đang đi dọc đường, gặp chỗ có  nước, hoạn quan nói rằng: Nầy, nước  đây, có sự gì ngăn cấm tôi chịu phép báp-tem  chăng? Phi-líp nói: Nếu ông hết lòng tin, điều  đó có thể được. Hoạn quan trả lời  rằng: Tôi tin rằng Đức Chúa Jêsus Christ là Con Đức  Chúa Trời. Người biểu dừng xe lại; rồi  cả hai đều xuống nước, và Phi-líp làm <strong>phép báp-tem</strong> cho hoạn quan.&rdquo; </em>(Công  Vụ Các Sứ Đồ 8:36-38)</p>
+        <p>Câu chuyện thật sống  động, ngay sau khi hoạn quan tuyên xưng đức  tin của mình <em>&ldquo;Tôi tin rằng  Đức Chúa Jêsus Christ là Con Đức Chúa Trời&rdquo;</em>,  ông liền được nhận báp-têm bằng nước.</p>
+        <p>c) Câu chuyện Sau-lơ  trên chuyến đi bắt bớ Hội Thánh của Chúa tại  Đa-mách, ông đã gặp Chúa qua ánh sáng từ trời và  qua tiếng phán của Chúa, sau đó ông bị mù trong ba ngày.  Trước khi mắt ông được sáng lại, Chúa  sai một môn đồ là A-na-nia đến gặp  Sau-lơ: <em>&ldquo;A-na-nia bèn đi, vào  nhà, rồi đặt tay trên mình Sau-lơ mà nói rằng: Hỡi  anh Sau-lơ, Chúa là Jêsus nầy, đã hiện ra cùng anh trên  con đường anh đi tới đây, đã sai tôi  đến, hầu cho anh được sáng mắt lại  và đầy Đức Thánh Linh. Tức thì có cái chi như  cái vảy từ mắt người rớt xuống, thì  người được sáng mắt; rồi chờ dậy  và <strong>chịu phép báp-tem</strong>.&rdquo; </em>(Công  Vụ Các Sứ Đồ 9:17,18)</p>
+        <p>Sau-lơ nhận phép  Báp-têm ngay sau khi bị Chúa bắt phục, ngay sau khi ông gặp  Chúa.</p>
+        <p>d) Viên đội trưởng  Cọt-nây và gia đình của ông tin nhận chúa Jesus sau khi  được nghe Phi-e-rơ rao giảng. Công Vụ Các Sứ  Đồ 10:47,48 chép: <em>&ldquo;Bấy  giờ Phi-e-rơ lại cất tiếng nói rằng:  Người ta có thể từ chối <strong>nước về phép báp-tem</strong> cho những kẻ  đã nhận lấy Đức Thánh Linh cũng như chúng  ta chăng? Người lại truyền làm <strong>phép báp-tem</strong> cho họ nhân danh Đức Chúa Jêsus Christ.&rdquo;</em></p>
+        <p>Tương tự như  câu chuện trên, gia đình Cọt-nây được báp-têm  ngay sau khi tiếp nhận Tin Lành.</p>
+        <p>e) Trong câu chuyện Phao-lô  và Si-la làm chứng về Chúa Jesus cho viên cai ngục, chúng ta  đọc thấy: <em>&ldquo;Hai người  trả lời rằng: Hãy tin Đức Chúa Jêsus, thì  ngươi và cả nhà đều sẽ được cứu  rỗi. Hai người truyền đạo Đức Chúa  Trời cho người, và cho những kẻ ở nhà  người nữa. Trong ban đêm, chính giờ đó,  người đề lao đem hai người ra rửa  các thương tích cho; rồi tức thì người và mọi  kẻ thuộc về mình đều chịu <strong>phép báp-tem</strong>.&rdquo;</em> (Công Vụ Các Sứ  Đồ 16:31-33)</p>
+        <p>Gia đình người  cai ngục nhận phép báp-têm ngay sau khi họ tiếp nhận  Chúa Jesus.</p>
+        <p>Tất cả 5 trường  hợp nêu trên đều cùng có một điểm giống  nhau rất rõ ràng: Những người tin Chúa Jesus đều  được nhận phép báp-têm ngay sau đó. Từ sự  khảo sát 5 câu chuyện trên, chúng ta có thể khẳng  định: <strong>Điều kiện  cần và đủ để một người  được nhận báp-têm, đó là người ấy  đặt đức tin nơi Chúa Jesus</strong>. Chúa không đòi  hỏi điều kiện nào khác hơn là TIN nơi Ngài. Chỉ  khi một người đặt lòng tin chân thật nơi  Chúa Jesus, là Đức Chúa Trời, là Đấng chết vì  tội của mình, thì người ấy đủ điều  kiện để nhận Báp-têm. Chúa Jesus đã tuyên bố: <em>&ldquo;Ai <strong>tin</strong> và <strong>chịu phép báp-tem</strong>, sẽ  được rỗi.&rdquo;</em> (Mác 16:16). </p>
+        <p>Thật đáng buồn  là ngày nay, nhiều hệ phái Tin Lành, hay những tổ chức  Giáo Phái đã đặt thêm những điều kiện  để buộc người mới tin Chúa làm theo, sau  đó mới được nhận báp-têm. Điều kiện  thêm vào là buộc người tín đồ mới tin phải  học một lớp học gọi là &ldquo;giáo lý báp-têm&rdquo;  (Phước Âm Yếu Chỉ). Họ nghĩ rằng  người mới tin Chúa cần hiểu rõ những lẽ  đạo căn bản để củng cố cho đức  tin mới mẻ, họ cần được chuẩn bị  chu đáo trước khi tiếp nhận thánh lễ quan trọng  là báp-têm. Tuy nhiên, những điều ấy chỉ là ý  tưởng của loài người, do tổ chức giáo hội  thêm vào, chứ không phải mệnh lệnh của Chúa. Việc  học lẽ đạo căn bản là điều rất  cần thiết nhưng phải được thực hiện <strong>sau</strong> khi nhận Báp-têm, chứ  không phải <strong>trước</strong> khi báp-têm. Ngoài ra, việc bắt buộc người tân tín  hữu phải trải qua khóa học &ldquo;giáo lý báp-têm&rdquo; sẽ  làm trì hoãn phép báp-têm mà đáng lẽ họ phải  được nhận ngay sau khi họ tin Chúa. </p>
+        <p>Hãy nhớ lại câu hỏi  mà hoạn quan Ê-thi-ô-bi đã hỏi Phi-líp: &ldquo;Nầy, nước  đây, <strong>có sự gì ngăn cấm  tôi chịu phép báp-tem chăng</strong>?&rdquo; (Công Vụ Các Sứ Đồ  8:36) Chúng ta hãy hỏi tương tự: &ldquo;có sự gì  ngăn trở người tin Chúa chịu báp-têm không?&rdquo;. Chẳng  lẽ chúng ta trả lời rằng: &ldquo;Có! Cần phải học  một khóa giáo lý báp-têm&rdquo;</p>
+        <p>Đây là mệnh lệnh  của Chúa Jesus<em>: &ldquo;Vậy, hãy  đi <strong>dạy dỗ</strong> muôn dân,  hãy nhân danh Đức Cha, Đức Con, và Đức Thánh  Linh mà <strong>làm phép báp tem</strong> cho họ,  và <strong>dạy họ giữ</strong> hết  cả mọi điều mà ta đã truyền cho các  ngươi&rdquo;</em> (Ma-thi-ơ 28:19,20). Mệnh lệnh của  Chúa có 3 phần theo thứ tự: 1/ Dạy dỗ: Ý nói rao  giảng Tin Lành (Mác 16:15), hay khiến muôn dân trở nên môn đồ  của Chúa bởi sự tiếp nhận Chúa Jesus; 2/ Làm  báp-têm cho những ai tin; 3/ Dạy Lời Chúa cho những  người đã tin và đã chịu báp-têm. Chúng ta thấy  rõ, việc dạy Lời Chúa cho người tin phải được  thực hiện sau khi họ chịu báp-têm. </p>
+        <p>Như vậy, chúng ta cần  giúp người mới tin Chúa nhận báp-têm <strong>càng sớm càng tốt. </strong>Nếu  không thể thực hiện được trong ngày họ  tin Chúa, thì có thể nán lại trong vài ngày, chứ không nên  trì hoãn đến nhiều tuần lễ.</p>
+        <p><strong>4. Ai có thể làm báp-têm cho người mới tin Chúa.</strong></p>
+        <p>Trong mọi nan đề,  chúng ta luôn có được sự hướng dẫn từ  Kinh Thánh, là Lời Đức Chúa Trời. Kinh Thánh không  đưa ra một mệnh lệnh về vấn đề  nầy, nhưng lại giúp chúng ta khám phá được sự  hướng dẫn cần thiết. Một lần nữa,  hãy khảo sát 5 câu chuyện có liên quan đến báp-têm đã  nêu ở trên, chúng ta sẽ có giải đáp cho vấn đề <strong>ai</strong> là người giúp đỡ  cho người tân tín hữu nhận phép báp-têm: Trong 5  trường hợp trên, người thi hành báp-têm là người  trực tiếp tiếp xúc với người mới tin  Chúa, người đó là người đã làm chứng, là  người dẫn dắt người kia tin Chúa, và tốt  hơn nữa cũng chính họ hướng dẫn người  kia cầu nguyện tiếp nhận Chúa.</p>
+        <p>Trong ngày Lễ Ngũ Tuần,  với số người tin Chúa lên đến ba ngàn  người, Kinh Thánh không cho biết ai làm báp-têm, chúng ta có  thể cho rằng Phi-e-rơ và 11 <strong>sứ đồ</strong> cùng với 120 <strong>môn đồ</strong> mới có thể giúp làm báp-têm cho một  con số tín hữu rất lớn là ba ngàn người  trong cùng ngày.</p>
+        <p>Trong câu chuyện hoạn  quan Ê-thi-ô-bi và Phi-líp. Chúng biết Phi-líp là một <strong>chấp sự</strong>, Phi-líp đã  làm báp-têm cho người mà mình rao giảng cho.</p>
+        <p>Trong câu chuyện  Sau-lơ tin Chúa, A-na-nia chỉ là một <strong>môn đồ</strong> được Chúa dùng để làm  báp-têm cho Sau-lơ. </p>
+        <p>Trong câu chuyện viên  đội trưởng Cọt-nây, Phi-e-ơ là người  trực tiếp làm chứng cho gia đình Cọt-nây,  nhưng Kinh Thánh không nói ai là người làm báp-têm cho Cọt-nây  và gia đình của ông, nhưng chúng ta tin chắc là  Phi-e-rơ làm báp-têm cho họ.</p>
+        <p>Trong câu chuyện của  người cai ngục và gia đình ông tin Chúa, chúng ta tin rằng  Phao-lô và Si-la là hai người làm báp-têm cho gia đình người  cai ngục.</p>
+        <p>Qua các câu chuyện nêu  trên, chúng ta ghi nhận một yếu tố nổi bật: <strong>Người tin nhận Chúa</strong> <strong>cần được báp-têm</strong>,  đó mới là yếu tố quan trọng, chứ không phải  người làm báp-têm cho người tin Chúa, vì có vài trường  hợp Kinh Thánh chỉ tường thuật những  người tin chịu báp-têm nhưng không nói ai đứng  ra làm báp-têm. Sự khảo sát 5 trường hợp trên  cũng cho thấy: Chúa có thể dùng những người  có những vị trí khác nhau trong Hội Thánh để làm  Báp-têm. Quan điểm cho rằng <strong>chỉ có</strong> mục sư quản nhiệm mới  được làm báp-têm là quan điểm không có căn cứ  trên Kinh Thánh. </p>
+        <p>Làm thế nào để một  người tin Chúa nhận được báp-têm càng sớm  càng tốt mà không bị trễ nải đến hàng tháng,  vốn thường xãy ra trong các Hội Thánh ngày hôm nay? Nếu  chúng ta thật lòng muốn làm theo lời Kinh Thánh dạy,  thì vấn đề đã được giải quyết:  Những ai có trách nhiệm tham gia vào công cuộc truyền  giảng Tin Lành, là những người đã từng tiếp  xúc với người mới tin Chúa, là người đã  từng làm chứng cho người ấy, là người  đã cưu mang, đã cầu nguyện, đã dẫn  đưa người ấy đến với Chúa, đó  chính là những người nên làm báp-têm cho người mình  dẫn dắt tin Chúa, nếu thực hiện đúng theo  gương mẫu Kinh Thánh, những người tin Chúa sẽ  được làm báp-têm sớm mà không bị trì hoãn, vì không  phải học lớp &ldquo;giáo lý báp-têm&rdquo;, không cần phải chờ  các vị lãnh đạo trong Hội Thánh sắp xếp ngày  giờ thuận tiện để chịu báp-têm, mà <em>ngày giờ thuận tiện </em>có  khi phải đợi đến Lễ Giáng Sinh hay Lễ  Phục Sinh!!</p>
+        <p>Ngoài ra, việc suy gẫm  cẩn thận các phần Kinh Thánh liên quan đến nghi thức  báp-têm cho người mới tin Chúa trong Công Vụ Các Sứ  Đồ, chúng ta còn nhận thấy sự thi hành phép  báp-têm rất đơn sơ, diển ra bất cứ tại  đâu, có khi chỉ có hai người mà thôi (người  làm báp-têm và người nhận báp-têm) như Phi-líp và hoạn  quan Ê-thi-ô-bi; như A-na-nia và Sau-lơ. Không cần phải  chờ đợi, không cần khóa học giáo lý và bài kiểm  tra hay phỏng vấn, không cần phải sắp xếp  để có nhiều người chứng kiến, không cần  mặc áo lễ, không cần phải tổ chức một  buổi thánh lễ báp-têm long trọng như các Hội Thánh  ngày nay đang làm.</p>
+        <p>Chúng ta đều biết  mục sư là người giữ công tác làm báp-têm cho tân  tín hữu trong các Hội Thánh ngày nay. Tuy nhiên Lời Chúa cho  thấy người làm báp-têm cho tân tín hữu không bắt  buộc phải mang chức vụ mục sư. Nhiều  người có nếp sống tin kính trong Hội Thánh có thể  giúp các lãnh đạo Hội Thánh trong sự thi hành báp-têm  cho người mới tin Chúa. Điều quan trọng là ý  nghĩa của phép Báp-têm và người mới tin Chúa cần  được làm báp-têm.<strong> Cần  chú tâm vào nhu cầu cần được báp-têm của  người mới tin Chúa hơn là chú tâm vào chức vụ  phải có của người thi hành nghi thức báp-têm</strong>.</p>
+        <p><em>Tháng 9, năm 2013</em></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

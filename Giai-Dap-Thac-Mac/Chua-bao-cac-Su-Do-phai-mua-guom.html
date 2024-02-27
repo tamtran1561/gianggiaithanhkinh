@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center"><strong>Tại sao Chúa Jesus bảo  các Sứ Đồ phải mua gươm?</strong></p>
+  <p><strong> </strong></p>
+  <p><strong>Lu-ca 22:36</strong></p>
+  <p>&ldquo;Ngài phán rằng: Nhưng  bây giờ, ai có túi bạc, hãy lấy đi, ai có bao, cũng  vậy; <strong>ai không có gươm</strong>,  hãy bán áo ngoài đi mà mua.&rdquo;</p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Tại sao Chúa Jesus bảo  các Sứ Đồ phải mang theo gươm? Có phải với  mục đích bảo vệ?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Chúng ta nên hiểu lời  phán bảo của Chúa Jesus theo ý nghĩa nào: Nghĩa văn  tự hay nghĩa hàm ngụ?</p>
+  <p>Nếu giải thích theo  nghĩa văn tự (nghĩa đen), có nghĩa là Chúa bảo  các Sứ Đồ phải trang bị gươm bên mình, nếu  ai không có, phải bán áo ngoài để mua gươm cho bằng  được! Nếu căn cứ vào văn mạch <em>gần</em>, có vẻ như chúng ta  phải hiểu theo nghĩa văn tự, vì Chúa bảo các  Sứ Đồ mang theo túi tiền, mang theo bao (hiểu theo  nghĩa văn tự), thì rõ ràng mang theo gươm cũng  phải được hiểu theo nghĩa văn tự.  Ngay sau đó, câu 38 cho biết là có <em>gươm</em> thật: <em>&ldquo;Các  Sứ đồ thưa rằng: Thưa Chúa, có hai thanh  gươm đây.&rdquo; </em>Không bao lâu sau đó, chính Sứ Đồ  Phi-e-rơ đã dùng gươm nầy chém đứt vành  tai của người đầy tớ thầy tế lễ  thượng phẩm (Giăng 18:10).</p>
+  <p>Tuy nhiên, nếu hiểu  theo nghĩa văn tự như đã nêu trên, chúng ta phải  đối diện với vài vấn đề khó giải  quyết sau đây:</p>
+  <p>+ Sau khi Phi-e-rơ dùng  gươm chém đứt tai người đầy tớ  thầy cả thượng phẩm, Chúa Jesus lập tức  khiển trách Phi-e-rơ: <em>&ldquo;Hãy nạp  gươm vào vỏ; vì hễ ai cầm gươm thì sẽ  bị chết về gươm.&rdquo;</em> (Ma-thi-ơ 26:52). Sau  đó Chúa chữa lành vết thương tai cho người  đầy tớ ấy (Lu-ca 22:51). Chúng ta thấy Chúa Jesus  đã không chấp nhận cho Sứ Đồ của Ngài sử  dụng gươm. </p>
+  <p>+ Theo lời phán bảo của  Chúa, ai không có gươm, hãy bán áo ngoài để mua  gươm. Chúng ta biết lúc đó có 11 vị Sứ Đồ,  vậy tất cả 11 Sứ Đồ phải được  trang bị gươm, tổng số gươm phải là  11. Thế nhưng, khi họ nói với Chúa đã có 2 thanh  gươm rồi, Chúa lại nói: <em>&ldquo;Ấy là đủ&rdquo;</em> (Lu-ca 22:38)</p>
+  <p>+ Chúa Jesus không bao giờ  dạy sử dụng bạo lực để chống trả  với kẻ thù của mình, cho dù là để bảo vệ: <em>&ldquo;nếu ai vả má bên hữu  ngươi, hãy đưa má bên kia cho họ luôn&rdquo; </em>(Ma-thi-ơ  5:39);<em> &ldquo;Hãy yêu kẻ thù nghịch,  và cầu nguyện cho kẻ bắt bớ các ngươi.&rdquo; </em>(Ma-thi-ơ 5:44).</p>
+  <p>Cách hiểu tốt  hơn, là chúng ta giải thích lời phán bảo của Chúa  Jesus theo ý nghĩa hàm ngụ, đồng thời cũng phải  căn cứ vào văn mạch từ câu 35 đến 38:</p>
+  <p><em> &nbsp;&nbsp;&nbsp; “</em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,41,22:35" title="Share Verse"><em>35</em></a><em> Đoạn, Ngài lại phán rằng:  Khi ta đã sai các ngươi đi, không đem túi, bao, giày  chi
+    hết, các ngươi có  thiếu gì <br />
+  &nbsp; &nbsp;không? Môn đồ thưa rằng: Không thiếu  chi hết. </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,41,22:36" title="Share Verse"><em>36</em></a><em> Ngài phán
+    rằng: Nhưng bây giờ,  ai có túi bạc, hãy lấy đi, ai<br />
+  &nbsp; &nbsp;có bao, cũng vậy; <strong>ai không có gươm,
+    hãy bán áo ngoài đi mà mua</strong>. </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,41,22:37" title="Share Verse"><em>37</em></a><em> Vì ta rao cho các ngươi, có lời  chép<br />
+  &nbsp; &nbsp;rằng: Ngài đã bị
+      kể vào hàng kẻ dữ. Lời  ấy phải ứng nghiệm về chính mình ta. Thật vậy,  sự đã chỉ về ta
+      hầu<br />
+  &nbsp; &nbsp;được trọn. </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,41,22:38" title="Share Verse"><em>38</em></a><em> Các sứ đồ thưa rằng:  Thưa Chúa, có hai thanh gươm đây. Ngài phán
+    rằng: Ấy là đủ.” </em>(Lu-ca<br />
+  &nbsp; &nbsp;22:35-38)</p>
+  <p>Chúa Jesus nhắc cho các Sứ  Đồ nhớ lại khi Ngài bắt đầu sai họ  ra đi rao giảng về Nước Đức Chúa Trời,  Ngài yêu cầu họ đừng mang theo gì cả: <em>&ldquo;Ngài dạy rằng: Đi  đường chớ đem gì theo hết, hoặc gậy,  hoặc bao, hoặc bánh, hoặc tiền bạc; cũng  đừng đem hai áo.&rdquo;</em> (Lu-ca 9:3), trong suốt khoảng  thời gian ấy, họ cho biết họ không thiếu thốn  gì cả (câu 35). Khoảng thời gian đó, là lúc Chúa Jesus  còn ở với họ, Chúa Jesus chưa bị bắt, <em>giờ của Chúa chưa đến</em> (Giăng 7:6). Nhưng khi Chúa Jesus bảo các Sứ Đồ  mua gươm, Chúa Jesus biết rằng đã đến lúc  Ngài sẽ bị bắt trong vài tiếng đồng hồ  nữa, Ngài sẽ phải bước lên thập tự  giá. Câu 36 nói rõ: &ldquo;<em>Ngài phán rằng:  Nhưng <strong>bây giờ </strong>ai có túi bạc,  hãy lấy đi, ai có bao, cũng vậy; ai không có  gươm, hãy bán áo ngoài đi mà mua.&rdquo; </em>Cụm từ &ldquo;bây  giờ&rdquo; ám chỉ <em>giờ của  Chúa gần đến</em>, Chúa muốn dạy các Sứ  Đồ rằng, kể từ lúc Ngài bị bắt, chịu  thương khó, chịu chết, và kể cả sau khi Ngài  sống lại và hoàn tất sự chuộc tội, hoàn cảnh  của họ sẽ thay đổi, họ sẽ không còn  được hoan nghênh, được đón tiếp và  cung cấp các nhu cầu nữa, nhưng họ sẽ gặp  sự chống đối từ những người  khước từ Tin lành.</p>
+  <p>Kế tiếp, Chúa Jesus  trích dẫn Ê-sai 53:12, là lời tiên tri cho biết Ngài sẽ  bị kể vào hàng kẻ dữ: <em>&ldquo;người đã đổ mạng sống mình cho  đến chết, đã bị kể vào hàng kẻ dữ,  đã mang lấy tội lỗi nhiều người …&rdquo; </em>Chúa  thật đã bị bắt, bị xét xử, bị  đánh đòn, bị đóng đinh chung với 2 phạm  nhân khác.</p>
+  <p>Như vậy, khi Chúa phán  dạy các Sứ Đồ bán áo ngoài để mua  gươm, Chúa không có ý nói &ldquo;gươm&rdquo; theo nghĩa đen,  nhưng theo nghĩa hàm ngụ. Chúa chỉ mượn hình ảnh,  hay vật dụng thông thường trong cuộc sống  để dẫn các Sứ đồ đi đến chân  lý thuộc linh: Họ sẽ phải đối diện với  sự chống đối của những người  không tin. Kể từ khi Hội Thánh được thành lập,  Tin Lành được rao giảng, luôn luôn có những thành  phần chống đối với Tin Lành: những người  tin nhận Chúa bị những người không tin khinh dễ,  chống đối, bắt bớ v.v... Những người  tin Chúa phải chọn sự  &ldquo;phân  rẽ&rdquo; với người không tin, vì sự sáng và sự tối  không thể hòa đồng với nhau được.  Đúng như Chúa Jesus đã nói: <em>&ldquo;Chớ  tưởng rằng ta đến để đem sự  bình an cho thế gian; ta đến, không phải đem sự  bình an, mà là đem <strong>gươm  giáo</strong>. Ta đến để phân rẽ con trai với cha,  con gái với mẹ, dâu với bà gia; và người ta sẽ  có kẻ thù nghịch, là người nhà mình.&rdquo; </em>(Ma-thi-ơ  10:34-36)</p>
+  <p>Các Sứ Đồ chỉ  nghĩ đến &ldquo;gươm&rdquo; theo nghĩa đen, nên sau khi  họ cho Chúa Jesus biết họ đã có sẵn 2 thanh  gươm: <em>&ldquo;thưa Chúa, có hai  thanh gươm đây.&rdquo;</em> (câu 38), Chúa liền phán: <em>&ldquo;Ấy là đủ&rdquo;. </em>Câu nói của  Chúa Jesus rất sâu sắc (có tính chất hài hước  trong sự dạy dỗ của Ngài, trường hợp nầy  cũng như những trường hợp khác), Chúa muốn  nói với họ rằng &ldquo;Đừng mua thêm gươm nữa!!&rdquo;</p>
+  <p>Ngoài ra, cụm từ &ldquo;ấy  là đủ&rdquo; <em>(it is enough)</em> cũng được dùng tương tự trong Sáng Thế  Ký 45:28; I Các Vua 19:4; I Sử Ký 21:15, &ldquo;Ấy là đủ&rdquo; cho  biết Chúa Jesus không muốn dạy thêm về vấn đề  nầy nữa, Ngài muốn chấm dứt vào lúc nầy khi  thấy các Sứ Đồ không hiểu điều Ngài muốn  nói, Chúa biết các Sứ Đồ sẽ hiểu điều  Ngài dạy về &ldquo;gươm&rdquo; sau nầy chứ không phải  trong lúc nầy. Họ sẽ học và ghi nhớ điều  Ngài dạy một khi họ đối diện với thực  tại.</p>
+  <p>Sau nầy, các Sứ  Đồ đã thấu hiểu bài học Chúa dạy khi  Phi-e-rơ dùng gươm chém đứt vành tai người  đầy tớ của thầy cả thượng phẩm,  và bị Chúa cảnh cáo: <em>&ldquo;Hãy nạp  gươm vào vỏ; vì hễ ai cầm gươm thì sẽ  bị chết về gươm.&rdquo;. </em>Họ thật đã  hiểu, chúng ta thấy các Sứ Đồ đã không hề  dùng gươm lần nào nữa.</p>
+  <p><em><strong>Trần Đình Tâm </strong></em></p>
+  <p> </p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

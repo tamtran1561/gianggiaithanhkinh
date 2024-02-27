@@ -1,0 +1,622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.T {
+	text-align: center;
+}
+.A {
+	font-weight: bold;
+	color: #F00;
+}
+.A {
+	color: #F00;
+}
+.t {
+	color: #F00;
+	font-weight: bold;
+}
+.h {
+	color: #F00;
+	font-weight: bold;
+}
+.b {
+	color: #F00;
+	font-weight: bold;
+}
+T {
+	font-weight: bold;
+}
+.A {
+	color: #F00;
+}
+.A {
+	color: #000;
+}
+.B {
+	font-weight: bold;
+}
+.A {
+	font-weight: normal;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <div>
+          <p align="center">TRUY TÌM NGÀY CHÚA JESUS GIÁNG SINH</p>
+          <p align="center">Trần Đình  Tâm</p>
+          <p> </p>
+          <p>Theo thông lệ, ngày 25  tháng 12 mỗi năm là ngày các Cơ-đốc nhân trên toàn  thế giới kỷ niệm Chúa Jêsus giáng sanh. Tuy nhiên, có  bao nhiêu con cái Chúa ngày nay đặt câu hỏi: Có thật  Chúa Jesus được sanh ra bởi trinh nữ Ma-ri vào ngày  25 tháng 12? Đa số con cái Chúa tin ngày đó là sinh nhật  của Chúa Jesus mà không thắc mắc gì. Tuy nhiên, không có bằng  chứng nào trong Kinh Thánh cho thấy Chúa Jesus sanh ra vào ngày 24,  hay 25 hay bất cứ một ngày nào khác trong tháng 12, hơn  nữa, cũng không có bằng chứng trong sách Công Vụ  Các Sứ Đồ cho thấy Hội Thánh đầu tiên  trong thế kỷ thứ nhất tổ chức kỷ niệm  Chúa Jesus Giáng Sinh. Vậy, Chúa Jesus giáng sanh khi nào? Tân Ước  có cung cấp cho chúng ta vài manh mối để truy tìm ra  tháng và năm Chúa Jesus ra đời.</p>
+          <p class="A"> <span class="A">A. Truy tìm tháng Chúa  Jesus giáng sanh. </span></p>
+          <p><strong>Niên lịch của người Do Thái: </strong></p>
+          <p>Trước hết, chúng  ta cần biết rằng Kinh Thánh sử dụng <em>lịch</em> của người Do  Thái để chỉ định thời gian (ngày và tháng)  xãy ra các sự kiện. Lịch người Do Thái khác hẳn với lịch  ngày nay như sau:</p>
+          <p>&nbsp;</p>
+          <table border="1" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td width="151" bgcolor="#a8d08d" height="31" valign="top"> <p><center>Tháng<br />(Lịch DoThái)</center></p></td>
+                <td valign="top" bgcolor="#a8d08d" width="201"> <center>Tên tháng<br /> 
+                  (Lịch Do Thái)               
+                <br /></center></td>
+                <td valign="top" bgcolor="#a8d08d" width="267"><p><center>Tháng <br />
+                (Lịch ngày nay)</center></p></td>
+                <td valign="top" width="188" bgcolor="#a8d08d"><p><center>Mùa<br />(Chung cho 2 lịch)</center>
+                </p></td>
+              </tr>
+              <tr bgcolor="#c9c9c9" >
+                <td width="151" height="84" valign="top"><blockquote>
+                  <p> 1<br />
+                    2<br />
+                    3
+                  </p>
+                </blockquote></td>
+                <td valign="top" width="201"><blockquote>
+                  <p>Nisan<br />
+                    Iyyar<br />
+                    Sivan
+                    <br />
+                  </p>
+                </blockquote></td>
+                <td width="267" valign="top" style="font-size: 10pt"><br />
+&nbsp; &nbsp; 3,4 (March, April)<br />
+&nbsp; &nbsp; 4,5 (April, May)<br />
+&nbsp; &nbsp; 5,6 (May, June)</td>
+                <td valign="top" width="188"><blockquote>
+                  <p>Xuân (Spring)</p>
+                </blockquote></td>
+              </tr>
+              <tr bgcolor="#c9c9c9" >
+                <td valign="top" width="151"><blockquote>
+                  <p> 4<br />
+                    5<br />
+                    6</p>
+                </blockquote></td>
+                <td valign="top" width="201"><blockquote>
+                  <p>Tammuz<br />
+                    Ab<br />
+                    Ellul</p>
+                </blockquote></td>
+                <td valign="top" width="267"><br />
+&nbsp; &nbsp; &nbsp;6,7 (June, July)<br />
+&nbsp; &nbsp; &nbsp;7,8 (July, August)<br />
+&nbsp; &nbsp; &nbsp;8,9 (August, September)</td>
+                <td valign="top" width="188"><blockquote>
+                  <p>Hè (Summer)</p>
+                </blockquote></td>
+              </tr>
+              <tr bgcolor="#c9c9c9" >
+                <td valign="top" width="151"><blockquote>
+                  <p>7<br />
+                    8<br />
+                    9</p>
+                </blockquote></td>
+                <td valign="top" width="201"><blockquote>
+                  <p>Tishri<br />
+                    Heshvan<br />
+                    Kislev</p>
+                </blockquote></td>
+                <td valign="top" width="267"><br />
+&nbsp; &nbsp; 9,10 (September, October)<br />
+&nbsp; &nbsp;10,11 (October, November)<br />
+&nbsp; &nbsp;11,12 (November, December)</td>
+                <td valign="top" width="188"><blockquote>
+                  <p>Thu <br />
+                    (Fall)</p>
+                </blockquote></td>
+              </tr>
+              <tr bgcolor="#c9c9c9" >
+                <td width="151" height="83" valign="top"><blockquote>
+                  <p>10<br />
+                    11<br />
+                    12</p>
+                </blockquote></td>
+                <td valign="top" width="201"><blockquote>
+                  <p>Tebeth<br />
+                    Shebat<br />
+                    Adar</p>
+                </blockquote></td>
+                <td valign="top" width="267"><br />
+&nbsp; &nbsp; 12,1 (December, January)<br />
+&nbsp; &nbsp; 1,2 (January, February)<br />
+&nbsp; &nbsp; 2,3 (February, March)</td>
+                <td valign="top" width="188"><blockquote>
+                  <p>Đông (Winter)</p>
+                </blockquote></td>
+              </tr>
+            </tbody>
+          </table>
+          <p> </p>
+          <p>                               <em>Bảng đối chiếu giữa  lịch Do Thái và lịch ngày nay.</em></p>
+          <p><strong>1</strong>. <strong>Căn cứ vào thời  tiết tại xứ Do Thái</strong>.</p>
+          <p>Trong đêm Chúa Jesus giáng  sanh, có các người chăn chiên trú ngoài đồng để  canh giữ bầy chiên. Người chăn chiên Do Thái không  để chiên của mình ngoài đồng trong suốt mùa  đông, vì khoảng thời gian nầy trời lạnh và  có thể có nhiều mưa.</p>
+          <blockquote>
+            <p><em>&ldquo;Trong  ba ngày, các người của Giu-đa và Bên-gia-min đều  nhóm lại tại Giê-ru-sa-lem,
+              nhằm ngày hai mươi <strong>tháng chín</strong>; cả dân sự  đều ngồi tại phố ở đằng trước  đền của Đức
+              Chúa Trời, rúng sợ về việc  ấy và về <strong>cơn mưa lớn</strong>.  Song dân sự đông; và là nhằm <strong>mùa
+                mưa</strong>, chúng tôi không thể đứng  bên ngoài…&rdquo;</em> (Ê-xơ-ra 10:9,13). </p>
+            <p><em>&ldquo;Bấy  giờ là <strong>tháng chín</strong>; vua  đang ngồi trong cung <strong>mùa  đông</strong>, có <strong>lò than đỏ</strong> trước mặt
+              vua.&rdquo; </em>(Giê-rê-mi 36:22)</p>
+          </blockquote>
+          <p>Chúng ta thấy tháng 9 (tháng  Kislev theo lịch Do Thái) tương đương với  tháng11 và tháng 12 theo lịch ngày nay, là tháng trời có mưa  nhiều và lạnh. Vào mùa đông, những người  chăn chiên không để chiên ngoài đồng cỏ,  nhưng nhốt vào trong chuồng trại. Mùa thích hợp  để người chăn dẫn chiên ra đồng và  ngủ lại ngoài đồng để giữ chiên là khoảng  giữa mùa hè và đầu mùa thu. <em>&ldquo;Vì kìa, mùa đông đã qua, mưa đã dứt hết  rồi.&rdquo; </em>(Nhã Ca 2:11). Như vậy, Chúa Jesus không thể  ra đời vào tháng 12. </p>
+          <p>Ngoài ra, sự giáng sanh của  Chúa Jesus có liên quan đến việc kiểm tra dân số,  người dân ở các nơi phải quay trở về  sinh quán của mình để đăng ký. Chính quyền  La-mã không tổ chức thời hạn đăng ký vào mùa  đông, vì thời tiết không thuận lợi cho sự  đi lại của nhiều người dân.</p>
+          <p><strong> 2. Căn cứ vào ngày  Chúa Jesus chết trên thập giá.</strong></p>
+          <p>Chúng ta biết Chúa Jesus bắt  đầu thi hành chức vụ lúc Ngài 30 tuổi: <em>&ldquo;Khi Đức Chúa Jêsus khởi sự  làm chức vụ mình thì Ngài độ ba mươi tuổi&rdquo; </em>(Lu-ca 3:23), Chúa Jesus sống và giảng dạy trên đất  trong ba năm rưỡi, và Chúa Jesus bị đóng đinh  và chịu chết vào ngày lễ Vượt Qua (Passover). Vậy,  chúng ta chỉ cần đếm lui lại 6 tháng kể từ  lễ Vượt qua, chúng ta sẽ có được <strong>tháng</strong> Chúa Jesus ra đời.  Chúa chết vào lễ Vượt Qua, nhằm vào tháng Ni-san  (Xin đọc bài <em>&ldquo;Chúa Jesus chịu  chết vào ngày nào trong tuần&rdquo;)</em>, theo lịch Do Thái minh họa  bên trên, chúng ta đếm lui lại 6 tháng, chúng ta có tháng  Tishri. Như vậy, <strong>Chúa Jesus  giáng sanh vào tháng Tishri</strong>, tức tháng 9, khoảng đầu  mùa thu.</p>
+          <p><strong>3. Căn cứ vào sự thi hành chức tế lễ  của Xa-cha-ri theo ban A-bi-gia.</strong></p>
+          <p><em> &nbsp; &nbsp;“Trong đời Hê-rốt, vua nước Giu-đê, có  một thầy tế lễ, về <strong>ban A-bi-gia</strong>, tên là Xa-cha-ri; vợ người là  Ê-li-sa-<br />
+  &nbsp; &nbsp;bét, thuộc về chi phái A-rôn.” </em>(Lu-ca 1:5)</p>
+          <p>Xa-cha-ri là thầy tế  lễ, thuộc chi phái A-rôn, phục vụ trong đền  thờ theo ban A-bi-gia. </p>
+          <p><em><u>Tìm hiểu ban A-bi-gia</u></em>: </p>
+          <p>Trong đời trị vì  của vua Đa-vít, có nhiều thầy tế lễ thuộc  chi phái A-rôn, vua Đa-vít tổ chức sự phục vụ  cho các thầy tế lễ như sau:</p>
+          <p>a) Số các thầy tế  lễ được chia ra làm <strong>24  ban</strong>.</p>
+          <p>b) Mỗi ban sẽ phục  vụ trong đền thờ 1 tuần lễ, phiên trực  bắt đầu từ ngày Sa-bát và chấm dứt vào ngày  Sa-bát kế tiếp.</p>
+          <p>c) Ban thứ nhất bắt  đầu phục vụ vào tháng thứ 1 (Nisan).</p>
+          <p>d) Đối với những  tuần có ngày lễ quan trọng, như lễ Vượt  qua, lễ Lều Tạm, lễ Ngũ Tuần, các thầy  tế lễ đều phải đến đền thờ  phục vụ.</p>
+          <p>Theo I Sử Ký 24:7-19, <strong>số thứ tự</strong> và <strong>tên</strong> của hai mươi bốn  ban được liệt kê như sau:</p>
+          <p>1. Giê-hô-gia-ríp  (Jehoiarib)  2. Giê-đa-ê-gia (Jedaiah)  (I Sử Ký 24:7)</p>
+          <p>3. Ha-rim  (Harim)  4. Sê-rô-im (Seorim)   (I Sử Ký 24:8)</p>
+          <p>5. Manh-kia  (Malchijah)  6. Mia-min (Mijamin)  (I Sử Ký 24:9)</p>
+          <p>7. Cốt  (Hakkoz)  <strong>8.  <span class="A">A-bi-gia</span></strong> (Abijah)<strong> </strong>(I Sử Ký 24:10)</p>
+          <p>9. Giê-sua  (Jeshuah)  10. Sê-ca-ni (Shecaniah)   (I Sử Ký 24:11)</p>
+          <p>11. Ê-li-a-síp  (Eliashib)  12. Gia-kim (Jakim)  (I Sử Ký 24:12)</p>
+          <p>13.Húp-ba  (Huppah) 14. Giê-sê-báp (Jeshebeab)  (I  Sử Ký 24:13)</p>
+          <p>15. Binh-ga  (Bilgah)  16. I-mê (Immer)  (I Sử Ký 24:14)</p>
+          <p>17. Hê-xia  (Hezir)  18. Phi-xết (Aphses)   (I Sử Ký 24:15)</p>
+          <p>19. Phê-ta-hia  (Pethahiah)  20. Ê-xê-chi-ên (Jehezekel)  (I Sử Ký 24:16)</p>
+          <p>21. Gia-kin  (Jachim)  22. Ga-mun (Gamul)  (I  Sử Ký 24:17)</p>
+          <p>23. Đê-la-gia  (Delaiah) 24. Ma-a-xia  (Maaziah)  (I Sử Ký 24:18)</p>
+          <p>Chúng  ta có thể thiết lập bảng phân công phiên trực  của 10 ban đầu (có ban A-bi-gia)  trong 3 tháng đầu như sau:</p>
+          <p> </p>
+          <table width="819" height="147" border="1" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td width="168" height="39" valign="top" bgcolor="#ffc000">&nbsp;</td>
+                <td valign="top" bgcolor="#a8d08d" width="154">Tuần lễ 1</td>
+                <td valign="top" bgcolor="#a8d08d" width="149">Tuần lễ 2</td>
+                <td valign="top" bgcolor="#a8d08d" width="162">Tuần lễ 3</td>
+                <td valign="top" bgcolor="#a8d08d" width="174">Tuần lễ 4</td>
+              </tr>
+              <tr>
+                <td width="168" bgcolor="#8eaadb" height="37" valign="top">Tháng Nisan<br />
+                  (Tháng 3,4)</td>
+                <td valign="top" bgcolor="#c9c9c9" width="154">Ban 1<br />
+                Giê-hô-gia-ríp</td>
+                <td valign="top" bgcolor="#c9c9c9" width="149">Ban 2<br />
+                Giê-đa-ê-gia</td>
+                <td valign="top" bgcolor="#c9c9c9" width="162">Tuần lễ ăn bánh<br />
+                không men</td>
+                <td valign="top" bgcolor="#c9c9c9" width="174">Ban 3<br />
+                  Ha-rim</td>
+              </tr>
+              <tr>
+                <td width="168" bgcolor="#8eaadb" height="35" valign="top">Tháng Iyyar<br />
+                (Tháng 4,5)</td>
+                <td valign="top" bgcolor="#c9c9c9" width="154">Ban 4<br />
+                  Sê-rô-im                </td>
+                <td valign="top" bgcolor="#c9c9c9" width="149">Ban 5<br />
+                Manh-kia</td>
+                <td valign="top" bgcolor="#c9c9c9" width="162">Ban 6<br />
+                Mia-min</td>
+                <td valign="top" bgcolor="#c9c9c9" width="174">Ban 7<br />
+                  Cốt</td>
+              </tr>
+              <tr>
+                <td width="168" bgcolor="#8eaadb" height="34" valign="top">Tháng Sivan<br />
+                (Tháng 5,6)</td>
+                <td valign="top" bgcolor="#c9c9c9" width="154">Lễ Ngũ Tuần</td>
+                <td valign="top" bgcolor="#c9c9c9" width="149">Ban 8<br />
+                <span class="A">A-bi-gia</span></td>
+                <td valign="top" bgcolor="#c9c9c9" width="162">Ban 9<br />
+                Giê-sua</td>
+                <td valign="top" bgcolor="#c9c9c9" width="174">Ban 10<br />
+Sê-ca-ni </td>
+              </tr>
+            </tbody>
+          </table>
+          <p> </p>
+          <p>Theo thời khóa biểu  trên, Xa-cha-ri thuộc ban A-bi-gia, là ban thứ 8, ông phục vụ  trong đền thờ vào tuần lễ thứ hai của  tháng Sivan (tháng 5, 6 theo lịch ngày nay).</p>
+          <p>Khi Xa-cha-ri đang phục  vụ trong đền thờ, thiên sứ của Chúa hiện  đến và báo tin cho ông biết Ê-li-sa-bét, vợ ông sẽ  mang thai. Chúng ta biết thai ấy là Giăng Báp-tít. Lu-ca 1:24  cho biết: &ldquo;<em>Khỏi ít lâu</em>,<em> vợ người là Ê-li-sa-bét chịu  thai</em>.&rdquo; Vì &ldquo;khỏi ít lâu&rdquo; kể từ khi thiên sứ báo tin,  nên Ê-li-sa-bét chắc mang thai vào cuối tháng tháng Sivan. Thời  gian Ê-li-sa-bét mang thai là 9 tháng 10 ngày, như vậy, giăng  Báp-tít ra đời vào tháng Nisan.  </p>
+          <p>Ngoài ra, Ma-ri được  thiên sứ báo tin bà sẽ mang thai Chúa Jesus ngay vào lúc  Ê-li-sa-bét mang thai Giăng được 6 tháng: <em>&ldquo;Kìa, Ê-li-sa-bét, bà con ngươi,  cũng đã chịu thai một trai trong lúc già nua; người  ấy vốn có tiếng là son, mà nay cưu mang được <strong>sáu tháng</strong> rồi.&rdquo; </em>(Lu-ca  1:36). Căn cứ vào lời báo tin của thiên sứ, chúng  ta biết được Giăng Báp-tít chào đời  trước Chúa Jesus 6 tháng. Như vậy, chúng ta cộng  thêm 6 tháng vào tháng sanh của Giăng Báp-tít để có  được tháng sanh của Chúa Jesus: <strong>Chúa Jesus giáng sanh vào tháng Tishri</strong>, là <strong>tháng 9</strong> (september) theo lịch ngày nay.</p>
+          <p><span class="B">B. Truy tìm năm Chúa Jesus giáng sanh</span>.</p>
+          <p><strong>1</strong>. <strong>Căn cứ vào năm  trị vì của hoàng đế La-mã Sê-sa Ti-be-rơ (Tiberius Caesar).</strong></p>
+          <p><strong></strong><em> &nbsp; &nbsp;“<u>Năm thứ mười lăm</u> đời  Sê-sa Ti-be-rơ (Tiberius Caesar), khi Bôn-xơ Phi-lát làm quan tổng đốc xứ  Giu-đê, Hê-<br />
+  &nbsp; &nbsp; rốt làm vua chư hầu xứ Ga-li-lê.” </em>(Lu-ca  3:1)</p>
+          <p>Lu-ca 3:1-22 tường thuật  Giăng Báp-tít đang giảng dạy phép Báp-têm về sự  ăn năn để được tha tội cho dân  Giu-đa, sự kiện nầy xãy ra vào <strong>năm thứ 15</strong> đời cai trị của hoàng  đế La-mã Sê-sa Ti-be-rơ. Lịch sử các hoàng đế  La-mã cho thấy Sê-sa Ti-be-rơ cai trị trên đế quốc  từ năm 14AD đến 37AD. Như vậy, năm trị  vì thứ 15 sẽ là <strong>28AD</strong>,  được minh họa qua bảng đối chiếu  sau: </p>
+          <p> </p>
+          <table border="1" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td valign="top" bgcolor="#a8d08d" width="169"><p> Số năm cai trị của    Ti-be-rơ</p></td>
+                <td valign="top" bgcolor="#c9c9c9" width="584"><p>thứ 1      thứ 2   thứ 3   -      -   -   thứ 13   thứ 14   <span class="t">thứ 15</span>   thứ 16</p></td>
+              </tr>
+              <tr>
+                <td width="169" bgcolor="#8eaadb" height="96" valign="top"><p> <br />
+Niên lịch</p>
+<p> </p></td>
+                <td valign="top" bgcolor="#c9c9c9" width="584"><p> <br />
+                  14AD      15AD   16AD   -      -   -     26AD       27AD     <span class="h">28AD</span>     29AD</p></td>
+              </tr>
+            </tbody>
+          </table>
+          <p> </p>
+          <p>Trong khoảng thời  gian nầy (năm 28AD), Giăng làm phép Báp-têm cho Chúa Jesus, mở  đầu cho chức vụ công khai của Chúa Jesus. Chúng ta  đã biết Chúa Jesus bắt đầu chức vụ lúc  Ngài <strong>30 tuổi</strong>. Như vậy,  khi đếm ngược lại cho đến năm Chúa  Jesus ra đời, chúng ta sẽ có năm <strong>3BC</strong>.  </p>
+          <p>Chú ý: Khi đếm, chúng  ta không đếm năm 0, vì không có năm 0:</p>
+          <p> </p>
+          <table border="1" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td width="173" bgcolor="#a8d08d" height="70" valign="top"><p> <br />
+                  Niên lịch</p></td>
+                <td valign="top" bgcolor="#c9c9c9" width="593"><p> <br />
+                    <span class="b">3BC</span>     2BC       1BC   1AD   2AD       -   -   -      26AD   27AD   28AD</p></td>
+              </tr>
+              <tr>
+                <td width="173" bgcolor="#8eaadb" height="121" valign="top"><p>  Tuổi    của <br />
+                  Chúa Jesus</p>
+<p> </p></td>
+                <td valign="top" bgcolor="#c9c9c9" width="593"><p>Chúa<br />
+                  giáng   1        2        3       4        -   -   -     28       29        30<br />
+                  sanh</p>
+<p> </p></td>
+              </tr>
+            </tbody>
+          </table>
+          <p>   </p>
+          <p> <strong>2. Căn cứ vào năm Hê-rốt đại đế  qua đời.</strong></p>
+<p>Năm Chúa Jesus giáng sanh có  liên quan đặc biệt với năm vua Hê-rốt qua  đời, cũng như liên quan đến sự kiện  Hê-rốt ra lệnh giết các bé trai 2 tuổi trở xuống  trong thành Bết-lê-hem (Ma-thi-ơ chương 2).</p>
+          <p>Để xác định  năm vua Hê-rốt qua đời, người ta dựa vào  các dữ kiện sau đây:</p>
+          <p>a) <u>Hiện tượng  nguyệt thực</u>:</p>
+          <p>Sử gia Josephus cho biết  Hê-rốt qua đời trong thời gian <strong>sau khi</strong> xãy ra <strong>nguyệt  thực</strong> (Lunar Eclipse) (nhìn thấy từ thành Giê-ru-sa-lem và  thành Giê-ri-cô) và<strong> trước Lễ  Vượt Qua</strong>. Chúng ta biết Lễ Vượt Qua nhằm  vào tháng Nisan (tháng 3,4 theo lịch ngày nay). Người ta ghi  nhận có 4 lần xãy ra nguyệt thực có liên quan đến  ngày chết của Hê-rốt:</p>
+          <p><em>1. Nguyệt thực  ngày 15 tháng 9, 5BC</em>: </p>
+          <p>   <u>Nhận xét</u>: Không hợp lý, vì ngày nầy đã qua  khỏi Lễ Vượt Qua.</p>
+          <p><em>2. Nguyệt thực bán phần ngày 13 tháng 3, <strong>4BC</strong></em>. Lễ Vượt Qua  nhằm ngày 12 tháng 4, <strong>4BC</strong></p>
+          <p><u>Nhận xét</u>: Căn cứ  vào dữ kiện trên, đa số các tài liệu đều  kết luận Hê-rốt qua đời vào năm <strong>4BC</strong>. Tuy nhiên, giữa hiện  tượng nguyệt thực và Lễ Vượt Qua nêu  trên chỉ có 29 ngày. Khoảng thời gian ngắn ngủi nầy  không phù hợp cho nhiều sự kiện xãy ra như sau:</p>
+          <p>+ Một phần thi thể  của Hê-rốt bị nhiểm trùng nặng, được  đem đi tẩy rửa đặc biệt trên đoạn  đường 16 Km.</p>
+          <p>+ Những nhân vật quan  trọng cư trú trong phạm vị 30km đến 120Km  được thông báo về cái chết của vua và họ  được mời đến tham dự tang lễ.</p>
+          <p>+ Tang lễ được  chuẩn bị quy mô, được tổ chức trọng  thể và đoạn đường di quan dài 37km.</p>
+          <p>+ Có một tuần lễ  để tang sau tang lễ.</p>
+          <p>+ Thêm một khoảng thời  gian để tang đặc biệt dành cho nhữ người  yêu nước qua đời.</p>
+          <p>Những nhà nghiên cứu  sử học cho biết có nhiều sự kiện xãy ra mà  thời gian lại quá ngắn, nên không hợp lý nếu kết  luận Hê-rốt qua đời vào năm 4BC.</p>
+          <p><em>3. Nguyệt thực toàn phần ngày 9 tháng 1, <strong>1BC</strong></em>. Lễ Vượt Qua  nhằm ngày 6 tháng 4, <strong>1BC</strong></p>
+          <p><u>Nhận xét</u>:<strong> </strong>Có khoảng<strong> </strong>gần 12 tuần lễ giữa nguyệt thực  toàn phần và Lễ Vượt Qua, vua Hê-rốt qua đời  trong khoảng thời gian nầy thì hợp lý hơn cả.  Vậy chúng ta có thể kết luận vua Hê-rốt chết  vào năm <strong>1BC</strong>.</p>
+          <p>4. Nguyệt thực toàn  phần lần thứ hai ngày 29 tháng 12, cùng năm 1BC. </p>
+          <p>b) <u>Ngày kỷ niệm  Hê-rốt qua đời</u>.</p>
+          <p>Dân Do Thái kỷ niệm  ngày Hê-rốt qua đời vào ngày <strong>2 tháng Shebat</strong> (tháng 2 theo lịch ngày nay), sự kiện  nầy chứng minh rằng Hê-rốt không thể qua đời  vào năm 4BC như nhiều người công nhận, vì ngày  2 tháng Shebat không liên quan gì đến khoảng thời gian Hê-rốt  qua đời giữa nguyệt thực bán phần vào ngày  13 tháng 3 và Lễ Vượt Qua 12 tháng 4 trong năm 4BC. Trong  khi đó, ngày 2 tháng Shebat nằm trong khoảng thời gian  có nguyệt thực toàn phần và Lễ vượt Qua trong  năm 1BC. Như vậy, Hê-rốt qua đời vào năm <strong>1BC</strong>.</p>
+          <p>c) <u>Thời gian cai trị  của Hê-rốt</u>.</p>
+          <p>Hê-rốt được  chính quyền La-mã bổ nhiệm làm vua xứ Giu-đê cuối  năm 39BC, vào mùa đông. Triều đại Hê-rốt bắt  đầu từ năm 38BC. Sử gia Josephus cho biết  Hê-rốt cai trị Giu-đê trong 37 năm. Như vậy,  ta có năm 1BC là năm Rê-rốt qua đời.</p>
+          <p>Chúng ta biết Hê-rốt  chết năm 1BC, căn cứ vào Ma-thi-ơ 2:16: <em>&ldquo;Vua Hê-rốt thấy mình đã bị  mấy thầy bác sĩ đánh lừa, thì tức giận  quá, bèn sai giết hết thảy con trai từ hai tuổi sấp  xuống ở thành Bết-lê-hem và cả hạt, theo  đúng ngày tháng mà mấy thầy bác sĩ đã cho vua biết.&rdquo;</em> Trước khi qua đời, Hê-rốt ra lệnh giết  các bé trai trong thành Bết-lê-hem từ hai tuổi trở xuống,  chúng ta biết Chúa Jesus đã hơn 1 tuổi nhưng dưới  2 tuổi. Từ đó, chúng ta có thể kết luận Chúa  Jesus ra đời vào năm <strong>3BC </strong>hay sớm hơn.</p>
+          <p>C. Truy tìm ngày Chúa Jesus giáng sanh.</p>
+          <p>Chúng ta có thể biết  được ngày nào trong tháng 9 Chúa Jesus ra đời? Không  ai dám khẳng định ngày nào, vì thiếu bằng chứng  lịch sử. Tuy nhiên, một số nhà giải kinh cho rằng  Chúa Jesus sanh ra vào ngày 15 tháng 9 (tháng Tishri), dựa vào <strong>ý nghĩa thần học</strong> của  sự kiện Chúa sáng sanh:</p>
+          <blockquote>
+            <p><em>&ldquo;Hãy  truyền cho dân Y-sơ-ra-ên rằng: Ngày <strong>rằm tháng bảy</strong> nầy là <strong>lễ lều tạm</strong>, trải qua
+              bảy ngày đặng tôn  kính Đức Giê-hô-va.&rdquo; </em>(Lê-vi Ký 23:34)</p>
+          </blockquote>
+          <p>Theo luật pháp Đức  Chúa Tời ban cho dân do Thái, một trong 3 ngày lễ trọng  đại hàng năm mà người Do Thái phải giữ,  là Lễ Vượt Qua, Lễ Ngũ Tuần và Lễ Lều  Tạm. Lễ lều Tạm bắt đầu ngày 15 tháng 7  (tháng 7 của lịch Do Thái là tháng Tishri) tức là ngày 15  tháng 9 lịch ngày nay. Lễ Lều Tạm trong nguyên ngữ  Hê-bơ-rơ là <em>&ldquo;mishkân&rdquo;</em>, dịch  sang Anh ngữ là <em>&ldquo;tabernacles&rdquo;,</em> có  nghĩa là &ldquo;ở&rdquo; hay &ldquo;cư trú&rdquo;. Cựu Ước dùng  &ldquo;tabernacles&rdquo; chỉ về &ldquo;đền tạm&rdquo; hay &ldquo;hội mạc&rdquo;  trong thời Môi-se (Xuất Ê-díp-tô Ký 30:20; 38:21), là nơi <strong>Đức Chúa Trời hiện  diện với dân Y-sơ-ra-ên</strong>, và dân Y-sơ-ra-ên chứng  kiến sự vinh hiển của Chúa đầy dẫy  trong đền tạm (Xuất Ê-díp-tô Ký 40:34,35).</p>
+          <p>Chúng ta đọc  Giăng 1:14: <em>&ldquo;Ngôi Lời đã  trở nên xác thịt, <strong>ở giữa</strong> chúng ta, đầy ơn và lẽ thật; chúng ta đã ngắm  xem sự vinh hiển của Ngài, thật như vinh hiển  của Con một đến từ nơi Cha</em>.&rdquo; Ngôi Lời  là Chúa Jesus đã đến thế gian trong thân xác con người,  Ngài <strong>ở giữa </strong>chúng ta (từ  ngữ &ldquo;ở giữa&rdquo; theo ngôn ngữ Hy-lạp,  tương đương với từ &ldquo;tabernacles&rdquo;). Ê-sai  nói tiên tri về sự giáng sanh của Chúa Jesus: <em>&ldquo;Nầy một gái đồng  trinh sẽ chịu thai, và sanh một con trai, rồi người  ta sẽ đặt tên cho con trai đó  là Em-ma-nu-ên, nghĩa là <strong>Đức Chúa Trời ở cùng  chúng ta</strong>.&rdquo;</em> (Ma-thi-ơ 1:23). Như vậy, theo ý nghĩa  thần học về sự giáng sanh của Chúa Jesus, một  số người cho rằng Chúa sanh ra vào ngày 15 tháng 9,  tương đương với 15 tháng 7 theo lịch Do  thái, là ngày dân Y-sơ-ra-ên kỷ niệm Lễ Lều Tạm.</p>
+          <p>D. Kết Luận:</p>
+          <p>Bài viết nầy chỉ  nhằm chứng minh rằng Chúa Jesus giáng sanh vào tháng 9, chứ  không phải tháng 12 như truyền thống giữ lễ  của các Hội Thánh ngày nay. Tuy nhiên, dù có sự hiểu  sai về ngày tháng, nhưng ý nghĩa thần học về  sự giáng sinh của Chúa Jesus thì không có gì thay đổi: <em>&ldquo;Ngôi Lời đã trở nên xác thịt,  ở giữa chúng ta&rdquo; </em>(Giăng 1:14). Chúa Jesus là Đức  Chúa Trời mang thân xác con người, Ngài đến thế  gian để chịu chết chuộc tội cho nhân loại: <em>&ldquo;Vì Con người đã đến  không phải để người ta hầu việc mình,  song để hầu việc người ta, và phó sự sống  mình làm giá chuộc cho nhiều người.&rdquo;</em> (Mác 10:45)</p>
+          <p> <strong><em>Tháng 11, 2013</em></strong></p>
+<p><u>Tài liệu tham khảo</u>:</p>
+          <p>http://askelm.com/star/star006.htm</p>
+          <p>http://www.versebyverse.org/doctrine/birthofchrist.html</p>
+          <p>http://home.comcast.net/~murrellg/Herod.htm</p>
+          <p>http://www.ldolphin.org/birth.html</p>
+          <p>http://petragrail.tripod.com/page5.html</p>
+          <p>http://www.truthortradition.com/modules.php?file=article&amp;name=News&amp;sid=468</p>
+        </div>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

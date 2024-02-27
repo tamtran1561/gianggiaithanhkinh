@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>CÓ NÊN TREO HÌNH CHÂN DUNG CHÚA JESUS TRONG NHÀ?</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Trong nhà của nhiều  con cái Chúa ngày nay cũng như các vị lãnh đạo Hội  Thánh, có treo hình chân dung của Chúa Jesus. Chân dung của Chúa có  thể là một bức tranh vẽ hay được  điêu khắc trên gỗ hay đá mài; hình Chúa được  treo ở những nơi trang trọng như phòng khách,  phòng làm việc. </p>
+        <p>Có một số vấn  đề mà các con cái Chúa nên biết rõ về hình Chúa Jesus như  sau:</p>
+        <p><strong>1. Đức Chúa Trời có ý muốn lưu truyền  chân dung của Chúa Jesus?</strong></p>
+        <p>Từ khi Chúa Jesus giáng  sanh cho đến khi Ngài trưởng thành và thi hành chức  vụ trên đất, không có bất cứ một Sứ  Đồ nào, môn đồ nào, hay bất cứ một  người nào nghĩ đến việc phát họa hay ghi  khắc chân dung của Chúa Jesus để lưu truyền lại  cho các thế hệ tiếp theo. Vì Kinh Thánh không ghi chép lại  sự kiện lưu truyền hình ảnh Chúa Jesus, nên chúng  ta tin chắc rằng không có một bản phát họa (điêu  khắc) nào về chân dung của Chúa Jesus ngay trong thời  Chúa Jesus còn trên đất. Trên tất cả, Đức  Chúa Trời đã tể trị vấn đề nầy,  Ngài không muốn cho nhân loại sau nầy chú ý đến  hình dung bên ngoài của Chúa Jesus, mà muốn nhân loại chú ý <strong>Chúa Jesus</strong> <strong>là ai</strong> và <strong>Ngài đã làm gì </strong>khi còn trên đất. Chúng ta ghi nhận các tác giả sách  Phúc Âm như Ma-thi-ơ, Mác, Giăng đều không có một  lời nào mô tả về diện mạo của Chúa Jesus.  Lu-ca 2:52 không phải là câu Kinh Thánh mô tả chân dung Chúa Jesus.</p>
+        <p>Vài nhân vật trong Cựu  Ước như Đa-vít được mô tả <em>&ldquo;Mặt người hồng hồng,  con mắt xinh lịch, và hình dung tốt đẹp&rdquo;</em> (I  Sa-mu-ên 16:12) hay Áp-sa-lôm<em>: &ldquo;Vả,  trong cả Y-sơ-ra-ên chẳng có một người nào  được khen chuộng về nhan sắc mình như  Áp-sa-lôm; nơi mình người, từ bàn chân cho đến  chót đầu, chẳng có tì vít gì hết.&rdquo; </em>(II Sa-mu-ên  14:25). Nhưng không có một lời nào mô tả Chúa Jesus  trong khi Ngài sống trên đất. </p>
+        <p>Chỉ có một lời  duy nhất là lời tiên tri của Ê-sai về Chúa Jesus: <em>&ldquo;Người chẳng có hình dung,  chẳng có sự đẹp đẽ; khi chúng ta thấy  người, không có sự tốt đẹp cho chúng ta  ưa thích được.&rdquo;</em> (Ê-sai 53:2). Lời tiên tri cho  thấy hình dạng của Chúa Jesus sẽ không như  người ta cố ý mong đợi và gán cho (theo quan niệm  của con người về một nhân vật nổi tiếng  nào đó) như là … đẹp trai và có sức hấp dẫn  thu hút người nhìn như tài tử điện ảnh!!  Lời tiên tri cho biết Đấng Mê-si có hình dáng và diện  mạo thông thường như bao nhiêu người đàn  ông Do Thái lúc ấy. Chính vì thế, khi Giu-đa dẫn những  người lính đến bắt Chúa Jesus trong vườn  Ghết-sê-ma-nê, Giu-đa phải cho họ  một dấu hiệu để  người lính phân biệt Chúa với những người  khác: Đó là cái hôn. Điều nầy chứng minh rằng  Chúa Jesus không có gì đặc biệt so với những  người đàn ông Do Thái khác.  </p>
+        <p><strong>2. Tranh vẽ chân dung của Chúa Jesus.</strong></p>
+        <p>Hình vẽ chân dung Chúa  Jesus chỉ xuất hiện từ khoảng năm 1090. Từ  lúc đó về sau, nhiều họa sĩ đã vẽ chân  dung của Chúa Jesus, hình vẽ theo trường phái Tin Lành  khác với hình vẽ theo trường phái Công Giáo La-mã. Điều  quan trọng mà chúng ta cần biết là: <strong>Người ta vẽ chân dung Chúa Jesus hoàn toàn dựa  vào sự tưởng tượng của họ và cảm xúc  của họ về Chúa Jesus</strong>, vì thế các hình vẽ chân  dung Chúa Jesus khác nhau: Nước da ngăm hoặc trắng;  tóc dài chấm vai hoặc ngắn; tóc thẳng hoặc  xoăn; màu tóc nâu đen, vàng hay màu hung; râu dài hay râu ngắn  được tỉa xén cẩn thận; khuôn mặt gầy  guộc hay đầy đặn; có vầng hào quang chung  quanh hay không có v.v… Cũng có thể hình Chúa Jesus được  vẽ theo mẫu của một nhân vật đã từng  đóng vai Chúa Jesus trong một bộ phim kể về cuộc  đời Chúa Jesus. Cho dù bất cứ họa sĩ nào vẽ  hay vẽ theo trường phái nào đi nữa thì tất cả  các hình vẽ ấy <strong>không phải  là hình ảnh thật sự của Chúa Jesus</strong>. </p>
+        <p>Sau đây là vài tranh vẽ  Chúa Jesus, lưu ý hình đầu tiên là hình được  đa số con cái Chúa trong Hội Thánh truyền thống chọn  để treo trong nhà.</p>
+        <p> <img src="sample_image002.jpg" v:shapes="Picture_x0020_1" height="134" width="99" />  <img src="sample_image004.jpg" v:shapes="Picture_x0020_2" height="133" width="88" /> <img src="sample_image006.jpg" v:shapes="Picture_x0020_3" height="131" width="113" /> <img src="sample_image008.jpg" v:shapes="Picture_x0020_5" height="131" width="98" /> <img src="sample_image010.jpg" v:shapes="Picture_x0020_6" height="132" width="88" />  <img src="sample_image012.jpg" v:shapes="Picture_x0020_7" height="132" width="91" /></p>
+        <p> Ngoài các tranh vẽ trên  đây, còn nhiều tranh vẽ Chúa Jesus với nhiều phiên  bản khác nhau, tất cả đều không phải là hình  ảnh thật của Chúa Jesus.</p>
+        <p><strong>Nếu không phải là hình ảnh thật sự của  Chúa Jesus thì tại sao con cái Chúa treo hình không phải là Chúa  Jesus trong nhà và nghĩ rằng đó là hình Chúa Jesus? </strong></p>
+        <p>Có thể có người  cho rằng hình Chúa Jesus treo trong nhà chỉ là hình ảnh &ldquo;tượng  trưng&rdquo; mà thôi. Tuy nhiên, trong trường hợp nầy,  hình vẽ để <em>tượng  trưng </em>thật không hợp lý. Hãy tưởng tượng  rằng bạn có người thân yêu trong gia đình qua  đời, bạn muốn treo hình của người ấy  trong phòng, nhưng người ấy không để lại  hình ảnh hay di họa nào, có thể nào bạn chấp nhận  treo hình của một người khác và bạn nói rằng  hình nầy tượng trưng cho người thân yêu của  bạn?!   </p>
+        <p><strong>3. Một khám phá của ngành Khảo Cổ:</strong></p>
+        <p>Các nhà khảo cổ  người Tây Ban Nha công bố đã tìm thấy một cái  đĩa cỗ thủy tinh thuộc thế kỷ thứ  4 sau Công Nguyên, chiếc đĩa và các mãnh vỡ được  tìm thấy tại Castulo ở Andalusia, Tây Ban Nha.  Trên mặt đĩa có khắc họa hình Chúa Jesus cùng với  hai Sứ Đồ Phi-e-rơ và Phao-lô. Hình Chúa Jesus khác rất  nhiều so với những gì mà người ta gán cho Chúa bấy  lâu nay: Tóc xoăn ngắn, không để râu.</p>
+        <p>                                        <img src="sample_image014.jpg" alt="Archaeologists  in Spain believe they have found one of the earliest known images of Jesus, which depict him with no beard and shorter hair." v:shapes="Picture_x0020_8" height="224" width="241" /></p>
+        <p>                                 <em>Hình Chúa Jesus trên đĩa thuộc  thế kỷ thứ 4</em></p>
+        <p>Không có gì chứng minh được  rằng hình Chúa Jesus trên cái đĩa là đúng với sự  thật.</p>
+        <p>Ngoài sự phát hiện  nêu trên, người ta còn bàn nhau về bí mật của <em>&ldquo;tấm vải liệm Turin&rdquo;</em>,  là tấm vải trùm lên mặt Chúa Jesus trong khi xác Chúa  được khâm liệm. Người ta đồn  đoán rằng tấm vải liệm đã được  các nhà khoa học phân tích &ldquo;đồng vị Carbon 14&rdquo; vào  năm 1988. Kết quả phân tích đồng vị Carbon  cho thấy tấm vải có in hình của Chúa Jesus. Có người  cho rằng câu chuyện &ldquo;tấm vải liệm Turin&rdquo; chỉ  là sự thêu dệt: Không ai chứng minh được tấm  vải đó chính là tấm vải trùm lên mặt Chúa Jesus. Có  những thông tin có vẻ như được khoa học  chứng minh, nhưng đó chỉ là một hình thức lừa  dối tinh vi nhằm thuyết phục người khác tin  theo.</p>
+        <p>                                    <img src="sample_image016.jpg" alt="Giả thuyết mới về vải liệm Turin" v:shapes="Picture_x0020_9" height="260" width="315" /></p>
+        <p>                                      <em>Bên trái: Tấm vải liệm &ldquo;linh thiêng&rdquo; Turin!                           </em></p>
+        <p><em>                                    Bên phải: Hình Chúa Jesus &ldquo;hiện&rdquo; trên nền vải!</em></p>
+        <p><strong> </strong><strong>4. Chúa Jesus có mái tóc dài hay ngắn?        </strong></p>
+        <p>Hình chân dung Chúa Jesus treo  trong nhà các con cái Chúa đều là hình với <strong>mái tóc dài</strong>. Không có bằng chứng  nào cho thấy Chúa Jesus từng để tóc dài. Trái lại,  có những yếu tố khiến chúng ta có thể tin rằng  trong thời của Chúa Jesus, người đàn ông để  tóc ngắn. </p>
+        <p>+ Đức Chúa Trời  quy định luật cho người na-xi-rê: không  được cạo đầu nhưng phải để  tóc mọc dài cho đến khi nào sự hứa nguyện  hoàn tất (Dân số Ký 6:5). Sau khi xong thời gian làm  Na-xi-rê, người đó phải cạo đầu.  Như vậy, việc để tóc dài chỉ dành riêng cho  người Na-xi-rê mà thôi, và chỉ trong một khoảng thời  gian mà thôi. Chúa Jesus không ở trong trường hợp  đó.  </p>
+        <p>+ Sách tiên tri Ê-xê-chi-ên 44:20  cho thấy các thầy tế lễ được quy định: <em>&ldquo;Chúng nó sẽ không cạo đầu,  và không để tóc dài, nhưng sẽ cắt tóc.&rdquo;  </em></p>
+        <p>+ Chúng ta cũng đọc  thấy trong I Cô-rinh-tô 11:14: <em>&ldquo;Chính  lẽ tự nhiên há chẳng dạy cho anh em biết <strong>đờn ông để tóc dài  thì lấy làm hổ thẹn sao</strong>?</em>&rdquo;</p>
+        <p>+ Khải Huyền mô tả  hình dáng các <em>tà linh</em> xuất hiện  trong thời kỳ sau cùng: <em>&ldquo;nó  có tóc giống tóc đàn bà.&rdquo;</em> (Khải Huyền 9:8)</p>
+        <p>+ Người ta có thể  tìm thấy những bức tượng điêu khắc  người đàn ông có mái tóc ngắn trong thời kỳ  đế quốc La-mã cai dân Do Thái.</p>
+        <p>Tóm lại, chúng ta có nên  treo hình chân dung Chúa Jesus mà chúng ta biết đó không phải  là Chúa Jesus, và Chúa Jesus lại để tóc dài?</p>
+        <p><strong></strong><strong><em>Tháng 11, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

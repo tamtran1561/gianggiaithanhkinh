@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+	border-top-right-radius: 0px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center">&nbsp;</p>
+<p align="center"><strong style="font-size: 12pt"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Các thánh đồ Cựu Ước nhìn thấy chúng  ta sống trên trần gian?</strong></p>
+  <p><strong> </strong></p>
+  <p><strong>Hê-bơ-rơ  12:1,2:</strong></p>
+  <p><em>&ldquo;Thế thì, vì <strong>chúng ta  được</strong> <strong>nhiều  người chứng kiến vây lấy như đám mây rất  lớn</strong>, chúng ta cũng nên quăng hết gánh nặng và tội  lỗi dễ vấn vương ta, lấy lòng nhịn nhục  theo đòi cuộc chạy đua đã bày ra cho ta, nhìn xem  Đức Chúa Jêsus, là cội rễ và cuối cùng của  đức tin, tức là Đấng vì sự vui mừng  đã đặt trước mặt mình, chịu lấy thập  tự giá, khinh điều sỉ nhục, và hiện nay ngồi  bên hữu ngai Đức Chúa Trời.&rdquo;</em></p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Có phải các thánh đồ  thời Cựu Ước, hay những người tin Chúa  đã qua đời, họ đang ở thiên đàng và đang  nhìn xuống thấy chúng ta là những người đang  sống trên trần gian nầy?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Một số nhà giải  nghĩa Kinh Thánh căn cứ vào Hê-bơ-rơ 12:1,2 giảng  dạy rằng những thánh đồ đã qua đời  trong thời Cựu Ước, là những vị anh hùng  đức tin được liệt kê trong Hê-bơ-rơ  chương 11 (như Áp-ra-ham, Nô-ê, Môi-se, Sam-sôn, Giép-thê,  Đa-vít v.v…) kể cả những người tin Chúa và phục  vụ Chúa trong thời Ân điển mà đã qua đời,  họ đang ở trên thiên đàng, họ đang nhìn xuống  thấy chúng ta đang sống và đang phục vụ Chúa  trên trần gian, giống như trước giả thư  Hê-bơ-rơ đã mô tả: <em>&ldquo;chúng  ta được nhiều người chứng kiến vây  lấy như đám mây rất lớn&rdquo;</em></p>
+  <p>Điểm quan trọng  cần làm sáng tỏ trong Hê-bơ-rơ 12:1: Các thánh đồ  đã qua đời đang ở trong nước Chúa có <strong>nhìn thấy</strong> chúng ta đang sống  trên trần gian nầy không?</p>
+  <p>Để có thể hiểu  đúng hình ảnh mà trước giả thư  Hê-bơ-rơ mô tả, chúng ta cần giải thích dựa  trên bối cảnh xã hội trong thời kỳ Kinh Thánh Tân  Ước được ký thuật. Thư Hê-bơ-rơ  được viết và gửi cho các tín đồ người  Do Thái đã tin Chúa Jesus sống rải rác ở các vùng thuộc  quyền cai trị của đế quốc La-mã. Người  La-mã cho phép xây dựng các vận động trường  để tổ chức các cuộc tranh tài thể thao ở  một số thành phố. Hê-bơ-rơ 12:1,2 là phần  Kinh Thánh mượn hình ảnh <strong><em>vận động viên</em> trong cuộc  chạy đua để minh họa cho nếp sống theo  Chúa của Cơ-đốc nhân ngày nay</strong>. Cụm từ <em>&ldquo;cuộc chạy đua đã bày  ra cho ta&rdquo;</em> (câu 1) đã chứng minh điều đó. Chúng  ta có thể hình dung quang cảnh tại sân vận động  với các chi tiết sau:</p>
+  <p>+ Người chạy  đua phải ăn mặc thật gọn nhẹ để  không bị bất cứ một trở ngại nhỏ nào  làm ảnh hưởng đến tốc  độ chạy. Cũng vậy, người tín đồ  của Chúa Jesus cũng phải <em>“quăng  hết gánh nặng và tội lỗi dễ  vấn vương”. </em>Những sự cám dỗ trong thế  gian như các thú vui trần tục; lòng tham mê tiền bạc  và của cải đời nầy; chạy theo quyền thế,  danh vọng hảo huyền … Đó chính là những gánh nặng  “thuộc linh” và tội lỗi vấn vương làm cản  trở người tín đồ trên con đường theo  Chúa.</p>
+  <p>+ Người chạy  đua phải tập trung tinh thần, tập trung sức  lực và hướng đến mục đích, tức là <em>mức  đến</em> mà chạy. Tượng tự như thế,  người tín đồ của Chúa Jesus cũng phải <em>“nhìn xem Chúa Jesus, là cội rễ và cuối  cùng của đức tin” </em>trong suốt cuộc đời  theo Chúa và phục vụ Chúa của mình.</p>
+  <p>+ Sau cùng, vận động  trường nào cũng có nhiều <em>khán giả</em>, họ là những người theo dõi  cuộc tranh tài. Từ trên khán đài, họ <em>nhìn xuống</em> và <em>chứng kiến</em> cuộc chạy  đua của vận động viên. Khán giả giữ vai trò rất  quan trọng, họ cổ vũ cho vận động viên  của họ bởi những tiếng la lớn như: <em>“Cố lên! cố lên! sắp đến đích rồi  đó …!” </em>Đây chính là hình ảnh mà trước giả  thư Hê-bơ-rơ đã dùng “<em>chúng ta được nhiều  người chứng kiến vây lấy như đám mây rất  lớn”</em></p>
+  <p>Như vậy, chúng ta  không nên hiểu cụm từ &ldquo;<em>chúng  ta được nhiều người chứng kiến vây  lấy như đám mây rất lớn&rdquo; </em>theo nghĩa&ldquo;đen&rdquo;, nhưng cần hiểu  theo nghĩa biểu tượng. Vì hình ảnh người  chạy đua trong thao trường được sử  dụng làm biểu tượng, thì hình ảnh khán giả  cũng phải được hiểu theo nghĩa biểu  tượng. Những thánh đồ đã qua đời, họ  đã xong phần của họ trên thế gian nầy, họ  đã yên nghỉ trong nước Chúa. Họ không thể từ  trên thiên đàng nhìn xuống trần gian thấy chúng ta  được. Không có chổ nào trong cả Kinh Thánh khẳng  định những thánh đồ thời Cựu Ước  hay những người tin Chúa Jesus đã qua đời  trong thời Tân Ước từ trên thiên đàng quan sát những  người đang sống trên trần gian.</p>
+  <p>Do đó, chúng ta có thể  hiểu <strong>những nhân vật  được liệt kê trong Hê-bơ-rơ chương 11,  như là những tấm gương hay mẫu mực về  đức tin và lòng nhịn nhục nhằm mục đích  cổ vũ, khích lệ chúng ta còn ở trần gian nầy  hãy tiến bước trên đường thuộc linh. </strong></p>
+  <p>Trong Tân Ước, sứ  đồ Phao-lô thường hay dùng hình ảnh vận  động viên trong thao trường để minh họa  cho lẽ đạo về nếp sống theo Chúa của  Cơ-đốc nhân. Chúng ta đọc thấy một số  câu sau đây:</p>
+  <p>+ <strong>I Cô-rinh-tô 9:24</strong>: </p>
+  <p><em>&ldquo;Anh em há chẳng biết rằng rằng trong cuộc  chạy thi nơi trường đua, hết thảy đều  chạy, nhưng chỉ một người được  thưởng sao? Vậy, anh em hãy chạy cách nào cho  được thưởng.&rdquo;</em></p>
+  <p>+ <strong>I Cô-rinh-tô 9:26</strong>:</p>
+  <p><em>&ldquo;Vậy thì, tôi chạy, chẳng phải là chạy bá  vơ; tôi đánh, chẳng phải là đánh gió.&rdquo;</em></p>
+  <p>+ <strong>Phi-líp 3:13,14</strong>:</p>
+  <p><em>&ldquo;Hỡi Anh em, về phần tôi, tôi không tưởng  rằng đã đạt đến mục đích,  nhưng tôi cứ làm một điều: quên lửng sự  ở đằng sau, mà bươn theo sự ở đằng  trước, tôi nhắm mục đích mà chạy, để  giựt giải về sự kêu gọi trên trời của  Đức Chúa Trời trong Đức Chúa Jêsus Christ.&rdquo;</em></p>
+  <p>+ <strong>II Ti-mô-thê 4:7</strong>:</p>
+  <p><em>&ldquo;Ta đã đánh trận tốt lành, đã xong sự  chạy, đã giữ được đức tin.&rdquo;</em></p>
+  <p>+ <strong>II Ti-mô-thê 2:5</strong>:</p>
+  <p><em>&ldquo;Cũng một lẽ đó, người đấu  sức trong diễn trường chỉ đấu nhau theo  lệ luật thì mới được mão triều thiên.&rdquo;</em></p>
+  <p> </p>
+  <p>Trần Đình Tâm</p>
+  <p><strong><em>Tháng 1, 2016</em></strong></p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

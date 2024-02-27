@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>Trang trí tượng trong nhà có  vi phạm điều răn thứ hai?</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Sự thờ lạy hình  tượng (idol) là phạm tội với Đức Chúa  Trời, vi phạm điều răn thứ hai trong 10  Điều Răn. Tất cả con cái Chúa đều đồng  ý như thế. Tuy nhiên, một vấn đề được  nêu lên: Những người làm tượng để trang  trí trong các công sở, công viên, hay trong nhà có phạm tội  không? Con cái Chúa mua tượng về trang trí trong nhà có vi phạm  điều răn thứ hai không? Sở dĩ vấn đề  nầy được nêu ra vì có người cho rằng  trong điều răn thứ hai, Đức Chúa Trời cấm  con người làm bất cứ loại hình tượng  nào, dù đó là tượng chỉ để trang trí.  </p>
+        <p><strong>1. Ý nghĩa của điều răn thứ hai:</strong></p>
+        <p>Chúng ta đọc lại  điều răn thứ hai sau:</p>
+        <blockquote>
+          <p><em>&ldquo;Ngươi <strong>chớ làm tượng (Image) chạm  cho mình</strong>, cũng chớ làm tượng nào giống những vật trên trời cao kia, hoặc  nơi đất thấp nầy, hoặc trong nước  dưới đất. Ngươi <strong>chớ quì lạy </strong>trước các hình tượng  đó, và cũng <strong>đừng hầu  việc</strong> chúng nó.&rdquo; </em>(Xuất Ê-díp-tô Ký 20:4,5)</p>
+        </blockquote>
+        <p>Phục Truyền Luật  Lệ Ký 4:16-18 giải thích thêm:</p>
+        <blockquote>
+          <p><em>&ldquo;E  các ngươi phải làm hư hoại cho mình chăng, và  làm một <strong>tượng</strong> (<strong>image</strong>) chạm nào, tạo hình trạng của tà thần nào,  hoặc hình của người nam hay người nữ,  hoặc hình của con thú nào đi trên đất, hoặc  hình của vật nào có cánh bay trên trời, hoặc hình của  loài côn trùng nào bò trên đất, hay là hình  của con cá nào ở trong nước dưới đất;  lại e khi ngươi ngước mắt lên trời thấy  mặt trời, mặt trăng, các ngôi sao, tức là toàn cả  thiên binh, thì ngươi bị quyến dụ <strong>quì xuống trước các vì  đó, và thờ lạy</strong> các tinh tú nầy mà Giê-hô-va Đức Chúa Trời ngươi  đã chia phân cho muôn dân dưới trời chăng.&rdquo;</em></p>
+        </blockquote>
+        <p>Trong thời Cựu Ước,  có hai loại tượng: Tượng tạc (graven image)  và tượng đúc (molten image).</p>
+        <p><em>Tượng tạc</em> là loại tượng  được tạc hay điêu khắc từ <em>đá</em> hay <em>gỗ</em>; <em>tượng  đúc</em> là loại tượng người ta tạo ra bằng  cách nấu chảy <em>kim loại</em>. </p>
+        <p>Ê-sai 44:9-17 là phân đoạn  Kinh Thánh mô tả người ta tạc tượng từ  đá hay gỗ, và đúc tượng từ kim loại:</p>
+        <blockquote>
+          <p><em>&ldquo;Những  thợ chạm tượng đều là hư vô, việc  họ rất ưa thích chẳng có ích gì …  Ai là kẻ tạo một vì thần, đúc một  tượng, mà không có ích chi? ... <strong>Thợ  rèn</strong> lấy một thỏi sắt nướng trên than lửa; dùng búa mà đập,  dùng cánh tay mạnh mà làm; mặc dầu đói và kém sức; không uống nước và  kiệt cả người. <strong>Thợ  mộc</strong> giăng dây; dùng phấn mà gạch; đẽo bằng cái chàng, đo bằng cái  nhíp; làm nên tượng người, giống hình người  tốt đẹp, để ở trong một cái nhà. Lại  đi đốn cây bách; lấy cây lật, cây dẽ, mà mình  đã chọn trong các thứ cây trên rừng; trồng cây  thông, mưa xuống làm cho lớn lên. Gỗ ấy người  ta sẽ dùng mà chụm,lấy về mà sưởi.  Cùng dùng để đun lửa hấp bánh; lại cũng  lấy mà <strong>làm một vì thần,  rồi thờ lạy nó, làm nó nên  một tượng chạm mà quì lạy trước mặt  nó</strong>. Đoạn, gỗ còn thừa lại, làm một  vị thần, tức là tượng chạm mình; <strong>cúi mình trước mặt nó mà  thờ lạy</strong>, cầu nguyện nó mà rằng:  Xin giải cứu tôi, vì ngài là thần của tôi!&rdquo;</em></p>
+        </blockquote>
+        <p>Chúng ta thấy rõ: Tất  cả các câu Kinh Thánh nói về <strong>công  việc</strong> <strong>tạc tượng</strong> hay đúc tượng đều liên quan đến sự <strong>thờ lạy</strong> chính các hình  tượng được tạc hay đúc ấy. Như  vậy, chúng ta có thể kết luận: Đức Chúa Trời  nghiêm cấm con người thờ hình tượng và cấm  công việc chế tạo hình tượng để thờ  lạy. </p>
+        <p>Như vậy, điều  răn thứ hai ghi: &ldquo;Ngươi chớ làm tượng chạm  cho mình …&rdquo; nên được hiểu là <strong>chớ làm tượng với mục đích thờ  lạy</strong>, chứ không có ý nói &ldquo;chớ làm tượng với  mục đích trang trí&rdquo;.</p>
+        <p>Nếu Đức Chúa Trời  cũng cấm làm tượng với mục đích trang  trí, chắc hẳn Chúa sẽ giải thích rõ điều nầy  trong luật pháp để dân Y-sơ-ra-ên hiểu rõ và áp dụng  cho đúng. Tất cả các trường hợp Cựu  Ước nói đến <em>&ldquo;hình  tượng&rdquo;</em> đều liên quan đến sự thờ  lạy hình tượng, không có trường hợp nào bị  kể là phạm tội thờ hình tượng mà liên quan  đến làm tượng để trang trí. Xin kể một  số trường hợp sau:</p>
+        <p>- Các pho  tượng Ra-chên ăn cắp của La-ban (Sáng Thế Ký  31:19) </p>
+        <p>- Các hình  tượng trong nhà Mi-ca (Quan Xét 18:14-17)</p>
+        <p>- Tượng  bằng vàng Vua Nê-bu-cát-nết-sa làm ra và buộc dân chúng quỳ  lạy (Đa-ni-ên 3:1)</p>
+        <p>- Tượng  của con thú được tạo ra mà người ta phải  thờ lạy trong thời kỳ sau cùng (Khải Huyền 13:14)</p>
+        <p>Còn đây  là vài trường hợp liên quan đến &ldquo;hình tượng&rdquo;  mà chắc chắn không bị kết tội, vì không liên quan  đến sự thờ lạy, chúng ta đừng quên  Đức Chúa Trời không hề mâu thuẫn với chính  Ngài khi phán dạy loài người điều gì:</p>
+        <p>- Đức Chúa Trời  truyền dạy Môi-se phải làm 2 tượng Chê-ru-bim bằng  vàng đặt trên nắp thi ân của rương giao ước.  (Xuất Ê-díp-tô Ký 37:7)</p>
+        <p>- Đức Chúa Trời  truyền dạy Môi-se làm con rắn bằng đồng treo  trên cây sào (Dân số Ký 21:9)</p>
+        <p>- Vua Sa-lô-môn làm 2 tượng  Chê-ru-bim bằng gổ Ô-li-ve và bọc vàng để tại  nơi chí thánh trong đền thờ. (I Các Vua 6:23,28)</p>
+        <p>- Vua Sa-lô-môn có làm cho mình một  ngai bằng vàng ròng có hình 12 con sư tử (II Sử Ký  9:17-19). Đây là những hình tượng với mục  đích trang trí mỹ thuật chứ không phải thờ lạy.  Sa-lô-môn không hề phạm tội &quot;thờ hình tượng&quot;.  Nên nhớ vua Sa-lô-môn đã sa vào thờ hình tượng  trong lúc tuổi già vì ông kết hôn với những người  nữ ngoại bang, chứ không phải vì ông làm các tượng  trang trí nầy.</p>
+        <p><strong>2. Sự ứng dụng điều răn thứ  hai:</strong></p>
+        <p>Điều răn thứ  hai có thể chia làm hai phần:</p>
+        <p>a)<strong> &ldquo;ngươi chớ làm tượng chạm cho mình&rdquo;</strong>:  Chỉ về phương diện <strong>chế tạo</strong> hình tượng. Đức Chúa Trời  cấm con người chế tạo ra các loại hình  tượng, tất nhiên với mục đích thờ lạy,  cúng vái. Vì vậy, những ai kinh doanh ngành làm tượng  để thờ lạy là vi phạm điều răn của  Chúa, cho dù người đó không thờ lạy các sản  phẩm mình làm ra. Phục Truyền Luật Lệ Ký 27:15  cho biết Đức Chúa Trời rủa sả những  người chế tạo ra hình tượng: <em>&ldquo;Đáng rủa sả thay người  nào làm tượng chạm hay là tượng đúc, là vật  gớm ghiếc cho Đức Giê-hô-va, công việc bởi  tay người thợ, dựng nó lên trong nơi kín nhiệm!&rdquo;</em></p>
+        <p>Trời Cựu Ước  chỉ nói đến tượng bằng <em>gổ</em>, <em>đá</em> và <em>kim loại</em>; ngày nay, do sự  phát triển của ngành công nghiệp vật liệu, các  hình tượng để thờ lạy có thể  được chế tạo từ nhiều loại vật  liệu khác. </p>
+        <p>b)<strong> &ldquo;Chớ quỳ lạy và chớ hầu việc hình  tượng&rdquo;</strong>: Chỉ về phương diện <strong>thờ lạy và phục vụ</strong> hình tượng. Thờ lạy và phục vụ bao gồm  các công việc như: Đặt chúng ở những nơi  tôn nghiêm, váy lạy, cầu khấn, dâng hoa quả, đốt  hương, cúng kiến, chăm sóc, lau chùi v.v…, hay gán cho hình  tượng bất cứ ý nghĩa linh thiêng nào.</p>
+        <p>Chúng ta nên biết rằng  tất cả những câu Kinh Thánh nói về làm <em>tượng </em>hay <em>hình tượng</em>, từ ngữ <em>&ldquo;hình tượng&rdquo;</em> là <em>&ldquo;image&rdquo;</em> trong tiếng Anh (&ldquo;<em>pesel&rdquo; </em>hay<em> &ldquo;Pâsal&rdquo; </em>trong tiếng Hebrew) có nghĩa là <em>bản sao chép lại hình dáng của  một người hay một vật</em>. Do đó, <em>hình tượng</em> (image: bản  sao chép) mà người ta thờ lạy có thể được  chế tạo từ bất cứ loại vật liệu  nào hay dưới bất cứ hình thức nào: Hình tượng  có thể bằng thạch cao, sứ, thủy tinh, nhựa,  vải v.v… ; hoặc <em>hình tượng</em> có thể được <em>vẽ</em> lại hoặc <em>in</em> lại  trên lịch, áo quần, đồ dùng trong nhà v.v… Vì các tượng  (statue), <em>hình</em> <em>vẽ</em> hay <em>hình in</em> chính  là <em>&ldquo;image&rdquo; </em>của người  hay vật mà người ta muốn thờ lạy (<em>bản sao chép lại hình ảnh  của người hay vật mà con người muốn thờ  lạy</em>)</p>
+        <p>Như vậy,<strong> image </strong>(hình ảnh sao chép) giữ  vai trò quan trọng để xác định các loại  tượng được chế tạo với mục  đích <strong>thờ lạy</strong> hay chỉ  để <strong>trang trí</strong>.</p>
+        <p>Có những ngành phục vụ  trong đời sống mà người ta cần làm tượng:  Tượng người trong ngành Y học, ma-nơ-canh  để trang trí áo quần, tượng trong ngành kiến  trúc, trang trí mỹ thuật, các loại tượng trang trí  trong nhà (ví dụ: tượng Giô-sép, Ma-ri, người  chăn chiên, các nhà thông thái được trang trí trong dịp  lễ Kỷ niệm Chúa Giáng Sinh; tượng các nhân vật  trong phim hoạt hình của Walt Disney; tượng con trâu và  người nông dân Việt Nam; tượng 3 cô gái Hà Nội,  Huế, Sài-gòn v.v…), thú nhồi bông v.v… các thể loại hình  nầy chỉ nhằm mục đích trang trí, vì <em>hình ảnh</em> (image) của hình  tượng đó không liên quan gì đến các chủ thể  mà người ta muốn thờ lạy. Các trường hợp  đó không phải là thờ lạy hình tượng (idol) nên  không thể kể là vi phạm đều răn thứ  hai. </p>
+        <p>Các loại tượng  điêu khắc mà chúng ta thường thấy đặt  nơi công cộng, hoặc đặt tại các nơi tôn  nghiêm như trong các nhà thờ, chùa, miếu v.v… như các  tượng: Phật Thích Ca, Phật Bà Quan Âm, Ma-ri, Chúa Jesus  v.v… hay gán cho nó ý nghĩa thần thánh: Con rồng, con rắn,  Thiên sứ, Phao-lô, Phi-e-rơ v.v … đều phải  được kể là vi phạm điều răn thứ  hai vì các tượng nầy mang <em>hình  ảnh</em> (image) chủ thể mà con người muốn thờ  lạy.</p>
+        <p>Con cái Chúa không nên trang trí  những hình tượng, hình ảnh, tranh vẽ, tranh khảm  v.v… có liên quan đến sự thờ tự, mê tín (như  hình ảnh con rồng, con rắn, hình bát giác, ông thổ  địa, thần tài v.v…) trong nhà cho dù mình không thờ lạy  các hình ảnh đó.</p>
+        <p>Có ý kiến cho rằng  con cái Chúa không được để trong nhà bất cứ  hình tượng nào dù chỉ với mục đích trang trí.  Trong trường hợp nầy, chúng ta nên cư xử theo  nguyên tắc trong Rô-ma 14:3: <em>&ldquo;Người  ăn chớ khinh dễ kẻ không ăn; và người  không ăn chớ xét đoán kẻ ăn.&rdquo;</em> Chúng ta áp dụng  như sau: <em>&ldquo;người trang trí  tượng trong nhà chớ khinh dễ người không  trang trí tượng; và người không trang trí tượng  trong nhà chớ xét đoán người trang trí tượng.&rdquo;</em></p>
+        <p><strong><em><br />
+          Tháng 11, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

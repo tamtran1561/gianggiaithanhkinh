@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>Chúa Jesus chịu chết vào  ngày Thứ Tư hay Thứ Sáu?</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p><strong>1. Ngày Thứ Tư hay Thứ Sáu?</strong></p>
+        <p>Hàng năm, các Cơ-đốc  nhân trên toàn thế giới kỷ niệm Chúa Jesus chịu  thương khó và chết vào ngày Thứ Sáu và sống lại  vào ngày Chủ Nhật. Quan điểm cho rằng Chúa chịu  chết vào ngày Thứ Sáu dựa vào chứng cứ sau: <strong>Ngày hôm sau ngày Chúa chết là ngày  Sa-bát</strong>:</p>
+        <p><em>“Bấy giờ là ngày sắm sửa (ngày Chúa bị  đóng đinh), và ngày Sa-bát gần tới.”</em> (Lu-ca 23:54)</p>
+        <p><em>&ldquo;Vì bấy giờ là ngày sắm sửa về ngày  Sa-bát, mà Sa-bát nầy là rất trọng thể, nên dân  Giu-đa ngại rằng những thây còn treo lại trên thập  tự giá trong ngày Sa-bát chăng, bèn xin Phi-lát cho đánh gãy ống  chân những người đó và cất xuống.&rdquo;</em> (Giăng 19:31)</p>
+        <p>Vì ngày kế tiếp ngày  Chúa chết là ngày Sa-bát, nên ngày Chúa chết phải là ngày Thứ  Sáu.</p>
+        <p>Ngày của người  Do Thái trong Kinh Thánh bắt đầu từ lúc mặt trời  lặn cho đến lúc mặt trời lặn của ngày  kế tiếp (khoảng 6 giờ chiều). </p>
+        <p>Chúng ta đã biết Chúa  trút linh hồn trên thập tự giá lúc 3 giờ chiều, tức  là chỉ còn 3 tiếng đồng nữa thôi là bước  qua ngày mới, là ngày Sa-bát; thân xác Chúa nằm trong mộ trọn  ngày Thứ Bảy; Chúa sống lại vào rạng sáng Chủ  Nhật, mà ngày Chủ Nhật bắt đầu kể từ  lúc mặt trời lặn của ngày Thứ Bảy. Như  vậy, nếu Chúa Jesus chịu chết vào ngày Thứ Sáu,  thì tổng số thời gian xác chúa nằm trong mộ cho  đến khi sống lại chỉ vỏn vẹn chưa  đến 48 tiếng đồng hồ, chưa đủ  2 ngày! Điều nầy mâu thuẫn với chính lời tuyến  bố của Chúa Jesus về khoảng thời gian thân xác  Ngài nằm trong mộ như sau:</p>
+        <blockquote>
+          <p><em>&ldquo;Vì  Giô-na đã bị ở trong bụng cá lớn <strong>ba ngày ba đêm </strong>(three days and  three nights),
+            cũng một thể ấy,  Con người sẽ ở trong lòng đất <strong>ba ngày ba đêm</strong> (three days and  three
+            nights)</em>. (Ma-thi-ơ 12:40)</p>
+        </blockquote>
+        <p>Chúa Jesus đã nói tiên tri về  sự chết của Ngài: Ngài sẽ ở trong lòng đất  3 ngày 3 đêm, tức là trọn 3 ngày, tương  đương 72 tiếng đồng hồ.</p>
+        <p>Ngoài ra, các câu Kinh Thánh sau  đây chứng minh rõ Chúa Jesus không thể chết vào ngày Thứ  Sáu:</p>
+        <blockquote>
+          <p><em>&ldquo;Bấy  giờ, Ngài khởi sự dạy môn đồ rằng Con  người phải chịu khổ nhiều, phải bị  các
+            trưởng lão, các thầy  tế lễ cả, và các thầy thông giáo loại ra, phải  chịu giết, <strong>sau ba
+              ngày </strong>(after three days) phải  sống lại.&rdquo;</em> (Mác 8:31)</p>
+          <p>&ldquo;Người ta sẽ nhạo  báng Ngài, nhổ trên Ngài, đánh đập Ngài mà giết  đi; <strong>sau ba ngày
+          </strong>(after three days), Ngài sẽ  sống lại.&rdquo; (Mác 10:34)</p>
+          <p>&ldquo;Các thầy tế lễ và  người Pha-ri-si nói với Phi-<em>lát</em>:<em>&ldquo;Thưa chúa, chúng  tôi nhớ người gian
+            dối nầy (họ nói về  Chúa Jesus), khi còn sống nó nói rằng: <strong>khỏi ba ngày </strong>(after three
+            days) thì ta sẽ sống lại&rdquo; </em>(Ma-thi-ơ 27:63)</p>
+        </blockquote>
+        <p>Chúng ta biết các bà Ma-ri  đi thăm mộ vào rạng sáng ngày Chủ Nhật, khi  các bà đi đến mộ, thì chỉ thấy <strong>ngôi mộ trống </strong>mà thôi, sự  kiện nầy cho thấy Chúa đã sống lại từ  trước khi các bà đến mộ, tức là trước  khi trời rạng sáng thì Chúa đã sống lại rồi.  Ngày Chủ Nhật (ngày thứ nhất trong tuần lễ)  bắt đầu từ lúc mặt trời lặn của  ngày Thứ Bảy, như vậy, Chúa đã sống lại  vào tối Thứ Bảy. </p>
+        <p>Nếu chúng ta đếm  ngược lại 3 ngày trọn kể từ tối Thứ  Bảy, chúng ta sẽ phải kết luận rằng Chúa  Jesus không thể chết vào ngày Thứ Sáu, cũng không phải  ngày Thứ Năm, nhưng phải là ngày Thứ Tư. Từ  lúc mặt trời lặn của ngày Thứ Tư (xác Chúa  được đặt nằm trong mộ) cho đến  lúc mặt trời lặn của ngày Thứ Bảy là  đúng <strong>3 ngày 3 đêm</strong> (đúng như lời Chúa phán trong Ma-thi-ơ 12:40), và  cũng đúng với Mác 8:31, Mác 10:34 và Ma-thi-ơ 27:63 nêu  trên: Chúa sống lại <strong>sau 3  ngày</strong> nằm trong mộ.</p>
+        <p><strong>2. Chúa chết và sống lại vào &ldquo;ngày thứ ba&rdquo; (on  the third day).</strong></p>
+        <blockquote>
+          <p><em>&ldquo;Con người sẽ bị nộp trong tay người  ta. Họ sẽ giết Ngài, nhưng đến <strong>ngày thứ ba</strong> (third
+            day), Ngài sẽ sống lại.&rdquo;</em> (Ma-thi-ơ 17:22,23)</p>
+          <p><em>&ldquo;Ngài  đã bị chôn, đến <strong>ngày  thứ ba </strong>(third day), Ngài sống lại, theo lời Kinh  Thánh.&rdquo;</em> (I
+            Cô-rinh-tô 15:4)</p>
+        </blockquote>
+        <p>Ngoài 2 câu Kinh Thánh trên, một  số các câu khác cũng cho biết Chúa sống lại vào <strong>ngày thứ ba</strong>: Ma-thi-ơ 16:21;  Ma-thi-ơ 20:19; Lu-ca 24:7; Công Vụ Các Sứ Đồ 10:40. </p>
+        <p>Cụm từ &ldquo;đến  ngày thứ ba&rdquo; để chỉ khoảng thời gian từ  lúc Chúa chịu chết, nằm trong mộ, cho đến  lúc sống lại.</p>
+        <p>Những nhà giải kinh  theo quan điểm Chúa chết vào ngày Thứ Sáu, lý giải  rằng: Theo cách tính thời gian của người Do Thái  trong thời Chúa Jesus, <em>một phần  của một ngày cũng được kể là một  ngày trọn. </em>Họ giải thích như sau: </p>
+        <p>+ Ngày Thứ Sáu: Chúa chết  lúc 3 giờ chiều, phải kể là một ngày trọn: <strong>Ngày thứ nhất</strong>.</p>
+        <p>+ Ngày Thứ Bảy: Một  ngày trọn: <strong>Ngày thứ hai</strong>.</p>
+        <p>+ Ngày Chủ Nhật: Chúa  sống lại rất sớm, cũng phải kể một  ngày trọn: <strong>Ngày thứ ba</strong>.</p>
+        <p>Chúa Jesus chết vào ngày Thứ  Sáu, đến ngày thứ ba, là ngày Chủ Nhật, Chúa sống  lại.</p>
+        <p>Thật khó có thể chấp  nhận một phần của ngày phải được  tính trọn một ngày là 24 tiếng đồng hồ.  Giăng 11:9 cho biết: <em>&ldquo;Đức  Chúa Jêsus đáp rằng: Trong <strong>ban  ngày</strong> há chẳng phải có <strong>mười  hai giờ</strong> sao?&rdquo;</em> <em>Ban ngày </em>là  phân nửa của một ngày, gồm đủ 12 tiếng  đồng hồ, ban đêm cũng vậy, phải gồm  đủ 12 giờ. Một ngày bao gồm <em>buổi chiều</em> và <em>buổi  mai </em>(hay <em>một ngày một  đêm</em>) phải đủ 24 giờ vậy. Ngoài ra, không  có chổ nào trong Kinh Thánh chứng minh người Do Thái kể  một phần của ngày là một ngày trọn.</p>
+        <p>Chúng ta nên tìm hiểu cách  người Do Thái sử dụng cụm từ chỉ thời  gian &ldquo;ngày thứ ba&rdquo; là chỉ về khoảng thời gian  nào.</p>
+        <p>Chúng ta sẽ hiểu  được ý nghĩa của &ldquo;ngày thứ ba&rdquo; qua việc  khảo sát các câu chuyện sau đây:</p>
+        <p>1. <u>Câu chuyện Giô-sép giam  các anh của ông trong ngục</u>:</p>
+        <blockquote>
+          <p><em>&ldquo;Đoạn, Giô-sép  truyền đem giam họ chung trong ngục <strong>trong</strong> <strong>ba ngày</strong> (in three  days).&rdquo;</em>          (Sáng Thế Ký 42:17)</p>
+        </blockquote>
+        <p>Chúng ta hiểu ngay rằng  Giô-sép quyết định tạm giam các anh của mình trong  ngục trọn 3 ngày, chúng ta không thể cho rằng Giô-sép  giam các anh chỉ vài giờ trong ngày rồi kể là một  ngày trọn!!</p>
+        <blockquote>
+          <p><em>&ldquo;<strong>Ngày thứ ba </strong>(the third day), Giô-sép nói cùng họ rằng:  Ta kính sợ Đức Chúa Trời; hãy
+            làm như điều nầy, thì  được sống …&rdquo; </em>(Sáng Thế Ký 42:18) </p>
+        </blockquote>
+        <p>Nếu đọc tiếp  câu chuyện, chúng ta thấy Giô-sép thả các anh ra để  họ đi về. Điều nầy chứng minh rằng  các người anh của Giô-sép đã ở trong ngục <strong>trọn 3 ngày </strong>trước khi  được thả ra.</p>
+        <p>Xin chú ý: Các người  anh đã ở trong ngục trọn 3 ngày rồi, sau đó  Kinh thánh chép <strong>ngày thứ ba</strong> Giô-sép  thả họ ra. Điều nầy chứng minh rằng  &ldquo;ngày thứ ba&rdquo; có nghĩa là &ldquo;sau khi chấm dứt ba ngày&rdquo;.  Đó là cách mà người Do thái sử dụng cụm từ  &ldquo;ngày thứ ba&rdquo;. </p>
+        <p>2. <u>Câu chuyện dân  Y-sơ-ra-ên đến gặp vua Rô-bô-am</u>:</p>
+        <p>Giê-rô-bô-am và dân Y-sơ-ra-ên  đến gặp vua Rô-bô-am để thỉnh cầu Vua một  việc, là xin vua giảm nhẹ việc lao động và  thuế khóa cho người dân. Vua Rô-bô-am trả lời<em>:</em></p>
+        <blockquote>
+          <p><em>&ldquo;<strong>Khỏi ba ngày</strong> (hay <strong>sau  3 ngày</strong> = after three days) các ngươi hãy trở lại cùng  ta. Dân
+            sự bèn lui về&rdquo;</em> (II Sử Ký  10:5).</p>
+        </blockquote>
+        <p>Sau đó, theo đúng lời  vua truyền, Giê-rô-bô-am và các đại diện của dân Y-sơ-ra-ên  đến gặp vua Rô-bô-am, Kinh Thánh ghi lại như sau<em>: </em></p>
+        <blockquote>
+          <p><em>&ldquo;<strong>Ngày thứ ba</strong> (the third day), Giê-rô-bô-am và cả dân sự  đều đến cùng Rô-bô-am y
+            như vua đã dặn biểu rằng:  Hãy trở lại cùng ta trong <strong>ngày  thứ ba</strong>&rdquo; </em>(II Sử Ký 10:12)</p>
+        </blockquote>
+        <p>Chúng ta thấy rõ<strong>: &ldquo;ngày thứ ba&rdquo; </strong>hoàn toàn đồng  nghĩa với<strong> &ldquo;sau ba ngày&rdquo;</strong>.  Vì sau khi hết ba ngày chờ đợi, dân Y-sơ-ra-ên  đến gặp vua Rô-bô-am.  Họ  không thể đến sớm hơn, vì là lệnh của  vua. Vua nói họ phải phải trở lại <strong>sau 3 ngày</strong>, và sau khi hết ba  ngày chờ đợi, họ gặp vua, Kinh Thánh lại ghi  rằng: &ldquo;Ngày thứ ba&rdquo; họ đến gặp vua!!</p>
+        <p>3. <u>Câu chuyện dân  Giu-đa kiêng ăn</u>:</p>
+        <p>Trong thời gian dân  Giu-đa lưu đày tại Ba-by-lôn, dân Giu-đa đứng  trước nguy cơ bị tuyệt diệt bởi Ha-man,  bà Ê-xơ-tê là hoàng hậu, bà cũng là người  Giu-đa, bà có kế hoạch để cứu dân  Giu-đa:</p>
+        <blockquote>
+          <p><em>&ldquo;Bà Ê-xơ-tê bèn biểu  đáp lại cùng Mạc-đô-chê rằng: Hãy đi nhóm hiệp  các người Giu-đa
+            ở tại Su-sơ, rồi hãy vì  tôi mà kiêng cữ ăn trong <strong>ba  ngày và đêm</strong>, chớ ăn hay uống gì
+            hết; tôi và các nàng hầu tôi  cũng sẽ kiêng cữ ăn nữa; như vậy, tôi sẽ  vào cùng vua, là
+            việc trái luật pháp; nếu tôi  phải chết thì tôi chết.&rdquo;</em> (Ê-xơ-tê 4:14,15)</p>
+        </blockquote>
+        <p>Hoàng hậu Ê-xơ-tê yêu  cầu dân Giu-đa kiêng ăn trong <strong>ba ngày đêm </strong>(three days). Chúng ta hiểu ngay thời  gian kiêng ăn là 3 ngày trọn, không thể nào cho rằng  kiêng ăn chỉ một phần của ngày cũng  được kể là kiêng ăn trọn ngày hôm đó. </p>
+        <blockquote>
+          <p><em>&ldquo;<strong>Ngày thứ ba </strong>(third day), bà Ê-xơ-tê mặc đồ  triều-phục, và ra chầu đứng tại nội viện,
+            đối trước cung điện  vua.&rdquo;</em> (Ê-xơ-tê 5:1)</p>
+        </blockquote>
+        <p>Sau khi kiêng ăn <strong>đủ 3 ngày</strong>, thì <strong>ngày thứ ba</strong>, Ê-xơ-tê ra chầu  vua.</p>
+        <p>Tóm lại, khi đã hiểu  được cách người Do Thái sử dụng cụm  từ &ldquo;ngày thứ ba&rdquo;, chúng ta sẽ hiểu được  những câu Kinh Thánh nói về khoảng thời gian thân xác  Chúa Jesus ở trong mồ, &ldquo;<strong>đến  ngày thứ ba, Ngài sẽ sống lại</strong>&rdquo;, có nghĩa là <strong>Chúa Jesus sống lại sau khi  thân xác của Ngài nằm trong mồ trọn 3 ngày</strong>.</p>
+        <p>Ngày Chúa Jesus chịu chết  phải là ngày Thứ Tư.</p>
+        <p><strong>3. Chúa Jesus chịu chết vào ngày trước ngày  Sa-bát.</strong></p>
+        <p>Những người theo  quan điểm Chúa chết vào Thứ Sáu, lý luận rằng  vì ngày hôm sau là ngày Sa-bát, là Thứ Bảy, nên hiển nhiên,  ngày Chúa chết phải là ngày Thứ Sáu.</p>
+        <p>Nếu đọc kỹ  Giăng 19:31: &ldquo;<em>Vì bấy giờ  là ngày sắm sửa về ngày Sa-bát, mà Sa-bát nầy là <strong>rất trọng thể,</strong> nên  dân Giu-đa ngại rằng những thây còn treo lại trên  thập tự giá trong ngày Sa-bát chăng…&rdquo; </em>chúng ta sẽ nhận  ra ngày Sa-bát kế ngày Chúa chết không phải là ngày Sa-bát  thông thường (Thứ Bảy), nhưng là ngày Sa-bát đặc  biệt, là <strong>Lễ Sa-bát, </strong>là  ngày <strong>Sa-bát trọng thể</strong>, ngày  nầy được đề cập đến trong luật  về kỷ niệm Lễ Vượt Qua, được  ghi chép trong Dân số Ký 28:16-18:</p>
+        <blockquote>
+          <p><em>&ldquo;Ngày <u>mười bốn</u> tháng giêng, phải giử <strong>lễ  Vượt Qua</strong> cho Đức Giê-hô-va. Qua ngày <u>mười </u><u>lăm</u> sẽ là  ngày <strong>lễ</strong>; phải ăn  bánh không men trong bảy ngày. Ngày thứ nhất các  ngươi sẽ
+            có sự hội hiệp thánh: <strong>chớ nên làm một công việc  xác thịt nào</strong>&rdquo;</em></p>
+        </blockquote>
+        <p>Đức Chúa Trời quy  định cách dân Do Thái kỷ niệm tuần lễ có  ngày Lễ vượt Qua như sau:</p>
+        <p>+ Ngày 14 (tháng Nisan): Là ngày  Lễ Vượt Qua. Chúa Jesus chết trong ngày nầy.</p>
+        <p>+ Ngày 15: Là ngày đầu  tiên trong 7 ngày ăn bánh không men, cũng là ngày lễ. Trong  ngày nầy, người Do Thái không được làm bất  cứ công việc nào, đó là ngày nghỉ, cũng là ngày  Sa-bát, ngày nầy chính là ngày <strong>Sa-bát  trọng thể</strong> mà Giăng 19:31 đề cập đến.  Gọi là ngày Sa-bát trọng thể là vì ngày nầy nằm  trong tuần lễ có lễ Vượt Qua. Ngày Lễ Sa-bát  có thể rơi vào bất cứ ngày nào trong tuần. Xem  hình minh họa bên dưới.</p>
+        <p> </p>
+        <p align="center"><img src="/Image/image001_0000.jpg" alt="Description: C:\Users\Tam Tran\Downloads\Tuan Le Vuot Qua.jpg" v:shapes="Picture_x0020_2" height="189" width="567" /></p>
+        <p>Hình minh họa sau đây  trình bày khung thời gian từ lúc thân xác Chúa được  đặt trong mộ cho đến lúc Chúa sống lại: </p>
+        <p align="center"><img src="/Image/image002_0003.jpg" alt="Description: C:\Users\Tam Tran\Downloads\Jesus in tomb.jpg" v:shapes="Picture_x0020_1" height="500" width="561" /></p>
+        <p><strong><em>Tháng 3, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

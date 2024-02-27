@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>Trẻ em qua đời có  được cứu không?</strong></p>
+        <p align="center">Trần đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Trẻ em từ lúc sơ  sinh cho đến lứa tuổi hiểu biết để  có thể nghe và hiểu về Tin Lành cứu rỗi, nếu  qua đời có được cứu không và sẽ đi  đâu? Để trả lời câu hỏi nầy, chúng ta cần  phải giải đáp một số vấn đề khác  có liên quan như sau: Trẻ em có mắc tội không, có phải  là <em>tội nhân</em> (sinner) không?  Đến <strong>tuổi nào</strong> (bao  nhiêu tuổi) thì trẻ em có sự hiểu biết để  phải chịu trách nhiệm về quyết định của  mình (accountability)?</p>
+        <p><strong>1. Trẻ em có mắc tội không?</strong></p>
+        <p>Đây là câu trả lời:  CÓ và KHÔNG.</p>
+        <p>Trẻ em là một <em>tội nhân</em> (sinner) trước  mặt Đức Chúa Trời:</p>
+        <p>     <em>&ldquo;Kìa,  tôi sanh ra trong sự gian ác. Mẹ tôi đã hoài thai tôi trong tội  lỗi.&rdquo; </em>(Thi Thiên 51:5)</p>
+        <p><em>     &ldquo;Vì mọi người  đều đã phạm tội, thiếu mất sự  vinh hiển của Đức Chúa Trời.&rdquo;</em> (Rô-ma
+          3:23)</p>
+        <p>Tất cả mọi  người trên thế gian đều là tội nhân, bao gồm  cả trẻ em, không miễn trừ một người  nào.</p>
+        <p>Trẻ em là tội nhân vì  mắc tội do A-đam truyền lại. Kinh Thánh khẳng  định tội của A-đam có đặc tính lưu  truyền trong dòng dõi loài người: <em>“Cho nên, bởi một người (A-đam) mà tội  lỗi vào trong thế gian...” </em>(Rô-ma 5:19), <em>“Như trong A-đam mọi người đều chết…</em>”  (I Cô-rinh-tô 15:22)</p>
+        <p>Như vậy, tất cả  trẻ em đều mắc <em>nguyên  tội</em> do A-đam truyền lại.</p>
+        <p>Trên phương diện  khác, trẻ em <em>vô tội </em>(innocent).  Các câu Kinh Thánh sau đây chứng minh điều nầy:</p>
+        <blockquote>
+          <p><em>&ldquo;Con  trẻ ấy sẽ ăn mỡ sữa và mật, cho đến  chừng nào biết <strong>bỏ  điều dữ và chọn điều
+            lành</strong>. Vả, <strong>trước khi</strong> <strong>con trẻ biết bỏ điều  dữ chọn điều lành</strong>, thì nước của hai  vua mà
+            ngươi đang ghét sẽ  bị bỏ hoang.&rdquo;</em> (Ê-sai 7:15,16)</p>
+          <p><em>&ldquo;vì chúng nó đã lìa bỏ  ta, đã làm chỗ nầy nên xa lạ, đã đốt  hương ở đó cho các thần
+            khác mà chúng nó, tổ phụ  chúng nó, các vua Giu-đa đều chưa từng biết,  và vì chúng nó
+            đã làm cho <strong>máu vô tội</strong> đầy  nơi nầy. Lại xây đắp các nơi cao cho Ba-anh,  đặng đốt con
+            trai mình làm của lễ  thiêu dân cho Ba-anh.&rdquo;</em> (Giê-rê-mi 19:4)</p>
+          <p><em>&ldquo;về  phần Rê-be-ca, khi bà ấy bởi tổ phụ chúng ta là  Y-sác mà có thai đôi cũng vậy. Vì,
+            khi hai con chưa sanh ra, <strong>chưa làm điều chi lành hay  dữ</strong>…&rdquo; </em>(Rô-ma 9:10,11)</p>
+        </blockquote>
+        <p>Các câu Kinh Thánh trên cho thấy  có một giai đoạn trong lứa tuổi trẻ  thơ, kể từ lúc mới sanh cho đến tuổi biết  phân biệt phải trái. Trong giai đoạn nầy, trẻ  em chưa phát triển hoàn thiện về tâm trí, chưa có  khả năng phân biệt điều thiện điều  ác, nên không thể buộc chúng phải chịu trách nhiệm  về hành vi của chúng. Trẻ em trong giai đoạn nầy  được kể là <em>vô tội </em>(innocent)<em>.</em></p>
+        <p><strong>2. Đến tuổi nào thì trẻ em chịu trách nhiệm  về hành vi của mình?</strong></p>
+        <p>Các nhà nghiên cứu về  giáo dục đưa ra độ tuổi: 6,7 tuổi; các  nhà tâm lý học thì đề nghị lứa tuổi 14  đến 16; các nhà làm luật thì đề nghị độ  tuổi cao hơn: 18 tuổi! Tất cả đều  đưa ra những kết luận khác nhau dựa trên  chuyên ngành của họ. Chúng ta không nên tin vào những con số  mà họ nêu ra. Điều quan trọng là Đức Chúa Trời  bày tỏ về vấn đề nầy như thế nào?  Kinh Thánh không có chổ nào khẳng định về số  tuổi mà đứa trẻ được kể là vô tội.  Chúng ta đều biết rõ mỗi cá nhân đều hoàn toàn  khác nhau, không ai giống ai. Đức Chúa Trời tạo dựng  mỗi người khác nhau, sự trưởng thành ở  mỗi đứa trẻ khác nhau, sự cách biệt có thể  tính bằng nhiều năm, cũng có khi sự cách biệt  chỉ là vài tháng. Đức Chúa Trời biết rõ điều  nầy và Ngài không nêu ra một quy định nào về số  tuổi mà đứa trẻ được kể là <em>vô tội</em>. Điều nầy  chỉ có Chúa biết rõ, mỗi cá nhân đứa trẻ  đều phải chịu trách nhiệm trước mặt  Chúa vào thời điểm mà đứa trẻ đó hiểu  và phân biệt được điều phải trái.</p>
+        <p>Điều thú vị là  có một câu chuyện trong Cựu Ước dường  như có liên quan đến số tuổi do Đức Chúa  Trời ấn định: Sự kiện có một số  dân Y-sơ-ra-ên được vào xứ Ca-na-an, một số  khác không được vào mà phải chết trong đồng  vắng. </p>
+        <blockquote>
+          <p><em>&ldquo;Những  con trẻ của các ngươi và các ngươi đã nói  rằng sẽ thành một miếng mồi, và
+            những con trai các  ngươi hiện bây giờ <strong>chưa  biết điều thiện hay là điều ác</strong>, sẽ  vào xứ
+            đó. Ta sẽ ban cho chúng  nó xứ nầy làm sản nghiệp.&rdquo;</em> (Phục Truyền  Luật Lệ Ký 1:39)</p>
+        </blockquote>
+        <p>Môi-se nhắc lại cho  dân Y-sơ-ra-ên nhớ lại, sau khi 12 thám tử được  cử đi dọ thám xứ Ca-na-an trở về, ngoại  trừ Giô-suê và Ca-lép tin chắc Chúa ban xứ Ca-na-cho họ,  còn lại 10 thám tử kia chẳng những không tin mà còn xúi  giục dân Y-sơ-ra-ên quay trở lại Ê-díp-tô. Kinh Thánh  cho biết <strong>tất cả</strong> dân Y-sơ-ra-ên nghe theo 10 thám tử kia, <strong>tất cả</strong> dân Y-sơ-ra-ên nổi loạn chống  lại Môi-se và đòi quay trở lại Ê-díp-tô. (Dân Số  Ký 14:1-4). Trước thái độ phản loạn đó,  Đức Chúa Trời quyết định hình phạt họ:  Họ sẽ phải chết trong đồng vắng. Dù <strong>tất cả</strong> dân Y-sơ-ra-ên  nổi loạn, nhưng Đức Chúa Trời không hình phạt  những người <strong>dưới  20 tuổi</strong>: </p>
+        <blockquote>
+          <p><em>&ldquo;Đức Giê-hô-va  nói rằng: Ta chỉ sự hằng-sống ta mà thề, ta  sẽ đãi các ngươi tùy theo lời
+            ta đã nghe các ngươi  nói; những thây các ngươi sẽ ngã nằm trong đồng  vắng nầy. Các
+            ngươi mà người  ta đã tu bộ, hết thảy bao nhiêu cũng vậy, <strong>từ hai mươi tuổi sắp  lên</strong>, là
+            những kẻ đã lằm  bằm cùng ta, thì chẳng hề được vào xứ.&rdquo; </em>(Dân Số Ký 14:29)</p>
+        </blockquote>
+        <p>Chúng ta nhận thấy  Đức Chúa Trời không kể những người  Y-sơ-ra-ên dưới 20 tuổi là thật sự mắc  tội phản loạn mặc dù họ có hành vi phản loạn.  Chúng ta có thể kết luận rằng những người  Y-sơ-ra-ên dưới 20 tuổi nầy chỉ làm theo sự  xúi giục của những người lớn tuổi  hơn mà thôi, những người trẻ nầy chưa  đủ trưởng thành để phân biệt đúng  sai, nên Đức Chúa Trời không buộc tội họ phải  chết chung với những người khác. Đức  Chúa Trời thật rất yêu thương và công bằng,  Ngài không hề bắt tội khi con người chưa  đủ hiểu biết về điều phải và  điều trái.</p>
+        <p>Chúng ta không nên dựa vào  câu chuyện trên để áp đặt tuổi 20 là thời  điểm cho một người trẻ phải chịu  trách nhiệm về hành động và quyết định  của mình, vì đây chỉ là lứa tuổi áp đặt  cho Dân Y-sơ-ra-ên trong thời Cựu Ước [Thời Cựu  Ước nêu lên những &ldquo;con số&rdquo;, Thời Tân Ước  chú trọng đến &ldquo;con người bên trong&rdquo;]</p>
+        <p>Tân Ước ghi lại  câu chuyện một người mù từ lúc mới sanh,  được Chúa Jesus chữa lành (Giăng chương  9). Những người Pha-ri-si không tin người mù  được chữa lành, nên họ tra hỏi cha mẹ  người mù, cha mẹ người mù trả lời cho  người pha-ri-si<em>: &ldquo;Nó đã <strong>đủ tuổi</strong>, hãy hỏi  nói&rdquo;</em> (Giăng 9:23). Dù Kinh Thánh không cho biết người  mù lúc được chữa lành là bao nhiêu tuổi, nhưng  khi đọc xuyên suốt câu chuyện, chúng ta hiểu ngay  người mù đã <strong>đủ  tuổi </strong>để biết rõ <em>người</em> chữa lành mình <strong>là ai</strong>, và biết <em>do đâu</em> <em>người nầy </em>có khả năng chữa cho mắt  mình được sáng. </p>
+        <p><strong>3. Trẻ em qua đời có được cứu  không?</strong></p>
+        <p>Không có câu Kinh Thánh nào trực  tiếp giải đáp cho câu hỏi tế nhị nầy,  nhưng chúng ta có thể căn cứ vào ý nghĩa của một  số câu Kinh Thánh để đi đến kết luận:  Trẻ em khi qua đời trước khi được  nghe Tin lành, sẽ được cứu:</p>
+        <p>1. Giăng 3:18: <em>&ldquo;<u>Ai tin</u> Ngài thì chẳng bị  đoán xét đâu; <u>ai không tin</u> thì đã bị đoán xét  rồi.&rdquo;</em></p>
+        <p>Ai <em>không tin</em> thì bị đoán xét. Lứa tuổi ấu  nhi chưa đủ trí khôn để hiểu về Tin Lành  nên không thể quyết định, như vậy, đứa  trẻ sẽ bị Chúa xét đoán.</p>
+        <p>2. II Tê-sa-lô-ni-ca 1:8,9: <em>&ldquo;báo thù <u>những kẻ chẳng  hề nhận biết Đức Chúa Trời</u>, và <u>không  vâng phục Tin Lành</u> của Đức Chúa Jêsus Christ chúng  ta. Họ sẽ bị hình phạt hư mất đời  đời, xa cách mặt Chúa và sự vinh hiển của  quyền phép Ngài.&rdquo;</em></p>
+        <p>Những người bị  hình phạt trong hồ lửa đời đời là những  người không nhận biết Đức Chúa Trời và  khước từ Tin Lành cứu rỗi. Trẻ em không thể  nằm trong số người nầy.</p>
+        <p>3. Khải Huyền  20:11-15; <em>&ldquo;Cũng có mở một  quyển sách khác nữa, là sách sự sống; những kẻ  chết <u>bị xử đoán tùy công việc mình làm</u>, cứ  như lời đã biên trong những sách ấy. Biển  đem trả những người chết mình chứa; Sự  chết và Âm phủ cũng đem trả những người  chết mình có. Mỗi người trong bọn đó bị  xử đoán <u>tùy công việc mình làm</u>. Kẻ nào không  được biên vào sách sự sống đều bị  ném xuống hồ lửa.&rdquo;</em></p>
+        <p>Trong ngày phán xét sau cùng,  người ta sẽ bị Chúa phán xét tùy theo công việc họ  làm lúc còn sống. Trẻ em được kể là vô tội  về những hành vi của mình.</p>
+        <p>4. Lu-ca 18:16,17: <em>&ldquo;Nhưng Đức Chúa Jêsus gọi  họ mà phán rằng: hãy để con trẻ đến  cùng ta, đừng ngăn cấm; vì <u>nước Đức  Chúa Trời thuộc về những người giống  như con trẻ ấy</u>. Quả thật, ta nói cùng các  ngươi, ai không <u>nhận lãnh nước Đức  Chúa Trời như một đứa trẻ</u>, thì sẽ  không được vào đó.&rdquo;</em></p>
+        <p>5. Ma-thi-ơ 18:2-5<em>: &ldquo;Đức Chúa Jêsus gọi một  đứa trẻ đến, để ở giữa môn  đồ, mà phán rằng: quả thật, ta nói cùng các  ngươi, nếu các ngươi không đổi lại  và nên <u>như đứa trẻ</u>, thì <u>chẳng  được vào nước thiên đàng đâu</u>. Vậy,  hễ ai trở nên <u>khiêm nhường như đứa trẻ</u> nầy, sẽ là lớn hơn hết trong nước thiên  đàng. Hễ ai vì danh ta chịu tiếp một <u>đứa  trẻ</u> thể nầy, tức là chịu tiếp ta.&rdquo;</em></p>
+        <p>6. Trường hợp  đứa con còn rất nhỏ của Đa-vít và Bát-sê-ba:  Đứa trẻ bị bệnh trong 7 ngày rồi chết.  Đa-vít nói: <em>&ldquo;Khi đứa trẻ  còn sống, ta kiêng ăn và khóc lóc, vì ta nghĩ rằng: Nào  ai biết; có lẽ Đức Giê-hô-va sẽ thương  xót ta, và cho đứa trẻ được sống  chăng. Nhưng bây giờ nó đã chết, ta kiêng ăn  làm chi? Ta có thế làm cho nó trở lại ư? <strong>Ta sẽ đi đến nó  nhưng nó không trở lại cùng ta</strong>.&rdquo;</em> (II Sa-mu-ên  12:22,23)</p>
+        <p>Câu trên không nói rõ trẻ  em sau khi chết sẽ được cứu, nhưng câu  trên giúp cho chúng ta hiểu theo chiều hướng đó:  Đa-vít tin rằng đứa trẻ sẽ được  cứu và ông sẽ gặp nó trong tương lai, sau khi ông  qua đời.</p>
+        <p>7. I Giăng 2:2: <em>&ldquo;Ấy chính Ngài làm của lễ  chuộc tội lỗi chúng ta, không những vì tội lỗi  chúng ta thôi đâu, mà cũng vì tội lỗi cả thế  gian nữa.&rdquo; </em> Rô-ma 5:19: <em>&ldquo;như bởi sự không vâng phục  của một người mà mọi người khác đều  thành ra kẻ có tội, thì cũng một lẽ ấy, bởi  sự vâng phục của một người mà mọi  người khác sẽ đều thành ra công bình.&rdquo;</em></p>
+        <p>Chúa Jesus chịu chết  trên thập tự giá để chuộc tội cho toàn thể  nhân loại, trong đó có trẻ em. Nguyên tội của  đứa trẻ do A-đam truyền lại sẽ  được tha thứ qua sự chết của Chúa  Jesus.</p>
+        <p>8. I Ti-mô-thê 2:4<em>; &ldquo;Ngài muốn cho mọi người  được cứu rỗi và hiểu biết lẽ thật.&rdquo;</em></p>
+        <p>Đức Chúa Trời là  Tình Yêu, Ngài không muốn một ai bị hư mất  nhưng muốn tất cả mọi người  được cứu, trong đó có cả trẻ em vô tội.</p>
+        <p><strong>4. Số phận của những trẻ em bị chết  trong gia đình không kính sợ Chúa.</strong></p>
+        <p>Theo kế hoạch của  Đức Chúa Trời, khi dân Y-sơ-ra-ên tiến chiếm  xứ Ca-na-an, họ phải giết tất cả dân thành  Giê-ri-cô, trong đó có cả trẻ em:</p>
+        <blockquote>
+          <p><em>&ldquo;Khi  Giê-hô-va Đức Chúa Trời ngươi đã dẫn  ngươi vào xứ mình sẽ nhận được,  đuổi khỏi
+            trước mặt  ngươi nhiều dân tộc, là dân Hê-tít, dân Ghi-rê-ga-sít,  dân A-mô-rít, dân Ca-
+            na-an, dân Phê-rê-sít, dân Hê-vít,  và dân Giê-bu-sít, tức bảy dân tộc lớn và mạnh  hơn
+            ngươi, khi Giê-hô-va  Đức Chúa Trời ngươi đã phó cho các dân ấy  cho, và ngươi đánh bại
+            chúng, thì <strong>phải diệt hết chúng đi</strong>.&rdquo; </em>(Phục  Truyền Luật Lệ Ký 7:1,2)</p>
+          <p><em>&ldquo;Vậy,  dân sự la lên, và những thầy tế lễ thổi  kèn. Vừa khi dân sự nghe tiếng kèn, bèn la
+            lớn lên, và vách thành liền  ngã sập, dân sự leo lên thành, mỗi người ngay  trước mặt
+            mình. Chúng lấy thành, <strong>đưa gươm qua diệt  mọi vật ở trong thành, nào nam phụ
+              lão ấu</strong>, cho đến  bò, chiên, và lừa.&rdquo; </em>(Gôi-suê 6:20,21)</p>
+        </blockquote>
+        <p>Hoặc Chúa ra lệnh cho  dân Y-sơ-ra-ên tiêu diệt dân A-ma-léc, trong đó bao gồm cả  trẻ em:</p>
+        <blockquote>
+          <p><em>&ldquo;Vậy,  hãy đi đánh dân A-ma-léc và diệt hết mọi vật  thuộc về chúng nó. Ngươi sẽ không
+            thương xót chúng nó, phải <strong>giết</strong> người nam và nữ, <strong>con trẻ và con bú</strong>, bò và  chiên, lạc
+            đà và lừa.&rdquo;</em> (I Sa-mu-ên 15:3)</p>
+        </blockquote>
+        <p>Nhiều người  đã thắc mắc về hành động của Đức  Chúa Trời và số phận của những trẻ em trong  bối cảnh lịch sử nêu trên: Tại sao Chúa cho phép  dân của Ngài giết những trẻ em được kể  là <em>vô tội</em>, tức là những  đứa trẻ chưa biết phân biệt điều  thiện điều ác, mặc dù chúng sinh ra trong gia đình  không kính sợ Chúa? Những đứa trẻ nầy có  được cứu không?</p>
+        <p>Các bậc ông bà hay cha mẹ  trong gia đình có khuynh hướng truyền dạy cho con  cháu niềm tin hay tín ngưỡng của mình. Đối lại,  con cháu trong nhà lúc còn trẻ thơ thường chịu ảnh  hưởng của sự giáo dục do cha mẹ truyền  lại. Con trẻ thường bắt chước những  gương xấu (hay tốt) từ bậc cha mẹ thể  hiện qua nếp sinh hoạt hằng ngày. </p>
+        <p>[Trong nhà nhiều người  Việt Nam thường lập bàn thờ để thờ  lạy tổ tiên. Sự thờ cúng ông bà được  lưu truyền cho con cháu từ thế hệ nầy sang  thế hệ khác.]</p>
+        <p>Những dân tộc không  kính sợ Chúa, thờ lạy tà thần trong Kinh Thánh  (người dân trong xứ Ca-na-an cũng như các dân tộc  khác) thường truyền dạy sự thờ lạy  hình tượng cho con cháu trong nhà khi chúng còn nhỏ dại,  những đứa trẻ <em>vô tội</em> nầy khi trưởng thành sẽ tiếp tục thờ lạy  tà thần và chúng sẽ tiếp nối truyền dạy sự  thờ tà thần cho con cháu của chúng. Câu chuyện Đức  Chúa Trời hứa ban xứ Ca-na-an cho con cháu của  Áp-ra-ham chứng minh rõ điều ấy: <em>&ldquo;Đức Giê-hô-va phán cùng Áp-ram rằng: Phải biết  rằng, dòng dõi ngươi sẽ ngụ trong một xứ  chẳng thuộc về chúng nó (xứ Ai-cập), làm tôi mọi  cho dân xứ đó và bị họ hà hiếp bốn trăm  năm. Nhưng, ta sẽ đoán phạt dân mà dòng dõi  ngươi sẽ làm tôi mọi đó; rồi khi ra khỏi  xứ, thì sẽ được của cải rất nhiều.  Còn ngươi sẽ bình yên về nơi tổ phụ,  hưởng lộc già sung sướng, rồi qua đời.  Đến đời thứ tư, dòng dõi ngươi sẽ  trở lại đây (tức là xứ ca-na-an), vì <strong>tội lỗi của dân A-mô-rít  chưa được đầy dẫy</strong>.&rdquo;</em> (Sáng Thế  Ký 15:13-16) </p>
+        <p>Khi Đức Chúa Trời  phán với Áp-ra-ham lời hứa trên, thì dân A-mô-rít, là một  dân thuộc xứ Ca-na-an, là dân tộc đang sống trong  tội lỗi, nhưng chưa đến mức quá độ.  Vào thời điểm đó, thật dễ dàng để  hình dung ra rằng trong số dân A-mô-rít, cũng có rất nhiều  trẻ em trong lứa tuổi <em>vô  tội </em>sống chung trong gia đình có cha mẹ ông bà phạm  tội. Tuy nhiên, khi chúng trưởng thành, chúng đã trở  nên những người phạm tội, vì chúng bắt  chước thói hư tật xấu do người lớn  trong gia đình truyền lại, vì thế đến thế  hệ thứ tư, Đức Chúa Trời cho phép dân  Y-sơ-ra-ên tiêu diệt dân A-mô-rít để chiếm xứ  Ca-na-an. </p>
+        <p>Trở lại với thời  điểm dân Y-sơ-ra ên tiêu diệt dân Ca-na-an bao gồm  cả trẻ em. Như vậy tốt hơn cho chúng, vì  chúng được xem là <em>vô tội</em> và sẽ được Chúa cứu. Còn hơn là để  chúng trưởng thành mà phạm tội vì sẽ không  được cứu!</p>
+        <p>Trong mọi trường  hợp, chúng ta phải tin nơi sự phán xét công bình của  Đức Chúa Trời: <em>&ldquo;Quả  thật Đức Chúa Trời không làm ác, Đấng Toàn  năng chẳng trái phép công bình.&rdquo;</em> (Gióp 34:12),  <em>&ldquo;</em><em>Ngài sẽ lấy  công bình đoán xét thế gian, dùng sự ngay thẳng mà xử  các dân tộc.&rdquo;</em> (Thi Thiên 9:8). </p>
+        <p><strong><em>Tháng 6, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

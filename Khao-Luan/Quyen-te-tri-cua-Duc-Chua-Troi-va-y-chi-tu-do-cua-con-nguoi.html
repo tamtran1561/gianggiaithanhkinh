@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center">QUYỀN TỂ TRỊ CỦA ĐỨC CHÚA TRỜI VÀ Ý CHÍ TỰ DO CỦA CON NGƯỜI</p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p><strong>1. Ý Chúa hay ý con người?</strong></p>
+        <p>Tất cả những sự  việc xãy ra chung quanh chúng ta, dù tốt hay xấu, là do ý  Chúa hay ý của con người? Các Cơ-đốc nhân  đều có cùng chung câu trả lời: &ldquo;mọi sự xãy  ra bởi ý muốn của Đức Chúa Trời.&rdquo; Câu trả  lời như thế có lẽ &ldquo;an toàn&rdquo; hơn là trả lời  theo một cách khác! Vì tất cả chúng ta đều biết  Đức Chúa Trời cầm quyền trên mọi sự,  nên rõ ràng mọi việc xãy ra trong cuộc sống: từ những  diển biến chính trị, kinh tế hay xã hội ở các  nước trên khắp thế giới, cho đến những  sự kiện xãy ra trong các Hội Thánh của Chúa hay những  biến cố diễn ra ở từng cá nhân v.v… đều  bởi ý Chúa mà xãy ra. Tuy nhiên, câu nói &ldquo;mọi sự xãy ra bởi  ý muốn của Đức Chúa Trời&rdquo; mà hầu hết  con cái Chúa hay đầy tớ Chúa thường hay thốt  lên trên môi miệng mình, có thể là một câu nói theo quán  tính, theo thói quen, mà thiếu sự suy xét cẩn thận những  gì mình nói. </p>
+        <p>Nếu mọi việc  xãy ra là tuyệt đối <strong>bởi  ý muốn của Chúa</strong> thì kết luận đó đưa  đến 2 vấn đề sau đây: </p>
+        <p>1. Vì bởi <strong>ý muốn của Chúa</strong> mà mọi  việc xãy ra, nên loài người không có quyền tự do  làm theo ý muốn của mình, điều nầy mâu thuẫn  với mục đích của Đức Chúa Trời trong sự  tạo dựng nên loài người: Ngài dựng nên loài người  và ban cho họ quyền tự do chọn lựa vâng theo lời  Chúa truyền dạy hay không vâng theo lời Chúa truyền dạy  (câu chuyện trái cây biết điều thiện và điều  ác chứng minh điều nầy), từ đó đến  nay, loài người vẫn tiếp tục sống với  quyền tự do quyết định ấy. Chúng ta  cũng nhận thấy Đức Chúa Trời thật rất  tôn trọng quyền tự do của con người, vì  chính Ngài đã tạo dựng nên con người và ban cho con  người quyền đó.</p>
+        <p>2. Vì bởi <strong>ý muốn của Chúa</strong> mà mọi  sự xãy ra, nên về mặt lý luận, loài người  không phải chịu trách nhiệm về những gì mình  đã làm và cũng không phải chịu trách nhiệm về  những hậu quả mình gây ra. Như vậy, chúng ta  đã đổ trách nhiệm cho Đức Chúa Trời về  tất cả những gì đã xãy ra. Hoặc ít ra, loài  người đã làm giảm nhẹ đi trách nhiệm của  mình về những hành động sai trái mình đã làm và hậu  quả để lại từ việc làm sai trái ấy. Bằng  cách kết luận mọi việc xãy ra là &ldquo;do ý Chúa&rdquo;, chúng ta  đã vô tình biện minh cho những việc làm theo ý muốn  riêng mà không vâng theo lời truyền dạy của Chúa. </p>
+        <p>Thật ra, khi chúng ta phát  biểu &ldquo;mọi việc xãy ra là bởi ý Chúa&rdquo; là chúng ta chỉ  nêu ra phân nửa sự thật mà thôi! Chân lý đã không  được chúng ta trình bày một cách trọn vẹn.  Kinh Thánh cho chúng ta biết loài người có quyền tự  do quyết định: Người chưa tin Chúa  được tự do quyết định tiếp nhận  hay từ chối ơn cứu rỗi khi họ có cơ hội  nghe Tin Lành; người đã tin nhận Chúa cũng  được tự do quyết định vâng giữ hay  không vâng giữ Lời Chúa dạy trong Kinh Thánh. Và cách hành xử  của con người trong mọi trường hợp  đều ở dưới sự kiểm soát của  Đức Chúa Trời, Ngài có thể <strong>không ngăn cản</strong> <strong>những  ý định và hành động sai trái của con người,  nhưng ngài cho phép xãy ra. </strong>Như vậy, những điều  xấu xãy ra không thể nào <strong>do  ý muốn của Đức Chúa Trời</strong> được,  vì Chúa không bao giờ muốn đều xấu xãy ra. Tuy  nhiên, chúng ta lại chứng kiến những việc xấu  thật đã xãy ra trong cuộc sống chung quanh chúng ta, ấy  là <strong>do con người gây ra</strong>,  là hậu quả của việc làm sai trái của con người, <strong>Đức Chúa Trời không  ngăn cản nhưng cho phép chúng xãy ra</strong>, <strong>vì Đức Chúa Trời có thể dùng những điều  không tốt do con người gây ra để làm thành mục  đích của Ngài</strong>, chúng ta gọi đó là <strong>quyền tể trị của  Đức Chúa Trời trên ý chí tự do của con người</strong>.<strong> </strong></p>
+        <p>Những phần Kinh Thánh  sau đây sẽ làm sáng tỏ chân lý trên:</p>
+        <p><strong>2. Ý đồ của Pha-ra-ôn: &ldquo;Ta sẽ khiến vua  Ai-cập cứng lòng&rdquo;</strong></p>
+        <p>Đức Chúa Trời truyền  dạy cho Môi-se phải đi gặp vua Pha-ra-ôn để  yêu cầu vua cho phép dân Y-sơ-ra-ên ra khỏi Ai-cập:</p>
+        <blockquote>
+          <p><em>&ldquo;Đức  Giê-hô-va phán cùng Môi-se rằng: Khi trở về xứ  Ê-díp-tô, hãy cẩn thận về các dấu
+            lạ của Ta
+            đã giao  nơi tay ngươi mà làm trước mặt Pha-ra-ôn;  nhưng <u>Ta sẽ khiến người </u><u>cứng lòng</u> chẳng  cho dân sự đi.&rdquo; (Xuất Ê-díp-tô Ký 4:21)</em></p>
+        </blockquote>
+        <p>Đọc câu trên, chúng ta  dễ cho rằng Đức Chúa Trời trực tiếp  điều khiển tâm trí của vua Pha-ra-ôn, Ngài làm cho vua <strong>cứng lòng</strong> để vua không  cho phép dân Y-sơ-ra-ên ra khỏi Ai-cập. Nếu đúng  như vậy, thì Pha-ra-ôn đã không thật sự có quyền  quyết định, và ông không phải chịu trách nhiệm  về quyết định của mình! Thật ra, vấn  đề không phải như thế, chúng ta cần tìm hiểu <em>&ldquo;Ta (Đức Chúa Trời) sẽ  khiến người (Pha-ra-ôn) cứng lòng&rdquo;</em> có ý nghĩa  gì? </p>
+        <p>Có một yếu tố  quan trọng chúng ta cần biết: <strong>Trước khi</strong> Đức Chúa Trời cho Môi-se biết  là Ngài sẽ làm cho Pha-ra-ôn cứng lòng (4:21) như đã nêu  trên, Chúa đã <strong>báo trước</strong> cho Môi-se biết là Pha-ra-ôn sẽ không cho dân Y-sơ-ra-ên ra  đi:</p>
+        <blockquote>
+          <p><em>&ldquo;Vả, Ta <strong>biết</strong> rằng dẫu lấy  quyền lực ép buộc vua Ê-díp-tô, thì người  cũng chẳng bao giờ
+            cho các ngươi đi!&rdquo; (Xuất  Ê-díp-tô Ký 3:19)</em></p>
+        </blockquote>
+        <p>Câu trên là câu chìa khóa giúp  chúng ta giải quyết vấn đề: Đức Chúa Trời  tỏ cho Môi-se biết bản chất của con người  Pha-ra-ôn, chính Pha-ra-ôn sẽ không cho phép dân Y-sơ-ra-ên ra  đi, Chúa <strong>biết trước</strong> điều ấy, như thế, chúng ta nên hiểu <em>&ldquo;Đức Chúa Trời khiến  vua Pha-ra-ôn cứng lòng&rdquo; </em>như sau: Pha-ra-ôn thật sự  là con người cứng lòng, ông sẽ không cho dân  Y-sơ-ra-ên ra khỏi Ai-cập, ông muốn họ ở lại  Ai-cập để tiếp tục làm nô lệ cho Ai-cập,  Chúa biết trước điều nầy sẽ xãy ra,  Ngài không ngăn cản nhưng cho phép xãy ra, Pha-ra-ôn  được tự do ngăn cấm dân Y-sơ-ra-ên ra  đi. Như vậy <em>&ldquo;Ta sẽ  khiến vua Ai-cập cứng lòng&rdquo; </em>cho thấy quyền tể  trị của Đức Chúa Trời trên ý chí tự do của  con người. Qua sự cứng lòng của Pha-ra-ôn, Đức  Chúa Trời bày tỏ quyền năng của Ngài cho Pha-ra-ôn  và dân xứ Ai-cập thấy bởi các tai họa mà Ngài  giáng xuống trên xứ Ai-cập, để họ nhận  biết Ngài là Đức Giê-hô-va. Đến tai họa cuối  cùng, Pha-ra-ôn buộc lòng phải cho dân Y-sơ-ra-ên ra đi<em>. &ldquo;Ta sẽ làm cho Pha-ra-ôn cứng  lòng, và thêm nhiều dấu lạ phép kỳ của ta trong xứ  Ê-díp-tô. Nhưng Pha-ra-ôn sẽ chẳng nghe các ngươi  đâu; ta sẽ tra tay vào đất Ê-díp-tô, dùng những sự  đoán-phạt nằng-nề, đặng rút khỏi xứ  đó các quân đội ta, là dân Y-sơ-ra-ên. Khi nào ta tra tay  vào xứ Ê-díp-tô mà rút dân Y-sơ-ra-ên ra khỏi giữa vòng  người Ê-díp-tô, thì họ sẽ biết ta là Đức  Giê-hô-va.&rdquo; </em>(Xuất Ê-díp-tô Ký 7:3-5)</p>
+        <p><strong>3. Dân Y-sơ-ra-ên muốn có vua: &ldquo;Hãy nghe theo lời  chúng nó&rdquo;</strong></p>
+        <p>Sau khi dân Y-sơ-ra-ên ở  trong xứ Ca-na-an được hơn 300 năm, họ muốn  có vua cai trị họ. Lúc nầy, Sa-mu-ên làm quan xét trên dân  Y-sơ-ra-ên, ông là người rất có uy tín nên các trưởng  lão trong dân đến gặp Sa-mu-ên và nói:</p>
+        <blockquote>
+          <p><em>&ldquo;Kìa, ông đã già yếu,  còn các con trai ông lại chẳng noi theo gương của  ông. Bây giờ, xin
+            hãy lập trên chúng tôi một  vua đặng đoán xét chúng tôi, y như các dân tộc khác  đã có
+            rồ</em>i.&rdquo; (I Sa-mu-ên 8:5)</p>
+        </blockquote>
+        <p>Chúng ta đặt câu hỏi:  Việc dân Y-sơ-ra-ên cầu xin cho có một vua để  cai trị trên họ là điều tốt hay xấu, nên hay  không nên? Chúng ta có ngay lời giải đáp trong câu 7: Đó  là điều xấu: <em>&ldquo;Đức  Giê-hô-va phán cùng Sa-mu-ên rằng: Hãy nghe theo mọi lời dân  sự nói cùng ngươi; ấy chẳng phải chúng nó từ  chối ngươi đâu, bèn là <strong>từ chối Ta</strong> đó, hầu cho <strong>Ta chẳng cai trị chúng nó nữa.</strong>&rdquo;</em> Dân  Y-sơ-ra-ên không muốn <em>Đức  Chúa Trời</em> cai trị họ, họ muốn <em>loài người</em> cai trị họ!</p>
+        <p>Đức Chúa Trời  truyền dạy Sa-mu-ên: &ldquo;<em>Hãy  nghe theo mọi lời dân sự nói cùng ngươi&rdquo; (câu 7)</em>,<em> &ldquo;Vậy bây giờ, hãy nghe theo lời  chúng nó.&rdquo;</em> (câu 9). Đức Chúa Trời cho phép dân  Y-sơ-ra-ê có vua. Chúng ta biết Đức Chúa Trời chỉ  định cho Sau-lơ làm vua, Ngài sai Sa-mu-ên xức dầu  cho Sau-lơ làm vua, là vị vua đầu tiên của nước  Y-sơ-ra-ên. </p>
+        <p>Như vậy, nếu đúng  như điều mà chúng ta thường hay thốt lên <strong>&ldquo;mọi việc xãy ra bởi ý muốn  của Chúa&rdquo;</strong> thì có phải sự kiện dân Y-sơ-ra-ên  có vua là bởi &ldquo;ý muốn&rdquo; của Chúa? Câu trả lời là  KHÔNG, 
+        dân Y-sơ-ra-ên có vua <strong>không  phải là ý muốn của Chúa</strong>, nhưng là ý muốn của  người dân, vì họ đòi hỏi điều đó.  Tuy vậy, Đức Chúa Trời không ngăn cản  nhưng cho phép xãy ra theo ý muốn của họ, theo quyết  định của họ. Điều nầy bày tỏ quyền  tể trị của Đức Chúa Trời trên ý chí tự  do của con người. </p>
+        <p><strong>4. Hôn nhân của Sam-sôn: &ldquo;Điều đó bởi  Đức Giê-hô-va mà đến&rdquo;</strong></p>
+        <p>Sách Các Quan Xét đoạn  14 ghi lại câu chuyện Sam-sôn gặp một cô gái người  Phi-li-tin, ông nói với cha mẹ: <em>&ldquo;Con  có thấy tại Thim-na một người nữ trong vòng  con gái Phi-li-tin; bây giờ xin hãy hỏi nàng cưới cho  con.&rdquo;</em> (câu 2). Nhưng cha mẹ ông nói: <em>&ldquo;Trong vòng các con gái của anh em con và trong cả dân sự  chúng ta, há chẳng có người nữ nào, mà con phải  đi cưới vợ nơi dân Phi-li-tin chẳng chịu  cắt bì đó sao?&rdquo;</em> (câu 3a). Sam-sôn thưa với cha: <em>&ldquo;Xin cha cưới cô ấy cho  con, <strong>vì nàng vừa mắt con</strong>.&rdquo;</em> (câu 3b). Và câu 4 cho chúng ta biết:</p>
+        <blockquote>
+          <p><em>&ldquo;Vả,  cha mẹ người chẳng rõ <strong>điều đó</strong> <strong>bởi  nơi Đức Giê-hô-va mà đến</strong>; vì người  tìm dịp
+            tranh đấu cùng dân  Phi-li-tin. Lúc bấy giờ dân Phi-li-tin quản hạt  Y-sơ-ra-ên.&rdquo;</em></p>
+        </blockquote>
+        <p>Qua câu chuyện của  Sam-sôn, nan đề được nêu lên: Sam-sôn chọn cô  gái Phi-li-tin làm vợ đến từ quyết định  của cá nhân ông hay được Đức Chúa Trời  định trước? Nhiều người căn cứ  vào câu &ldquo;<em>điều đó bởi  nơi Đức Giê-hô-va mà đến&rdquo; </em>để kết  luận rằng Đức Chúa Trời cầm quyền trên  mọi sự, Ngài chỉ định cô gái Phi-li-tin sẽ  làm vợ Sam-sôn với mục đích Sam-sôn sẽ tranh chiến  với dân Phi-li-tin, cứu dân Y-sơ-ra-ên khỏi sự hà  hiếp của dân Phi-li-tin. Nếu kết luận đó  đúng, sẽ mâu thuẫn với hai yếu tố sau: 1.  Đức Chúa Trời tướt đoạt quyền tự  do quyết định của Sam-sôn, là khả năng mà  chính Ngài ban cho loài người. 2. Đức Chúa Trời cho  phép Sam-sôn làm điều mà Ngài đã truyền dạy không  được làm: Chúa có truyền dạy cho những  người nam Y-sơ-ra-ên không được kết hôn với  các cô gái thuộc các dân ngoại bang, là những dân tộc  có truyền thống thờ lạy tà thần, lệnh truyền  nầy được lặp lại nhiều lần (xin  đọc Xuất Ê-díp-tô Ký 34:16; Phục Truyền Luật  Lệ Ký 7:3,4; Giô-suê 23:12). Đức Chúa Trời không thể  tự mâu thuẫn với chính mình Ngài.</p>
+        <p>Như vậy, Đức  Chúa Trời không xúi giục Sam-sôn kết hôn với cô gái  Phi-li-tin, Sam-sôn muốn kết hôn với cô gái ấy là một  quyết định hoàn toàn đến từ cá nhân Sam-sôn, Kinh  Thánh cho biết cô ấy <em>vừa  mắt</em> ông, hay <em>làm ông vui thích  (pleased Samson well). </em>Nên nhớ rằng Sam-sôn cưới cô  gái Phi-li-tin không phải nhằm mục đích tranh chiến  với dân Phi-li-tin, Sam-sôn không phải là mẫu người  nhìn thấy được mục tiêu ấy, câu <em>&ldquo;vì người tìm dịp
+          tranh đấu cùng dân Phi-li-tin&rdquo;</em> không phải là câu chứng  minh Sam-sôn có một mục đích khi cưới cô gái  Phi-li-tin, nhưng là câu trình bày mục đích của Đức  Chúa Trời đối với cuộc hôn nhân của Sam-sôn.  Chúng ta thấy rõ <strong>quyền tể  trị của Đức Chúa Trời đối với quyền  quyết định của con người</strong>: Sam-sôn kết  hôn với cô gái Phi-li-tin là bởi ý riêng của ông, ông có quyền  chọn cô gái đó hay không chọn cô gái đó, nhưng ông  đã chọn cô gái ấy, và Đức Chúa Trời dùng  điều đó để làm hoàn thành ý định của  Ngài, là khiến cho Sam-sôn có cơ hội tranh chiến với  dân Phi-li-tin, đó chính là ý nghĩa thật sự của câu  &ldquo;<strong><em>điều  đó</em></strong><em> <strong>bởi nơi Đức Giê-hô-va mà đến</strong>&rdquo;</em>.  Đọc câu chuyện của Sam-sôn, chúng ta thấy thật  Đức Chúa Trời đã dùng ông để trừng phạt  dân Phi-li-tin, ông đã nhiều phen làm cho dân Phi-li-tin phải  điêu đứng và tổn thất nặng nề, Kinh  Thánh cho biết khi Sam-sôn chết, ông đã giết nhiều  người Phi-li-tin hơn lúc ông còn sống (Các Quan Xét  16:30). Tuy nhiên, vì quyết định của Sam-sôn không theo  ý muốn của Chúa, nên ông đã phải trả giá cho quyết  định sai lầm của mình.</p>
+        <p><strong>5. Sự phản bội của Giu-đa Ích-ca-ri-ốt:  &ldquo;Con Người đi như điều đã chép về  Ngài&rdquo;</strong></p>
+        <blockquote>
+          <p>&ldquo;<em>Con Người đi như <strong>điều đã chép</strong> về Ngài; nhưng <strong>khốn thay</strong> cho kẻ phản  Con Người!
+            Thà nó đừng sinh ra thì  hơn.&rdquo;  (Ma-thi-ơ 26:24)</em></p>
+        </blockquote>
+        <p>Trong đêm cuối cùng,  trước khi Chúa Jesus chịu chết, Chúa nói với các sứ  đồ sự chết của Ngài phải xãy ra đúng  theo <em>&ldquo;mọi điều đã  chép về Ngài&rdquo;. </em>Chương trình cứu rỗi nhân loại  qua sự chết của Chúa Jesus được Đức  Chúa Trời hoạch định từ trước khi Ngài  sáng tạo trời đất (Ê-phê-sô 1:4), và nhiều lần  được bày tỏ qua các câu chuyện hoặc  được tiên tri trong suốt cả Cựu Ước. </p>
+        <p>Vai trò của sứ đồ  Giu-đa Ích-ca-ri-ốt được đặc biệt  nhắc đến trong kế hoạch của Đức  Chúa Trời: khoảng 1000 năm trước khi Chúa Jesus chịu  chết, sự phản bội của Giu-đa được  nói tiên tri trong Thi Thiên 41:<em>9 &ldquo;Đến  đỗi người bạn thân tôi, mà lòng tôi tin cậy,  và đã ăn bánh tôi, cũng giơ gót lên nghịch cùng tôi.&rdquo;  </em>Và ông đã bán Chúa với giá 30  miếng bạc trong Xa-cha-ri 12:<em>11  &ldquo;Chúng nó bèn cân tiền công cho ta, là ba chục miếng bạc.&rdquo;</em></p>
+        <p>Căn cứ vào lời  tiên tri trên, có phải Giu-đa Ích-ca-ri-ốt được  Chúa <strong>chỉ định </strong>là  người sẽ phản bội Ngài, mở đầu  cho một loạt sự kiện để đưa đến  sự chết của Chúa Jesus trên thập tự giá?  Những người theo quan điểm  &ldquo;tiền định&rdquo;, suy luận rằng Đức Chúa Trời  cầm quyền trên mọi sự, loài người không có  quyền quyết định về hành động của  mình, nên Giu-đa thật được Chúa chỉ định  cho sự phản Chúa Jesus, đúng như lời tiên tri loan  báo. Tuy nhiên, căn cứ trên lời kết án của Chúa  Jesus trên Giu-đa trong hai câu Kinh Thánh sau, chúng ta không thể  chấp nhận quan điểm &ldquo;tiền định&rdquo;: </p>
+        <p>     &ldquo;<em>nhưng <strong>khốn thay</strong> cho kẻ phản  Con Người! <strong>Thà nó đừng  sinh ra thì hơn</strong>.&rdquo; (Ma-thi-ơ
+          26:24b)</em>          </p>
+        <blockquote>
+          <p><em>&ldquo;Đang khi Con còn ở  với họ, Con gìn giữ họ, trừ <strong>đứa con của sự hư mất</strong> ra, thì  trong
+            đám họ không một  người nào bị thất lạc, hầu cho lời  Kinh Thánh được ứng nghiệm.&rdquo;          (Giăng 17:12)</em></p>
+        </blockquote>
+        <p>Chúa kết án nặng nề  Giu-đa Ích-ca-ri-ốt và Ngài gọi ông là <em>đứa con của sự hư mất </em>(the son of  perdition). Điều nầy chứng minh rõ ràng hành động  phản bội của Giu-đa không phải là ý muốn của  Chúa, Chúa không xúi giục ông phản Ngài, nhưng do chính ông  quyết định. Như vậy, lời tiên tri về sự  phản bội của Giu-đa Ích-ca-ri-ốt không nên hiểu  là Đức Chúa Trời đã &ldquo;tiền định&rdquo;, hay chỉ  định Giu-đa phản Ngài, nhưng nên hiểu là sự <strong>biết trước</strong> (foreknow) của Đức Chúa Trời, Ngài biết trước  Giu-đa sẽ phản bội Chúa Jesus, và Đức Chúa Trời  dùng sự việc đó để làm thành mục đích của  Ngài. Đó là quyền tể trị của Đức Chúa  Trời đối với quyền tự do của con  người.</p>
+        <p>Thật ra, Giu-đa không  phải là nguyên nhân chính yếu đưa đến sự  chết của Chúa Jesus, hãy xem các câu Kinh Thánh sau:</p>
+        <blockquote>
+          <p><em>&ldquo;Thật  vậy, <strong>Hê-rốt</strong> và <strong>Pôn-xơ Phi-lát</strong> cùng với các <strong>dân ngoại</strong> và <strong>dân Y-sơ-ra-ên</strong> đã tụ
+            họp tại thành nầy  để chống lại Đầy Tớ thánh Ngài là  Đức Chúa Jesus, Đấng mà Ngài đã
+            xức dầu để làm mọi  việc tay Ngài và ý Ngài <strong>đã  định trước</strong>.&rdquo;   (Công Vụ Các Sứ Đồ
+            4:27,28)</em></p>
+          <p><em>&ldquo;Ngài đã bị phản  nộp theo kế hoạch <strong>đã  định</strong> và sự <strong>biết  trước</strong> của Đức Chúa Trời…&rdquo;          (Công Vụ Các Sứ Đồ  2:23)</em></p>
+        </blockquote>
+        <p>Vua Hê-rốt, quan tổng  đốc Phi-lát, quân lính La-mã và dân Y-sơ-ra-ên đều  chịu trách nhiệm về sự chết của Chúa Jesus.  Dù sự chết của Chúa Jesus đã được định  trước, nhưng những ai can dự vào đều phải  gánh chịu trách nhiệm về hành động của mình.</p>
+        <p><strong>6. Bài học cho chúng ta:</strong></p>
+        <p>Lẽ đạo về  quyền tể trị của Đức Chúa Trời đối  với sự tự do quyết định của loài  người giúp chúng ta cẩn thận trong nếp sống  của mình. Chúa ban cho chúng ta quyền tự do để  vâng lời Chúa dạy hoặc không vâng lời Chúa dạy.  Chúa không ép buộc chúng ta làm theo ý muốn Ngài, nhưng muốn  chúng ta tự nguyện vâng lời Ngài. Mỗi cá nhân phải  chịu trách nhiệm trước mặt Chúa về những  gì mình đã làm, cho dù Đức Chúa Trời có dùng những  sự sai trái của con người để hoàn thành mục  đích của Ngài, thì con người cũng không có quyền  gì để biện hộ cho mình hay cho người khác.  không một ai có thể biện hộ cho những sai trái của  mình hay biện hộ cho những sai trái của người  khác bằng câu nói quen thuộc: <strong>&ldquo;mọi  việc xãy ra bởi ý muốn của Chúa&rdquo;! </strong>Đức  Chúa Trời không chỉ định cho bất cứ ai làm  điều trái ngược với lời phán dạy của  Ngài.</p>
+        <p><strong><em>Tháng 12, 2013</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

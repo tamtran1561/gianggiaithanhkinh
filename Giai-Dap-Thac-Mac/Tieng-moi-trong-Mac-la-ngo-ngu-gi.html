@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center"><strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “Tiếng mới” trong Mác  16:17,18 là loại ngôn ngữ gì?</strong></p>
+  <p>&nbsp;</p>
+  <p><strong>Mác 16:17,18</strong>: </p>
+  <p><em>&ldquo;Vậy những kẻ tin sẽ được các dấu  lạ nầy: lấy danh Ta mà trừ quỉ; dùng <strong>tiếng mới</strong> mà nói; bắt  rắn trong tay; nếu uống giống chi độc,  cũng chẳng hại gì; hễ đặt tay trên kẻ  đau, thì kẻ đau sẽ lành.&rdquo;</em></p>
+  <p><strong>Câu hỏi: </strong></p>
+  <p>&ldquo;Tiếng mới&rdquo; trong câu  Kinh Thánh trên là loại ngôn ngữ gì? </p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Chúng ta hãy chú ý đến  văn mạch Kinh Thánh đi trước câu trên, là lời  Chúa Jesus phán dạy các Sứ Đồ trước khi Ngài  về trời<em>: &ldquo;Ngài phán cùng các Sứ  Đồ rằng: Hãy đi khắp thế gian, giảng  Tin Lành cho mọi người. Ai tin và chịu phép báp-tem, sẽ  được rỗi; nhưng ai chẳng tin, sẽ bị  đoán phạt.&rdquo;</em> (Mác 16:15,16). Chúa Jesus giao cho các Sứ  Đồ trách nhiệm rao giảng Tin Lành cho mọi người.  Ngay sau đó, Chúa Jesus nói tiếp trong câu 17,18: &ldquo;<em>Vậy những kẻ tin sẽ  được các dấu lạ nầy: lấy danh Ta mà trừ  quỉ; dùng <strong>tiếng mới</strong> mà nói; bắt rắn trong tay; nếu uống giống chi  độc, cũng chẳng hại gì; hễ đặt tay  trên kẻ đau, thì kẻ đau sẽ lành.&rdquo;</em></p>
+  <p>Chúa Jesus phán những lời  trên sau khi Chúa ủy thác công tác rao giảng Tin Lành cho các sứ  đồ (câu 15,16) và trước khi Chúa Jesus về trời  (câu 19). Công cuộc rao giảng Tin Lành thật sự bắt  đầu từ lúc các môn đồ và Sứ đồ nhận  lãnh Đức Thánh Linh trong ngày Lễ Ngũ Tuần. Sự  rao giảng Phúc Âm trong giai đoạn Hội Thánh mới  được thành lập, và Kinh Thánh Tân Ước  chưa hoàn tất trong giai đoạn phôi thai đó, nên Chúa  cho phép các <strong>dấu</strong> kèm theo  để <strong>chứng minh</strong> Phúc  Âm là chân thật. (Xin đọc Công Vụ Các Sứ Đồ  4:33; 14:3 để thấy rằng phép lạ hay dấu lạ  là để chứng minh cho sự giảng Tin Lành.)</p>
+  <p>Theo lời tuyên bố của  Chúa Jesus, những người nghe Tin Lành và <strong>tin</strong>, sẽ nhận được các <strong>dấu</strong> (sign) sau:</p>
+  <p>1/ Nhân danh Chúa trừ quỉ.</p>
+  <p>2/ Nói tiếng mới.</p>
+  <p>3/ Bắt rắn trong tay.</p>
+  <p>4/ Uống thức uống  có chất độc mà không bị hại. </p>
+  <p>5/ Đặt tay chữa  lành bệnh tật.</p>
+  <p>Trong những dấu lạ  nêu trên, dấu thứ 1 &ldquo;nhân danh Chúa trừ quỷ&rdquo; đã  được chứng thực trong Công Vụ Các Sứ  Đồ 5:16; 8:7; 16:18; 19:12. Dấu thứ 3 &ldquo;bắt rắn  trong tay&rdquo; đã được chứng minh ở Công Vụ  Các Sứ Đồ 28:5. Về dấu thứ 4 &ldquo;uống nhầm  chất độc không bị hại&rdquo;, chúng ta không thấy  ghi nhận trong sách Công Vụ Các Sứ Đồ; tuy nhiên, có  thể đã xãy ra trên thực tế nhưng không được  ghi chép lại mà thôi, vì Công Vụ Các Sứ Đồ 2:43,  5:12; 6:8 cho biết có nhiều <strong>dấu</strong> lạ được làm bởi các Sứ đồ mà không  nói rõ là dấu gì. Dấu thứ 5 &ldquo;Đặt tay chữa  lành bệnh tật&rdquo; đã được ứng nghiệm ở  Công Vụ Các Sứ Đồ 5:15,16; 9:17; 28:8.  </p>
+  <p>Về dấu thứ 2  &ldquo;nói tiếng mới&rdquo;, chúng ta nên giải thích như thế  nào?</p>
+  <p>Có khá nhiều người  giải thích &ldquo;nói tiếng mới&rdquo; theo ý nghĩa <strong>thuộc linh</strong>: Khi một  người ăn năn tội và tin nhận Chúa Jesus,  đời sống người đó được đổi  mới. Trước khi tin Chúa, họ nói những lời lẽ  không đẹp (thô tục, lỗ mảng, nói dối, nói  hành người khác v.v …) nhưng sau khi tin Chúa, người  ấy được đổi mới, chỉ nói nói những  lời lẽ tốt đẹp (nhã nhặn, lễ độ,  nói về Chúa v.v …) </p>
+  <p>Tuy nhiên, cách giải thích  trên cho thấy không có sự nhất quán trong phương  pháp giải nghĩa câu 17,18. Cần giữ sự nhất  quán trong cách giải nghĩa như sau: 5 dấu được  liệt kê chỉ có thể giải nghĩa theo một cách  mà thôi, nếu đã giải thích dấu lạ &ldquo;nói tiếng  mới&rdquo; theo ý nghĩa thuộc linh, thì cũng phải giải  thích 4 dấu lạ còn lại theo ý nghĩa thuộc linh. Chúng  ta thấy rõ 4 dấu lạ kia đều đã xãy ra  đúng theo ý nghĩa <em>văn tự </em>hay nghĩa <em>đen </em>(literal)  chứ không phải nghĩa thuộc linh. Vì thế, cách tốt  nhất để giải thích &ldquo;nói tiếng mới&rdquo; là cũng  phải giải thích theo nghĩa <em>văn  tự, </em> &ldquo;tiếng mới&rdquo; ấy  chính là tiếng <strong><em>ngoại quốc</em></strong>, theo  đúng như sự thật đã xãy ra ở Công Vụ Các  Sứ Đồ 2:4: <em>&ldquo;Hết thảy  đều được đầy dẫy Đức  Thánh Linh, khởi sự <strong>nói các  thứ tiếng khác</strong>, theo như Đức Thánh Linh cho  mình nói.&rdquo;</em>;10:46: <em>&ldquo;Vì các tín đồ nghe họ <strong>nói tiếng</strong> <strong>ngoại quốc</strong> và khen ngợi Đức Chúa Trời.&rdquo;</em>;19:6: <em>&ldquo;Sau khi Phao-lô đã đặt tay lên, thì có Đức  Thánh Linh giáng trên chúng, cho <strong>nói tiếng  ngoại quốc</strong> và lời tiên tri.&rdquo;</em>. Các môn đồ  thật đã nói &ldquo;tiếng mới&rdquo;, là tiếng ngoại quốc.</p>
+  <p>Xin lưu ý: Các tín hữu  thuộc hệ phái Ngũ Tuần cho rằng dấu lạ  nói &ldquo;tiếng mới&rdquo; trong Mác 16:17,18 nêu trên, là ân tứ nói &ldquo;tiếng  lạ&rdquo; mà Đức Thánh Linh ban cho khi họ được  Báp-têm bằng Đức Thánh Linh, tín hữu hệ phái  Ngũ Tuần tin rằng <strong>nói  tiếng lạ</strong> là một <strong>dấu</strong> (sign) để chứng minh rằng họ được  đầy dẫy Đức Thánh Linh. Tuy nhiên, dấu lạ  nói &ldquo;tiếng mới&rdquo; ở đây không phải là nói &ldquo;tiếng  lạ&rdquo; như các con cái Chúa hệ phái Ngũ Tuần đã  gán cho. Nói tiếng lạ là loại tiếng <em>thuộc linh</em> (chứ không phải  tiếng ngoại quốc), là ân tứ Đức Thánh Linh  ban cho một số tín hữu (I Cô-rinh-tô 12:30; 14:2-4) như đã  xãy ra tại Hội Thánh Cô-rinh-tô. Vì &ldquo;nói tiếng mới&rdquo;  trong Mác 16:17 là một <strong>dấu </strong>(sign)  liên quan đến sự tiếp nhận Phúc Âm đối  với những người mới nghe và tin nhận Tin  Lành, <strong>&ldquo;tiếng mới&rdquo; là</strong> <strong>dấu (sign) để chứng  minh Phúc Âm được rao giảng là chân thật trong giai  đoạn Hội Thánh mới hình thành, </strong>chứ không liên  quan gì đến sự nhóm họp thờ phượng Chúa  của những con cái Chúa trong một Hội Thánh. </p>
+  <p><em>Trần Đình Tâm</em></p>
+  <p><strong><em>Tháng 2, 2014</em></strong></p>
+<p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

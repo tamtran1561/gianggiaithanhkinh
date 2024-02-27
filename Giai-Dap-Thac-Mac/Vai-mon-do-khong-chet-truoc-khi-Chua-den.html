@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center"><strong>Vài môn đồ của Chúa sẽ không chết trước khi Chúa tái lâm.</strong></p>
+  <p align="center"><strong> </strong></p>
+  <p>Ma-thi-ơ 16:28:</p>
+  <p><em>&ldquo;Quả thật, ta nói cùng các ngươi, trong các  ngươi đứng đây, có một vài người sẽ  không chết trước khi thấy Con Người ngự  đến trong nước Ngài.&rdquo;</em></p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Tất cả các môn đồ  trong thời Chúa Jesus đã qua đời, vậy Chúa Jesus  đã nói câu trên với ý nghĩa gì?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Nếu chúng ta chú ý đến  Ma-thi-ơ 16:27, là câu Kinh Thánh đi trước lời tuyên  phán của Chúa Jesus: <em>&ldquo;Vì Con  người sẽ ngự trong sự vinh hiển của  Cha mình mà giáng xuống cùng các thiên sứ, lúc đó, Ngài sẽ  thưởng cho từng người, tùy việc họ  làm.&rdquo;</em>,  thì lời phán của  Chúa Jesus trở nên rất khó hiểu: Vì câu 27, Chúa Jesus  đang phán dạy môn đồ và các Sứ đồ về   sự kiện Ngài sẽ tái  lâm với sự vinh hiển, cùng với các thiên sứ, và  ban thưởng cho những người tin theo Ngài. Ngay sau  đó, trong câu 28, Chúa lại phán sẽ có vài người  (trong nhóm người đứng trước mặt Chúa  lúc đó) sẽ không chết, và sẽ chứng kiến Chúa  Jesus trở lại. Chúng ta biết rằng tất cả những  người đi theo Chúa Jesus lúc ấy đã qua đời!  Chúa Jesus không bao giờ nói ra điều gì SAI, vì thế,  chúng ta nên tìm hiểu Chúa Jesus muốn dạy về điều  gì khi Ngài tuyên bố: <em>&ldquo;Quả thật,  ta nói cùng các ngươi, trong các ngươi đứng  đây, có một vài kẻ sẽ không chết trước  khi thấy Con Người ngự đến trong nước  Ngài (His Kingdom).&rdquo;</em></p>
+  <p>Cách giải thích tốt  nhất là căn cứ vào văn mạch Kinh Thánh đi sau  lời phán của Chúa Jesus. Ma-thi-ơ 17:1-8 là phần  văn mạch đi liền sau Ma-thi-ơ 16:28. Ma-thi-ơ  17:1-8 là câu chuện Chúa Jesus hóa hình: <em>&ldquo;Khỏi sáu ngày, Đức Chúa Jêsus đem Phi-e-rơ,  Gia-cơ, và Giăng là em Gia-cơ, cùng Ngài đi tẻ lên  núi cao. Ngài biến hóa trước mặt các người ấy  mặt Ngài sáng lòa như mặt trời, áo Ngài trắng  như ánh sáng. Nầy, có Môi-se và Ê-li hiện đến, nói  chuyện cùng Ngài</em>.&rdquo; (Ma-thi-ơ 17:1-3).</p>
+  <p>Quang cảnh Chúa Jesus hóa  hình (transfiguration) bao gồm các yếu tố sau:</p>
+  <p>1. Diện mạo của  Chúa Jesus: Mặt Ngài sáng lòa như mặt trời, áo Ngài trắng  như ánh sáng. </p>
+  <p>2. Sự hiện diện  của Môi-se: Môi-se đã qua đời, thân thể ông  chưa được sống lại và chưa được  biến hóa (chờ sống lại và biến hóa trong thời  kỳ sau cùng), nhưng lại hiện diện với Chúa  Jesus với <em>thân thể</em> thuộc  linh, là thân thể <strong>sẽ </strong>được  biến hóa, là thân thể sẽ sống với Chúa Jesus  trong Vương quốc của Ngài (His Kingdom). </p>
+  <p>3. Sự hiện diện  của Ê-li: Ê-li không chết như Môi-se nhưng được  cất lên trời, cho thấy thân thể của ông đã  được biến hóa vào lúc cất lên (để thích  hợp với sự sống trên trời).</p>
+  <p>Cả ba yếu tố  trên cho thấy cảnh tượng hóa hình trên núi là một  phần của <strong>cảnh tượng  về nước của Chúa Jesus</strong> (His Kingdom) mà Ngài muốn  cho một vài người trong số các sứ đồ của  Ngài chứng kiến trước.</p>
+  <p>Chúng ta lưu ý: chỉ có  3 Sứ đồ trong số 12 Sứ đồ (kể cả  các môn đồ) là Phi-e-rơ, Gia-cơ và Giăng là  được Chúa Jesus gọi riêng ra và được dẫn  lên núi để chứng kiến cảnh tượng hóa  hình mà thôi, đúng như lời Chúa phán: &ldquo;… <em>trong các ngươi đứng đây, có một <strong>vài người</strong> sẽ không chết  trước khi thấy Con Người ngự đến  trong nước Ngài.&rdquo;. </em>Thật vậy, Phi-e-rơ,  Gia-cơ và Giăng là 3 người, trước khi chết,  đã thấy được Chúa Jesus đến trong nước  của Ngài. </p>
+  <p>Cuối cùng, trong II  Phi-e-rơ 1:16-18, Sứ đồ Phi-e-rơ kể lại  kinh nghiệm của ông về ngày ông được &ldquo;chứng  kiến&rdquo; sự <em>tái lâm của  Chúa Jesus</em> qua cảnh tượng Chúa Jesus hóa hình trên núi:<em> &ldquo;Vả, khi chúng tôi (ông kể thêm  Gia-cơ và Giăng) đã làm cho anh em biết <strong>quyền phép và sự</strong> <strong>đến của Đức  Chúa Jêsus Christ chúng ta,</strong> thì chẳng phải là theo những  chuyện khéo đặt để, bèn là <strong>chính mắt chúng tôi đã ngó thấy sự oai nghiêm  Ngài</strong>. Vì Ngài đã nhận lãnh sự tôn trọng vinh hiển  từ nơi Đức Chúa Trời, Cha Ngài, khi Đấng  tôn nghiêm rất cao phán cùng Ngài rằng: &quot;Nầy là Con yêu  dấu của ta, đẹp lòng ta mọi đường.&quot; <strong>Chính chúng tôi cũng từng  nghe tiếng ấy đến từ trời, lúc chúng tôi ở  với Ngài trên hòn núi thánh.</strong>&rdquo;</em></p>
+  <p><em>Trần Đình Tâm</em></p>
+  <p>Tháng 2, 2014</p>
+<p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

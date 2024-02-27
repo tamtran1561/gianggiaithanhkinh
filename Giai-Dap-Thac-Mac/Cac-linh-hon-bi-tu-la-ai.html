@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+	font-size: 11pt;
+	text-align: justify;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 12pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="/index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center"><strong style="font-size: 12pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Các Linh Hồn bị cầm  tù là ai?</strong></p>
+  <p><strong> </strong></p>
+  <p><strong>I Phi-e-rơ 3:19:</strong></p>
+  <p><em>&ldquo;Ấy bởi đồng một linh hồn đó,  Ngài đi giảng cho các linh hồn bị tù&rdquo;</em></p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Đã có lúc Chúa Jesus giảng  cho các linh hồn bị tù, các linh hồn bị tù chỉ về  ai?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Có thể nói I Phi-e-rơ  3:19 là một trong số ít câu Kinh Thánh khó hiểu nhất  trong cả Kinh Thánh và rất khó giải thích. Hơn nữa,  các nhà giải kinh cũng đưa ra nhiều cách giải  thích khác nhau nên càng khiến cho câu Kinh Thánh nầy trở nên  rắc rối hơn.</p>
+  <p>Để nắm bắt  được nội dung chính, chúng ta cần phải đọc  và suy gẫm bao gồm văn mạch đi trước và  văn mạch đi sau của I Phi-e-rơ 3:19:</p>
+  <p> &nbsp;&nbsp;&nbsp; <em>“Vả,  Đấng Christ cũng vì tội lỗi chịu chết một  lần, là Đấng công bình thay cho kẻ không công bình, để dẫn  chúng<br />
+  &nbsp; &nbsp; ta đến cùng Đức Chúa Trời; về phần  xác thịt thì Ngài đã chịu chết, nhưng về phần  linh hồn thì được sống. Ấy <br />
+  &nbsp; &nbsp; bởi đồng  một linh hồn đó, Ngài đi giảng cho<strong> </strong>các<strong> linh hồn (spirit) </strong>bị tù, tức là kẻ bội nghịch thuở  trước, về thời <br />
+  &nbsp; &nbsp; kỳ Nô-ê, khi Đức Chúa Trời nhịn  nhục chờ đợi, chiếc tàu đóng nên, trong  đó có ít người được cứu bởi nước, là &nbsp; &nbsp; &nbsp; &nbsp; chỉ có tám  người.”</em> (I Phi-e-rơ 3:18-20)</p>
+  <p>Chúng ta đối chiếu  câu 19 với các bản dịch Anh Ngữ như sau:</p>
+  <p><em>&ldquo;<strong>Ấy bởi đồng  một linh hồn đó, Ngài đi giảng cho các linh hồn  (spirit) bị tù</strong>&rdquo; </em>(Bản Truyền Thống)</p>
+  <p><em>&ldquo;In which he went and proclaimed to the <strong>spirits</strong> in prison&rdquo; </em>(Bản ESV)</p>
+  <p><em>&ldquo;</em><em>By which also he went and preached unto the <strong>spirits</strong> in prison&rdquo;</em> (Bản KJV)</p>
+  <p><em>&ldquo;</em><em>After being made alive, he went and made  proclamation to the imprisoned <strong>spirits</strong>&rdquo;</em> (Bản NIV)</p>
+  <p>Theo nội  dung của I Phi-e-rơ 3:18-20, Chúa Jesus đã đi rao giảng  cho các linh hồn bị cầm tù trong thời kỳ Nô-ê.  Như vậy, có đến 3 câu hỏi cần được  giải đáp:</p>
+  <p>1/ Các linh hồn  bị tù chỉ về ai, hay chỉ về nhóm người  nào?</p>
+  <p>2/ Chúa Jesus  rao giảng về điều gì?</p>
+  <p>3/ Lúc nào  Chúa Jesus rao giảng?</p>
+  <p>Cả 3 câu  hỏi trên cần được giải đáp với sự  nhất quán trong cách giải thích, với toàn bộ Kinh Thánh  làm nền tảng, nhất là đối với câu hỏi  thứ nhất.</p>
+  <p><strong>1. Các linh hồn (spirits) bị tù  là ai? </strong></p>
+  <p>Có 4 yếu  tố liên quan đến nhau mà chúng cần tìm hiểu: 1/  Linh hồn; 2/ bị cầm tù; 3/ bội nghịch; 4/ Thời  kỳ Nô-ê.</p>
+  <p>a) <u>Linh Hồn</u> (<strong>spirit</strong>): </p>
+  <p>Bản Kinh  Thánh Việt Ngữ Truyền Thống dịch &ldquo;spirit&rdquo; trong I  Phi-e-rơ 3:19 là <em>&ldquo;linh hồn&rdquo; </em>thì  không đúng, nên dịch là <em>&ldquo;<strong>linh</strong>&rdquo;</em> (chỉ về <em>thể linh</em>, spirit) thì đúng hơn,  vì &ldquo;linh hồn&rdquo; (soul), khác với &ldquo;spirit&rdquo;. Chính cách dịch  không đúng khiến cho tư tưởng chúng ta suy diễn  lệch lạc. (xin đọc I Tê-sa-lô-ni-ca 5:23 để  thấy sự phân biệt giữa &ldquo;linh&rdquo; và &ldquo;hồn&rdquo; trong con  người). Đây là một yếu tố rất quan trọng  để xác định &ldquo;linh&rdquo; chỉ về ai. </p>
+  <p>Từ ngữ  &ldquo;linh&rdquo; (spirit) theo ngôn ngữ gốc Hy Lạp là <strong><em>pneuma </em></strong>có nhiều nghĩa như: Hơi thở, gió … Tuy  nhiên, chúng ta không cần phải tìm hiểu tất cả  các nghĩa của <em>pneuma </em>và tất  cả các câu Kinh Thánh dùng từ ngữ đó. Chúng ta chỉ  cần chú ý đến vài điểm quan trọng sau:</p>
+  <p>+ Theo I  Tê-sa-lô-ni-ca 5:23: <em>&ldquo;</em><em>nguyền xin <u>tâm thần</u>, <u>linh  hồn</u>, và <u>thân thể</u> của anh em đều  được giữ vẹn&rdquo;</em>, cho thấy <em>con  người</em> bao gồm 3 phần: <em>thể xác</em> (body), <em>tâm thần</em> hay còn gọi là <em>tâm linh</em> (spirit) và <em>linh hồn</em> (soul).  Xin chú ý quan trọng: Loài người <strong>CÓ</strong> <em>spirit</em> (có <em>tâm linh</em>), nhưng <strong>loài người không phải là  thể linh</strong> (spirit), vì Chúa tạo nên loài người có  thân xác <em>(body),</em> mắt thấy  được, tay rờ được. Mắt chúng ta  không nhìn thấy được thể <em>linh. </em></p>
+  <p>+ Vì con  người không phải là thể <strong>linh</strong>, nên Kinh Thánh không bao giờ dùng <strong>spirit</strong> chỉ về con người. Nếu có dùng  &ldquo;spirit&rdquo; chỉ về con người là chỉ về &ldquo;tâm  linh&rdquo; của con người (như I Tê-sa-lô-ni-ca 5:23 đã  nói đến. Hê-bơ-rơ 12:23)</p>
+  <p>+ Kinh Thánh  dùng <strong>spirit</strong> (<em>thể linh</em>) chỉ về thiên sứ, ma quỷ:</p>
+  <p> &nbsp;&nbsp;&nbsp; <em>“Nói về thiên sứ thì  Ngài phán rằng: Đức Chúa Trời làm cho <strong>thiên sứ</strong> (spirit) Ngài như gió, Và tôi tớ Ngài như<br />
+  &nbsp; &nbsp; ngọn lửa.” </em> &nbsp; (Hê-bơ-rơ 1:7)</p>
+  <p> &nbsp;&nbsp;&nbsp; <em>“Các <strong>thiên sứ</strong> (angel) há chẳng  phải đều là <strong>thần</strong> (spirit) hầu việc Đức Chúa Trời, đã  được sai xuống để giúp<br />
+  &nbsp; &nbsp;việc những người sẽ hưởng cơ nghiệp  cứu rỗi hay sao?”</em> (Hê-bơ-rơ 1:14) </p>
+  <p><em>     &ldquo;</em><em>Vả, cũng một lúc ấy,  trong nhà hội có người bị <strong>tà ma</strong> (spirit) ám&rdquo;</em> (Mác 1:23)</p>
+  <p> &nbsp;&nbsp;&nbsp; <em>“Đức  Chúa Jêsus gọi mười hai môn đồ đến, ban  quyền phép trừ <strong>tà ma</strong> (spirit), và chữa các thứ tật bịnh.”</em> (Ma-<br />
+  &nbsp; &nbsp;thi-ơ 10:1)</p>
+  <p><em> &nbsp;&nbsp;&nbsp; “Khi <strong>tà ma</strong> (spirit) ra khỏi một người, thì nó  đi đến nơi khô khan kiếm chỗ nghỉ,  nhưng kiếm không được;  … Nó<br />
+  &nbsp; &nbsp;bèn lại đi, đem về bảy <strong>quỉ</strong> (spirit) khác dữ hơn nó nữa.”</em> (Ma-thi-ơ 12:43-45)</p>
+  <p> &nbsp;&nbsp;&nbsp; <em>“Tôi  thấy từ miệng rồng, miệng thú, miệng tiên  tri giả có ba <strong>tà thần</strong> (spirit) ra, giống như ếch nhái.”</em> (Khải <br />
+  &nbsp; &nbsp;Huyền  16:13)</p>
+  <p> <em> &nbsp;“Dầu vậy, chớ mừng vì các <strong>quỉ </strong>(spirit) phục các ngươi; nhưng hãy mừng vì tên các ngươi đã ghi trên thiên<br />
+  &nbsp; &nbsp;đàng”</em> (Lu-ca 10:20) &nbsp; </p>
+  <p>Như vậy, các &ldquo;linh hồn&rdquo;  hay gọi cho đúng hơn là các &ldquo;linh&rdquo; (spirits) không thể chỉ  về con người, nhưng chỉ về thiên sứ hay  ma quỷ (vì họ là thể <em>linh</em>).  Nên nhớ rằng Đức Chúa Trời tạo ra các vật <em>thấy được</em>, gọi  là thể<em> xác thịt (flesh)</em>;  Chúa cũng tạo nên các vật <em>không  thấy được, </em>gọi là thể <em>linh</em> (spirit): <em>&ldquo;Vì muôn vật đã được dựng nên trong  Ngài, bất luận trên trời, dưới đất, vật  thấy được, vật không thấy được.&rdquo; </em>(Cô-lô-se 1:16)</p>
+  <p>b) <u>Bị cầm tù, hay  bị giam giữ</u> (<strong>in prison</strong>):</p>
+  <p>Sự kiện các<em> linh</em> (spirit) <em>bị cầm tù</em>, hay bị giam cầm cho thấy  các<em> linh</em> không thể chỉ về  con người, vì Kinh Thánh không bao giờ dùng hình ảnh <em>&ldquo;bị giam cầm&rdquo;</em> (in prison)  để chỉ về con người không tin Đạo  dù họ đã qua đời. Tuy nhiên, Kinh Thánh cho biết có  một số các thiên sứ (thể linh) bị Đức  Chúa Trời giam cầm để chờ ngày phán xét:</p>
+  <p><em> &nbsp;&nbsp;&nbsp; “Vả, nếu Đức  Chúa Trời chẳng tiếc các thiên sứ đã phạm tội,  nhưng quăng vào trong vực sâu, tại đó họ bị  trói <br />
+  &nbsp; &nbsp;buộc bằng xiềng nơi tối tăm để  chờ sự phán xét.”</em> (II Phi-e-rơ 2:4)</p>
+  <p>Đó là một bằng  chứng cho thấy &ldquo;các linh bị cầm tù&rdquo; không thể là  con người, nhưng là các thiên sứ phạm tội.</p>
+  <p>Các thiên sứ bội ngịch  bị giam tại đâu? Câu trả lời sẽ được  tìm thấy trong bài &ldquo;Linh hồn con người ở đâu  sau khi chết&rdquo; trong mục &ldquo;Khảo Luận&rdquo;.</p>
+  <p>c) <u>Bội nghịch</u> (<strong>disobedient</strong>): </p>
+  <p>&ldquo;Bội nghịch&rdquo;  (disobedient) hay &ldquo;không vâng lời&quot; được áp dụng  cho sự không tuân giữ mệnh lệnh. Như vậy, thái  độ &ldquo;bội nghịch&rdquo; chỉ về hành động  của các thiên sứ <strong>không vâng  giữ mệnh lệnh </strong>của Đức Chúa Trời.  Điều nầy phù hợp với Giu-đe 6:</p>
+  <p><em> &nbsp;&nbsp;&nbsp; “</em><em>Còn các thiên sứ không giữ thứ  bậc và bỏ chỗ riêng mình thì Ngài đã dùng dây xích họ trong nơi tối tăm  đời <br />
+  &nbsp; &nbsp;đời, cầm giữ lại để chờ  sự phán xét ngày lớn.” (</em>Giu-đe 6)</p>
+  <p>Như vậy, vào một  thời điểm, có một số các thiên sứ đã  không vâng lời, không giữ đúng thứ bậc và nhiệm  vụ Chúa đặt để, nên bị Chúa giam cầm trong  nơi tối tăm cho đến ngày phán xét.</p>
+  <p>d) <u>Trong thời kỳ  Nô-ê</u>:</p>
+  <p>Thời kỳ Nô-ê là thời  kỳ có cơn nước lụt trên cả thế giới.  Thời nầy có liên quan gì đến các thiên sứ phạm  tội? Sáng Thế Ký 6:2 cho chúng ta biết có một sự  kiện rất đặc biệt đã xãy ra trước  cơn nước lụt: </p>
+  <p> &nbsp;&nbsp;&nbsp;&nbsp; <em>“Các  con trai của Đức Chúa Trời thấy con gái loài  người tốt đẹp, bèn cưới người  nào vừa lòng mình mà làm<br />
+  &nbsp; &nbsp; vợ.”</em> (Sáng Thế  Ký 6:2)</p>
+  <p>&ldquo;Các con trai của Đức  Chúa Trời&rdquo; là ai? không ai khác hơn là các thiên sứ! [Xin  đón đọc bài giải đáp câu hỏi &ldquo;Các con trai của  Đức Chúa Trời là ai?&rdquo;, bài viết nầy sẽ chứng  minh con trai của Đức Chúa Trời là các thiên sứ] </p>
+  <p><strong>2. Chú Jesus rao giảng điều gì cho các linh bị cầm  tù?</strong></p>
+  <p>Kinh Thánh không cho chúng ta biết  Chúa Jesus rao giảng hay công bố (proclaim) điều gì  đối với các thiên sứ bội nghịch. Chúng ta có  thể kết luận rằng, căn cứ trên ý nghĩa  sự chết và sống lại của Chúa Jesus, Chúa Jesus  đã công bố sự đắc thắng của Ngài trên sự  chết: <em>&ldquo;Sự chết đã  bị nuốt mất trong sự thắng. Hỡi sự chết,  sự thắng của mầy ở đâu? Hỡi sự  chết, cái nọc của mầy ở đâu?&rdquo;</em> (I  Cô-rinh-tô 15:54,55), và Chúa công bố Ngài đã đắc thắng  ma quỉ: <em>&ldquo;Vả, Con Đức  Chúa Trời đã hiện ra để hủy phá công việc  của ma quỉ.&rdquo;</em> (I Giăng 3:8) và <em>&ldquo;hầu cho Ngài bởi sự chết mình mà phá diệt  kẻ cầm quyền sự chết, là ma quỉ&rdquo; </em>(Hê-bơ-rơ  2:14)</p>
+  <p>Câu hỏi: Tại sao Chúa  Jesus công bố sự chiến thắng của Ngài cho các  thiên sứ bội nghịch? Xin giải đáp: Khác với  Sa-tan và các thiên sứ phạm tội khác đi theo Sa-tan,  chúng không bị giam cầm nhưng đang hoạt động  chung quanh chúng ta (I Phi-e-rơ 5:8), các thiên sứ nầy bị  giam cầm nên không chứng kiến được sự  chết và sống lại của Chúa Jesus. </p>
+  <p><strong>3. Chúa Jesus rao giảng vào lúc nào?</strong></p>
+  <p>Căn cứ vào câu 18 và  19<em>: &ldquo;Về phần xác thịt  thì Ngài đã chịu chết, nhưng về phần linh hồn  (spirit) thì được sống. Ấy bởi đồng  một linh hồn (spirit) đó, Ngài đi giảng cho các  linh hồn bị tù&rdquo;</em>, để có thể công bố sự  đắc thắng đối với các thiên sứ phạm  tội đang bị giam trong vực sâu, vốn là các thể <em>linh</em>, nên thật hợp lý khi  kết luận rằng Chúa Jesus sau khi Ngài chết trong phần  xác, <em>linh</em> của Chúa Jesus  đi giảng trong khoảng thời gian nào đó nằm giữa  thời điểm Chúa chết và thời điểm Ngài sống  lại. Xin lưu ý: Bản Việt Ngữ dịch là &ldquo;linh hồn&rdquo;  của Chúa Jesus thì không đúng, nên dịch là &ldquo;linh&rdquo; (spirit) thì  đúng hơn, vì Giăng 4:24a cho biết <em>&ldquo;Đức Chúa Trời là thần</em> (spirit, tức là  thể <em>linh</em>)&rdquo;</p>
+  <p><strong>* Một cách giải thích khác về các linh hồn bị  cầm tù:</strong></p>
+  <p>Một số nhà giải  nghĩa Kinh Thánh cho rằng các linh hồn bị tù không thể  là các tà linh hay ma quỉ, nhưng chỉ về các linh hồn  của những người sống trong thời kỳ  Nô-ê trước cơn nước lụt. Những người  nầy đã được Nô-ê rao giảng về sự  đoán phạt của Đức Chúa Trời bởi  cơn nước lụt sẽ xãy đến nhưng họ  không ăn năn, đúng như câu 20 cho biết: <em>&ldquo;tức là kẻ bội nghịch  thuở trước, về thời kỳ Nô-ê&rdquo;.</em> Nhân loại  thời đó không ăn năn nên phải chết trong  cơn nước lụt, nay linh hồn của họ bị  cầm tù trong địa ngục vì không vâng theo lời giảng  của Nô-ê. Nô-ê được gọi là <em>&ldquo;thầy giảng đạo công bình&rdquo;</em>  (II Phi-e-rơ 2:5). </p>
+  <p>Câu 18 và 19: <em>&ldquo;về phần xác thịt thì Ngài  đã chịu chết, nhưng về phần linh hồn  thì được sống. Ấy bởi đồng một  linh hồn đó, Ngài đi giảng cho các linh hồn bị  tù.&rdquo; </em>được giải thích như sau: <strong><em>Linh</em> (spirit) của Chúa Jesus (trước khi Ngài nhập thể)  giảng cho những người sống trong thời kỳ  Nô-ê qua môi miệng của Nô-ê.</strong></p>
+  <p>Các nhà giải kinh theo  khuynh hướng trên dùng một số câu Kinh Thánh sau  đây để làm nền tảng cho lập luận của  mình:</p>
+  <p>+ <u>I Phi-e-rơ 1:10,11</u>: <em>&ldquo;Về sự cứu rỗi  đó, các đấng tiên tri đã tìm tòi suy xét, và đã nói  tiên tri về ân điển định sẵn cho anh em:  nghĩa là tìm cho biết thời kỳ nào và thời kỳ  cách nào mà <strong>Thánh Linh Đấng  Christ ở trong lòng mình đã chỉ cho</strong>, là khi làm chứng  trước về sự đau đớn của Đấng  Christ và về sự vinh hiển sẽ theo sau.&rdquo;</em></p>
+  <p>+ <u>I Phi-e-rơ 4:6</u>: <em>&ldquo;Vì ấy bởi điều  đó mà <strong>Tin Lành cũng đã giảng  ra cho kẻ chết</strong>.&rdquo;</em></p>
+<p><strong>Nhận xét</strong>: Cách giải thích trên gặp một số  trở ngại sau:</p>
+  <p>+ Không giải thích  được tại sao &ldquo;linh hồn&rdquo; của những người  từ chối sứ điệp của Nô-ê lại bị &ldquo;giam  cầm&rdquo;?</p>
+  <p>+ Không giải thích  được tại sao sự rao giảng của Chúa  Jesus (qua môi miệng Nô-ê) chỉ giới hạn trong phạm  vi những người sống trong thời Nô-ê mà thôi?</p>
+  <p>+ Không giải thích  được tại sao Chúa Jesus lại chọn Nô-ê để  rao giảng qua môi miệng của ông trong khi nhiều nhân vật  khác, cũng rao giảng về sự ăn năn và sự  đoán phạt mà không được nói đến (ví dụ  các vị tiên tri trong Cựu Ước)</p>
+  <p>+ Về câu trích dẫn I  Phi-e-rơ 1:10,11: Câu nầy cho chúng ta biết rằng các  tiên tri Cựu Ước được Thánh Linh Đấng  Christ soi dẫn nên những gì họ viết ra, hoặc rao  giảng đều làm hình bóng về Chúa Jesus, đúng  như Lu-ca 24:26,27 đã ký thuật<em>: &ldquo;Há chẳng phải Đấng Christ chịu  thương khó thể ấy, mới được vào sự  vinh hiển mình sao? Đoạn, Ngài (Chúa Jesus) bắt đầu  từ Môi-se rồi kế đến mọi đấng  tiên tri mà cắt nghĩa cho hai người đó những lời  chỉ về Ngài trong cả Kinh Thánh.&rdquo;. </em>Như vậy,  câu Kinh Thánh I Phi-e-rơ 1:10,11 không thể đem dùng để  chứng minh Chúa Jesus (trước khi Ngài nhập thể) đã  rao giảng qua môi miệng Nô-ê.</p>
+  <p>+ Về câu trích dẫn I  Phi-e-rơ 4:6: Câu nầy không liên quan gì đến câu chuyện  Nô-ê rao giảng, vì văn mạch nằm khá xa. Hơn nữa,  Tin Lành (Tin Mừng, Gospel) được rao giảng là Tin  Lành về sự chết và sự sống lại của  Chúa Jesus để chuộc tội cho nhân loại, đã  hoàn tất tại thập tự giá. Ý nghĩa của câu  Kinh Thánh nầy không thể đem áp dụng cho những  người sống trong thời Nô-ê. Nô-ê chỉ có thể  rao ra sự đoán phạt sẽ đến nếu người  ta không ăn năn.</p>
+  <p>&nbsp;</p>
+  <p><strong>Trần Đình Tâm</strong></p>
+  <p><strong>Tháng 8, 2015</strong></p>
+  <p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="/index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

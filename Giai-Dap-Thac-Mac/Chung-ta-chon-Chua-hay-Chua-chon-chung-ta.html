@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+	text-align: justify;
+	font-size: 11pt;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <div>
+    <p align="center"><strong style="font-size: 12px"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong><strong style="font-size: 13pt">Chúng ta chọn Chúa hay Chúa chọn  chúng ta?</strong></p>
+    <p align="center"><strong> </strong></p>
+    <p><strong>Giăng 15:16:</strong></p>
+    <p><em>&ldquo;Ấy chẳng phải các ngươi đã chọn  Ta, bèn là Ta đã chọn và lập các ngươi.&rdquo;</em></p>
+    <p><strong>Câu hỏi:</strong></p>
+    <p>Trong sự cứu rỗi,  chúng ta chọn Chúa để được cứu hay Chúa  chọn chúng ta để chúng ta được cứu?</p>
+    <p><strong>Giải đáp:</strong></p>
+    <p>Sau khi tin Chúa một thời  gian ngắn hay lâu dài, con cái Chúa thường nhận thấy  mình được cứu không phải vì mình tốt lành đáng  được cứu, nhưng chỉ do ân sủng Chúa ban  cho. Con cái Chúa cảm nhận bản thân mình không xứng  đáng để hưởng ơn cứu rỗi của  Chúa, tất cả chỉ bởi tình yêu của Chúa dành cho  mình. Từ lối suy nghĩ đó, đa số con cái chúa  đều kết luận rằng <em>không phải tôi đã chọn Chúa nhưng Chúa đã chọn  tôi. </em>Hơn nữa, chẳng phải Chúa Jesus đã từng  nói trong Giăng 15:16 rằng &ldquo;Chúa đã chọn chúng ta, chứ  không phải chúng ta chọn Chúa&rdquo; đó sao!</p>
+    <p>Thật ra, chúng ta đã  hiểu sai Giăng 15:16, câu Kinh Thánh nầy cần phải  được đặt trong bối cảnh để hiểu  đúng. Khi Chúa Jesus phán: “<em>Ấy <strong>chẳng phải các  ngươi đã chọn Ta</strong>, bèn là <strong>Ta đã chọn và lập các ngươi</strong>.”</em> ấy  là <strong>Chúa phán trực tiếp với  các Sứ Đồ</strong> (lúc đó có 11 Sứ Đồ) chứ  không phải phán với chúng ta ngày nay, là những người đã nhận được sự cứu rỗi. Đúng như điều  Chúa Jesus đã nói, các Sứ Đồ đã không chọn  Chúa trước, nhưng Chúa đã kêu gọi họ trước  và họ vâng lời đi theo Ngài, sau đó một thời  gian, Chúa chọn họ và chỉ định họ làm Sứ  đồ: <em>“Đến sáng hôm  sau, Ngài gọi các môn đồ đến, chọn mười  hai người trong số họ, gọi là sứ đồ.”</em> (Lu-ca 6:13). </p>
+    <p>Như vậy, <strong>Chúng ta không thể dùng Giăng  15:16 đem áp dụng cho những người tiếp nhận  ơn cứu rỗi </strong>ngày nay, để buộc phải  đi đến kết luận rằng: <em>không phải chúng ta chọn Chúa, nhưng Chúa chọn  chúng ta</em>.  </p>
+    <p>Chúng ta biết rằng  Đức Chúa Trời yêu thương tất cả mọi  người, Ngài muốn tất cả mọi người  được cứu qua đức tin nơi Chúa Jesus,  nhưng điều đó không có nghĩa là tất cả mọi  người đều được cứu. Chỉ có  người TIN mới được cứu, ai KHÔNG TIN thì  không được cứu:<em> “Ai <strong>tin</strong> Con, thì được sự  sống đời đời; ai <strong>không chịu tin</strong> Con, thì chẳng thấy sự sống  đâu.” </em>(Giăng 3:36). Như thế, quyết định  TIN hay KHÔNG TIN là sự lựa chọn của mỗi cá nhân.  Chúa không tạo dựng con người như bộ máy bị  điều khiển bởi Ngài, nhưng Chúa ban cho con  người quyền tự do để lựa chọn  (tương tự như A-đam và Ê-va khi xưa, họ  được tự do lựa chọn giữa <strong>ăn</strong> hay <strong>không ăn </strong>trái cây biết điều thiện và  điều ác). </p>
+    <p> Xin nêu ra một ví dụ đơn sơ sau đây: Một chàng trai yêu cô gái và quyết định cầu hôn cô gái mình yêu, tuy nhiên, cô gái có quyền quyết định chấp nhận hay khước từ lời cầu hôn của chàng trai. Theo thông lệ về sự cầu hôn, người con trai chủ động đưa ra lời đề nghị cầu hôn, nhưng nếu cô gái từ chối thì cuộc hôn nhân sẽ không thành. Cũng vậy, Chúa muốn mọi người được cứu, nhưng mỗi người có quyền tự do chọn lựa: Tiếp nhận hay khước từ ơn cứu rỗi.</p>
+    <p>Kinh Thánh cho biết có nhiều  người bị hư mất (Ma-thi-ơ 7:13,14), họ bị hư mất không phải vì Chúa không chọn  họ, nhưng vì họ khước từ ơn cứu rỗi.  Cũng vậy, người tin Chúa được cứu  vì họ tiếp nhận ơn cứu rỗi, chứ không  phải Chúa chọn họ như điều khiển cái  máy. Chúa không thể là Đấng chọn người nầy  để họ được cứu, và không chọn  người kia để họ bị hư mất. </p>
+    <p>Những người tin theo sự "tiền định", cho rằng Đức Chúa Trời chọn họ để họ được cứu thông qua sự nghe và chấp nhận Tin Lành. Tuy nhiên, những ai tin theo "tiền định" sẽ không thể nào giải thích được cho hợp lý theo Kinh Thánh trường hợp những người không được cứu: Những người không được cứu sẽ biện hộ cho họ rằng: <em>"Anh được cứu vì Chúa chọn anh, còn tôi không được cứu vì Chúa không chọn tôi. Sự công bình của Đức Chúa Trời ở đâu?"</em></p>
+    <p>Đức Chúa Trời biết  trước A-đam và Ê-va sẽ phạm tội, nên từ  ban đầu, Chúa đã có kế hoạch cứu rỗi  loài người qua sự chết của Chúa Jesus trên thập  tự giá: <em>“Trước khi sáng  thế, Ngài đã <strong>chọn</strong> chúng ta <strong>trong Đấng Christ</strong>”</em> (Ê-phê-sô 1:4). Câu nầy không hề mang ý nghĩa <em>tiền định</em> như nhiều người đã lầm tưởng, câu nầy không có  nghĩa là Chúa chọn chúng ta bằng cách tác động trên tâm trí  chúng ta để buộc chúng ta phải TIN Chúa (như một  người điều khiển bộ máy), nhưng có  nghĩa là từ <strong>buổi sáng thế</strong>, Đức Chúa Trời  biết trước loài người sẽ phạm tội,  Ngài chuẩn bị sẵn Đấng giải cứu là  Chúa Jesus, và giải pháp để được cứu là  đức tin nơi Chúa Jesus:<em> &quot;vì biết rằng chẳng phải bởi vật hay hư nát như bạc hoặc   vàng mà anh em đã được chuộc khỏi sự ăn ở không ra chi của tổ   tiên truyền lại cho mình, <strong>bèn là bởi huyết báu Đấng Christ</strong>, dường như huyết của chiên   con không lỗi không vít, <strong>đã định sẵn trước buổi sáng thế</strong>&quot;</em> (IPhi-e-rơ 1:18-20). Như vậy, bất cứ  ai TIN Chúa Jesus hôm nay đều trở thành những người <strong>được chọn trong  Đấng Christ.</strong></p>
+    <p>Như vậy, các con cái Chúa thường làm chứng rằng: &quot;không phải tôi chọn Chúa nhưng Chúa chọn tôi&quot;, chúng ta nên hiểu đó là một câu nói dựa vào <strong>cảm xúc </strong>của chính mình, dựa vào ý nghĩ cho rằng mình không xứng đáng nhưng Chúa đã yêu mình và cứu mình. Lời làm chứng đó đúng theo cảm nhận của con người, nhưng không đúng trên thần học Thánh Kinh.</p>
+    <p><strong>Trần Đình Tâm</strong></p>
+    <p>Tháng 1, 2015</p>
+  </div>
+  <p align="center">&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

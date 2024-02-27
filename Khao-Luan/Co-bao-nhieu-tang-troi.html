@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>CÓ BAO NHIÊU TẦNG TRỜI?</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Nhiều câu Kinh Thánh nói  đến <strong>các tầng trời</strong> chỉ về số nhiều (heavens), tức là có nhiều  hơn một tầng trời:</p>
+        <blockquote>
+          <p><em>&ldquo;Khi tôi nhìn xem <u>các từng  trời</u> là công việc của ngón tay Chúa. Mặt trăng  và các ngôi
+            sao mà Chúa đã đặt.&rdquo;</em> (Thi  Thiên 8:3)</p>
+          <p><em>&ldquo;Hãy ngước mắt  lên xem <u>các từng trời</u>.&rdquo;</em> (Gióp 35:5)</p>
+          <p><em>&ldquo;Hỡi <u>các từng trời</u>, hãy nghe; hỡi đất, hãy lắng  tai.&rdquo;</em> (Ê-sai 1:2)</p>
+          <p><em>&ldquo;Đức Giê-hô-va gầm  thét từ Si-ôn; Ngài là cho vang tiếng mình ra từ  Giê-ru-sa-lem; <u>các</u>      <u>từng trời</u> và đất  đều rúng động.&rdquo;</em> (Giô-ên 3:16)</p>
+          <p><em>&ldquo;Vừa khi chịu  phép báp-tem rồi, Đức Chúa Jêsus ra khỏi nước;  bỗng chúc <u>các từng trời
+            </u>      mở ra, Ngài thấy Thánh Linh của  Đức Chúa Trời ngự xuống như chim bò câu,  đậu trên
+            Ngài.&rdquo;</em> (Ma-thi-ơ 3:16)</p>
+        </blockquote>
+        <p>Vậy có bao nhiêu tầng  trời?</p>
+        <p><strong>1. Căn nguyên của các tầng trời</strong>.</p>
+        <p>Để tìm hiểu gốc  tích của các tầng trời, cần trở lại với  cuộc sáng tạo ban đầu của Đức Chúa Trời.  Chúng ta hãy xem chuyện gì đã xãy ra trong ngày thứ hai  (second day):</p>
+        <blockquote>
+          <p><em>&ldquo;Đức Chúa Trời  lại phán rằng: Phải có một <strong>khoảng không</strong> <u>ở giữa</u> <strong>nước</strong> đặng phân rẽ          <strong>nước</strong> cách với <strong>nước</strong>.  Ngài làm nên <strong>khoảng không</strong>,  phân rẽ <strong>nước</strong> <u>ở  dưới</u> <strong>khoảng
+            không</strong> cách với <strong>nước</strong> <u>ở trên</u> <strong>khoảng không</strong>; thì có như vậy.  Đức Chúa Trời đặt tên          <strong>khoảng không</strong> là <strong>Trời  (Heaven)</strong>. Vậy, có buổi chiều và buổi mai; ấy  là ngày thứ nhì.&rdquo;        </em> (Sáng Thế Ký 1:6-8)</p>
+        </blockquote>
+        <p>Để có thể nắm  bắt được các yếu tố trong cuộc sáng tạo  được mô tả trong câu trên, xin quý vị đọc  thật kỹ lần nữa câu Kinh Thánh trên, xin chú ý đến  các chi tiết, chúng ta nghi nhận công việc Đức  Chúa Trời làm như sau:</p>
+        <p>1. Lúc ban đầu: Không  có <em>khoảng không</em> (firmament,  expanse), mà chỉ có lớp <strong><em>nước </em></strong>(waters). Chắc chắn lớp nước nầy  rất lớn (rất dầy).</p>
+        <p>2. Đức Chúa Trời  định làm một <em>khoảng  không</em> (firmament) ở <strong>chính giữa </strong>(in the midst) lớp <em>nước</em> đó: &ldquo;<em>Phải có một <strong>khoảng không</strong> <u>ở giữa</u> <strong>nước</strong> đặng phân  rẽ <strong>nước</strong> cách với <strong>nước</strong>.&rdquo; </em>(câu 6)</p>
+        <p>3. Đức Chúa Trời  tạo nên <em>khoảng không </em><strong>giữa</strong><em> lớp nước </em>đó bằng cách phân chia lớp  nước đó ra làm hai: Như vậy, có đến <strong>2 lớp nước</strong>: 1/ <em>Lớp nước nằm bên trên  khoảng không</em> và 2/ <em>Lớp  nước nằm bên dưới khoảng không</em>: &ldquo;<em>Ngài làm nên <strong>khoảng không</strong>, phân rẽ <strong>nước</strong> <u>ở dưới</u> <strong>khoảng không</strong> cách với <strong>nước</strong> <u>ở trên</u> <strong>khoảng không</strong>; thì có như vậy.&rdquo;</em> (câu 7)</p>
+        <p>4. Đức Chúa Trời  đặt tên cho <em>khoảng không</em> là <strong>Trời (Heaven)</strong></p>
+        <p>Tất cả các yếu  tố mô tả nêu trên, được minh họa bằng  hình vẽ sau:</p>
+        <p><img src="/Image/image001_0001.jpg" alt="Description: C:\Users\Tam Tran\Desktop\Untitled-1 copy.jpg" v:shapes="Picture_x0020_1" height="480" width="720" /></p>
+        <p> </p>
+        <p>Kế tiếp, trong ngày  sáng tạo thứ ba, Đức Chúa Trời tạo nên <strong>đất</strong> (Earth) và <strong>biển </strong>(sea) được  mô tả như sau:</p>
+        <blockquote>
+          <p><em>&ldquo;Đức Chúa Trời  lại phán rằng: Những <strong>nước</strong> (waters) <u>ở dưới trời</u> phải tụ lại  một nơi, và
+            phải có chỗ khô cạn bày ra;  thì có như vậy. Đức Chúa Trời đặt tên chỗ  khô cạn là <strong>đất
+              </strong>(Earth), còn nơi nước  (waters) tụ lại là <strong>biển </strong>(Seas).&rdquo;</em> (Sáng Thế Ký 1:9,10)</p>
+        </blockquote>
+        <p>Căn cứ vào câu trên,  để tạo ra <em>mặt  đất</em> (earth) và <em>biển</em> (sea), Đức Chúa Trời  làm cho <em>nước ở dưới  trời (waters under the heavens)</em>, tức là lớp <strong>nước</strong> <strong>bên dưới khoảng không </strong>(xem hình minh họa ở  trên) tụ lại một chổ theo ý muốn của Ngài:  Những chổ nước tụ lại hình thành ra <em>biển</em> (sea); còn những chổ  nước khô cạn hình thành nên <em>mặt đất</em> (earth)</p>
+        <p>Sau đó, đến ngày  sáng tạo thứ tư, Đức Chúa Trời tạo nên  mặt trời, mặt trăng, ngôi sao. Câu hỏi: Đức  Chúa Trời đặt các vật thể đó ở  đâu? Giải đáp: Chúa đặt mặt trời, mặt  trăng và các ngôi sao trong <em>khoảng  không</em><strong> </strong>(firmament) hay còn gọi  là <em>trời</em> (heaven) (xem hình minh  họa bên trên. (có bản dịch Kinh Thánh gọi là <em>bầu trời</em>):</p>
+        <blockquote>
+          <p><em>&ldquo;Đức Chúa Trời  làm nên hai vì sáng lớn; vì lớn hơn để cai trị  ban ngày, vì nhỏ hơn để cai
+            trị ban đêm; Ngài  cũng làm các ngôi sao. Đức Chúa Trời đặt các  vì đó trong <strong>khoảng
+              không trên trời </strong>(firmament  of heaven), đặng soi sáng đất.&rdquo;</em> (Sáng Thế Ký  1:16,17)</p>
+        </blockquote>
+        <p>Cuối cùng, trong ngày sáng  tạo thứ năm, Đức Chúa Trời tạo ra các  loài chim bay:</p>
+        <blockquote>
+          <p><em>&ldquo;Đức  Chúa Trời lại phán rằng: Nước phải sanh các  vật sống cho nhiều, và các loài chim
+            phải bay <strong>trên mặt đất</strong> trong<strong> khoảng không trên trời </strong>(firmament of heaven).&rdquo; </em>(Sáng
+            Thế Ký 1;20)</p>
+        </blockquote>
+        <p>Chú ý quan trọng: Đức  Chúa Trời tạo ra các loài chim bay trên trời, Chúa đặt  chúng sống được trong <em>khoảng  không trên trời, ngay <strong>bên trên mặt  đất </strong></em>(above the earth). </p>
+        <p><strong>2. Có bao nhiêu tầng trời (heaven) trong khoảng không  (firmament)?</strong></p>
+        <p>Chúng ta so sánh ngày sáng tạo  thứ tư và thứ năm: Đức Chúa Trời tạo  nên mặt trời, mặt trăng và các ngôi sao và đặt  chúng trong <em>khoảng không</em>; Chúa  cũng tạo ra các loài chim và cũng đặt chúng trong <em>khoảng không</em>, nhưng có sự  khác biệt rõ ràng như sau: Các loài chim chỉ được  Chúa đặt trong <em>khoảng  không</em> ngay <strong>bên trên mặt đất</strong> mà thôi, vì khoảng không bên trên mặt đất có chứa  nhiều khí Nitrogen (78%) và Oxigen (21%) để chúng thở  được. Ngoài ra, không có loài chim nào sống được  trong khoảng không cách rất xa mặt đất, là <em>khoảng không</em> Chúa đặt mặt  trời, mặt trăng và các ngôi sao.</p>
+        <p>Từ đó, chúng ta có thể  đi đến kết luận: <em>khoảng không</em> (hay <em>trời</em>,  heaven) mà Đức Chúa Trời tạo thành trong ngày sáng tạo  thứ hai có thể chia làm 2 <em>tầng</em>:</p>
+        <p>1. <em><strong>Tầng trời thứ nhất</strong> (first heaven)</em>: Là khoảng  không ngay bên trên mặt đất, các nhà khoa học gọi  tầng nầy là tầng <em>khí  quyển </em>(atmosphere), bao gồm lớp không khí (air) bao chung  quanh trái đất, nơi các loài chim trời sống  được. Các câu Kinh Thánh sau đây cho thấy có <em>tầng trời thứ nhất</em>:</p>
+        <blockquote>
+          <p><em>&ldquo;E cơn thạnh nộ  của Đức Giê-hô-va sẽ phừng lên cùng các  ngươi, Ngài đóng <strong>từng  trời
+            </strong> (heaven) lại, nên nỗi chẳng  có mưa nữa, đất không sanh sản: như vậy,  các ngươi sẽ vội
+            chết mất trong xứ  tốt tươi nầy, là xứ mà Đức Giê-hô-va ban  cho các ngươi.&rdquo;</em> (Phục
+            Truyền Luật Lệ Ký  11:17)</p>
+          <p><em>&ldquo;Đức Giê-hô-va sẽ  vì ngươi mở <strong>trời</strong> (heaven) ra, là kho báu của Ngài, đặng cho mưa
+            phải thì giáng xuống  đất, và ban phước cho mọi công việc của  tay ngươi.&rdquo;</em> (Phục Truyền
+            Luật Lệ Ký 28:12)</p>
+        </blockquote>
+        <p>     <em>&ldquo;Chim <strong>trên trời</strong> (heaven) và cá biển  …&rdquo;</em> (Thi Thiên 8:8)</p>
+        <blockquote>
+          <p><em>&ldquo;Kẻ  đuổi theo chúng ta thật lẹ hơn con chim ưng <strong>trên trời </strong>(heaven). Đuổi  theo chúng
+            ta trên các núi, rình rập  chúng ta trong đồng vắng.&rdquo;</em> (Ca Thương 4:19)</p>
+        </blockquote>
+        <p>2. <em><strong>Tầng trời thứ hai </strong>(second heaven)</em>: Là khoảng  không gian bên trên bầu khí quyển (nối tiếp với tầng  trời thứ nhất), là nơi có sự hiện diện  của mặt trời, mặt trăng, ngôi sao, các dãy thiên hà. Tầng  trời thứ hai là khoảng không gian bao la, xa vời vợi.  Các câu Kinh Thánh sau đây cho thấy có tầng trời  thứ hai:</p>
+        <blockquote>
+          <p><em>&ldquo;Đoạn,  Ngài dẫn người ra ngoài và phán rằng: Ngươi  hãy ngó lên <strong>trời </strong>(heaven), và  nếu
+            ngươi đếm  được các ngôi sao thì hãy đếm đi. Ngài lại  phán rằng: Dòng dõi ngươi cũng
+            sẽ như vậy.&rdquo;</em> (Sáng Thế Ký 15:5)</p>
+          <p><em>&ldquo;khi ngươi  ngước mắt lên <strong>trời</strong> (heaven) thấy mặt trời, mặt trăng, các ngôi sao, tức  là
+            toàn cả thiên binh …&rdquo; </em>(Phục  Truyền Luật Lệ Ký 4:19)</p>
+          <p><em>&ldquo;Khi  tôi nhìn xem các <strong>từng trời</strong> (heavens) là công việc của ngón tay Chúa. Mặt trăng và
+            các ngôi sao mà Chúa đã đặt.&rdquo; </em>(Thi  Thiên 8:3)</p>
+          <p><em>&ldquo;Sự tai nạn của  những ngày đó vừa mới qua, thì mặt trời liền  tối tăm, mặt trăng không
+            sáng, các ngôi sao từ trên trời  sa xuống, và thế lực của các <strong>từng trời</strong> (heavens) rúng
+            động.&rdquo;</em> (Ma-thi-ơ 24:29)</p>
+        </blockquote>
+        <p><strong>3. Tầng trời thứ ba.</strong></p>
+        <p>Chỉ có một lần  duy nhất Kinh Thánh nói đến tầng <strong>trời thứ ba </strong>(third heaven), là trường hợp  Sứ đồ Phao-lô được Chúa đem lên tầng  trời thứ ba, ông được xem thấy những gì  mà ông không được phép nói ra:</p>
+        <blockquote>
+          <p><em>&ldquo;Tôi biết một  người trong Đấng Christ, cách mười bốn  năm trước, đã được đem lên đến          <strong>từng trời thứ ba </strong>(third heaven). Tôi biết  người đó (hoặc trong thân thể người, hoặc
+            ngoài thân thể người,  tôi cũng chẳng biết, có Đức Chúa Trời biết)  được đem lên đến
+            chốn <strong>Ba-ra-đi</strong>, ở đó, nghe những lời không thể  nói, mà không có phép cho người nào
+            nói ra.&rdquo;</em> (II Cô-rinh-tô 12:2-4)</p>
+        </blockquote>
+        <p>Tầng trời thứ  ba ở đâu?</p>
+        <p>Câu Kinh Thánh nêu trên giúp  chúng ta suy luận ra các hệ quả sau:</p>
+        <p>a. Có tầng trời<em> thứ ba</em>, thì rõ ràng phải có  tầng trời <em>thứ nhất</em> và tầng trời <em>thứ hai</em>.  Suy luận nầy phù hợp với tất cả những  gì chúng tôi đã trình bày bên trên.</p>
+        <p>b. Tầng trời <em>thứ ba</em> phải là tầng trời <strong>cao hơn hết</strong>, vì là  nơi được gọi là chốn <strong>Ba-ra-đi</strong> (paradise), và vì không có chổ nào trong Kinh  Thánh nói đến tầng trời <em>thứ tư</em>.</p>
+        <p>c. Tầng trời <em>thứ ba</em> phải ở <strong>bên trên </strong>tầng trời <em>thứ hai</em>.</p>
+        <p>Trở lại với sự  sáng tạo trong ngày thứ hai, Đức Chúa Trời tạo  nên <em>khoảng không</em> (gồm tầng  trời thứ nhất và tầng trời thứ hai) ở  giữa hai lớp nước. Chúng ta đã biết lớp  nước <em>bên dưới</em> khoảng không trở thành <em>biển</em>.  Như vậy, <strong>lớp</strong> <strong>nước</strong> (waters) <strong>bên trên khoảng không chính là lớp  nước phân chia tầng trời thứ hai và tầng trời  thứ ba. </strong>Điều nầy phù hợp với sự mô  tả về khải tượng diễn ra trên trời mà  Sứ đồ Giăng được Chúa cho thấy, ông  diễn tả như sau:</p>
+        <blockquote>
+          <p><em>&ldquo;Trước  ngôi có như <strong>biển</strong> (sea)  trong ngần giống thủy tinh, còn chính giữa và chung
+            quanh có bốn con sanh vật,  đằng trước đằng sau chỗ nào cũng có  mắt.&rdquo;</em> (Khải Huyền
+            4:6)</p>
+        </blockquote>
+        <p>Trước đó,  Giăng thấy <em>&ldquo;<u>một cái cửa  mở ra trên trời</u>, và tiếng thứ nhất mà tôi  đã nghe nói với tôi, vang rầm như tiếng loa, phán  cùng tôi rằng: Hãy lên đây, ta sẽ cho ngươi thấy  điều sau nầy phải xảy đến. Tức  thì tôi bị Thánh Linh cảm hóa; thấy một ngôi đặt  tại <strong>trên trời </strong>(heaven),  trên ngôi có một Đấng đang ngồi đó.&rdquo;</em> (Khải  Huyền 4:1,2)</p>
+        <p>Như vậy, tầng trời <em>thứ ba</em> nằm bên trên lớp <em>nước</em> (nước bên  trên khoảng không), đây là lớp nước mà Khải  Huyền 4:6 gọi là <em>biển</em> trong như pha-lê mà Giăng đã nhìn thấy. </p>
+        <p>Lớp nước nầy  được Đa-vít nói đến trong Thi Thiên 148:4: <em>&ldquo;hỡi <strong>nước</strong> (waters) <u>trên các từng trời</u> (above the heavens), hãy ngợi khen Ngài!&rdquo;</em> Đây chính là lớp  nước bên trên tầng thời thứ hai. Lớp nước  ở đây không thể là nước làm ra mưa trên mặt  đất, cũng không phải là nước gây ra trận  đại lụt trong thời Nô-ê, vì lớp nước nầy  ở xa vô cùng so với mặt đất.</p>
+        <p>Hình vẽ sau đây minh họa  về ba tầng trời:</p>
+        <p> </p>
+        <p><img src="/Image/image002_0005.jpg" alt="Description: C:\Users\Tam Tran\Desktop\Ba tang troi.jpg" v:shapes="Picture_x0020_2" height="480" width="720" /></p>
+        <p> </p>
+        <p> Tầng trời thứ  ba là nơi Chúa ngự cùng với muôn vạn thiên sứ (Khải  huyền 5:11). Các câu Kinh Thánh sau đây cho thấy có tầng  trời <em>thứ ba</em>:</p>
+        <blockquote>
+          <p><em>&ldquo;Đức  Giê-hô-va đã lập ngôi Ngài trên các <strong>từng trời</strong>, Nước Ngài cai trị trên muôn  vật.&rdquo;</em>          (Thi Thiên 103:19)</p>
+          <p><em>&ldquo;Đại ý điều  chúng ta mới nói đó, là chúng ta có một thầy tế lễ  thượng phẩm (Chúa
+            Jesus), ngồi bên hữu  ngai của Đấng tôn nghiêm trong các <strong>từng trời.&rdquo;</strong></em><strong> </strong>(Hê-bơ-rơ  8:1)<strong></strong></p>
+          <p><em>&ldquo;Đấng đã xuống (Chúa Jesus) tức là Đấng  đã lên trên hết các <strong>từng  trời</strong>.&rdquo;</em> (Ê-phê-sô
+            4:10)</p>
+          <p><em>&ldquo;Bỗng chúc có muôn vàn  thiên binh với thiên sứ đó ngợi khen Đức Chúa  Trời rằng: Sáng
+            danh Chúa trên các <strong>từng trời rất cao</strong>,  Bình an dưới đất, ân trạch cho loài người!&rdquo;</em> (Lu-
+            ca 2:13,14)</p>
+        </blockquote>
+        <p><strong>4. Trời của các tầng trời (heaven of the  heavens)</strong></p>
+        <p>Trong văn chương của  người Do Thái (Hebrew), có một dạng cú pháp (syntax)  đặc biệt để mô tả một điều  gì đó vượt trội hơn tất cả, ví dụ: <em>&ldquo;Vua của các vua&rdquo;</em> (King of  kings) và <em>&ldquo;Chúa của các chúa&rdquo; </em>(Lord  of Lords) chỉ về Chúa Jesus trong Khải Huyền 19:16; <em>&ldquo;Nô lệ của các nô lệ&rdquo; </em>(Sáng  Thế Ký 9:25) chỉ về người con trai của Nô-ê  là Ca-na-an đáng bị rủa sả; hoặc &ldquo;Bài ca của  những bài ca&rdquo; (Song of songs) chỉ về sách Nhã Ca của  vua Sa-lô-môn. </p>
+        <p>Kinh Thánh cũng dùng đặc  ngữ &ldquo;trời của các từng trời&rdquo; (heaven of heavens)  chỉ về một tầng trời cao hơn hết các tầng  trời, là tầng trời cao nhất. Dễ nhận thấy  rằng <em>trời của các từng  trời </em>chỉ về <strong>tầng  trời thứ ba</strong>. Chúng ta tìm thấy Kinh Thánh sử dụng  cú pháp nầy trong các câu sau:</p>
+        <blockquote>
+          <p><em>&ldquo;Ôi!  chỉ một mình Chúa là Đức Giê-hô-va có một không  hai; Chúa đã dựng nên <strong>các từng
+            trời </strong>(heaven), và <strong>trời của các từng trời</strong> (heaven of heavens), cùng toàn cơ binh của
+            nó, trái đất và các vật  ở trên nó, biển và muôn vật ở dưới nó, Chúa  bảo tồn những vật
+            ấy, và cơ binh của  các từng trời đều thờ lạy Chúa.&rdquo;</em> (Nê-hê-mi 9:6)</p>
+          <p><em>&ldquo;Kìa,  trời và <strong>các từng trời  cao hơn trời</strong></em> (heaven of heavens, nên dịch là &ldquo;trời  của các
+            từng trời&rdquo;), <em>đất và mọi vật ở  nơi đất đều thuộc về Giê-hô-va Đức  Chúa Trời ngươi.&rdquo;</em> (Phục Truyền Luật  Lệ Ký 10:14)</p>
+          <p><em>&ldquo;Kìa,  trời, dầu đến đỗi <strong>trời của các từng trời</strong> (heaven of heavens) chẳng  có thể chứa
+            Ngài được thay,  phương chi cái đền này tôi đã cất!&rdquo;</em> (I Các  Vua 8:27)</p>
+        </blockquote>
+        <p>Khi đọc các câu Kinh Thánh có cụm từ &quot;tầng trời của các tầng trời&quot;, chúng ta nên hiểu câu đó chỉ về tầng trời thứ ba.</p>
+        <p><strong>5. Làm thế nào để nhìn thấy tầng trời  thứ ba?</strong></p>
+        <p>Ngày nay các khoa học gia về  vũ trụ đã sử dụng những viễn vọng  kính rất tối tân để quan sát bầu trời. Các  viễn vọng kính đã giúp họ nhìn thấy những <em>ngôi sao</em> hoặc vô số <em>dãy thiên hà</em> rất xa so với  trái đất. Khoảng cách xa đến nỗi phải  tính bằng vận tốc ánh sáng; thậm chí không thể  tính bằng một phút, một ngày hay một tuần,  nhưng phải tính bằng năm, tức là khoảng  đường dài mà vận tốc của ánh sáng đi  trong 1 năm:</p>
+        <p>- Vận tốc ánh sáng 1  giây (second): 300.000km (viết theo kiểu Mỹ: 300,000km) </p>
+        <p>- Vận tốc ánh sáng 1  phút: 300.000km x 60 = 18.000.000km </p>
+        <p>- Vận tốc ánh sáng 1  giờ: 18.000.000 x 60 = 1.080.000.000km</p>
+        <p>- Vận tốc ánh sáng 1  ngày: 1.080.000.000 x 24 = 25.920.000.000km</p>
+        <p>- Vận tốc ánh sáng 1  năm: 25.920.000.000 x 365 = 9.460.800.000.000km </p>
+        <p>Gần đây, các nhà thiên  văn học cho biết đã nhìn thấy hình ảnh của  một dãy thiên hà được kể là xa nhất mang tên <strong>z8_GND_5296, cách  xa trái đất 13 tỉ <em>năm  ánh sáng</em>! (Xem hình bên dưới)</strong></p>
+        <p>                             <img src="/Image/image004_0002.jpg" alt="Description: C:\Users\Tam Tran\Downloads\thien-ha-xa-nhat.jpg" v:shapes="Picture_x0020_3" height="249" width="391" /></p>
+        <p><em>     Thiên hà Z8_GND_5296 chụp  bởi Kính viễn vọng Hubble (hình của NASA, 2013)</em></p>
+        <p>Dù cho khoa học ngày nay  đã chế tạo và sẽ chế tạo các loại viễn  vọng kính tối tân nhất để có thể nhìn xa nhất  vào khoảng không gian bao la, nhưng chúng ta biết chắc  chắn rằng họ không bao giờ có thể đạt  đến được … lớp <strong>nước </strong>ngăn cách giữa tầng trời thứ  hai và tầng trời thứ ba!</p>
+        <p>Tuy nhiên, nếu Đức  Chúa Trời cho phép, chỉ trong nháy mắt, Phao-lô đã  được đem lên tầng trời thứ ba (II  Cô-rinh-tô 12:2-4); Giăng cũng được nhìn thấy tầng  trời thứ ba (Khải Huyền chương 4,5); Chấp  sự Ê-tiên, trong giây phút trước khi chết, đã nhìn &ldquo;xuyên  qua&rdquo; tầng trời thứ hai để thấy tầng trời  thứ ba: <em>&ldquo;Nhưng người,  được đầy dẫy Đức Thánh Linh, <u>mắt  ngó chăm lên trời</u>, thấy sự vinh hiển của  Đức Chúa Trời, và Đức Chúa Jêsus đứng  bên hữu Đức Chúa Trời.&rdquo;</em> (Công Vụ Các Sứ  Đồ 7:55)</p>
+        <p><strong>6. Ai có thể vào tầng trời thứ ba?</strong></p>
+        <blockquote>
+          <p><strong> </strong><em>&ldquo;Ngợi khen Đức  Chúa Trời, là Cha Đức Chúa Jêsus Christ chúng ta, Ngài lấy  lòng thương
+            xót cả thể khiến  chúng ta lại sanh, đặng chúng ta nhờ sự Đức  Chúa Jêsus Christ sống lại
+            từ trong kẻ chết  mà có sự trông cậy sống, là <strong>cơ nghiệp không hư đi, không ô uế,
+              không suy tàn, để dành  trong các từng trời</strong> cho anh em, là kẻ bởi đức  tin nhờ quyền
+            phép của Đức Chúa  Trời giữ cho, để được sự cứu  rỗi gần hiện ra trong kỳ sau rốt!&rdquo;</em> (I
+            Phi-e-rơ 1:3-5)</p>
+        </blockquote>
+        <p>Chỉ có những người  tiếp nhận ơn cứu rỗi của Chúa Jesus, là những  người được tái sanh bởi Đức Thánh  Linh, mới nhận được cơ nghiệp mà Đức  Chúa Trời dành sẵn cho họ trong tầng trời <em>thứ ba</em>. Trong thời kỳ  sau rốt, khi Chúa Jesus trở lại tiếp rước Hội  Thánh, chúng ta sẽ được ở với Chúa trong tầng  trời thứ ba. Chính Chúa Jesus hứa: <em>&ldquo;Trong nhà Cha ta (tầng trời thứ ba) có nhiều  chỗ ở; Ta đi sắm sẵn cho các ngươi một  chỗ. Khi ta đã đi, và sắm sẵn cho các  ngươi một chỗ rồi, ta sẽ trở lại  đem các ngươi đi với ta, hầu cho ta ở  đâu thì các ngươi cũng ở đó.&rdquo; </em>(Giăng  14:2,3)</p>
+        <blockquote>
+          <p><em>&ldquo;Vả,  chúng ta biết rằng nếu nhà tạm của chúng ta  dưới đất đổ nát, thì chúng ta lại có
+            nhà đời đời tại <strong>trên trời</strong>, bởi Đức  Chúa Trời, không phải bởi tay người làm ra.&rdquo;</em> (II Cô-
+            rinh-tô 5:1)</p>
+        </blockquote>
+        <p>Cuộc sống của  chúng ta trên đất rồi sẽ qua đi, nhà cửa tài  sản mà chúng ta có rồi sẽ để lại cho  người khác, cuối cùng rồi sẽ đổ nát  trong ngày sau rốt, chỉ có nhà ở trên trời, ở tầng  trời <em>thứ ba</em>, là nhà  đời đời mà Chúa dành sẵn cho chúng ta, là những  người tin nhận Ngài. </p>
+        <p> <strong><em>Tháng 7, 2014</em></strong></p>
+<p><strong></strong></p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

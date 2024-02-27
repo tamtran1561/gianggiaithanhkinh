@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong>CHÚA JESUS CÓ PHẢI LÀ ĐỨC CHÚA TRỜI?</strong></p>
+        <p align="center">Trần Đình  Tâm</p>
+        <p align="center"> </p>
+        <p>Chúa Jesus có phải là  Đức Chúa Trời? </p>
+        <p>Trước khi giải  đáp câu hỏi trên, cũng nên đặt một câu hỏi  khác cũng không kém quan trọng: Tại sao câu hỏi trên lại  được nêu ra? Vấn đề được nêu  ra vì có liên quan đến giáo lý &ldquo;Ba Ngôi Thiên Chúa&rdquo;. Có giáo phái hay  những nhóm người không chấp nhận Đức  Chúa Trời Ba Ngôi, hay Đức Chúa Trời có ba thân vị  (Đức Chúa Cha, Đức Chúa Jesus và Đức Thánh  Linh). Họ lập luận rằng giáo lý Ba Ngôi có 3 Đức  Chúa Trời, và điều nầy hoàn toàn mâu thuẫn với  Phục Truyền Luật Lệ Ký 6:4 <em>&ldquo;Hỡi Y-sơ-ra-ên! hãy nghe: <strong>Giê-hô-va Đức Chúa Trời chúng ta</strong> là <strong>Giê-hô-va có một không hai</strong>.&rdquo; </em>hay  Ê-sai 45:5: <em>&ldquo;Ta là Đức  Giê-hô-va, không có Đấng nào khác, <strong>ngoài ta không có Đức Chúa Trời nào khác </strong>nữa.&rdquo;</em>.  Vì không thể chấp nhận điều mà họ cho là mâu  thuẫn, nên nhiều người đã cố gắng chứng  minh Chúa Jesus và Đức Thánh Linh không phải là Đức  Chúa Trời.</p>
+        <p>Thật ra, chứng minh  Chúa Jesus là Đức Chúa Trời thì dễ dàng hơn nhiều  so với chứng minh Chúa Jesus không phải là Đức  Chúa Trời. Nếu chúng ta đọc Kinh Thánh với đức  tin đơn sơ như một đứa trẻ  (Ma-thi-ơ 18:3) hay với tấm lòng thuận phục Lời  Chúa như người học trò đối cùng người  thầy của mình (Ê-sai 50:4) thì dễ thấy Chúa Jesus chính  là Đức Chúa Trời mà chúng ta phải tin, vì chính Kinh  Thánh bày tỏ như vậy. Ngược lại, để  chứng minh Chúa Jesus không phải là Đức Chúa Trời,  người ta phải lý luận (có khi phải lý luận  qua nhiều tầng) mà những lý luận hay lập luận  nầy không có nền tảng Kinh Thánh, vì vậy phần kết  luận không đáng tin cậy (vấn đề nầy sẽ  được trình bày trong một bài viết khác).</p>
+        <p>Bài viết nầy không  trình bày về giáo lý &ldquo;Đức Chúa Trời Ba Ngôi&rdquo;, chỉ  xin nêu ra một số bằng chứng để chứng  minh Chúa Jesus là Đức Chúa Trời. </p>
+        <p>Mục đích của bài  viết nhằm giúp cho những ai còn đang thắc mắc  về Chúa Jesus và cung cấp thêm tài liệu cho các con cái Chúa  để đối đáp với những người phủ  nhận Chúa Jesus là Đức Chúa Trời.</p>
+        <p>&nbsp;</p>
+        <p align="center"><strong>CÁC BẰNG CHỨNG BÀY TỎ CHÚA JESUS LÀ ĐỨC CHÚA TRỜI</strong></p>
+        <p><strong>1. <u>Một số các câu Kinh Thánh</u>:</strong></p>
+        <p>a) <u>Ê-sai 9:6</u>: <em>&ldquo;Vì có một <strong>con trẻ sanh cho chúng ta</strong>, tức là một con trai  ban cho chúng ta; quyền cai trị sẽ nấy trên vai Ngài.  Ngài sẽ được xưng là Đấng Lạ Lùng,  là Đấng Mưu Luận,<strong> </strong>là <strong>Đức Chúa Trời</strong> Quyền  Năng (The Mighty God), là Cha Đời Đời, là Chúa Bình  An.</em>&rdquo;</p>
+        <p>b) <u>I Giăng 5:20</u>: <em>&ldquo;Nhưng chúng ta biết <strong>Con Đức Chúa Trờ</strong>i  đã đến, Ngài đã ban trí khôn cho chúng ta đặng  chúng ta biết Đấng chân thật, và chúng ta ở trong  Đấng chân thật, là ở trong <strong>Đức Chúa Jêsus Christ</strong>, Con của Ngài. <strong>Ấy chính Ngài là Đức Chúa  Trời</strong> chân thật và là sự sống đời đời.&rdquo;</em></p>
+        <p>c) <u>Rô-ma 9:5</u>: <em>&ldquo;là dân (dân Y-sơ-ra-ên) sanh hạ bởi  các tổ phụ, và theo phần xác, bởi dân ấy sanh ra <strong>Đấng Christ</strong>, là Đấng  trên hết mọi sự, tức <strong>là Đức Chúa Trời</strong> đáng ngợi khen đời  đời. A-men.&rdquo;</em></p>
+        <p>d) <u>Tít 2:13</u>: <em>&ldquo;</em><em>Đang  chờ đợi sự trông cậy hạnh phước của  chúng ta, và sự hiện ra của sự vinh hiển <strong>Đức Chúa Trời</strong> lớn  và Cứu Chúa chúng ta, <strong>là Đức  Chúa Jêsus Christ</strong>&rdquo;</em></p>
+        <p>Các câu Kinh Thánh trên đây chứng minh quá rõ Chúa Jesus là  Đức Chúa Trời mà không cần phải lập luận  thêm điều gì nữa!</p>
+        <p><strong>2. <u>Đối chiếu  Cựu Ước và Tân Ước</u>:</strong></p>
+        <p>Hãy đối chiếu từng đôi câu Kinh Thánh sau  đây, một trong Cựu Ước chỉ về  Giê-hô-va, và một trong Tân Ước chỉ về Chúa Jesus  để thấy sự đồng nhất giữa Đức  Chúa Trời và Chúa Jesus:</p>
+        <p>a) Đối chiếu Ê-sai 44:6 và Khải Huyền  1:17: </p>
+        <p>+ Ê-sai 44:6: &ldquo;<strong>Đức  Giê-hô-va</strong>, là Vua và Đấng Cứu chuộc của  Y-sơ-ra-ên, là Đức Giê-hô-va vạn quân, phán như vầy: <strong>Ta là đầu tiên và cuối  cùng</strong>.&rdquo; (I am the first and I am the last)</p>
+        <p>+ Khải Huyền 1:17: &ldquo;<em>&ldquo;Vừa thấy người (<strong>Chúa Jesus</strong>), tôi (Giăng) ngã xuống chân người  như chết; nhưng người đặt tay hữu  lên trên tôi, mà rằng: Đừng sợ chi, ta là <strong>Đấng</strong> <strong>trước hết và là Đấng sau cùng</strong>.&rdquo;</em> (I  am the first and the last)</p>
+        <p>b) Đối chiếu Thi  Thiên 45:6 và Hê-bơ-rơ 1:8:</p>
+        <p>+ Thi Thiên 45:6: <em>&ldquo;Hỡi <strong>Đức Chúa Trời</strong>, ngôi Chúa còn mãi đời nọ  qua đời kia; quyền bính nước Chúa là một quyền  bính ngay thẳng.&rdquo;</em></p>
+        <p>+ Hê-bơ-rơ 1:8: <em>&ldquo;Nhưng  nói về <strong>Con </strong>(<strong>Chúa Jesus</strong>) thì lại phán rằng:  Hỡi <strong>Đức Chúa Trời</strong>,  ngôi Chúa còn mãi đời nọ qua đời kia. Quyền  bính của nước Chúa là quyền bính ngay thẳng.&rdquo;</em></p>
+        <p>c) Đối chiếu Xa-cha-ri 12:10 và Khải Huyền  1:7:</p>
+        <p>+ Xa-cha-ri 12:10<em>: &ldquo;</em><strong><em>Ta</em></strong><em> (<strong>Đức  Giê-hô-va</strong>) sẽ đổ thần của ơn phước  và của sự nài xin ra trên nhà Đa-vít, và trên dân cư  Giê-ru-sa-lem; chúng nó sẽ <strong>nhìn  xem ta là Đấng chúng nó đã đâm</strong>; và chúng nó sẽ  thương khóc, như là thương khóc con trai một.&rdquo;</em></p>
+        <p>+ Khải Huyền 1:7: <em>&ldquo;Kìa, Ngài (<strong>Chúa Jesus</strong>) đến giữa những đám mây, mọi  mắt sẽ trong thấy, cả đến những kẻ <strong>đã đâm Ngài cùng trông thấy</strong>;  hết thảy các chi họ trong thế gian sẽ than khóc  vì cớ Ngài&rdquo;</em></p>
+        <p>d) Đối chiếu  Ê-sai 44:24 và Giăng 1:3:</p>
+        <p>+ Ê-sai 44:24<em>: &ldquo;Đức Giê-hô-va, là Đấng Cứu chuộc  ngươi, đã gây nên ngươi từ trong lòng mẹ,  phán như vầy: <strong>Ta là Đức  Giê-hô-va, đã làm nên mọi vật</strong>.&rdquo;</em></p>
+        <p>+ Giăng 1:3<em>: &ldquo;Muôn vật bởi <strong>Ngài </strong>(<strong>Chúa Jesus</strong>) làm nên, chẳng vật chi đã làm nên mà  không bởi Ngài.&rdquo;</em></p>
+        <p><u>Kết luận</u>:  Không thể kết luận khác hơn là Chúa Jesus trong Tân  Ước cũng là Giê-hô-va Đức Chúa Trời trong Cựu  Ước.</p>
+        <p><strong>3. <u>Ý nghĩa của &ldquo;Em-ma-nu-ên&rdquo;:</u></strong></p>
+        <p>Ê-sai 7:14 dự báo một trinh nữ sẽ chịu  thai và sẽ sanh một bé trai tên là Em-ma-nu-ên: <em>&ldquo;Vậy nên, chính Chúa sẽ ban một  điềm cho các ngươi: nầy một gái đồng  trinh sẽ chịu thai, <strong>sanh ra  một trai</strong>, và đặt tên là <strong>Em-ma-nu-ên</strong>.&rdquo;</em></p>
+        <p>600 năm sau, thiên sứ báo tin cho Giô-sép biết Ma-ri sẽ  chịu thai và sinh Chúa Jesus, ứng nghiệm lời tiên tri của  Ê-sai: <em>&ldquo;Nầy, một gái đồng  trinh sẽ chịu thai, và sanh một con trai, Rồi người  ta sẽ đặt tên con trai đó là <strong>Em-ma-nu-ên</strong>; nghĩa là: <strong>Đức  Chúa Trời ở cùng chúng ta</strong>.&rdquo; </em>(Ma-thi-ơ 1:23)</p>
+        <p>Ý nghĩa của &ldquo;Em-ma-nu-ên&rdquo; là &ldquo;Đức Chúa Trời  ở cùng chúng ta&rdquo;: Vậy, Chúa Jesus là Đức Chúa Trời  nhập thể đi vào thế giới loài người.</p>
+        <p><strong>4. <u>Lời tuyến bố  của Thô-ma trước Chúa Jesus</u>:</strong></p>
+        <p>Giăng 20:28<em>: &ldquo;Thô-ma  thưa (với Chúa Jesus) rằng: Lạy Chúa tôi và <strong>Đức Chúa Trời</strong> tôi!&rdquo;.</em></p>
+        <p>Thô-ma công nhận Chúa Jesus là Đức Chúa Trời  trước mặt các Sứ Đồ khác. Nếu Chúa  Jêsus không phải là Đức Chúa Trời, Ngài đã phải  đính chính lại lời tuyên bố của Thô-ma. Thế  nhưng ngày nay, vẫn có người cố gắng giải  thích rằng ông Thô-ma không có ý nói Chúa Jesus là Đức Chúa Trời.</p>
+        <p><strong>5. <u>Chúa Jesus là hình ảnh  (image) của Đức Chúa Trời</u>:</strong></p>
+        <p>a) II Cô-rinh-tô 4:4<em>: </em></p>
+        <p><em>&ldquo;cho những kẻ chẳng  tin mà chúa đời nầy đã làm mù lòng họ, hầu  cho họ không trông thấy sự vinh hiển chói lói của  Tin Lành <strong>Đấng Christ</strong>, <strong>là ảnh tượng của  Đức Chúa Trời </strong>(</em><strong><em>who</em></strong><em> <strong>is the image of God</strong>)&rdquo;</em></p>
+        <p>Chúa Jesus là hình ảnh của Đức  Chúa Trời (who is image of God)</p>
+        <p>b) Chúa Jesus phán: <em>&ldquo;</em><em>Còn ai <strong>thấy ta</strong>, là <strong>thấy Đấng</strong> đã sai ta đến (Đức  Chúa Trời)&rdquo;</em> (Giăng 12:45) </p>
+        <p>c) Phi-líp hỏi Chúa Jesus: <em>&ldquo;Xin chỉ Cha cho chúng tôi&rdquo;</em> (Giăng 14:8). Chúa Jesus trả lời: <em>&ldquo;Ai đã <strong>thấy Ta</strong> tức là <strong>thấy Cha</strong>.&rdquo; </em>(Giăng  14:9)</p>
+        <p>d) Cô-lô-se 1:15:</p>
+        <p><em>&ldquo;Ấy  chính Ngài (Chúa Jesus) là <strong>hình ảnh  của Đức Chúa Trời </strong>không thấy được.&rdquo;</em></p>
+        <p><strong>6. <u>Quyền tha tội của Chúa Jesus</u>:</strong></p>
+        <p>Chúa Jesus phán với người bại liệt  trước khi Ngài chữa lành: <em>&ldquo;Đức  Chúa Jêsus thấy đức tin của họ, bèn phán rằng:  Hỡi người, <strong>tội lỗi  ngươi đã được tha</strong>.&rdquo; </em>(Lu-ca 5:20)</p>
+        <p>Sau khi nghe Chúa  phán như thế, giới lãnh đạo Do Thái, gồm các  thầy thông giáo và người Pha-ri-si bàn luận với  nhau: &ldquo;<em>Người nầy là ai  mà nói <strong>phạm thượng</strong> vậy? Ngoài <strong>Đức Chúa Trời</strong>,  há có ai tha tội được sao?&rdquo; </em>(Lu-ca 5:21)</p>
+        <p>Người  Do Thái cho rằng Chúa Jesus phạm thượng vì chỉ có  Đức Chúa Trời mới có quyền tha tội cho loài  người. Nhưng Chúa Jesus có quyền tha tội vì Ngài là  Đức Chúa Trời.</p>
+        <p>Chúa Jesus đã  nói với người phụ nữ bị bắt quả  tang phạm tội ngoại tình<em>:  &ldquo;</em><em>Ta cũng không định  tội người; hãy đi, đừng phạm tội nữa.&rdquo;</em> (Giăng 8:11)</p>
+        <p><strong>7. <u>Ý nghĩa của  &ldquo;Con Đức Chúa Trời</u>&rdquo;</strong></p>
+        <p>Cụm từ &ldquo;Con Đức Chúa Trời&rdquo; được  dùng nhiều trong Tân Ước, để chỉ về  Chúa Jesus. Có nhiều người thật rất ngớ ngẩn  khi cho rằng vì Chúa Jesus là &ldquo;Con&rdquo; thì không thể nào là Đức  Chúa Trời được; &ldquo;Con&rdquo; không thể nào bằng  &ldquo;Cha&rdquo; được!! Chúng ta cần phải hiểu theo cách  của người Do Thái chứ không phải cách người  Việt Nam! Đây là một thuật ngữ đặc biệt  của người Do Thái. Người Do Thái thì hiểu  ngay &ldquo;Con Đức Chúa Trời&rdquo; có nghĩa là &ldquo;Đức Chúa  Trời&rdquo;:</p>
+        <p>a) Câu chuyện Chúa Jesus bị bắt và chịu xét xử  trong nhà thầy cả thượng phẫm Cai-phe sẽ  giúp chúng ta hiểu rõ ý nghĩa của &ldquo;Con Đức Chúa Trời&rdquo;: </p>
+        <p>Cai-phe thách thức Chúa Jesus: <em>&quot;Ta khiến  ngươi chỉ Đức Chúa Trời hằng sống  mà thề, hãy nói cho</em> <em>chúng ta, ngươi có phải là  Đấng Christ, <strong>Con Đức Chúa Trời</strong> chăng? </em></p>
+        <p><em>Đức Chúa Jêsus đáp rằng: Thật như lời; vả lại, ta nói cùng các  ngươi, về sau các ngươi sẽ thấy Con  người ngồi bên hữu quyền phép Đức Chúa  Trời, và ngự trên mây từ trời mà xuống.  </em></p>
+        <p><em>Thầy cả thượng phẩm bèn xé áo mình mà nói  rằng: Nó đã nói <strong>phạm thượng</strong>; chúng ta còn cần  gì người làm chứng nữa sao. Các ngươi vừa  nghe lời <strong>phạm thượng</strong> đó, thì nghĩ làm sao?  Chúng trả lời rằng: Nó  đáng chết!&quot; </em>(Ma-thi-ơ 26:63-65)</p>
+        <p>Giới lãnh đạo Do-Thái hiểu rõ &quot;Con Đức  Chúa Trời&quot; có nghĩa là <strong>Đức  Chúa Trời trong thân xác loài người</strong> nên họ thách thức  Chúa Jesus trả lời câu họ hỏi. Sau khi Chúa Jesus công  nhận chính Ngài là &quot;Con Đức Chúa Trời&quot;, họ  nói Chúa Jesus phạm thượng.</p>
+        <p>b) So sánh và đối chiếu 3 câu Kinh Thánh sau:</p>
+        <p>+ Câu 1: <em>&quot;Ban đầu có <strong>Ngôi Lời</strong>, Ngôi Lời ở  cùng Đức Chúa Trời, và <strong>Ngôi  Lời là Đức Chúa Trời</strong>.&quot; (Giăng 1:1)</em></p>
+        <p>+ Câu 2:  &quot; <strong>Ngôi Lời đã trở nên xác thịt</strong>, ở giữa  chúng ta, đầy ơn và lẽ thật; chúng ta đã ngắm  xem sự vinh hiển của Ngài, thật như vinh hiển  của <strong>Con</strong> một đến từ nơi Cha.&quot;  (Giăng 1:14)</p>
+        <p>+ Câu 3:<em> &quot;Thiên sứ  truyền rằng: Đức Thánh Linh sẽ đến trên  ngươi (bà Ma-ri), và quyền phép Đấng Rất Cao  sẽ che phủ ngươi dưới bóng mình, cho nên <strong>con thánh sanh ra </strong>(Chúa Jesus),  phải xưng là <strong>Con  Đức Chúa Trời</strong>.&quot;</em>  <em>(Lu-ca 1:35)</em></p>
+        <p>Đối chiếu câu 1 và câu 2, chúng ta kết luận  như sau: <strong>Ngôi Lời là Đức  Chúa Trời</strong>. Ngôi Lời đã trở nên xác thịt, ở  giữa chúng ta. Vì Chúa Jesus mang lấy thân xác loài người  (nhập thể) sống giữa loài người, nên <strong>Chúa Jesus là Ngôi Lời</strong>; mà Ngôi Lời  là Đức Chúa Trời; như vậy, <strong>Chúa Jesus phải là Đức Chúa Trời</strong>.</p>
+        <p>Đối chiếu câu 2 và câu 3: <strong>Chúa Jesus</strong> <strong>sinh ra</strong> phải  được gọi là <strong>Con  Đức Chúa Trời</strong>. Con Đức Chúa Trời  cũng được gọi là <strong>Ngôi Lời.</strong></p>
+        <p>Tóm lại, qua 3 câu Kinh Thánh trên, chúng ta kết luận:  Chúa Jesus<strong> </strong>là<strong> Con Đức Chúa Trời </strong>có nghĩa là<strong> Chúa Jesus là Đức Chúa Trời  trong thân xác con người</strong>.</p>
+        <p><strong>8. <u>Chúa Jesus tự nhận  Ngài là Đức Chúa Trời</u>:</strong></p>
+        <p>a) Chúa Jesus nói  với người Do Thái: <em>&ldquo;<strong>Ta với Cha là một</strong>&rdquo;</em> (Giăng 10:30)</p>
+        <p>Người Do Thái hiểu ngay Chúa Jesus muốn nói <strong>Ngài là Đức Chúa Trời</strong>,  bằng chứng nằm trong trong các câu tiếp theo:</p>
+        <p>Giăng 10:31-33: <em>&ldquo;Người  Giu-đa lại <u>lượm đá đặng ném Ngài</u>.  Đức Chúa Jêsus phán rằng: Ta đã làm trước mắt  các ngươi lắm việc lành bởi Cha đến; vì việc  chi mà các ngươi ném đá ta? Người Giu-đa trả  lời rằng: Ấy chẳng phải vì một việc  lành mà chúng ta ném đá ngươi, nhưng vì <strong>lỗi</strong> <strong>lộng ngôn</strong>: ngươi là người, mà <strong>tự xưng là Đức Chúa  Trời</strong>.&rdquo;</em></p>
+        <p>Quá rõ ràng: Chúa Jesus nói &ldquo;Ta với Cha là một&rdquo; có  nhĩa là &ldquo;Ta là Đức Chúa Trời&rdquo;</p>
+        <p>b) Một lần khác Chúa Jesus tuyên bố với  người Do Thái: <em>&ldquo;Đức  Chúa Jêsus đáp rằng: Quả thật, quả thật, ta  nói cùng các ngươi, <strong>trước  khi chưa có Áp-ra-ham, đã có ta.&rdquo;</strong></em><strong>  </strong>(before Abraham was, <strong>I am</strong>) (Giăng 8:58)</p>
+        <p>Đối với người Việt Nam, lời nói  của Chúa Jesus nêu trên có vẻ khó hiểu, không liên quan gì  đến mục đích chứng tỏ Ngài là Đức  Chúa Trời và như thế không chứng minh được  Ngài là Đức Chúa Trời. Tuy nhiên, đối với  người Do Thái thì trái lại, họ hiểu ngay Chúa  Jesus tuyên bố <strong>Ngài là Đức  Chúa Trời</strong>.  </p>
+        <p>Xin Chú ý: Chúa Jesus không nói &ldquo;Before Abraham was, <strong>I was.</strong>&rdquo;, nhưng Chúa nói &ldquo;Before  Abraham was, <strong>I am.</strong>&rdquo; &ldquo;I am&rdquo; trong Hy  văn là <em>&ldquo;Egō eimi&rdquo;</em> cùng ý  nghĩa với <em>&ldquo;hāyāh&rdquo; </em>trong  tiếng Hebrew, được thấy trong lời tuyên bố  của Đức Chúa Trời về chính Ngài cho Môi-se biết  khi ông nhìn thấy bụi gai cháy: &ldquo;<strong>Đức Chúa Trời</strong> phán rằng: Ta là Đấng <strong>Tự Hữu Hằng Hữu&rdquo; </strong>(I AM WHO <strong>I AM</strong>) (Xuất  Ê-díp-tô Ký 3;14)</p>
+        <p>Như vậy, Chúa Jesus nói Ngài là Đấng &ldquo;I AM&rdquo; (Tự  Hữu Hằng Hữu), bản Kinh Thánh Việt ngữ phần  Tân Ước là <em>&ldquo;đã có ta&rdquo;</em> (Giăng 8:58), cho thấy Ngài tự nhận mình là Đức  Chúa Trời. Chính vì lời tuyên xưng đó mà dân Do Thái tức  giận lấy đá ném Chúa Jesus, Giăng 8:59 chép: <em>&ldquo;Bấy giờ chúng lấy đá  đặng quăng vào Ngài.&rdquo; </em></p>
+        <p><strong>9. <u>Chúa Jesus chấp  nhận cho loài người thờ lạy Ngài</u>:</strong></p>
+        <p>Chúa Jesus chấp nhận cho con người thờ lạy  Ngài, điều nầy chứng tỏ rằng Ngài là Đức  Chúa Trời:</p>
+        <p>+ Các môn đồ thờ lạy Chúa Jesus:</p>
+        <p>Ma-thi-ơ 14:33: <em>&ldquo;Các  người trong thuyền bèn đến <strong>quì lạy</strong> Ngài mà nói rằng: Thầy thật là Con  Đức Chúa Trời!&rdquo;</em></p>
+        <p>+ Các phụ nữ thờ lạy Chúa Jesus:</p>
+        <p>Ma-thi-ơ 28:9: <em>&ldquo;Đức  Chúa Jêsus gặp hai người đàn bà đó, thì phán rằng:  Mừng các ngươi! Hai người cùng đến gần  ôm chân Ngài, và <strong>thờ lạy</strong> Ngài.&rdquo;</em></p>
+        <p><em>+</em> Các Sứ Đồ thờ lạy  Ngài:</p>
+        <p>Ma-thi-ơ 28:17: <em>&ldquo;Khi môn  đồ thấy Ngài, thì <strong>thờ  lạy</strong> Ngài&rdquo;</em></p>
+        <p>+ Người mù được chữa lành thờ lạy  Chúa Jesus:</p>
+        <p>Giăng 9:38: <em>&ldquo;Người  thưa rằng: Lạy Chúa, tôi tin; bèn <strong>sấp mình xuống</strong> (worshiped) trước mặt  Ngài.&rdquo;</em></p>
+        <p>+ Thiên sứ thờ lạy Chúa Jesus:</p>
+        <p>Hê-bơ-rơ 1:6: <em>&ldquo;Còn khi  Ngài đưa Con đầu lòng mình vào thế gian, thì phán rằng:<strong> Mọi thiên sứ của Đức  Chúa Trời phải thờ lạy Con.</strong>&rdquo;</em></p>
+        <p>Thật dễ hiểu rằng loài người chỉ  được phép thờ lạy Đức Chúa Trời mà  thôi. Nếu Chúa Jesus không phải là Đức Chúa Trời,  Ngài sẽ từ chối sự thờ lạy của con  người, như thiên sứ từ chối sự thờ  lạy của Giăng trong Khải Huyền 19:10: <em>&ldquo;Tôi bèn gieo mình xuống dưới  chân người (thiên sứ) đặng thờ lạy;  song người phán rằng: Hãy giữ lấy, <strong>đừng làm vậy</strong>; ta là bạn  tôi tớ với ngươi và với anh em ngươi là  người cùng giữ lời chứng của Đức  Chúa Jêsus. <strong>Ngươi hãy thờ  lạy Đức Chúa Trời.</strong>&rdquo;</em>. một lần khác  Giăng cũng toan thờ lạy thiên sứ, nhưng  cũng bị thiên sứ ngăn cấm: <em>&ldquo;Chính tôi là Giăng đã thấy và nghe những điều  đó. Khi nghe và thấy đoạn, tôi sấp mình xuống  dưới chân thiên sứ đã tỏ những điều  ấy cho tôi, để thờ lạy. Song người phán  rằng: <strong>Chớ làm vậy</strong>!  Ta là bạn tôi tớ với ngươi, với anh em  ngươi, là các đấng tiên tri, và với những kẻ  giữ các lời trong sách nầy. <strong>Hãy thờ phượng Đức Chúa Trời</strong>!</em>&rdquo;  (Khải Huyền 22:8,9)</p>
+        <p><strong>10. <u>Các bằng chứng khác</u>:</strong></p>
+        <p>Ngoài các bằng chứng  nêu trên, còn nhiều bằng chứng khác cho thấy Chúa Jesus  phải là Đức Chúa Trời: </p>
+        <p>a) Đời sống  thánh khiết, vô tội của Ngài (Giăng 8:46; I  Phi-e-rơ 2:22; I Giăng 3:5)</p>
+        <p>b) Chúa có quyền trên thiên  nhiên: Làm sóng gió yên lặng, đi trên mặt biển, khiến  cây vả khô héo, hóa bánh ra nhiều, biến nước thành  rượu.</p>
+        <p>c) Chúa có quyền trên bệnh  tật: Chúa chữa bệnh, chữa khỏi tật nguyền  cho rất nhiều người, kêu người chết sống  lại.</p>
+        <p>d) Chúa có quyền trên ma quỷ  (Mác 1:23-27) và có quyền ban quyền phép chữa bệnh,  đuổi quỷ cho các Sứ Đồ (Ma-thi-ơ 10:1)</p>
+        <p>e) Chúa hiểu thấu  tư tưởng của con người (Giăng 2:25; Mác  2:6-8)</p>
+        <p>f) Sự giảng dạy  đầy quyền năng của Ngài. (Ma-thi-ơ 7:29;  Giăng 7:46)</p>
+        <p>g) Sự sống lại của Ngài.</p>
+        <p> </p>
+        <p><strong><em>Tháng 11, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

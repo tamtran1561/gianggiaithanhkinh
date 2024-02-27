@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tầm quan trọng của các lời tiên tri</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.t {
+	color: #00F;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right"><a href="Tầm quan trọng của việc nghiên cứu các lời tiên tri trong Kinh Thánh.pdf"><img src="../Image/Download.jpg" width="170" height="30" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <p align="center">TẦM QUAN TRỌNG CỦA  CÁC LỜI TIÊN TRI TRONG KINH THÁNH</p>
+  <p align="center">Trần Đình  Tâm</p>
+  <p align="center">&nbsp;</p>
+  <p align="left"> <strong><!--[if !supportLineBreakNewLine]--><!--[endif]-->
+  </strong><strong>Các lời tiên  tri trong Kinh Thánh đã không được chú ý đúng mực.</strong></p>
+<p> Đa số các con dân Chúa trong các Hội  Thánh ngày nay rất ít chú ý đến việc tìm hiểu, suy  gẫm các lời tiên tri trong Kinh Thánh, chúng ta có thể nêu  lên một số nguyên do sau   đây:</p>
+  <p>+ Lý do đầu tiên có thể  kể là từ trách nhiệm của những người  giữ công tác giảng dạy trong các Hội Thánh. Nếu  những người giữ trách nhiệm giảng dạy  Thánh Kinh không quan tâm đến các lời tiên tri, không chú tâm  học hỏi, nghiên cứu để rồi chia xẻ lại  cho tín hữu thì lẽ đương nhiên, các tín hữu  cũng không có lý do gì để mà chú ý đến đề  tài nầy. Hầu hết các bài học Kinh Thánh được  giảng ra từ tòa giảng thường hướng  đến các vấn đề sống đạo là chủ  yếu; điều nầy rất tốt nhưng không phải  vì vậy mà bỏ qua việc học hỏi các sách tiên tri  trong Kinh Thánh.</p>
+  <p>+ Lý do thứ hai là vì các  sách tiên tri thường khó hiểu. Nhận xét nầy  đúng vì lời tiên tri về ngày sau cùng là một chủ  đề khó hiểu nên khó giải thích. Sách Khải Huyền  là một ví dụ, có quá nhiều biểu tượng để  có thể hiểu đúng. Các sách tiên tri trong Cựu Ước  cũng chứa đựng nhiều lời tiên tri mầu  nhiệm khó hiểu. Chính vì sự khó khăn trong việc thông  giải các lời tiên tri đã khiến cho con dân Chúa cũng  như các vị giảng dạy Kinh Thánh xa lánh các sách tiên  tri, vì cho rằng sự giải thích sai ý nghĩa của lời  tiên tri khiến người nghe cũng hiểu sai, từ  đó đưa đến quan niệm cho rằng chẳng  thà là không biết còn hơn là biết không đúng! Tuy nhiên sự  khó hiểu của các lời tiên tri không có nghĩa là chúng ta  nên tránh xa nó. Đức Chúa Trời không bao giờ vừa  ban cho chúng ta các sách tiên tri và đồng thời cũng  không muốn chúng ta hiểu biết các lời tiên tri ấy!  Ngài muốn chúng ta đọc, nghe và giữ vào lòng những  lời tiên tri trong sách Khải Huyền (Khải Huyền  1:3; 22:7).</p>
+  <p>+ Lý do thứ ba, là quan niệm  cho rằng các lời tiên tri về ngày sau cùng không quan trọng,  không thực tế nên không cần thiết phải để  thì giờ nghiên cứu làm chi, vì… chương trình mà Đức  Chúa Trời đã dự định sẽ xãy ra thì sẽ phải  xãy ra! Sự hiểu biết lời tiên tri không làm thay đổi  được những gì Chúa đã định trước!  Vả lại, các con dân Chúa đều cho rằng một  khi đã tin nhận Chúa Jesus rồi thì chắc sẽ  được cứu! Không cần phải bận tâm đến  các lời tiên tri vốn đã khó hiểu mà cũng chưa  chắc đã hiểu đúng! Chúng ta đừng quên rằng  Chúa Jesus thường xuyên cảnh báo các môn đồ: &ldquo;<em>hãy tỉnh thức, vì các  ngươi không biết ngày nào Chúa mình sẽ đến</em>&rdquo;  hay &ldquo;<em>các ngươi phải chực  cho sẵn</em>&rdquo; (Ma-thi-ơ 24:42,44; 25:10,13). Nếu chúng ta cho rằng  khi Chúa trở lại mình sẽ được cứu,  điều nầy không liên quan gì đến việc bắt  buộc phải tìm hiểu các lời tiên tri; nếu  đúng như vậy thì tại sao Chúa Jesus cảnh báo chúng  ta phải &ldquo;tỉnh thức&rdquo; và &ldquo;chực cho sẵn&rdquo;??? </p>
+  <p>+ Lý do thứ tư, là có  nhiều cách giải nghĩa khác nhau về một lời  tiên tri nào đó. Một số người đã thành thật  chú tâm vào việc học hỏi một vấn đề  nào đó, và nhận được những sự giải  nghĩa khác nhau, điều nầy có thể làm nản lòng  những ai bắt đầu tìm hiểu. Tuy vậy, không  nên để cho điều nầy cản trở lòng nhiệt  tình muốn hiểu biết Lời Chúa. Những người  giải nghĩa cũng như người lắng nghe, cả  hai cần có tinh thần khao khát tìm kiếm chân lý và tấm  lòng khiêm cung trước mặt Chúa, thì chắc mới  được Đức Thánh Linh soi dẫn để hiểu  được lời mầu nhiệm.</p>
+  <p>+ Cuối cùng, là có quan niệm  cho rằng công tác truyền bá Phúc Âm cho người đang  hư mất thì quan trọng hơn việc nghiên cứu các  lời tiên tri. Quan niệm nầy thật sự khiến  cho nhiều Cơ-đốc nhân dù có tinh thần sốt sắng  hầu việc Chúa, cũng đã tỏ ra hững hờ với  các lời tiên tri. Rao truyền Tin Lành là điều đúng,  nhưng chúng ta cần nhận ra rằng sự hiểu biết  lời tiên tri sẽ giúp rất nhiều trong sự truyền  giảng Tin Lành, các lời tiên tri sẽ hổ trợ rất  tốt cho công tác truyền giảng, lời tiên tri có tác dụng  kêu gọi tội nhân ăn năn tin nhận Chúa Jesus.</p>
+  <p><strong>Tại sao chúng ta cần nghiên cứu các lời tiên  tri trong Kinh Thánh.</strong></p>
+  <p>Sự nghiên cứu các lời  tiên tri là điều cần thiết và mang đến nhiều  lợi ích cho chúng ta hơn chúng ta thường suy tưởng.  Chúng ta có thể kể ra những lợi ích sau:</p>
+  <p>+ Các lời tiên tri là một  phần trong toàn bộ Lời của Đức Chúa Trời  mà chúng ta không thể cho rằng nó không quan trọng và tách  riêng nó ra. Có đến 25% trong toàn bộ các sự dạy dỗ  trong Kinh Thánh là các lời tiên tri. Có 20% trong tổng số 66  sách là các sách tiên tri. Thử lấy ra khỏi Kinh Thánh tất  cả những câu, những đoạn và những sách có  liên quan đến lời tiên tri thì Kinh Thánh còn lại những  gì? Thử tưởng tượng một người làm  nghề bác sĩ y khoa mà không hiểu biết đến 25%  các chức năng của các bộ phận trong cơ thể  con người thì liệu chúng ta có tin cậy vị bác  sĩ đó không? Khi II Ti-mô-thê 3:16 nói &ldquo;<em><u>CẢ</u> Kinh Thánh đều là bởi Đức  Chúa Trời soi dẫn, có ích cho sự dạy dỗ, bẻ  trách, sửa trị, dạy người trong sự công bình</em>&rdquo;  thì chúng ta phải hiểu rằng các sách tiên tri, các lời  tiên tri cũng được Đức Chúa Trời soi dẫn  và cũng có ích cho sự dạy dỗ, cho sự bẻ  trách, cho sự sửa trị và dạy người trong sự  công bình như những sách khác vậy.</p>
+  <p>+ Đức Chúa Trời  hứa ban phước cho những ai học hỏi các lời  tiên tri: Trong phần mở đầu của sách Khải  Huyền, có lời Chúa hứa: &ldquo;<em>Phước  cho những người đọc cùng những người  nghe lời tiên tri nầy, và giữ theo điều đã viết  ra đây. Vì thì giờ đã gần rồi</em>.&rdquo; (Khải Huyền  1:3). Chúa biết trước càng gần đến thì giờ  Chúa trở lại, sẽ có nhiều con dân Chúa thờ ơ  với các lời tiên tri nên Chúa đã kêu gọi chúng ta tìm hiểu  và vâng giữ các lời tiên tri. Những ai yêu mến Lời  Chúa thì cũng yêu mến các lời tiên tri; trong khi nghiên cứu,  suy gẫm sẽ nhận được ơn phước  thuộc linh như lời Chúa hứa. Công việc nghiên cứu  lời tiên tri là khó nhọc, cần nhiều thời gian cầu  nguyện, nhiều thời gian suy gẫm, nhiều thời  gian học hỏi hơn so với những vấn đế  khác, nhưng bù lại thì phước hạnh nhận  được sẽ dồi dào hơn. Trong phần cuối  của sách Khải Huyền, Sứ Đồ Giăng một  lần nữa, nhắc lại phước hạnh  được ban cho người người vâng giữ  các lời tiên tri<em>: &ldquo;Kìa, Ta đến  mau chóng. Phước thay cho người nào giữ những  lời tiên tri trong sách nầy.&rdquo; (22:7)</em> Làm thế nào có thể <em>&ldquo;giữ những lời tiên  tri&rdquo;</em> nếu không bắt đầu bằng việc học  hỏi các lời tiên tri một cách nghiêm túc. Rất nhiều  Cơ-đốc nhân ngày nay chưa kinh nghiệm được  những ơn phước đặc biệt mà sách Khải  Huyền mang đến vì không hết lòng tìm kiếm chân lý  từ cuốn sách mầu nhiệm nầy.</p>
+  <p>+ Các lời tiên tri giúp  chúng ta phát hiện hay phân biệt những sự dạy dỗ  sai lạc của các giáo sư giả ngày càng gia tăng  trong thời đại ngày nay. Đây là một lời tiên  tri: <em>&ldquo;Vì sẽ có một thời  kia người ta không chịu nghe đạo lành; nhưng  vì họ ham nghe những lời êm tai, theo tư dục mà  nhóm họp các giáo sư xung quanh mình&rdquo; (II Ti-mô-thê 4:3).</em> Thời  kỳ sau cùng sẽ xuất hiện nhiều giáo sư giả,  tiên tri giả chuyên giảng dạy Kinh Thánh và sẽ có nhiều  người tin theo. Những gì họ trình bày có thể thật  lấy ra từ Thánh Kinh, nhưng những gì họ giảng  dạy có thể không phải là <u>Lời của Đức  Chúa Trời</u>. </p>
+  <p>+ Các lời tiên tri đem  đến cho chúng ta sự tỉnh thức trong một thế  giới đầy cám dỗ; đem đến sự an ủi  trong cuộc sống đầy nhiễu nhương;  đem đến sức mạnh trong cuộc sống đầy  khó khăn, và đem đến niềm hy vọng cho ngày  chúng ta gặp mặt Chúa Jesus. &ldquo;<em>Anh  em đang trông đợi kỳ Đức Chúa Jesus Christ  chúng ta hiện đến, cũng chẳng thiếu một  ơn nào. Ngài sẽ khiến anh em được vững bền  cho đến cuối cùng, để khỏi bị quở  trách trong ngày của Đức Chúa Jesus Christ chúng ta</em>.&rdquo; (I  Cô-rinh-tô 1:7,8)</p>
+  <p>+ Các lời tiên tri giúp ích  trong công việc truyền Tin Lành: Trước hết, lời  tiên tri đem đến sự khích lệ cho người  rao giảng, họ hăng hái hơn trong sự làm chứng  vì biết rõ thế giới sẽ đi về đâu và biết  rõ số phận của những người không tin sẽ  ra sao. Lời tiên tri còn có tác dụng cảnh báo cho tội  nhân biết ăn năn mà tin nhận Chúa Jesus.</p>
+  <p class="t"><em>    Tháng 11 năm 2010</em></p>
+  <p align="center" class="MsoNormal" style="text-align:left">&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

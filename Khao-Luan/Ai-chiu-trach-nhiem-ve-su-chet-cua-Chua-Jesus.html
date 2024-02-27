@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <div>
+          <p align="center"><strong>AI CHỊU TRÁCH NHIỆM VỀ SỰ CHẾT CỦA CHÚA JESUS?</strong></p>
+          <p align="center">Trần Đình  Tâm</p>
+          <p align="center"> </p>
+          <p>Thập tự giá là công cụ  để tử hình phạm nhân dưới thời đế  quốc La-Mã. Phạm nhân bị đóng đinh hai bàn tay và  chân vào cây thập tự và bị treo lên cho đến khi chết.  Thông thường người bị đóng đinh không chết  ngay trong ngày bị hành hình nhưng chết sau hai ba ngày cho  đến một tuần. Người bị tử hình  theo phương cách nầy vừa phải chịu đau  đớn và vừa chịu sỉ nhục tột cùng. Chúa  Jesus đã chịu chết bởi hình phạt đóng  đinh trên thập giá.</p>
+          <p><strong>1. Ai chịu trách nhiệm về cái chết của  Chúa Jesus trên thập giá?</strong></p>
+          <p>Chúng ta thử tìm nguyên  nhân khiến Chúa Jesus phải chịu chết, hoặc ai là  người chịu trách nhiệm về cái chết của  Chúa Jesus trên thập tự giá.</p>
+          <p>a) Nguyên do đầu tiên  là sự ghen ghét của <strong>giới  lãnh đạo Do Thái</strong> đối với Chúa Jesus. Họ  là những thầy tế lễ trong đền thờ, là  những thầy dạy luật pháp và  các trưỡng  lão của dân Do Thái. Phần nhiều họ thuộc hàng  ngũ người Pha-ri-si. Những người nầy hầu  hết đều giả hình, bề ngoài làm ra vẻ đạo  đức nhưng trong lòng thì chứa đầy sự giả  dối, kiêu ngạo. Chúa Jesus thường chỉ ra sự  giả hình của họ (Ma-thi-ơ chương 23) nên họ  rất ghét Chúa Jesus và luôn tìm đủ mọi thủ đoạn  để bắt và giết Chúa Jesus: <em>&ldquo;Bấy giờ các thầy tế lễ cả và các  trưởng lão trong dân nhóm lại trong tòa thầy cả  thượng phẩm tên là Cai-phe; và bàn với nhau dùng  mưu chước gì đặng bắt Đức Chúa  Jêsus mà giết.&rdquo; </em>(Ma-thi-ơ 26:3,4); trong lúc Chúa Jesus bị  bắt và bị xét xử, chính những người nầy đã  sách động dân chúng giết Chúa Jesus: <em>&ldquo;Song các thầy tế lễ cả và các trưởng  lão xúi dục dân chúng hãy xin tha Ba-ra-ba và giết Đức  Chúa Jêsus.&rdquo;</em> (Ma-thi-ơ 27:20)</p>
+          <p>b) Một lý do khác góp phần  vào cái chết của Chúa Jesus là sự phản bội của <strong>Giu-đa Ích-ca-ri-ốt</strong>. Ông  là một trong mười hai Sứ đồ của Chúa  Jesus. Ông đã nhận 30 miếng bạc từ tay nhóm lãnh  đạo Do Thái và chính ông đã dẫn một nhóm người  do các thầy tế lễ sai đi để bắt Chúa  Jesus tại vườn Ghết-sê-ma-nê: <em>&ldquo;Bấy giờ có một người trong mười  hai sứ đồ, tên là Giu-đa Ích-ca-ri-ốt, đến  tìm các thầy tế lễ cả, mà nói rằng: Các thầy  bằng lòng trả cho tôi bao nhiêu đặng tôi sẽ nộp  người cho? Họ bèn trả cho nó ba chục bạc. Từ  lúc đó, nó tìm dịp tiện để nộp Đức  Chúa Jêsus.&rdquo;</em> (Ma-thi-ơ 26:14-16). Chúa Jesus nói Giu-đa Ích-ca-ri-ốt  là <em>&ldquo;đứa con của  sự hư mất&rdquo;</em> (Giăng 17:12)</p>
+          <p>c) <strong>Dân Do Thái</strong> cũng phải chịu trách nhiệm về  sự chết của Chúa Jesus. Trong khi Chúa Jesus chịu xét xử  trước tòa án Phi-lát, chính dân Y-sơ-ra-ên đã nghe theo lời  xúi dục của giới lãnh đạo Do Thái mà quyết  đòi xin đóng đinh chúa Jesus cho bằng được<em>: &ldquo;Phi-lát nói rằng: Vậy, còn  Jêsus gọi là Christ, thì ta sẽ xử thế nào? Chúng đều  trả lời rằng: Đóng đinh nó trên cây thập tự!  Quan hỏi: Song người nầy đã làm việc dữ  gì? chúng lại kêu la lớn hơn rằng: Đóng đinh  nó trên cây thập tự!&rdquo;</em> (Ma-thi-ơ 27:22,23)</p>
+          <p>d) <strong>Chính quyền La-mã</strong> phải gánh trách nhiệm về  sự chết của Chúa Jesus, mà người đại diện  cho La-mã để xét xử Chúa Jesus là quan tổng đốc  Phi-lát. Giới lãnh đạo Do Thái và dân Do Thái dù có muốn  Chúa Jesus phải chết trên thập giá cũng không  được vì họ không có quyền thực hiện  điều đó! Đế quốc La-mã đang cai trị  họ và chính quyền La-mã không cho phép dân bị trị thi  hành án tử hình: <em>&ldquo;Phi-lát bèn truyền  cho chúng rằng: Các ngươi hãy tự bắt lấy  người, và xử theo luật mình. Người  Giu-đa thưa rằng: Chúng tôi chẳng có phép giết ai cả.&rdquo;</em> (Giăng 18:31). Chính quyền La-mã chỉ cho phép dân Do Thái  được xử phạt các phạm nhân theo luật của  người Do Thái mà không liên quan đến án tử hình.  Như vậy, để thực hiện mục đích của  mình, giới lãnh đạo Do Thái đã tìm cách chuyển Chúa  Jesus cho tòa án La-mã xét xử. Các diển biến trong phiên tòa  xét xử Chúa Jesus được tường thuật trong  bốn sách Phúc Âm và đi đến kết cuộc Chúa  Jesus bị đóng đinh trên thập giá: <em>&ldquo;Phi-lát bèn tha tên Ba-ra-ba cho chúng; và khiến đánh  đòn Đức Chúa Jêsus, đoạn giao Ngài ra để  đóng đinh trên cây thập tự.&rdquo;</em> (Ma-thi-ơ 27:26)</p>
+          <p>e) Cho dù giới lãnh đạo  Do Thái, dân Y-sơ-ra-ên và chính quyền La-mã đã gây nên cái chết  của Chúa Jesus, nhưng trên tất cả, sự chết của  Chúa Jesus đã nằm trong chương trình của <strong>Đức Chúa Trời</strong>. Chúa  Jesus chịu chết trên thập giá là ý định của  Đức Chúa Trời để cứu rỗi nhân loại. Sứ đồ Phi-e-rơ đã nói với dân Do Thái triong ngày Lễ Ngũ Tuần như sau: <em>&ldquo;Người đó </em>(Chúa  Jesus)<em> bị nộp, <strong>theo ý định trước và  sự biết trước của Đức Chúa Trời</strong>,  các ngươi </em>(giới lãnh đạo Do Thái)<em> đã mượn tay độc  ác </em>(chính quyền La-mã)<em> mà  đóng đinh Người trên thập tự giá và giết  đi.&rdquo;</em> (Công Vụ Các Sứ Đồ 2:23). Sau đó,   Phi-e-rơ giảng cho dân Do Thái<em>:  &ldquo;Vả, Hê-rốt và Bô-xơ Phi-lát, với các dân ngoại,  cùng dân Y-sơ-ra-ên thật đã nhóm họp tại thành nầy  đặng nghịch cùng Đầy tớ thánh Ngài là Đức  Chúa Jêsus mà Ngài đã xức dầu cho, <strong>để làm mọi việc tay Ngài và ý Ngài đã  định trước</strong>.&rdquo;</em> (Công Vụ Các Sứ Đồ  4:27,28).</p>
+          <p>Sự chết của  Chúa Jesus trên thập tự giá được tiên tri qua câu  chuyện dân Do Thái bị rắn lửa cắn chết  trong sa mạc. Môi se làm một con rắn bằng đồng  treo trên cây, bất cứ người nào bị rắn cắn  mà nhìn vào con rắn đó sẽ lành bệnh, Chúa Jesus nhắc  lại cho giáo sư Ni-cô-đem hình ảnh con rắng đồng  trong Cựu Ước làm hình bóng về Ngài sẽ chịu  chết trên thập giá mà bất cứ ai tin nhận Ngài sẽ  được tha tội và hưởng ơn cứu rỗi<em>: &ldquo;Xưa Môi-se treo con rắn lên  nơi đồng vắng thể nào, thì Con người  cũng phải bị treo lên dường ấy, hầu cho  hễ ai tin đến Ngài đều được sự  sống đời đời.&rdquo; </em>(Giăng 3:14,15). Như vậy, sự  chết của Chúa Jesus nằm trong ý định của  Đức Chúa Trời.</p>
+          <p>f) Cuối cùng, vì yêu  thương chúng ta, chính <strong>Chúa  Jesus</strong> tự nguyện chọn con đường chịu  đóng đinh trên thập giá: <em>&ldquo;Chính  Ngài đã tự bỏ mình đi, lấy hình tôi tớ và trở  nên giống như loài người; Ngài đã hiện ra  như một người, tự hạ mình xuống, vâng  phục cho đến chết, thậm chí chết trên cây thập  tự.&rdquo;</em> (Phi-líp 2:7,8). Nếu Chúa Jesus không tự nguyện  chịu chết, không một ai có quyền cất mạng sống  Ngài được, chính Chúa Jesus tuyên bố: <em>&ldquo;Chẳng  có ai cất sự sống ta đi, nhưng <strong>tự ta phó cho</strong>; ta có quyền phó sự sống, và  có quyền lấy lại; ta đã lãnh mạng lịnh nầy  nơi Cha ta.&rdquo;</em> (Giăng 10:18)</p>
+          <p><strong>2. Kết luận</strong>:</p>
+          <p>Chúa Jesus chịu đóng  đinh trên thập giá nhằm hoàn thành chương chình cứu  rỗi của Đức Chúa Trời cho nhân loại. Trước  khi tắt thở trên thập giá, Chúa Jesus nói: <em>&ldquo;Mọi việc đã được  trọn&rdquo;</em> (Giăng 19:30). Công tác của Chúa Jesus đã hoàn  tất tại thập tự giá. Phần của chúng ta là  tiếp nhận sự chuộc tội của Ngài cho chúng  ta bởi <strong>đức tin</strong>. <strong>Bất cứ ai</strong> <strong>tin sẽ nhận được  ơn cứu rỗi. </strong>Kinh Thánh chép: &ldquo;<em>&ldquo;Xưa Môi-se treo con rắn lên nơi đồng vắng  thể nào, thì Con người cũng phải bị treo lên  dường ấy, hầu cho hễ <strong>ai tin đến Ngài đều được sự  sống đời đời</strong>.&rdquo; </em>(Giăng 3:14,15)</p>
+          <p><em>Tháng 9, 2014</em></p>
+          <p> </p>
+        </div>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

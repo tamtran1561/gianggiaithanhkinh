@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center">&nbsp;</p>
+<div>
+  <p align="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong style="font-size: 12pt">Tại sao con rắn làm hình  bóng về Chúa Jesus?</strong></p>
+  <p><strong> </strong></p>
+    <p><strong>Giăng 3:14,15</strong></p>
+    <p><em>&ldquo;Xưa Môi-se treo <strong>con rắn</strong> lên nơi đồng vắng thể  nào, thì <strong>Con người</strong> cũng phải bị treo lên dường ấy, hầu cho  hễ ai tin đến Ngài đều được sự  sống đời đời.&rdquo;</em></p>
+    <p><strong>Câu hỏi:</strong></p>
+    <p>Con  rắn tượng trưng cho điều ác, tại sao  Kinh Thánh dùng hình ảnh <em>con rắn</em> trong sa mạc trong thời Môi-se làm hình bóng về <em>Chúa Jesus</em>?</p>
+    <p><strong>Giải đáp:</strong></p>
+    <p>Theo  Dân Số Ký 21:4-9, dân Y-sơ-ra-ên trong khi lưu lạc trong  sa mạc, đã phạm tội chống nghịch Chúa và  Môi-se, nên Đức Chúa Trời khiến các con <em>rắn lửa</em> (fiery  serpent), là loài rắn có nọc độc sống trong sa mạc,  cắn chết rất nhiều người Y-sơ-ra-ên.  Dân Y-sơ-ra-ên ăn năn tội, Môi-se cầu xin Chúa giải  cứu họ. Đức Chúa Trời bảo Môi-se làm một <em>con rắn</em> bằng <em>đồng</em> (brass, bronze) treo lên cây sào, bất  cứ ai bị rắn cắn khi nhìn lên con rắn đồng  ấy sẽ được lành bệnh và được sống.</p>
+    <p>Chúng  ta biết <em>con rắn</em> là loài vật  Sa-tan dùng để cám dỗ Ê-va phạm tội (Sáng Thế  Ký 3:1). Con rắn làm hình bóng về Sa-tan và ma quỉ: <em>&ldquo;Con rồng lớn đó bị  quăng xuống, tức là <strong>con  rắn</strong> xưa, gọi là <strong>ma  quỉ</strong> và <strong>Sa-tan</strong>&rdquo;</em> (Khải  Huyền 12:9). Chúa Jesus dùng hình ảnh con rắn để  chỉ về bản chất của người Pha-ri-si: <em>&ldquo;Hỡi loài <strong>rắn</strong>, dòng dõi <strong>rắn</strong> lục kia, thế nào mà tránh khỏi sự đoán phạt  nơi địa ngục được?&rdquo;</em> (Ma-thi-ơ  23:33)</p>
+    <p>Tuy  nhiên, như Giăng 3:14 khẳng định, con rắn bằng  đồng treo trên cây sào làm hình bóng về Chúa Jesus, chứ  không làm hình bóng về Sa-tan hay ma quỉ.</p>
+    <p>Trong  ngôn ngữ Kinh Thánh, có một số <em>biểu tượng</em> (symbol) nhưng có <strong>hai ý nghĩa khác nhau</strong>, nên chúng  ta cần chọn một trong hai nghĩa đó, nếu không  chúng ta sẽ thấy khó hiểu. Để chọn ý  nghĩa đúng, chúng ta cần căn cứ vào văn mạch  và dựa vào nội dung của phân đoạn Kinh Thánh có chứa  biểu tượng đó. Ví dụ: I Phi-e-rơ 5:8 dùng biểu  tượng <em>&ldquo;con sư tử&rdquo;</em> để chỉ về <strong>ma quỉ</strong>: <em>&ldquo;Hãy tiết độ và tỉnh  thức: kẻ thù nghịch anh em là <strong>ma quỉ</strong>, như <strong>sư  tử</strong> rống, đi rình mò chung quanh anh em, tìm kiếm  người nào nó có thể nuốt được&rdquo;</em>, thế  nhưng, hình ảnh <em>&ldquo;con sư tử&rdquo;</em> cũng làm hình bóng về <strong>Chúa  Jesus trong </strong>Khải Huyền 5:5: <em>&ldquo;Chớ  khóc, kìa, <strong>sư tử</strong> của  chi phái Giu-đa, tức là <strong>Chồi  của vua Đa-vít</strong> (Chúa Jesus), đã thắng, thì có thể  mở quyển sách ấy và tháo bảy cái ấn ra.&rdquo; </em>Một  ví dụ khác: I Cô-rinh-tô 14:20 dùng hình ảnh &ldquo;trẻ con&rdquo;  nhưng với hai nghĩa khác nhau: <em>&ldquo;Hỡi anh em, về sự khôn sáng, chớ nên như<strong> trẻ con</strong>; nhưng về sự  gian ác, thật hãy nên như<strong> trẻ  con </strong>vậy. Còn về sự khôn sáng, hãy nên như kẻ  thành nhơn&rdquo;. </em>Ê-phê-sô 4:14 thì dạy chúng ta đừng giống  như trẻ con: <em>&ldquo;Ngài muốn  chúng ta không như <strong>trẻ con</strong> nữa, bị người ta lừa đảo, bị  mưu chước dỗ dành làm cho lầm lạc.&rdquo;</em>,  nhưng I Phi-e-rơ 2:2 lại dạy chúng ta hãy giống  như trẻ con: <em>&ldquo;Hãy ham thích sữa  thiêng liêng của đạo, như <strong>trẻ con</strong> mới đẻ vậy, hầu cho anh  em nhờ đó lớn lên mà được rỗi linh hồn&rdquo;</em></p>
+    <p>Theo  Thi Thiên 58:3,4, <strong>con rắn</strong> chỉ  về sự dối trá: <em>&ldquo;Kẻ  ác bị sai lầm từ trong tử cung. Chúng nó <strong>nói dối</strong> lầm lạc từ  khi mới lọt lòng mẹ. Nọc độc chúng nó khác  nào nọc độc <strong>con rắn</strong>;  Chúng nó tợ như <strong>rắn</strong> <strong>hổ mang</strong> điếc lấp  tai lại.&rdquo;</em>,nhưng  Ma-thi-ơ 10:16 dạy chúng ta nên khôn khéo như rắn: <em>&ldquo;Vậy, hãy khôn khéo như <strong>rắn</strong>, đơn sơ  như chim bò câu.&rdquo;</em></p>
+    <p>Tóm  lại, cùng một biểu tượng nhưng có thể gồm  2 ý nghĩa khác nhau hoặc trái ngược nhau. Do đó, sự  ứng dụng cũng khác nhau. Chúng ta chọn nghĩa  đúng bằng cách căn cứ vào văn mạch Kinh Thánh.</p>
+    <p><em>Trần Đình Tâm</em></p>
+    <p>9  tháng 4, 2017</p>
+</div>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

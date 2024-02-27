@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.N {
+	font-size: 12pt;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <div>
+      <p align="center">&nbsp;</p>
+      <p align="center"><strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Những cái chuông trên bộ áo  thầy Tế Lễ Thượng Phẩm A-rôn</strong></p>
+      <p> </p>
+      <p><strong>Xuất Ê-díp-tô Ký 28:33-35:</strong></p>
+      <p><em>&ldquo;Nơi biên dưới hãy thắt trái lựu màu tím,  đỏ điều, đỏ sặm, cùng chuông vàng nhỏ  đan tréo nhau ở vòng theo viền, nghĩa là <strong>một cái chuông</strong> rồi kế  một trái lựu, ở vòng khắp chung quanh viền áo.  Khi A-rôn hầu việc tế lễ, sẽ mặc áo  đó; và khi vào hay ra nơi thánh trước mặt Đức  Giê-hô-va, <strong>người ta sẽ</strong> <strong>nghe tiếng chuông vàng nhỏ</strong>,  và <u>A-rôn khỏi chết vậy</u>.&rdquo;</em></p>
+      <p><strong>Xuất Ê-díp-tô Ký 39:25,26:</strong></p>
+      <p><em>&ldquo;Nơi trôn áo, thắt những trái lựu bằng chỉ  xe mịn màu tím, đỏ điều, đỏ sặm; lại  làm <strong>chuông nhỏ </strong>bằng vàng  ròng, gắn giữa hai trái lựu, vòng theo chung quanh trôn áo; cứ  một trái lựu, kế <strong>một  cái chuông nhỏ</strong>, vòng theo chung quanh trôn áo dùng để hầu  việc, y như lời Đức Giê-hô-va đã phán dặn  Môi-se.&rdquo;</em></p>
+      <p><strong>Câu hỏi:</strong></p>
+      <p>Những cái chuông (bell) nhỏ  bằng vàng đính trên tua của bộ áo của thầy tế  lễ thượng phẫm A-rôn nhằm mục đích gì?</p>
+      <p><strong>Giải đáp:</strong></p>
+      <p>Thầy tế lễ  thượng phẫm A-rôn phải mặc kiểu trang phục  (garment) đặc biệt do Đức Chúa Trời chỉ  định mỗi khi vào nơi chí thánh của đền tạm.  Hình thức của bộ áo dành cho thầy tế lễ  thượng phẫm bao gồm rất nhiều chi tiết  và được mô tả rất tỉ mỉ trong Xuất  Ê-díp-tô Ký 28:6-39. Trong phần mô tả áo mặc bên ngoài, tua  (viền) áo bên dưới có đính các chuông nhỏ bằng  vàng xen kẻ với các trái lựu (pomegranate) bằng chỉ màu tím, đỏ điều  và đỏ sậm.</p>
+      <p>Mỗi khi A-rôn vào trong nơi chí thánh làm nhiệm vụ,  các chuông nhỏ đính trên áo rung lên theo cử động của  A-rôn, những người đứng bên ngoài nghe được  tiếng chuông phát ra đó. Tiếng chuông reo theo cử động  của A-rôn có mục đích gì?</p>
+      <p>Có ý kiến cho rằng, vì chỉ có thầy tế lễ  thượng phẫm mới được phép vào trong  nơi chí thánh mà thôi, nên tiếng chuông rung lên là dấu hiệu  cho biết thầy tế lễ thượng phẫm còn sống.  Nếu những người bên ngoài không nghe tiếng chuông  rung trong một khoảng thời gian nào đó, điều  nầy có nghĩa là thầy tế lễ thượng phẫm  bị Chúa hình phạt chết vì ông phạm một lỗi  lầm nào đó. Những người giải thích theo cách đó,  còn cho biết thêm: người ta buộc vào chân thầy tế  lễ thượng phẫm một sợi dây dài, để  khi ông vào nơi chí thánh, sợi dây vẫn thông với bên  ngoài. Trong trường hợp thầy tế lễ thượng  phẫm chết (vì không nghe tiếng chuông rung), những  người bên ngoài có thể kéo ông ra bằng sợi dây mà  không cần phải vào trong nơi chí thánh.</p>
+      <p>Cách giải thích trên không ổn  vì lý do sau: Trang phục để thầy tế lễ A-rôn  mặc vào trong nơi chí thánh phải được tuân thủ  chặt chẽ từng chi tiết, đúng theo thiết kế  Đức Chúa Trời chỉ định mà không được  thêm hay bớt một chi tiết nào. Nếu việc cột  một sợi dây vào người thầy tế lễ  thượng phẫm để thông với bên ngoài là việc  cần thiết thì chắc chắn phải được  Đức Chúa Trời truyền dạy. Nhưng chúng ta  không hề tìm thấy quy định phải cột một  sợi dây vào thầy tế lễ thượng phẫm  trong Xuất Ê-díp-tô Ký 28:6-39, là phần hướng dẫn  rất chi tiết các quy định Đức Chúa Trời  truyền dạy phải làm. Chúng ta không nên cho rằng A-rôn  được buộc với một sợi dây để  vào nơi chí thánh nếu không được Đức Chúa  Trời truyền dạy phải làm như vậy.</p>
+      <p>Cần phải hiểu ý  nghĩa của tiếng chuông reo: Tiếng chuông reo không phải  nhằm mục đích báo hiệu cho người bên ngoài biết  thầy tế lễ còn sống hay đã chết, nhưng <strong>tiếng chuông reo theo cử động  của thầy tế lễ thượng phẫm trong  nơi chí thánh là dấu hiệu cho dân Y-sơ-ra-ên bên ngoài biết  thầy tế lễ thượng phẫm là người  đại diện cho dân sự đang thi hành nhiệm vụ  tế lễ trước mặt Đức Chúa Trời</strong>.   Nếu tiếng chuông rung lên là  dấu hiệu cho biết A-rôn còn sống, nếu không nghe  tiếng chuông rung là dấu hiệu A-rôn đã chết, thì e  rằng những người Y-sơ-ra-ên đứng bên  ngoài nơi chí thánh <strong>thay vì chú ý  đến công tác mà A-rôn đang đại diện cho họ  để ra mắt Đức Chúa Trời, họ lại  chú ý xem A-rôn còn sống</strong> (nghe tiếng chuông rung) <strong>hay đã chết</strong> (không nghe tiếng  chuông rung)<strong>!!</strong></p>
+      <p>&ldquo;<em>Khi A-rôn hầu việc tế lễ, sẽ mặc áo  đó; và khi vào hay ra nơi thánh trước mặt Đức  Giê-hô-va, người ta sẽ nghe tiếng chuông vàng nhỏ,  và <u>A-rôn khỏi chết vậy</u>.&rdquo; </em>(Xuất Ê-díp-tô Ký  28: 35). Cụm từ <em>&ldquo;A-rôn khỏi  chết&rdquo;</em> nên được đặt trong văn mạch  của đoạn 28, kể từ câu 6, là phần hướng  dẫn thiết kế trang phục cho thầy tế lễ  thượng phẫm, A-rôn phải tuân giữ tất cả  mọi chi tiết trong cách ăn mặc để <em><u>khỏi bị chết</u></em> khi vào nơi chí thánh.</p>
+      <p> </p>
+      <p>Trần Đình Tâm</p>
+    </div>
+    <p align="center">&nbsp;</p>
+  </div>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

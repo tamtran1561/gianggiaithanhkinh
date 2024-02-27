@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <p align="center">&nbsp;</p>
+  <p align="center"><strong style="font-size: 12pt">Nô-ê đóng tàu trong bao nhiêu  năm?</strong></p>
+  <p> </p>
+  <p><strong>Sáng Thế Ký 6:3:</strong></p>
+  <p><em>&ldquo;Đức Giê-hô-va phán rằng: Thần  ta sẽ chẳng hằng ở trong loài người luôn; trong  điều lầm lạc, loài người chỉ là xác thịt;  đời người sẽ là <strong>một trăm hai mươi năm</strong> mà thôi.&rdquo;</em></p>
+  <p><strong>Câu hỏi:</strong></p>
+  <p>Có  phải Nô-ê đã dành 120 năm để hoàn tất việc  đóng tàu?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Nhiều  người căn cứ vào Sáng Thế Ký 6:3 nêu trên cho rằng  thời gian Nô-ê đóng tàu là 120 năm. Thật ra không có câu  nào trong Kinh Thánh xác định thời gian Nô-ê đóng tàu. </p>
+  <p>120  năm nói trên là số năm còn lại trước khi xãy  ra nước lụt; tức là từ lúc Đức Chúa Trời  phán cho đến nước lụt xãy ra là 120 năm (xin  đọc bài <em>&ldquo;Tuổi thọ  của con người là 120 năm?&rdquo;</em>). Chúng ta nên nhớ rằng  thời điểm Chúa phán ở Sáng Thế Ký 6:3 không có  nghĩa là thời điểm Nô-ê khởi công đóng tàu.</p>
+  <p>Những  bằng chứng sau đây cho thấy 120 năm không thể  nào là thời gian Nô-ê đóng tàu:</p>
+  <p>a) <strong>Sáng Thế Ký 5:32</strong>: <em>“Còn Nô-ê, khi  đến <strong>năm trăm tuổi</strong>,  sanh Sem, Cham và Gia-phết.”</em></p>
+  <p> &nbsp; &nbsp;Câu trên có thể gợi cho chúng ta hiểu rằng  Nô-ê sanh con đầu lòng là Sem lúc ông 500 tuổi. [Xin đọc Sáng &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thế Ký 11:26 để thấy tương tự như trường  hợp của Áp-ra-ham] </p>
+  <p> b) <strong>Sáng Thế Ký 7:6</strong><em>: “Vả, khi lụt xảy ra, và nước tràn trên mặt  đất, thì Nô-ê đã được <strong>sáu  trăm tuổi</strong>.”</em></p>
+  <p> &nbsp; &nbsp; Câu trên cho biết lúc nước lụt  xãy ra thì Nô-ê 600 tuổi.</p>
+  <p>     Như vậy, thời gian Nô-ê  đóng tàu không thể nào vượt quá 100 năm.</p>
+  <p>c) <strong>Sáng  Thế Ký 7:10,11</strong>: “<em>Nhằm năm sáu trăm của đời  Nô-ê, </em><em><strong>tháng hai, ngày mười bảy</strong>, chính ngày đó, các <br />
+  &nbsp; &nbsp; nguồn của vực lớn nổ ra, và các đập trên trời mở xuống."</em>&nbsp;</p>
+  <p> &nbsp;&nbsp;&nbsp; <strong>Sáng Thế Ký 8:14,15</strong>: <em>“Đến <strong>tháng hai, ngày hai mươi bảy</strong>, đất  đã khô rồi. Đức Chúa Trời bèn phán cùng <br />
+  &nbsp; &nbsp;Nô-ê rằng:  Hãy ra khỏi tàu, ngươi, vợ các con và các dâu ngươi.”</em></p>
+  <p> &nbsp; Hai câu trên giúp chúng ta biết thời gian nước lụt xãy  ra khoảng <strong>1 năm</strong> (chính xác là 1 năm 10 ngày)</p>
+  <p>d) <strong>Sáng Thế Ký 11:10</strong>: <em>“Đây là  dòng dõi của Sem: <strong>Cách hai  năm</strong>, sau cơn nước lụt, Sem được <strong>một trăm tuổi</strong>, <br />
+  &nbsp; &nbsp; sanh  A-bác-sát.”</em></p>
+  <p>Câu trên cho chúng ta biết lúc chấm dứt nước  lụt thì Sem được 98 tuổi. Trước khi xãy ra lụt Sem được  97 tuổi. Như vậy, <strong>Nô-ê  đóng xong tàu lúc Sem được 97 tuổi.</strong></p>
+  <p>e) <strong>Sáng Thế Ký 6:13,14,18</strong><em>: “Đức  Chúa Trời bèn phán cùng Nô-ê rằng: Kỳ cuối cùng của  mọi xác thịt đã đến trước mặt ta;  vì cớ loài người mà đất phải đầy dẫy  điều hung hăng; vậy, ta sẽ diệt-trừ họ  cùng đất. Ngươi <strong>hãy  đóng một chiếc tàu</strong> bằng cây gô-phe. Nhưng ta sẽ  lập giao ước cùng ngươi, rồi ngươi  và vợ, các con và <strong>các con dâu</strong> của ngươi, đều hãy vào tàu.”</em></p>
+  <p>Các  câu trên cho thấy vào thời điểm Chúa truyền lệnh  Nô-ê khởi công đóng tàu, cả 3 người con trai của  Nô-ê đều đã <strong>trưởng  thành vì cả 3 đều có vợ</strong>, và chắc chắn họ  là những người giúp Nô-ê đóng tàu. Nô-ê không thể một  mình đóng tàu mà không có sự phụ giúp của những  người con trai. Ngoài ta, chúng ta cũng nên nhớ rằng  không còn ai khác giúp Nô-ê đóng tàu vì Kinh Thánh cho biết cả  nhân loại lúc ấy đều bại hoại. Khi nước  lụt xãy đến, trên tàu chỉ có gia đình Nô-ê gồm  8 người được cứu mà thôi, không còn ai khác nữa.  Nếu có ai khác giúp Nô-ê đóng tàu, chắc người  đó sẽ có mặt trên tàu.</p>
+  <p>Chúng  ta không không biết tuổi của Cham và Gia-phết vì Kinh  Thánh không nói đến. Sem là con đầu lòng, giả  định Sem cưới vợ lúc 30 tuổi. Vậy thời  gian Nô-ê đóng tàu <strong>ít nhất</strong> bắt đầu từ lúc Sem cưới vợ, tức  là: 97 - 30 = <strong>67 năm</strong></p>
+  <p>Tất  nhiên, <strong>67 năm</strong> chỉ là con  số phỏng đoán vì chúng ta thiếu thông tin về Cham  và Gia-phết. Thời gian đóng tàu có thể ngắn  hơn 67 năm (vì phải chờ Cham và Gia-phết cưới  vợ). Điều chắc chắc là 120 năm không phải  thời gian Nô-ê đóng tàu.</p>
+  <p><strong>Trần Đình Tâm</strong></p>
+  <p><strong><em>Tháng  11, 2017</em></strong></p>
+  <p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

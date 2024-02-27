@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #CCC49F;
+	text-align: right;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right; font-size: 9pt; color: #800000;">&nbsp;</p>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p align="center"><strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Đức Chúa Trời có cho  phép người đàn ông cưới nhiều vợ?</strong></p>
+        <p align="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Trần đình  Tâm</p>
+        <p align="center"> </p>
+        <p><strong>1. Quan điểm về đa thê (polygamy)</strong></p>
+        <p>Một số người  và một số cộng đồng (Giáo Hội Mormon, Hồi  Giáo) cho rằng Đức Chúa Trời cho phép, hay ít ra Ngài  &ldquo;không ngăn cấm&rdquo; người đàn ông có nhiều vợ.  Những tín đồ thuộc các giáo phái trên được  quyền cưới nhiều vợ. Quan điểm trên  căn cứ vào các dữ liệu sau đây:</p>
+        <p>1. <strong>Không</strong> có chổ nào trong toàn bộ Kinh Thánh cho thấy  Đức Chúa Trời phán dạy một cách dứt khoát,  rõ ràng tương tự như mệnh lệnh: &ldquo;Người  đàn ông không được cưới hai vợ hoặc  nhiều hơn&rdquo;.</p>
+        <p>2. Luật pháp Môi se có  đề cập đến người đàn ông có hai vợ: <em>&ldquo;Khi một người nam nào  có hai vợ …&rdquo; </em>(Phục Truyền Luật Lệ Ký 21:15)</p>
+        <p>3. Nhiều nhân vật nổi  tiếng trong Cựu Ước có nhiều vợ mà không thấy  Đức Chúa Trời khiển trách hay trừng phạt họ:  Áp-ra-ham có 2 vợ (Sáng Thế Ký 16); Gia-cốp có 2 vợ  (Sáng Thế Ký 29:29); Ghê-đê-ôn có nhiều vợ (Các Quan Xét  8:30); Ên-ca-na có 2 vợ (I Sa-mu-ên 1:2); Đa-vít có 8 vợ (I  Sam-mu-ên 25:42,43 / II Sa-mu-ên 5:13-15 / I Sử Ký 14:3); Sa-lô-môn có  700 vợ (I Các Vua 11:3); Rô-bô-am có 18 vợ (II Sử Ký 11:21);  Giô-ách có 2 vợ (II Sử Ký 24:3); A-bi-gia có 14 vợ (II Sử  Ký 13:21) v.v…</p>
+        <p>4. Tiên tri Na-than cho biết  Đức Chúa Trời ban cho Đa-vít các người vợ  của Sau-lơ sau khi Sau-lơ qua đời: <em>&ldquo;Bấy giờ, Na-than nói cùng  Đa-vít rằng: Vua là người đó! <a name="_Hlk390287454" id="_Hlk390287454">Giê-hô-va  Đức Chúa Trời của Y-sơ-ra-ên có phán như vầy:  Ta đã xức dầu lập ngươi làm vua  Y-sơ-ra-ên, ta đã giải cứu ngươi khỏi tay  Sau-lơ. Ta cũng ban cho ngươi nhà của chủ  ngươi, <strong>trao vào tay  ngươi các vợ</strong> của chủ ngươi, lập  ngươi làm vua của nhà Y-sơ-ra-ên và Giu-đa, và nếu  điều đó không đủ, ắt ta sẽ thêm cho  ơn khác nữa.&rdquo;</a></em> (II  Sa-mu-ên 12:7,8)</p>
+        <p>Đa số con cái Chúa  ngày nay tin rằng đa thê là trái với đạo lý, không  phù hợp với tiêu chuẩn của một gia đình  Cơ-đốc, họ không chấp nhận lối sống  đa thê, nhưng mặt khác, các con cái Chúa lại bối rối  khi phải đối diện với các phần Kinh Thánh  nêu trên; vì các trích dẫn từ Kinh Thánh trên cho thấy có vẻ  như Đức Chúa Trời không cấm đa thê và Ngài  dường như chấp nhận một số trường  hợp đa thê nào đó …!? Để giải quyết nan  đề nầy, chúng ta cần quay về cội nguộn  của sự thiết lập hôn nhân.</p>
+        <p><strong>2. Hôn nhân nguyên thủy.</strong></p>
+        <p>Cuộc hôn nhân đầu  tiên do Đức Chúa Trời thiết lập diển tiến  theo thứ tự như sau:</p>
+        <blockquote>
+          <p><em>&ldquo;Giê-hô-va  Đức Chúa Trời phán rằng: Loài người ở một  mình thì không tốt; ta sẽ làm
+            nên <strong>một</strong> người giúp đỡ (<strong>a </strong>helper) giống như nó.&rdquo;</em> (Sáng Thế Ký 2:18)</p>
+        </blockquote>
+        <p>Theo kế hoạch của  Đức Chúa Trời, Ngài sẽ tạo cho A-đam <strong>một</strong> người giúp đỡ,  chứ không phải 2 người hay nhiều hơn. Đức  Chúa Trời biết rằng <strong>A-đam  chỉ cần một người mà thôi</strong>.</p>
+        <blockquote>
+          <p><em>&ldquo;Giê-hô-va  Đức Chúa Trời làm cho A-đam ngủ mê, bèn lấy <strong>một</strong> xương sườn  (<strong>one</strong> of his ribs), rồi lấp thịt  thế vào. Giê-hô-va Đức Chúa Trời dùng xương  sườn đã lấy nơi A-đam
+            làm nên <strong>một người nữ </strong>(<strong>a</strong> woman), đưa đến cùng A-đam.&rdquo; (Sáng Thế  Ký 2:21,22).&rdquo;</em></p>
+        </blockquote>
+        <p>Dù A-đam có đến  24 xương sườn, nhưng Đức Chúa Trời  chỉ lấy <strong>một  xương sườn </strong>của A-đam để tạo  dựng nên <strong>một người  nữ</strong> cho A-đam mà thôi. (Với 24 xương sườn,  Ngài có thể tạo cho A-đam 24 người vợ,  nhưng Ngài đã không làm như vậy!)</p>
+        <blockquote>
+          <p><em>&ldquo;A-đam  nói rằng: Người nầy là xương bởi  xương tôi, thịt bởi thịt tôi mà ra. Người  nầy sẽ
+            được gọi là  người nữ, vì nó do nơi người nam mà có. Bởi  vậy cho nên người nam sẽ lìa
+            cha mẹ mà dính díu cùng vợ  mình, và <strong>cả hai sẽ trở  nên một thịt</strong>.&rdquo; (Sáng Thế Ký
+            2:23,24)</em></p>
+        </blockquote>
+        <p>Đức Chúa Trời  đã phối hợp <strong>một  người nam</strong> và <strong>một  người nữ </strong>để trở nên vợ chồng,  hai người sẽ trở nên <em>một  thịt</em> (flesh).</p>
+        <p>Như vậy, cuộc  hôn nhân nguyên thủy do Đức Chúa Trời thiết lập  là sự phối hợp giữa một vợ một chồng.  Chúa Jêsus cũng đã khẳng định về nền tảng  của hôn nhân một chồng và một vợ: <em>&ldquo;Nhưng từ lúc đầu sáng  thế, Đức Chúa Trời làm ra <strong>một người nam </strong>và <strong>một người nữ</strong>.&rdquo;</em> (Mác 10:6)</p>
+        <p>Những câu Kinh Thánh sau  đây cho thấy phước hạnh của người  đàn ông có <strong>một vợ</strong>.  Xin chú ý: Từ ngữ chỉ người <strong>vợ</strong> (wife) trong các câu Kinh Thánh đều ở số  ít (singular) tức là ám chỉ <strong>một</strong> <strong>vợ</strong> mà thôi, chứ không phải <strong>nhiều vợ</strong> (wives) [wives  là số nhiều của wife] </p>
+        <blockquote>
+          <p>&ldquo;Vợ ngươi (wife) ở  trong nhà ngươi sẽ như cây nho thạnh mậu.&rdquo;  (Thi Thiên 128:3)</p>
+          <p>&ldquo;Nguyện nguồn mạch  con được phước; Con hãy lấy làm vui thích  nơi vợ (wife) con cưới
+            buổi đang thì.&rdquo; (Châm  Ngôn 5:18)</p>
+          <p>&ldquo;Ai tìm được một  người vợ (wife), tức tìm được một  điều phước. Và hưởng được ân  điển
+            của Đức  Giê-hô-va.&rdquo; (Châm Ngôn 18:22)</p>
+          <p>&ldquo;Còn một người vợ  (wife) khôn ngoan do nơi Đức Giê-hô-va mà đến.&rdquo;  (Châm ngôn
+            19:14)</p>
+          <p>&ldquo;Hãy ở vui vẻ cùng vợ  (wife) mình yêu dấu; vì đó là phần của ngươi  trong đời nầy.&rdquo;          (Truyền Đạo 9:9)</p>
+        </blockquote>
+        <p><strong>3. Đức Chúa Trời có cho phép người đàn  ông cưới nhiều vợ?</strong></p>
+        <p>Điều quan trọng  chúng ta cần chú ý: Vấn đề <strong>đa thê chỉ xuất hiện sau khi loài người  người phạm tội</strong>. Thật vậy, người  đàn ông đầu tiên cưới 2 vợ là Lê-méc,  được ký thuật trong Sáng Thế Ký 4:19: <em>&ldquo;Lê-méc cưới hai vợ; một  người tên là A-đa, một người tên là Si-la.&rdquo; </em>Sau  khi A-đam và Ê-va sa ngã, tội lỗi khởi sự lan truyền  trong dòng dõi loài người. Loài người biết nói dối,  biết giết hại lẫn nhau và biết … cưới  thêm vợ. Cưới nhiều vợ là một trong hàng  ngàn hình thái tội lỗi khác nhau mà con người có thể  nghĩ ra. </p>
+        <p>Đa thê không phải là ý  định của Đức Chúa Trời dành cho hôn nhân của  loài người. Không có chổ nào trong cả Kinh Thánh cho thấy  Đức Chúa Trời truyền dạy người đàn  ông nên cưới nhiều vợ. Sự kiện một  người đàn ông cưới nhiều vợ, dù đó  là người không kính sợ Chúa hay là người kính sợ  Chúa (vài nhân vật đáng kính trong Cựu Ước) thì  hành động cưới thêm vợ là đến từ <strong>ý riêng</strong> của con người,  cũng như nhiều loại tội khác cũng phát xuất  từ ý riêng vậy. </p>
+        <p>Chúng ta nhận thấy  nhiều nhân vật trong Cựu Ước có 2 vợ hay nhiều  hơn mà không bị Đức Chúa Trời khiển trách hay  hình phạt không có nghĩa là điều đó đẹp  lòng Chúa. Họ đã quyết định và hành động  theo ý muốn riêng của mình và Đức Chúa Trời cho  phép điều ấy xãy ra theo ý muốn của họ. [Ví  dụ: I Sa-mu-ên 8 kể câu chuyện dân Y-sơ-ra-ên xin có vua  để cai trị họ. Điều dân Y-sơ-ra-ên muốn  không phải là ý muốn của Chúa. Tuy nhiên, Đức Chúa  Trời không ngăn cản nhưng <em>cho phép</em> ý muốn của họ được hoàn  thành.]</p>
+        <p>Cách Đức Chúa Trời  &ldquo;cho phép&rdquo; vài nhân vật trong Cựu Ước cưới  nhiều vợ có thể được lý giải qua lời  dạy của Chúa Jesus cho người Pha-ri-si khi họ hỏi  Ngài về vấn đề ly dị: <em>&ldquo;Họ lại hỏi Ngài rằng: Vậy chớ sao  Môi-se đã dạy lập tờ để đặng  để vợ đi? Ngài phán rằng: Vì cớ <strong>lòng các ngươi cứng cỏi</strong>,  nên Môi-se <strong>cho phép</strong> để vợ;  nhưng, lúc ban đầu không có như vậy đâu.&rdquo;</em> (Ma-thi-ơ 19:7,8)</p>
+        <p>Ly dị không phải là ý  muốn của Chúa, nhưng được &ldquo;cho phép&rdquo; (lý do  ngoại tình) vì lòng con người cứng cỏi, muốn  sống theo ý riêng. Cũng vậy, đa thê không phải là ý  muốn của Chúa, nhưng được &ldquo;cho phép&rdquo; vì có những  người đàn ông muốn như vậy!</p>
+        <p>Phục Truyền Luật  Lệ Ký 17:17: <em>&ldquo;Vua cũng không  nên có nhiều vợ (shall not acquire many wives for himself).&rdquo;</em> Ý  muốn của Chúa được bày tỏ rất rõ ràng:  Vua không nên cưới nhiều vợ, thế mà chúng ta thấy  các vua Đa-vít, Sa-lô-môn, Rô-bô-am, A-bi-gia, Giô-ách, Giô-ram (II Sử  Ký 21:14), Giê-hô-gia-kin (II Các Vua 24:15) đều có nhiều vợ,  họ đã không làm theo ý muốn của Chúa.</p>
+        <p>Trường hợp của  vua Đa-vít, khi tiên tri Na-than nói với Đa-vít: &ldquo;<em>Giê-hô-va Đức Chúa Trời của  Y-sơ-ra-ên có phán như vầy: Ta đã xức dầu lập  ngươi làm vua Y-sơ-ra-ên, ta đã giải cứu  ngươi khỏi tay Sau-lơ. Ta cũng ban cho  ngươi nhà của chủ ngươi, <strong>trao vào tay ngươi các vợ</strong> của chủ  ngươi, lập ngươi làm vua của nhà  Y-sơ-ra-ên và Giu-đa, và nếu điều đó không  đủ, ắt ta sẽ thêm cho ơn khác nữa.&rdquo;</em> (II  Sa-mu-ên 12:7,8). Đức Chúa Trời thật có ý định  ban nhiều vợ cho Đa-vít không? Nếu tìm hiểu ngữ  cảnh, chúng ta sẽ thấy câu trả lời là &ldquo;KHÔNG&rdquo;. Na-than  đang nói về vấn đề Đức Chúa Trời  truất bỏ vua Sau-lơ và ban ngôi nước cho  Đa-vít, Chúa lập Đa-vít làm vua Y-sơ-ra-ên thay cho  Sau-lơ, điều nầy mang ý nghĩa Chúa lấy <strong>ngôi nước </strong>của  Sau-lơ (bao gồm nhà, tài sản, vợ … ) ban cho  Đa-vít. Bằng chứng là Sau-lơ có một vợ là  A-hi-nô-am (I Sa-mu-ên 14:50) và một vợ lẽ (concubine) là  Rít-ba (II Sa-mu-ên 3:7). Đa-vít không hề lấy những  người nầy làm vợ.</p>
+        <p><strong>4. Hậu quả của hôn nhân đa thê.</strong></p>
+        <p>Chúng ta đừng quên rằng  cho dù vấn đề đa thê được Chúa &ldquo;cho phép&rdquo;  ở một số nhân vật trong thời Cựu Ước  đi nữa, thì con người phải gánh lấy hậu  quả mà cuộc hôn nhân đa thê đem lại. Những hậu  quả thường thấy là những xáo trộn trong gia  đình: sự ghen tương giữa các người vợ,  sự thiên vị của người chồng, sự thiên  vị của người chồng hay của các bà vợ  đối với những đứa con được  sanh ra từ các bà vợ khác nhau, và có thể dẫn đến  thảm kịch trong gia đình.</p>
+        <p>+ Hôn nhân của Áp-ra-ham: Sự  ghen ghét giữa Sa-ra và A-ga; ganh tỵ giữa Y-sác và Ích-
+          ma-ên.</p>
+        <p>+ Hôn nhân của Gia-cốp:  Sự ganh tỵ và tranh đua giữa Lê-a và Ra-chên. Sự  tranh đua giữa
+          2 người vợ đã  đưa đẩy Gia-cốp ăn nằm với 2 cô gái  hầu của hai bà vợ. Gia-cốp thiên vị với
+          các con của Lê-a và Ra-chên. Sự  thiên vị gây ra sự thù hằn giữa 2 dòng con.</p>
+        <p>+ Hôn nhân của Ên-ca-na: Ên-ca-na  đối xử với An-ne tốt hơn Phê-ni-na; sự  thiên vị khiến
+          cho Phê-ni-na phân bì và trêu ghẹo  An-ne. </p>
+        <p>+ Hôn nhân của Đa-vít:  Thảm kịch gia đình: cái chết của đứa  con trai của Bát-sê-ba; quan
+          hệ tình dục giữa hai  người con khác mẹ (Am-nôn và Ta-ma); giết hại nhau  giữa các người
+          con khác mẹ (Áp-sa-lôm giết  Am-nôn; Sa-lô-môn ra lệnh giết A-đô-ni-gia)</p>
+        <p>+ Hôn nhân của Sa-lô-môn: Những  người vợ ngoại bang đã đưa đẩy  Sa-lô-môn vào sự thờ
+          lạy hình tượng.</p>
+        <p>+ Phục Truyền Luật  Lệ Ký 21:15: <em>&ldquo;Khi một  người nam nào có hai vợ, vợ nầy được  thương,
+          vợ kia bị ghét, song cả  hai đều có sanh con cho ngươi, và con trưởng  nam thuộc về vợ bị 
+          ghét.&rdquo; </em>Câu Kinh Thánh nầy  không hề dạy rằng người đàn ông nên cưới  2 vợ, nhưng chỉ là
+          quy định của luật  pháp nhằm giải quyết một hậu quả của  đa thê: Sự thiên vị của người
+          chồng, một trong hai  người vợ bị người chồng ghét bỏ!</p>
+        <p>Những xáo trộn trong  gia đình là hậu quả của hôn nhân đa thê, điều  nầy cho thấy đa thê không phải là ý muốn của  Chúa.</p>
+        <p><strong>5. Đa thê trong thời Tân Ước</strong></p>
+        <p>Tân Ước không hề  ủng hộ hôn nhân đa thê, trái lại hôn nhân một vợ  một chồng là tiêu chuẩn của Đức Chúa Trời:</p>
+        <blockquote>
+          <p><em> &ldquo;Song, cho được  tránh khỏi mọi sự dâm dục, thì mỗi người  đờn ông phải có vợ (wife),
+            mỗi người đờn  bà phải có chồng (husband).&rdquo; (I Cô-rinh-tô 7:2)</em></p>
+        </blockquote>
+        <p>&ldquo;Vợ&rdquo; (wife) hay &ldquo;chồng&rdquo;  (husband) trong câu Kinh Thánh trên đều ở <strong>số ít</strong>, tức là chỉ có một vợ một  chồng mà thôi.</p>
+        <p>Người đàn ông tin  Chúa mà có nhiều vợ được xem là không đủ  phẩm cách để làm giám mục chấp sự, hay trưởng  lão:</p>
+        <blockquote>
+          <p>&ldquo;<em>Vậy,  người giám mục cần phải không chỗ trách  được, là <strong>chồng chỉ  một vợ mà thôi</strong>.&rdquo;        </em>  <br />
+          (I Ti-mô-thê 3:2)</p>
+        </blockquote>
+        <p>     <em>&ldquo;Các  chấp sự chỉ nên làm <strong>chồng  của một vợ mà thôi</strong>.&rdquo; (I Ti-mô-thê 3:12</em></p>
+        <blockquote>
+          <p>&ldquo;Mỗi người trong vòng  trưởng lão đó phải cho không chỗ trách được,  chỉ <strong><em>chồng của một
+            vợ</em></strong><em>.&rdquo; </em>(Tít 1:6)</p>
+        </blockquote>
+        <p>Có người dựa vào  các câu Kinh Thánh trên để lý luận rằng: Vì đa thê  không thích hợp cho những người giữ địa  vị lãnh đạo trong Hội Thánh, nên một người  tín đồ không nắm giữ vị trí lãnh đạo  trong Hội Thánh có thể … có nhiều vợ! Chúng ta tin rằng  người đàn ông nhiều vợ không xứng đáng  giữ chức vụ lãnh đạo trong Hội Thánh, vì  được kể là có nếp sống theo <em>xác thịt, </em>vì nếp sống  đa thê được liệt kê chung với nếp sống  theo <em>xác thịt</em> như: ghiền  rượu, tham tiền, hung bạo, hai lời, buông tuồng,  kiêu ngạo, giận dữ v.v… (I Ti-mô-thê 3:3-8,11; Tít 1:6,7) thì  không có lý do gì một người tín đồ lại phải  chọn nếp sống đa thê.</p>
+        <p><strong>6. Nếu một người đàn ông có nhiều vợ  trước khi tin nhận Chúa, người đó phải  làm gì sau khi tin Chúa?</strong></p>
+        <p>Có một ít giáo phái trên thế  giới hay một vài vùng tại Phi Châu cho phép người  đàn ông có nhiều vợ. Một số rất ít người  đàn ông Việt Nam có nhiều vợ (có hôn thú hay không có  hôn thú) lúc chưa tin nhận Chúa. Nếu người đàn  ông ấy tiếp nhận Chúa Jesus thì ông ấy phải giải  quyết chuyện vợ chồng như thế nào? </p>
+        <p>Có ý kiến cho rằng  người đó nên ly dị các bà vợ và chỉ để  lại một vợ mà thôi. Thật ra, giải quyết bằng  ly dị không đơn giản chút nào: Vì phải quyết  định giữ lại người vợ nào: người  vợ thứ nhất, thứ hai, hay người cuối  cùng? Hay giữ lại người mình yêu thương nhất?  Hay giữ lại người vợ nào sanh ra cho mình nhiều  con nhất? Đó là chưa kể người đàn ông vẫn  còn trách nhiệm đối với người vợ cùng  con mà mình ly dị. Thật ra, ly dị trong trường hợp  nầy là ly dị không phải vì người vợ ngoại  tình, như thế là vi phạm điều răn của  Chúa Jesus trong Ma-thi-ơ 19:9: <em>&ldquo;Vả,  ta phán cùng các ngươi, nếu ai để vợ mình  không phải vì cớ ngoại tình, và cưới vợ  khác, thì người ấy phạm tội tà dâm; và hễ ai  cưới người bị để, thì phạm tội  ngoại tình.&rdquo;</em></p>
+        <p>Cách giải quyết tốt  hơn là người ấy phải ăn năn tội và xin  Chúa tha thứ cho lỗi lầm của mình. Sau đó nên tiếp  tục giữ nguyên hiện trạng mà không nên ly dị bất  cứ người vợ nào, vì ly dị là vi phạm lời  Chúa Jesus dạy. Dù đã được Chúa tha thứ,  nhưng người ấy sẽ phải tiếp tục  gánh chịu những hệ lụy do cuộc hôn nhân đa  thê mang lại. Bởi lòng thương xót của Chúa,  người đàn ông ấy chắc sẽ được  Chúa an ủi và Chúa sẽ có cách của Ngài để giải  quyết chuyện gia đình theo ý tốt nhất của  Ngài trong tương lai. Chúa Jesus là Đấng <em>&ldquo;chẳng bẻ cây sậy đã  gãy, chẳng tắt ngọn đèn gần tàn.&rdquo; </em>(Ma-thi-ơ  12:20)</p>
+        <p><strong><em>Tháng 6, 2014</em></strong></p>
+        <p>&nbsp;</p>
+      </blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

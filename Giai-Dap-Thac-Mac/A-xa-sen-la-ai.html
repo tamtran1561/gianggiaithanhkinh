@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	text-align: justify;
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div>
+    <p align="center">&nbsp;</p>
+</div>
+  <div>
+    <p align="center"><strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A-xa-sên là ai?</strong></p>
+    <p align="center">&nbsp;</p>
+    <p><strong style="color: #1630FF">Lê-vi Ký 16:8-10</strong></p>
+    <p><em>&ldquo;Đoạn, A-rôn bắt thăm cho <strong>hai con dê đực</strong>, một thăm về phần  Đức Giê-hô-va, một thăm về phần <strong>A-xa-sên</strong>. </em><em> A-rôn sẽ biểu dẫn con dê  đực bắt thăm về phần Đức Giê-hô-va  lại gần và dâng nó làm của lễ chuộc tội.  Còn con bắt thăm về phần <strong>A-xa-sên</strong>, sẽ để sống trước mặt  Đức Giê-hô-va, để làm lễ chuộc tội trên  nó, rồi thả nó ra nơi đồng vắng đặng  nó về <strong>A-xa-sên</strong>.&rdquo;</em></p>
+    <p><strong style="color: #1630FF">Câu hỏi:</strong></p>
+    <p>A-xa-sên là ai?</p>
+    <p><strong style="color: #1630FF">Giải đáp:</strong></p>
+    <p>Trước hết, chúng  ta cần biết về các quy định của Đức  Chúa Trời về Ngày Lễ Chuộc Tội.</p>
+    <p>Đức Chúa Trời  truyền lệnh cho dân Y-sơ-ra-ên phải giữ <em>Ngày</em> <em>Lễ  Chuộc Tội</em> (The Day of Atonement) mỗi năm một lần. <em>Lễ chuộc tội</em> bao gồm  một số các nghi thức, được hướng dẫn  trong Lê-vi Ký chương 16. Chỉ xin tóm lược về  cách thức dâng sinh tế mà thôi:</p>
+    <p>1. Trước hết, thầy  tế lễ thượng phẩm A-rôn phải thực hiện  nghi thức làm lễ chuộc tội cho <em>chính mình</em> và cho các thầy tế lễ khác thuộc  trong gia đình mình như sau:</p>
+    <p>+ Giết một con <em>bò đực </em>làm <em>của lễ chuộc tội </em>(sin  offering). </p>
+    <p>+ A-rôn lấy huyết của  bò tơ rảy bảy lần về phía trước nắp  thi ân. </p>
+    <p>+ Giết một con <em>chiên đực </em>làm <em>của lễ thiêu </em>(burnt  offering). </p>
+    <p>+ Dùng huyết của con  chiên đực cũng rảy trên nắp thi ân.</p>
+    <p>2. Kế đến, A-rôn  phải làm lễ chuộc tội cho <em>toàn dân</em> Y-sơ-ra-ên như sau:</p>
+    <p>+ Dùng <strong>hai</strong> con <em>dê đực </em>làm <em>của lễ chuộc tội </em>(sin  offering) và một con <em>chiên đực</em> làm <em>của lễ thiêu </em>(burnt  offering).</p>
+    <p>+ Về phần hai con dê  đực, A-rôn bắt thăm để chọn một  con về phần Đức Giê-hô-va, con kia về phần <strong>A-xa-sên</strong>.</p>
+    <p>+ Con dê đực thuộc  về Đức Giê-hô-va sẽ bị giết làm sinh tế  như thông thường.</p>
+    <p>+ Đặc biệt, con  dê đực thuộc về A-xa-sên <strong>không</strong> bị giết, nhưng để cho sống.  A-rôn đặt tay trên đầu con dê sống nầy và  xưng tất cả các tội lỗi của dân  Y-sơ-ra-ên. Sau đó, con dê thuộc về A-xa-sên bị  đuổi đi vào trong đồng vắng.</p>
+    <p>Vậy, A-xa-ên là ai, hay  A-xa-sên có ý nghĩa gì?</p>
+    <p>Từ ngữ &ldquo;A-xa-sên&rdquo; chỉ  xuất hiện 4 lần, và chỉ có trong Lê-vi ký  chương 16 mà thôi: câu 8, 10 và 16.</p>
+    <p>Chúng ta nên nhớ rõ: Có 2  con <em>dê đực</em> (goat): </p>
+    <p>1/ Con dê thuộc về  Đức Giê-hô-va phải <strong>bị  giết</strong> và A-rôn dùng huyết của nó rảy trong nơi  chí thánh để làm lễ chuộc tội: <em>Con dê</em> nầy làm hình bóng về sự  chết của Chúa Jesus, Chúa đã chịu chết trên thập  tự giá, đổ huyết ra để chuộc tội lỗi  cho nhân loại, bởi đức tin nơi Chúa Jesus, tội  nhân (trước đó chưa tin Chúa) được  xưng công bình trước mặt Đức Chúa Trời: <em>&ldquo;Đức Chúa Trời đã làm  cho Đấng vốn chẳng biết tội lỗi trở  nên tội lỗi vì chúng ta, hầu cho chúng ta nhờ Đấng  đó mà được trở nên sự công bình của  Đức Chúa Trời&rdquo; </em>(II Cô-rinh-tô 5:21).</p>
+    <p>2/ Con dê thuộc về  A-xa-sên không bị giết, nhưng để cho <strong>sống </strong>và bị đuổi  vào trong đồng vắng. &ldquo;A-xa-sên&rdquo; (Azazel) có nghĩa là &ldquo;trốn  thoát&rdquo; (scape, departure). Như vậy, A-xa-sên có nghĩa là <em>con dê được thoát khỏi  chết</em> (scapegoat, bản KJV).</p>
+    <p>Theo quy định của  Đức Chúa Trời, có 2 bước mà A-rôn phải làm  đúng theo thứ tự: <u>Trước hết</u>, con dê  thuộc về Đức Giê-hô-va phải chịu chết  (ý nghĩa đã được trình bày bên trên). <u>Sau đó</u>,  A-rôn đặt tay trên con dê thuộc về A-xa-sên và xưng  các tội phạm của dân Y-sơ-ra-ên rồi dẫn nó  vào đồng vắng. Con dê nầy sẽ mang lấy tội  lỗi của cả dân Y-sơ-ra-ên ra đồng vắng  cách xa khỏi dân Y-sơ-ra-ên, đúng như Lê-vi Ký 16:22 chép: <em>&ldquo;Vậy, con dê đực đó  sẽ gánh trên mình các tội ác của dân Y-sơ-ra-ên ra  nơi hoang địa.&rdquo;</em></p>
+    <p>Như vậy, con dê thuộc <em>A-xa-sên</em> làm hình bóng về Chúa  Jesus mang tội lỗi của chúng ta cách xa chúng ta mỗi  khi chúng ta (là những người đã tin Chúa, đã nhận  được sự cứu rỗi) ăn năn tội  và cầu xin sự tha thứ của Chúa. Con dê thuộc về  A-xa-sên <u>không bị giết</u> mang ý nghĩa Chúa Jesus <strong>chịu chết chỉ một lần</strong> trên thập tự giá, <strong>huyết  Ngài chỉ đổ ra lần một lần</strong> (con dê thứ  nhất bị giết làm hình bóng) <strong>là đủ linh nghiệm để tha thứ cho tội  lỗi của chúng ta</strong>. <strong>Chúa  Jesus không cần phải chịu chết thêm lần nào nữa</strong><em>. &ldquo;Ấy là theo ý muốn đó mà  chúng ta được nên thánh nhờ sự dâng thân thể  của Đức Chúa Jêsus Christ <strong>một  lần đủ cả</strong>.&rdquo;</em> (Hê-bơ-rơ 10:10). Sau khi  tin Chúa, Cơ-đốc nhân vẫn có thể phạm tội  trong nếp sống hằng ngày, trong trường hợp nầy,  người tín hữu cần ăn năn tội và xin Chúa  tha thứ, huyết của Chúa Jesus đã đổ ra một  lần vẫn sẽ còn linh nghiệm để rửa sạch  tội của chúng ta: &ldquo;… <em>huyết  của Đức Chúa Jêsus, Con Ngài, làm sạch mọi tội  chúng ta.&rdquo; </em>(I Giăng 1:7)</p>
+    <p>Con dê thứ nhất bị  giết, huyết của nó được A-rôn lấy  đem vào nơi chí thánh<em>: &ldquo;Đoạn,  người giết con dê đực dùng về dân chúng làm của  lễ chuộc tội; đem <strong>huyết</strong> nó <strong>vào phía trong bức màn</strong>;  dùng huyết con dê đực đó cũng như đã dùng  huyết con bò tơ, tức là rảy trên nắp thi ân và  trước nắp thi ân vậy.&rdquo;</em> (Lê-vi Ký 16:15), con dê nầy  làm hình bóng về Chúa Jesus, như Hê-bơ-rơ 9:11,12 xác  định rõ: <em>&ldquo;Nhưng Đấng  Christ đã hiện đến làm thầy tế lễ  thượng phẩm của những sự tốt lành sau  nầy; Ngài đã vượt qua đền tạm lớn  hơn và trọn vẹn hơn, không phải tay người  dựng ra, nghĩa là không thuộc về đời nầy. <strong>Ngài đã vào nơi rất  thánh một lần thì đủ hết</strong>, không dùng huyết  của dê đực và của bò con, nhưng dùng chính huyết  mình, mà được sự chuộc tội đời  đời.&rdquo;.</em> Đó là lý do tại sao con dê thứ hai không  phải chịu chết.</p>
+    <p>Tóm lại, cả hai con  dê đực đều chỉ về <strong>sự chuộc tội</strong> mà Chúa Jesus thực hiện  cho con người: <em>con dê thuộc  về Đức Giê-hô-va</em> phải bị giết làm hình  bóng về Chúa Jesus chịu chết trên thập tự giá,  huyết Ngài đổ ra để tha tội cho chúng ta; <em>con dê thuộc A-xa-sên</em> không bị  giết mà phải đem vào đồng vắng làm hình bóng  về Chúa Jesus đã hoàn tất sự chết và đổ  huyết một lần đủ cả. Ngày hôm nay, Chúa  Jesus gánh mọi tội chúng ta (con dê thuộc A-xa-sên mang tội  của dân Y-sơ-ra-ên), Ngài tha thứ hết mọi tội  chúng ta khi chúng ta xưng tội mình với Chúa (con dê bị  đem vào đồng vắng cách xa người dân và nó  không trở về được nữa).</p>
+    <p><strong>Một cách giải nghĩa khác về &ldquo;A-xa-sên&rdquo;</strong></p>
+    <p>Có khá nhiều nhà giải  nghĩa Kinh Thánh cho rằng <em>con  dê thuộc về A-xa-sên</em> làm hình bóng về <em>Sa-tan</em>, vốn là thiên sứ phạm  tội chống nghịch lại Đức Chúa Trời. Cũng  có một số người khác cho rằng <em>A-xa-sên</em> là tên của một trong số các thiên sứ  phạm tội mà không phải là sa-tan, cách giải thích nầy  căn cứ vào cụm từ &ldquo;Các Con trai của Đức  Chúa Trời&rdquo; trong Sáng Thế Ký 6:1,2. Các nhà giải nghĩa  đưa ra những giải thích khác nhau, nhưng đều  có cùng chung một kết luận: Tất cả đều  không công nhận A-xa-sên làm hình bóng về Chúa Jesus. Cách lý luận  như sau:</p>
+    <p>+ Căn cứ vào câu 8: Có  2 con dê, sau khi bắt thăm một con thuộc về <em>Đức Giê-hô-va</em>, một con  thuộc về <em>A-xa-sên</em>. Tất  cả đều đồng ý con dê thứ nhất bị  giết làm hình bóng về Chúa Jesus. Như vậy, con dê thứ  hai không thể làm hình bóng về Chúa Jesus, mà ám chỉ về  một nhân vật đối kháng.</p>
+    <p>+ Có 2 con dê nhưng chỉ  có một con bị giết, Chúa Jesus làm hình bóng về con bị  giết. Còn con kia không bị giết, nên không thể làm hình  bóng về Chúa Jesus.</p>
+    <p>Ngoài ra, để làm nền  tảng cho cách giải thích trên, các nhà giải nghĩa dựa  vào một vài nguồn tài liệu có chứa đựng những  truyền thuyết hoang đường không đáng tin cậy,  đặc biệt là cuốn sách mang tên &ldquo;Sách của Hê-nóc&rdquo;  (Book of Enoch). </p>
+    <p>Ngày hôm nay, có nhiều con  cái Chúa tin rằng A-xa-sên làm hình bóng về một nhân vật  đối kháng với Chúa: Sa-tan, ma-quỷ, tà linh v.v…</p>
+    <p><u>Nhận xét</u>:</p>
+    <p>Chúng ta nên nhớ Lê-vi-Ký  chương 16 trình bày các quy định của Đức  Chúa Trời về <strong>Ngày Lễ  Chuộc Tội </strong>cho toàn dân.  Hãy  cẩn thận chú ý đến sự hướng dẫn của  Chúa đối với con dê thuộc về A-xa-sên trong câu 21  và 22: </p>
+    <p>+ Câu 21: <em>&ldquo;A-rôn sẽ nhận hai tay mình trên đầu con dê  đực còn sống, xưng trên nó các gian ác và sự vi phạm,  tức những tội lỗi của dân Y-sơ-ra-ên, và chất  trên đầu nó, rồi nhờ một người chực  sẵn việc nầy mà sai đuổi nó ra, thả vào  đồng vắng.&rdquo;</em>  Xin chú  ý: A-rôn, thầy tế lễ thượng phẩm thay mặt  cho toàn dân, đặt tay trên đầu con dê và xưng ra các  tội lỗi của toàn dân Y-sơ-ra-ên; hành động nầy  chứng minh rằng A-xa-sên không thể nào chỉ về  Sa-tan, hay tên của một tà linh hay quỷ sứ nào, vì dân  sự của Chúa không thể xưng các tội mình cho …  Sa-tan! Người ta chỉ có thể xưng tội với  Chúa Jesus mà thôi: <em>&ldquo;Còn nếu chúng  ta xưng tội mình, thì Ngài là thành tín công bình để tha  tội cho chúng ta, và làm cho chúng ta sạch mọi điều  gian ác.&rdquo; </em>(I Giăng 1:9)</p>
+    <p>+ Câu 22: <em>&ldquo;Vậy, con dê đực đó sẽ gánh trên mình các tội  ác của dân Y-sơ-ra-ên ra nơi hoang địa&rdquo;. </em>Ai gánh  tội lỗi của dân Y-sơ-ra-ên? Chắc chắn Sa-tan  không gánh tội của dân Y-sơ-ra ên! A-xa-sên không thể  làm hình bóng cho Sa-tan được, nhưng phải là hình  bóng về Chúa Jesus: Chỉ có Chúa Jesus <em>&ldquo;… mang lấy tội lỗi nhiều người&rdquo;</em> (Ê-sai 53:12), <em>&ldquo;Ngài gánh tội lỗi  chúng ta trong thân thể Ngài trên cây gỗ&rdquo;</em> (I Phi-e-rơ  2:23).</p>
+    <p><em style="font-weight: bold">Trần Đình Tâm</em></p>
+<p><strong>Tháng 7, 2014</strong></p>
+    <p>&nbsp;</p>
+  </div>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

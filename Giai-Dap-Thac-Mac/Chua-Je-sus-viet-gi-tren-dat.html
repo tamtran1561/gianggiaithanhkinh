@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giới thiệu trang Giảng Giải Thánh Kinh</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+	text-align: justify;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+.c {
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <p align="center">&nbsp;</p>
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="/index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <div> </div>
+  <p align="center">&nbsp;</p>
+  <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Chúa Jesus viết gì trên mặt  đất?</strong></p>
+  <p align="center"><br />
+  </p>
+  <p><span style="font-size: 12pt"><strong></strong></span><strong>Giăng 8:1-8:</strong></p>
+  <p><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,42,8:1" title="Share Verse">1</a><em> Đức  Chúa Jêsus lên trên núi ô-li-ve. </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,42,8:2" title="Share Verse"><em>2</em></a><em> Nhưng đến tảng sáng,  Ngài trở lại đền thờ; cả dân sự đều  đến cùng Ngài, Ngài bèn ngồi dạy dỗ họ. </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,42,8:3" title="Share Verse"><em>3</em></a><em> Bấy giờ, các thầy thông  giáo và các người Pha-ri-si dẫn lại cho Ngài một  người đàn bà đã bị bắt đang khi phạm  tội tà dâm; họ để người giữa đám  đông, </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,42,8:4" title="Share Verse"><em>4</em></a><em> mà nói cùng Đức Chúa Jêsus rằng:  Thưa thầy, người đàn bà nầy bị bắt  quả tang về tội tà dâm. </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,42,8:5" title="Share Verse"><em>5</em></a><em> Vả, trong luật pháp Môi-se có  truyền cho chúng ta rằng nên ném đá những hạng  người như vậy; còn thầy, thì nghĩ sao? </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,42,8:6" title="Share Verse"><em>6</em></a><em> Họ nói vậy để thử  Ngài, hầu cho có thể kiện Ngài. Nhưng Đức  Chúa Jêsus cúi xuống, <strong>lấy ngón  tay viết trên đất</strong>. </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,42,8:7" title="Share Verse"><em>7</em></a><em> Vì họ cứ hỏi nữa,  thì Ngài ngước lên và phán rằng: Ai trong các ngươi  là người vô tội, hãy trước nhất ném đá  vào người. </em><a href="http://www.vietchristian.com/kinhthanh/forward.asp?btt,42,8:8" title="Share Verse"><em>8</em></a><em> <strong>Rồi  Ngài lại cúi xuống cứ viết trên mặt đất</strong>.</em></p>
+  <p><strong>Câu hỏi:</strong><strong><span lang="vi" xml:lang="vi"> </span></strong></p>
+  <p>Chúa Jesus viết gì trên  đất?</p>
+  <p><strong>Giải đáp:</strong></p>
+  <p>Trước hết, chúng  ta cần loại trừ cách dịch không đúng sau đây:  Chúa lấy ngón tay viết trên <em>cát </em>hay <em>đất</em>. Không phải  Chúa viết trên cát (sand) hay trên đất (soil), nhưng viết  trên <em>nền</em> (tiếng Hy-lạp: <em>γ</em><em>ῆν; </em>tiếng Anh: <em>ground</em>). Tất cả các bản  Anh Ngữ đều dịch &ldquo;on the <em>ground</em>&rdquo;. Ngoài ra, cũng cần phải chú ý đến  chi tiết nầy: Chúa Jesus đến đền thờ  để giảng dạy, có thể Chúa giảng dạy  trong sân đền thờ, mặt sân đền thờ có  thể được lót đá.</p>
+  <p>Giăng 8:1-11 ghi lại  câu chuyện <em>&ldquo;Chúa Jesus và người  phụ nữ bị bắt quả tang phạm tội tà  dâm&rdquo;</em>. Một ngày nọ khi Chúa Jesus đang giảng dạy  trong sân đền thờ, các thầy thông giáo và người  Pha-ri-si dẫn một người phụ nữ bị bắt <em>quả tang</em> (in the act) phạm  tội tà dâm đến trước mặt Chúa Jesus và  đám đông. Họ nói với Chúa Jesus: <em>&ldquo;Thưa thầy, người đàn bà nầy bị  bắt quả tang về tội tà dâm. Vả, trong luật  pháp Môi-se có truyền cho chúng ta rằng nên ném đá những  hạng người như vậy; còn thầy, thì nghĩ  sao?&rdquo;</em> (Câu 4,5). </p>
+  <p>Mục đích chính yếu  của người pha-ri-si và thầy thông giáo không phải  là tố cáo sự vi phạm luật pháp của người  phụ nữ, nhưng là để gày bẫy Chúa Jesus nhằm <em>kết tội</em> (accuse) Ngài, vì câu 6 nói rõ: <em>&ldquo;Họ nói vậy để thử Ngài, hầu cho có  thể kiện Ngài&rdquo;.</em> Chúng ta phải công nhận rằng  họ rất thông minh (theo ý nghĩa xảo quyệt) khi cố  ý đưa Chúa Jesus vào trong một hoàn cảnh rất khó xử  (<em>on the horns of a  dilemma</em>: tiến thoái lưỡng  nan), vì theo sự suy luận của con người, dù  Chúa Jesus trả lời cách nào, Chúa cũng gặp rắc rối:  Nếu Chúa Jesus bảo phải tha thứ cho người phụ  nữ, họ sẽ buộc tội Chúa vi phạm luật  pháp Môi-se, vì Điều Răn Thứ Bảy nói rõ <em>&ldquo;Ngươi chớ phạm tội  tà dâm&rdquo;</em> và người vi phạm điều răn nầy  sẽ bị tử hình<em>: &ldquo;Nếu  người nào phạm tội tà dâm cùng vợ của  người khác, hay là phạm tội tà dâm cùng vợ  người lân cận mình, người nam cùng người  nữ đó đều phải bị xử tử.&rdquo;</em> (Lê-vi Ký 20:10). Nếu Chúa Jesus thuận theo luật pháp mà  đồng ý tử hình người phụ nữ, họ sẽ  kết tội Chúa Jesus vi phạm luật pháp La-mã, họ sẽ  tố cáo Chúa Jesus trước chính quyền La-mã, vì người  La-mã không cho phép chính quyền của dân tộc bị trị  thi hành án tử hình (Giăng 18:31).</p>
+  <p>Khi chúng ta đọc câu  chuyện nầy, tâm trí chúng ta thường hướng  đến sự kiện các thầy thông giáo và người  Pha-ri-si gài bẫy Chúa Jesus như thế nào (đã được  giải thích ở trên); và Chúa Jesus, với sự khôn ngoan của  Đức Chúa Trời, đã thoát ra cái bẫy một cách dễ  dàng như thế nào, khi Chúa đối đáp với họ: <em>&ldquo;Ai trong các ngươi là người  vô tội, hãy trước nhất ném đá vào người.&rdquo; </em>(câu 7); sau lời tuyên phán của Chúa Jesus, họ không thể  làm gì hơn là im lặng và rút lui. Ngoài ra, một số  người khi đọc câu chuyện nầy, còn thắc  mắc về sự vắng mặt của người  đàn ông tòng phạm: Tại sao người đàn ông  đồng lỏa không bị dẫn ra đây mà chỉ có  người phụ nữ? Chúng ta không biết chắc chuyện  gì đã xãy ra cho người đàn ông, nhưng như  đã nói ở trên, mục đích của người  Pha-ri-si và thầy thông giáo là để bắt bẻ Chúa  Jesus chứ không phải là để thi hành công lý đối  với người phạm tội. Do đó, vấn đề  tại sao người đàn ông không được đem  ra xử không còn là vấn đề quan trọng, hơn nữa,  nên nhớ rằng chính Chúa Jesus cũng không nêu vấn đề  nầy ra. Đó không phải là điều Chúa Jesus muốn  dạy trong câu chuyện nầy. </p>
+  <p>Tuy nhiên, trong câu chuyện,  có một chi tiết quan trọng mà chúng ta thường bỏ  qua, hoặc nếu có chú ý đến, rồi cũng cho qua,  vì chúng ta cho rằng chi tiết đó không quan trọng.  Đó là khi Chúa Jesus <em>&ldquo;lấy ngón  tay viết trên mặt đất&rdquo;</em>.  </p>
+  <p>Ngay sau câu hỏi thách thức  của người Pha-ri-si và các thầy thông giáo, Chúa Jesus  im lặng và Chúa cúi xuống <strong>dùng  ngón tay viết trên mặt đất</strong>. Đây là một  hành động khá kỳ lạ và khó hiểu của Chúa  Jesus. Một số người đặt câu hỏi: &ldquo;Chúa  Jesus viết gì?&rdquo;. Sau đây là một số ý kiến:</p>
+  <p>+ Có người cho rằng  Chúa viết &ldquo;Hãy yêu thương nhau&rdquo;; hay &ldquo;Hãy tha thứ cho  nhau&rdquo;; hay &ldquo;Chớ đoán xét nhau&rdquo;</p>
+  <p>+ Có người cho rằng  Chúa viết câu Xuất Ê-díp-tô ký 23:1: <em>“Ngươi chớ đồn huyễn; chớ hùa  cùng kẻ hung ác đặng làm chứng<br />
+  &nbsp;dối.”</em></p>
+  <p>Những ý kiến trên  không thuyết phục vì Chúa Jesus có thể nói ra ngay mà không cần  phải viết.</p>
+  <p>+ Cũng có ý kiến cho rằng  Chúa viết lại Điều Răn thứ bảy &ldquo;Chớ  phạm tội tà dâm&rdquo;<span lang="vi" xml:lang="vi">. </span></p>
+  <p>Ý kiến nầy khó chấp  nhận, vì các thầy thông giáo và người Pha-ri-si đã  biết quá rõ Điều Răn thứ bảy, chính họ  đã dùng Điều Răn nầy để đối  thoại với Chúa Jesus.</p>
+  <p>+ Có ý kiến cho rằng  Chúa Jesus viết điều mà Chúa tuyên bố ngay sau đó:  “<em>Ai trong các ngươi là người  vô tội, hãy trước nhất<br />
+  &nbsp;ném đá vào người.”</em></p>
+  <p>Ý kiến trên rất khó  chấp nhận, vì không thể nào giải thích được  tại sao Chúa lại phải viết xuống điều  mà Chúa sẽ nói ngay sau đó, và sau khi nói xong, Chúa lại cúi  xuống tiếp tục viết. </p>
+  <p>+ Cũng có người dựa  vào Giê-rê-mi 17:13 để kết luận rằng Chúa Jesus  đã viết <strong>tên</strong> của những  người pha-ri-si và những thầy thông giáo, là những  người gài bẫy để kết tội Chúa Jesus: <em>“Hỡi Đức Giê-hô-va, là sự  trông cậy của Y-sơ-ra-ên, những kẻ nào bỏ  Ngài đều sẽ bị xấu hổ! Những kẻ  lìa khỏi ta sẽ bị ghi trên đất, vì họ  đã bỏ suối nước sống, tức là Đức  Giê-hô-va.”</em></p>
+  <p>Để hiểu  được ý nghĩa của Giê-rê-mi 17:13, chúng ta đối  chiếu với Thi Thiên 69:28 <em>&ldquo;Nguyện  chúng nó bị xóa khỏi sách sự sống. Không được  ghi chung với người công bình.&rdquo; </em>và Đa-ni-ên 12:1 <em>&ldquo;Bấy giờ, trong vòng dân sự  ngươi, kẻ nào được ghi trong quyển sách  kia thì sẽ được cứu&rdquo;</em>. Qua sự đối  chiếu, chúng ta hiểu ngay những người chối bỏ  Đức Giê-hô-va sẽ bị ghi tên trên đất  (Giê-rê-mi 17:13), có nghĩa là họ không được ghi tên  chung với người công bình trong sách sự sống. Tên  của người công bình được ghi trong sách sự  sống, vậy tên của những người chống  nghịch Chúa sẽ không được ghi trong sách ấy,  nhưng bị ghi … <strong>trên đất</strong>!  Chúng ta biết rằng sự kiện ghi tên &ldquo;trên đất&rdquo;  không nên hiểu theo nghĩa văn tự (tức là bị  viết trên đất thật sự), nhưng nên được  hiểu theo nghĩa biểu tượng. Như vậy, không  thể dùng Giê-rê-mi 17:13 để kết luận rằng  Chúa Jesus đã viết tên của các thầy thông giáo và  người Pha-ri-si trên mặt đất, hơn nữa,  không lẽ nào chỉ có một vài người trong câu chuyện  nầy bị ghi tên trên đất thôi sao? </p>
+  <p>Tóm lại, không ai biết  chắc Chúa Jesus đã viết gì. Tuy nhiên, chúng ta có thể  tìm hiểu <strong>ý nghĩa của  hành động dùng ngón tay viết của Chúa Jesus</strong>. Chắc  chắn, hành động dùng ngón tay viết trên đất  mang một ý nghĩa <span lang="vi" xml:lang="vi">quan trọng </span>nào đó mà chúng ta <span lang="vi" xml:lang="vi">cần</span> tìm hiểu. </p>
+  <p>Tại sao Chúa cúi xuống  viết mà không nói ngay ra? Vì các thầy thông giáo và người  Pha-ri-si đem <strong>luật pháp</strong> ra để đối thoại với Chúa Jesus, họ nói  &ldquo;trong Luật Pháp Môi-se có truyền …&rdquo; Các thầy thông giáo rất  am hiểu Luật Pháp, họ biết <span lang="vi" xml:lang="vi">rõ </span>hai bảng 10 Điều  Răn do chính <strong>ngón tay của  Đức Chúa Trời viết</strong> nên: <em>&ldquo;Khi ta đi lên núi đặng lãnh hai bảng đá, tức  là <strong>hai bảng về sự giao  ước</strong> mà Đức Giê-hô-va đã lập cùng các  ngươi, ta ở trên núi bốn mươi ngày và bốn  mươi đêm, không ăn bánh, chẳng uống nước;  và Đức Giê-hô-va trao cho ta hai bảng đá, bởi <strong>ngón tay Đức Chúa Trời viết  ra</strong>.&rdquo;</em> (Phục Truyền Luật Lệ Ký 9:9,10)<span lang="vi" xml:lang="vi">; <em>&ldquo;</em></span><em>Khi Đức Giê-hô-va đã phán  xong cùng Môi-se tại núi Si-na-i, bèn cho người hai bảng  chứng bằng đá, <strong>bởi  ngón tay Đức Chúa Trời viết ra</strong></em><em><span lang="vi" xml:lang="vi">.&rdquo;</span></em><span lang="vi" xml:lang="vi"> (Xuất Ê-díp-tô Ký 31:18)</span></p>
+  <p><em><span lang="vi" xml:lang="vi">Giao Ước cũ</span></em><span lang="vi" xml:lang="vi"> (Luật Pháp) được viết  trên bảng đá bởi &ldquo;ngón tay&rdquo; của Đức Chúa Trời.  Như vậy, khi Chúa Jesus dùng ngón tay của Ngài để  viết trên đất, Chúa Jesus muốn cho người  Pha-ri-si, thầy thông giáo và tất cả mọi người  biết rằng Ngài viết nên một giao ước khác:  Đó là <em>giao ước mới</em>.  Sự kiện nầy được Phao-lô dẫn giải  trong II Cô-rinh-tô chương 3.</span></p>
+  <p><em><span lang="vi" xml:lang="vi"> &nbsp;&nbsp;&nbsp; “</span>Vả, rõ thật rằng  anh em là bức thơ của Đấng Christ, bởi chức  vụ chúng tôi viết ra, chẳng</em><em> phải viết bằng mực,<br />
+  &nbsp; &nbsp;nhưng bằng Thánh Linh của Đức Chúa Trời hằng  sống, <strong>chẳng phải</strong></em><strong><em> viết trên bảng đá, nhưng  trên bảng thịt,<br />
+  &nbsp; &nbsp;tức là trên lòng anh em</em></strong><em>.</em><em><span lang="vi" xml:lang="vi">”</span></em><span lang="vi" xml:lang="vi"> (II Cô-rinh-tô 3:3)</span></p>
+  <p><span lang="vi" xml:lang="vi">Giao Ước cũ được Đức Chúa Trời <strong>viết</strong> trên bảng đá,  nhưng giao ước mới sẽ được <strong>viết</strong> trên bảng thịt,  tức là trên tấm lòng chúng ta. Ai viết giao ước mới?  Chúa Jesus đã <strong>viết</strong> giao  ước mới. Giao ước mới được  hoàn tất bởi sự chết và đổ huyết của  Ngài trên thập tự giá.</span></p>
+  <p><span lang="vi" xml:lang="vi">Thầy thông giáo và người Pha-ri-si đem Luật  Pháp ra để kết tội người phụ nữ,  nhưng họ không ngờ rằng Luật Pháp dẫn con  người đến với Chúa Jesus (Ga-la-ti 3:24), là Đấng <em>viết</em> nên giao ước mới,  qua đó người phụ nữ được tha tội  và được kể là trắng án. Khi Chúa Jesus thiết  lập tiệc thánh, Chúa phán: <em>&ldquo;</em></span><em>vì nầy là huyết ta, <strong>huyết của sự giao ước</strong> đã đổ ra cho nhiều người được  tha tội</em><em><span lang="vi" xml:lang="vi">.&rdquo;</span></em><span lang="vi" xml:lang="vi"> (Ma-thi-ơ 26:28).</span></p>
+  <p><em><span lang="vi" xml:lang="vi"> &nbsp;&nbsp;&nbsp; “</span>Vì <strong>luật pháp</strong> đã ban cho bởi Môi-se, còn </em><strong><em><span lang="vi" xml:lang="vi">ân điển</span></em></strong><em><span lang="vi" xml:lang="vi"> (grace)</span> và lẽ thật bởi Đức Chúa Jêsus</em><em> Christ mà đến.</em><em><span lang="vi" xml:lang="vi">”</span></em><span lang="vi" xml:lang="vi"> (Giăng<br />
+  &nbsp; &nbsp; 1:17)</span></p>
+  <p><span lang="vi" xml:lang="vi">Luật Pháp được ban cho bởi Môi-se, luật  pháp định tội người phụ nữ, luật  pháp cũng định tội những người tố  cáo người phụ nữ. Do đó, sau khi Chúa Jesus tuyên  phán &ldquo;</span><em>Ai trong các ngươi  là người vô tội, hãy trước nhất ném đá  vào người</em><em><span lang="vi" xml:lang="vi">.&rdquo;</span></em><span lang="vi" xml:lang="vi">, không một người nào có đủ tư cách để  ném đá người phụ nữ nầy, tất cả mọi  người bỏ đi hết, vì họ biết họ có  tội. Nhưng Chúa Jesus đến ban <strong>ân điển</strong>, Ngài đem đến sự tha thứ  cho con người bị luật pháp kết tội. Phao-lô  viết trong Ê-phê-sô 1:7 <em>&ldquo;</em></span><em>Ấy là trong Đấng Christ,  chúng ta được cứu chuộc bởi huyết Ngài,  được <strong>tha tội</strong>,  theo sự dư dật của <strong>ân  điển</strong> Ngài</em><em><span lang="vi" xml:lang="vi">.&rdquo;.</span></em><span lang="vi" xml:lang="vi"> Đó là lý do tại sao Chúa phán với  với người phụ nữ: <em>&ldquo;Ta cũng không định tội ngươi, hãy  đi, đừng phạm tội nữa&rdquo;</em> (câu 11)</span></p>
+  <p><strong><span lang="vi" xml:lang="vi">Trần Đình Tâm</span></strong></p>
+  <p><em><span lang="vi" xml:lang="vi">7 tháng 9, 2015</span></em></p>
+  <p>&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

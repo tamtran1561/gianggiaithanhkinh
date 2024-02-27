@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Phân biệt hai sự kiện</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #808040;
+	background-image: url(../Image/background3.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 11pt;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	margin-right: 15px;
+	padding-right: 15px;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-image: url(../Image/nicebeig.jpg);
+	font-size: 10pt;
+	text-align: justify;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+div.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpLast {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNormal {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle1 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+div.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+li.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpFirst2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraphCxSpMiddle2 {margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+.t {
+	color: #00F;
+}
+.t {
+	color: #00F;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Image/header copy.jpg" width="960" height="170" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <div class="WordSection1">
+      <p class="MsoNormal" align="justify" style='text-align:center'><a href="../index.html"><img src="../Image/TrangChinh.jpg" width="138" height="30" align="left" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:right"><a href="Phân Biệt Hai Sự Kiện.pdf"><img src="../Image/Download.jpg" width="170" height="30" /></a></p>
+      <p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+<blockquote>
+  <p align="center">PHÂN BIỆT HAI SỰ KIỆN:  CHÚA TIẾP RƯỚC HỘI THÁNH VÀ CHÚA TÁI LÂM.</p>
+  <p align="center">Trần Đình  Tâm</p>
+  <p align="center">&nbsp;</p>
+  <p>    Việc nghiên cứu cẩn thận các phần Kinh Thánh có  liên quan đến sự trở lại của Chúa Jesus,  chúng ta sẽ thấy sự trở lại của Ngài bao gồm  hai giai đoạn như sau: </p>
+  <p>
+    <!--[if !supportLists]-->
+    1. Chúa  Jesus đến tiếp rước Hội Thánh (Rapture).</p>
+  <p>
+    <!--[if !supportLists]-->
+    2.<!--[endif]-->
+    Chúa  Jesus tái lâm (The second coming of Christ).</p>
+  <p>Trước hết, Chúa  Jesus sẽ đến tiếp rước Hội Thánh ra khỏi  thế giới nầy một cách bất ngờ, thế giới  sau đó sẽ bị Đức Chúa Trời đoán phạt  bằng cơn đại nạn kéo dài 7 năm. Vào cuối  cơn đại nạn, Chúa Jesus sẽ tái lâm trên đất. </p>
+  <p>Hai sự kiện trên hoàn  toàn khác nhau vì bao gồm các diễn biến khác nhau và xãy ra ở  hai thời điểm cũng khác nhau. Dựa vào các lời  tiên tri trong Kinh Thánh, chúng ta có thể phân biệt hai sự  kiện trên qua các sự so sánh sau đây:</p>
+  <p>
+    <!--[if !supportLists]-->
+    <strong>a.</strong>
+    <strong>Vị  trí của Hội Thánh:</strong></p>
+  <p>+ Chúa đến tiếp  rước Hội Thánh: <em>Hội  Thánh đang còn ở thế giới nầy thì Chúa đến: &ldquo;Ta sẽ trở lại <u>đem  các ngươi đi với Ta</u>.&rdquo; (Giăng 14:3)</em></p>
+  <p>+ Chúa tái lâm: Hội Thánh  đang ở trên trời cùng với các đạo binh thiên  sứ, sẽ đi theo Chúa Jesus: <em>&ldquo;Kìa  Chúa <u>đến với muôn vàn đấng thánh</u> (saints),  đặng đoán xét mọi người&rdquo; (Giu-đe 14)<strong></strong></em></p>
+  <p>
+    <!--[if !supportLists]-->
+    <strong>b.</strong>
+    <!--[endif]-->
+    <strong>Cách  Chúa Jesus xuất hiện:</strong></p>
+  <p>+ Chúa đến tiếp  rước Hội Thánh: Chúa Jesus đến tại không  trung để tiếp rước Hội Thánh: &ldquo;<em>Kế  đến chúng ta là kẻ sống, mà còn ở lại sẽ  cùng nhau đều được cất lên với những  người ấy giữa đám mây, <u>tại nơi không  trung</u> mà gặp Chúa.&rdquo; (I Tê-sa-lô-ni-ca 4:17)</em></p>
+  <p>+ Chúa tái lâm: Chúa Jesus sẽ đến trên đất,  ngay tại núi Ô-li-ve: <em>&ldquo;Trong ngày  đó, chân Ngài sẽ <u>đứng trên núi Ô-li-ve</u>, là núi  đối ngang Giê-ru-sa-lem về phía đông.&rdquo; (Xa-xha-ri 14:4)</em></p>
+  <p>
+    <!--[if !supportLists]-->
+    <strong>c.</strong>
+    <!--[endif]-->
+    <strong>Những người sẽ nhìn  thấy Chúa Jesus: </strong></p>
+  <p>+ Chúa đến tiếp rước Hội Thánh: Chỉ  có những ai tin nhận Chúa Jesus mới thấy Chúa mà thôi: <em>&ldquo;Chúng ta biết rằng khi Ngài hiện  đến, <u>chúng ta</u> sẽ giống như Ngài, vì <u>sẽ  thấy Ngài</u> như vốn có thật vậy.&rdquo; (I Giăng  3:2)</em></p>
+  <p>+ Chúa tái lâm: Tất cả mọi người trên thế  giới sẽ thấy tận mắt Chúa trở lại: <em>&ldquo;Kìa, Ngài đến giữa những  đám mây, <u>mọi mắt</u> sẽ trông thấy, cả  đến những kẻ đã đâm Ngài cũng trong thấy.&rdquo;  (Khải Huyền 1:7)</em></p>
+  <p>
+    <!--[if !supportLists]-->
+    <strong>d.</strong>
+    <!--[endif]-->
+    <strong>Thời điểm xãy ra:</strong></p>
+  <p>+ Chúa đến tiếp rước Hội Thánh: Chúa  đến bất ngờ, không ai biết trước  được<em>: &ldquo;Vì Con người  sẽ đến trong giờ các ngươi <u>không ngờ</u>.&rdquo;  (Ma-thi-ơ 24:44)</em></p>
+  <p>+ Chúa tái lâm: Chúa đến vào thời điểm cuối  của 7 năm đại nạn: <em>&ldquo;Sự tai nạn của những ngày đó <u>vừa  mới qua</u>…&rdquo; (Ma-thi-ơ 24:29)</em></p>
+  <p>
+    <!--[if !supportLists]-->
+    <strong>e.  </strong><strong>Liên quan đến những biến  động trong thiên nhiên:</strong></p>
+  <p>+ Chúa đến tiếp rước Hội Thánh: Không  có những biến động trong thiên nhiên báo trước: <em>&ldquo;Vì chính anh em biết rõ lắm  rằng ngày của Chúa sẽ đến như kẻ trộm  trong ban đêm vậy.&rdquo; (I Tê-sa-lô-ni-ca 5:2)</em></p>
+  <p>+ Chúa tái lâm: Có những hiện tượng trong thiên  nhiên báo trước<em>: &ldquo;Mặt trời  liền tối tăm, mặt trăng không sáng, các ngôi sao  trên trời sa xuống, và thế lực của các từng  trời rúng động. Khi ấy điềm Con người  sẽ hiện ra ở trên trời…&rdquo; (Ma-thi-ơ 24:29,30)</em></p>
+  <p>
+    <!--[if !supportLists]-->
+    <strong>f.  </strong><strong>Ảnh hưởng trên con  người:</strong></p>
+  <p>+ Chúa đến tiếp rước Hội Thánh:  Đem niềm vui và phước hạnh đến cho những  ai là con cái của Chúa<em>: &ldquo;…hầu  cho đến ngày vinh hiển của Ngài hiện ra, thì anh  em cũng được vui mừng nhảy nhót&rdquo; (I  Phi-e-rơ 4:13); &ldquo;Đương chờ đợi sự  trông cậy <u>hạnh phước</u> của chúng ta…&rdquo; (Tít  2:13)</em></p>
+  <p>+ Chúa tái lâm: Đem đến sự than khóc cho những  người từ chối Chúa: <em>&ldquo;Hết  thảy các chi họ trong thế gian sẽ <u>than khóc </u>vì cớ  Ngài.&rdquo; (Khải Huyền 1:7)</em></p>
+  <p>
+    <!--[if !supportLists]-->
+    <strong>g.</strong>
+    <!--[endif]-->
+    <strong>Mục đích:</strong></p>
+  <p>+ Chúa đến tiếp rước Hội Thánh: Chúa  giáng lâm giữa không trung để cứu Hội Thánh ra khỏi  cơn đại nạn sẽ trút xuống thế gian: <em>&ldquo;Đặng chờ đợi  Con Ngài từ trên trời, là Đức Chúa Jesus mà Ngài đã  khiến từ kẻ chết sống lại, tức là  Đấng <u>giải cứu chúng ta khỏi cơn thạnh  nộ</u> ngày sau.&rdquo; (I Tê-sa-lô-ni-ca 1:10)</em></p>
+  <p>+ Chúa tái lâm: Chúa giáng lâm trên mặt đất để  thi hành sự phán xét đối với những người  khước từ Ngài: <em>&ldquo;…khi  Đức Chúa Jesus từ trời hiện đến với  các thiên sứ của quyền phép Ngài, giữa ngọn lửa  hừng, báo thù những kẻ chẳng hề nhận biết  Đức Chúa Trời, và không vâng phục Tin Lành của  Đức Chúa Jesus Christ chúng ta. Họ sẽ bị <u>hình  phạt hư mất đời đời</u>, xa cách mặt  Chúa và sự vinh hiển của quyền phép Ngài.&rdquo; (II  Tê-sa-lô-ni-ca 1:7-9). </em></p>
+  <p class="t"><em>    Tháng 12 năm 2010</em></p>
+<p align="center" class="MsoNormal" style="text-align:left">&nbsp;</p>
+</blockquote>
+    </div>
+    <p class="MsoNormal" align="center" style='text-align:center'><a href="../index.html"><img src="../Image/TroLaiTrangChinh.jpg" width="180" height="30" align="middle" /></a></p>
+    <p class="MsoNormal" align="center" style='text-align:center'>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="footer">
+<img src="../Image/Footer.jpg" width="960" height="70" />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>
